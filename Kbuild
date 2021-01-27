@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 dtbo-y += waipio-vidc.dtbo
 
@@ -17,14 +18,23 @@ clean-files	:= *.dtb *.dtbo
 >>>>>>> 56985981 (msm-mmrm: Compile mmrm device tree)
 =======
 
+=======
+ifneq ($(CONFIG_ARCH_QTI_VM), y)
+>>>>>>> 16b5e76c (ARM: dts: msm: add trusted VM files for waipio target)
 dtbo-y += display/waipio-sde.dtbo \
 		display/waipio-sde-display-mtp-overlay.dtbo \
 		display/waipio-sde-display-cdp-overlay.dtbo \
 		display/waipio-sde-display-qrd-overlay.dtbo \
 		display/waipio-sde-display-rumi-overlay.dtbo
+else
+dtbo-y += display/trustedvm-waipio-sde-display-mtp-overlay.dtbo \
+	  display/trustedvm-waipio-sde-display-cdp-overlay.dtbo \
+	  display/trustedvm-waipio-sde-display-rumi-overlay.dtbo
+endif
 always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
 clean-files    := *.dtb *.dtbo
+<<<<<<< HEAD
 >>>>>>> 267af5af (ARM: dts: msm: add support for devicetree overlay for waipio)
 =======
 ifeq ($(CONFIG_BUILD_ARM64_DT_OVERLAY), y)
@@ -40,3 +50,5 @@ always-y	:= $(dtbo-y) $(dtb-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
 >>>>>>> 224fe549 (ARM: dts: msm: Add Makefile)
+=======
+>>>>>>> 16b5e76c (ARM: dts: msm: add trusted VM files for waipio target)
