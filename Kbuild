@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 dtbo-y += waipio-vidc.dtbo
 
@@ -52,3 +53,14 @@ clean-files	:= *.dtb *.dtbo
 >>>>>>> 224fe549 (ARM: dts: msm: Add Makefile)
 =======
 >>>>>>> 16b5e76c (ARM: dts: msm: add trusted VM files for waipio target)
+=======
+
+dtbo-y += waipio-audio.dtbo \
+                 waipio-audio-cdp.dtbo \
+                 waipio-audio-mtp.dtbo \
+                 waipio-audio-qrd.dtbo
+
+ always-y    := $(dtb-y) $(dtbo-y)
+ subdir-y    := $(dts-dirs)
+ clean-files    := *.dtb *.dtbo
+>>>>>>> 3ea2f680 (audio: dts: Compile audio component devicetree as overlay)
