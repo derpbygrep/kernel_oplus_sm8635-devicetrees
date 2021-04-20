@@ -56,10 +56,14 @@ all: dtbs
 
 dtbs:
 <<<<<<< HEAD
+<<<<<<< HEAD
 	$(MAKE) -C $(KERNEL_SRC) M=$(M) dtbs $(KBUILD_OPTIONS)
 =======
 	$(MAKE) -C $(KERNEL_SRC) M=$(M) modules dtbs $(KBUILD_OPTIONS)
 >>>>>>> 3ea2f680 (audio: dts: Compile audio component devicetree as overlay)
+=======
+	$(MAKE) -C $(KERNEL_SRC) M=$(M) dtbs $(KBUILD_OPTIONS)
+>>>>>>> 61bd919c (audio: dts: remove modules from makefile)
 
 modules_install:
 	$(MAKE) M=$(M) -C $(KERNEL_SRC) modules_install
