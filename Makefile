@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 vendor := $(srctree)/$(src)
 
 ifneq "$(wildcard $(vendor)/qcom)" ""
@@ -16,6 +17,8 @@ subdir-y += oplus
 >>>>>>> 56985981 (msm-mmrm: Compile mmrm device tree)
 =======
 >>>>>>> 267af5af (ARM: dts: msm: add support for devicetree overlay for waipio)
+=======
+>>>>>>> f9f7afac (ARM: dts: enable building eva DT in Vendor SI)
 KBUILD_OPTIONS+=KBUILD_EXTMOD_DTS=.
 
 all: dtbs
@@ -25,6 +28,7 @@ clean:
 
 %:
 	$(MAKE) -C $(KERNEL_SRC) M=$(M) $@ $(KBUILD_OPTIONS)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 5358623a (msm-vidc: Compile video component devicetree as overlay)
@@ -74,3 +78,5 @@ clean:
 >>>>>>> 224fe549 (ARM: dts: msm: Add Makefile)
 =======
 >>>>>>> 3ea2f680 (audio: dts: Compile audio component devicetree as overlay)
+=======
+>>>>>>> f9f7afac (ARM: dts: enable building eva DT in Vendor SI)

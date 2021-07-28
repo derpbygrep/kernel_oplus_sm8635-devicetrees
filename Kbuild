@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 dtbo-y += waipio-vidc.dtbo
 
@@ -12,10 +13,14 @@ clean-files    := *.dtb *.dtbo
 =======
 dtbo-y += waipio-mmrm.dtbo
 dtbo-y += waipio-mmrm-test.dtbo
+=======
+dtbo-y += waipio-eva.dtbo
+>>>>>>> f9f7afac (ARM: dts: enable building eva DT in Vendor SI)
 
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
+<<<<<<< HEAD
 >>>>>>> 56985981 (msm-mmrm: Compile mmrm device tree)
 =======
 
@@ -70,3 +75,5 @@ dtbo-y += waipio-audio.dtbo \
  subdir-y    := $(dts-dirs)
  clean-files    := *.dtb *.dtbo
 >>>>>>> 3ea2f680 (audio: dts: Compile audio component devicetree as overlay)
+=======
+>>>>>>> f9f7afac (ARM: dts: enable building eva DT in Vendor SI)
