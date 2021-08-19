@@ -4,12 +4,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 dtbo-y += waipio-vidc.dtbo
+=======
+dtbo-y += gpu/waipio-gpu.dtbo \
+		gpu/waipio-v2-gpu.dtbo
+>>>>>>> 9aed8346 (ARM: dts: msm: Initial commit for Adreno GPU)
 
 always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
 clean-files    := *.dtb *.dtbo
+<<<<<<< HEAD
 =======
 dtbo-y += waipio-mmrm.dtbo
 dtbo-y += waipio-mmrm-test.dtbo
@@ -83,3 +89,5 @@ dtbo-y += waipio-audio.dtbo \
 >>>>>>> 3ea2f680 (audio: dts: Compile audio component devicetree as overlay)
 =======
 >>>>>>> f9f7afac (ARM: dts: enable building eva DT in Vendor SI)
+=======
+>>>>>>> 9aed8346 (ARM: dts: msm: Initial commit for Adreno GPU)

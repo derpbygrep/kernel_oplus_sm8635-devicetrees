@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 vendor := $(srctree)/$(src)
 
 ifneq "$(wildcard $(vendor)/qcom)" ""
@@ -19,6 +20,8 @@ subdir-y += oplus
 >>>>>>> 267af5af (ARM: dts: msm: add support for devicetree overlay for waipio)
 =======
 >>>>>>> f9f7afac (ARM: dts: enable building eva DT in Vendor SI)
+=======
+>>>>>>> 9aed8346 (ARM: dts: msm: Initial commit for Adreno GPU)
 KBUILD_OPTIONS+=KBUILD_EXTMOD_DTS=.
 
 all: dtbs
@@ -28,6 +31,7 @@ clean:
 
 %:
 	$(MAKE) -C $(KERNEL_SRC) M=$(M) $@ $(KBUILD_OPTIONS)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -80,3 +84,5 @@ clean:
 >>>>>>> 3ea2f680 (audio: dts: Compile audio component devicetree as overlay)
 =======
 >>>>>>> f9f7afac (ARM: dts: enable building eva DT in Vendor SI)
+=======
+>>>>>>> 9aed8346 (ARM: dts: msm: Initial commit for Adreno GPU)
