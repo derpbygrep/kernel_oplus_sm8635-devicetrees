@@ -13,9 +13,13 @@ clean-files    := *.dtb *.dtbo
 =======
 dtbo-y += waipio-mmrm.dtbo
 dtbo-y += waipio-mmrm-test.dtbo
+<<<<<<< HEAD
 =======
 dtbo-y += waipio-eva.dtbo
 >>>>>>> f9f7afac (ARM: dts: enable building eva DT in Vendor SI)
+=======
+dtbo-y += waipio-v2-mmrm.dtbo
+>>>>>>> b4f12f9e (msm_mmrm: support mmrm on v1 and v2)
 
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
