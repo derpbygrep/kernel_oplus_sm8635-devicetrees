@@ -39,6 +39,7 @@ ifneq ($(CONFIG_ARCH_QTI_VM), y)
 >>>>>>> 16b5e76c (ARM: dts: msm: add trusted VM files for waipio target)
 dtbo-y += display/waipio-sde.dtbo \
 		display/waipio-sde-display-mtp-overlay.dtbo \
+		display/waipio-sde-display-cphy-mtp-overlay.dtbo \
 		display/waipio-sde-display-cdp-overlay.dtbo \
 		display/waipio-sde-display-qrd-overlay.dtbo \
 		display/waipio-sde-display-hdk-overlay.dtbo \
