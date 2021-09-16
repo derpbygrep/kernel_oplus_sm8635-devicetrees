@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 dtbo-y += waipio-vidc.dtbo
 =======
@@ -26,10 +27,17 @@ dtbo-y += waipio-eva.dtbo
 =======
 dtbo-y += waipio-v2-mmrm.dtbo
 >>>>>>> b4f12f9e (msm_mmrm: support mmrm on v1 and v2)
+=======
+ifeq ($(CONFIG_ARCH_WAIPIO),y)
+dtbo-y += waipio-cnss.dtbo
+dtbo-y += waipio-kiwi-cnss.dtbo
+endif
+>>>>>>> 3db81193 (wlan: dts: Add initial files for WLAN device tree project)
 
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 56985981 (msm-mmrm: Compile mmrm device tree)
 =======
@@ -92,3 +100,5 @@ dtbo-y += waipio-audio.dtbo \
 >>>>>>> f9f7afac (ARM: dts: enable building eva DT in Vendor SI)
 =======
 >>>>>>> 9aed8346 (ARM: dts: msm: Initial commit for Adreno GPU)
+=======
+>>>>>>> 3db81193 (wlan: dts: Add initial files for WLAN device tree project)
