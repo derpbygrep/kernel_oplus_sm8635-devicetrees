@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 dtbo-y += waipio-vidc.dtbo
 =======
@@ -43,6 +44,9 @@ clean-files	:= *.dtb *.dtbo
 =======
 
 =======
+=======
+ifneq ($(CONFIG_ARCH_KALAMA), y)
+>>>>>>> fc51bbcd (ARM: dts: msm: avoid compiling device tree for Kalama)
 ifneq ($(CONFIG_ARCH_QTI_VM), y)
 >>>>>>> 16b5e76c (ARM: dts: msm: add trusted VM files for waipio target)
 dtbo-y += display/waipio-sde.dtbo \
@@ -59,6 +63,7 @@ dtbo-y += display/trustedvm-waipio-sde-display-mtp-overlay.dtbo \
 	  display/trustedvm-waipio-sde-display-cdp-overlay.dtbo \
 	  display/trustedvm-waipio-sde-display-rumi-overlay.dtbo \
 	  display/trustedvm-waipio-sde-display-qrd-overlay.dtbo
+endif
 endif
 always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
