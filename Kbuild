@@ -27,6 +27,7 @@ dtbo-y += waipio-eva.dtbo
 >>>>>>> f9f7afac (ARM: dts: enable building eva DT in Vendor SI)
 =======
 dtbo-y += waipio-v2-mmrm.dtbo
+<<<<<<< HEAD
 >>>>>>> b4f12f9e (msm_mmrm: support mmrm on v1 and v2)
 =======
 ifeq ($(CONFIG_ARCH_WAIPIO),y)
@@ -34,6 +35,9 @@ dtbo-y += waipio-cnss.dtbo
 dtbo-y += waipio-kiwi-cnss.dtbo
 endif
 >>>>>>> 3db81193 (wlan: dts: Add initial files for WLAN device tree project)
+=======
+dtbo-y += waipio-v2-mmrm-test.dtbo
+>>>>>>> f088c49d (mmrm_test: Add clock rate info into dt file)
 
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
