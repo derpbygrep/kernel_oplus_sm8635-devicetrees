@@ -17,6 +17,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ifeq ($(CONFIG_ARCH_WAIPIO), y)
 dtbo-y += waipio-vidc.dtbo
@@ -35,9 +36,18 @@ endif
 =======
 ifeq ($(CONFIG_ARCH_KALAMA), y)
 	dtbo-y += display/kalama-sde.dtbo \
+=======
+ifneq ($(CONFIG_ARCH_QTI_VM), y)
+dtbo-$(CONFIG_ARCH_KALAMA) += display/kalama-sde.dtbo \
+>>>>>>> 9264d8bc (ARM: dts: msm: Add trustedvm device tree files for Kalama target)
 		display/kalama-sde-display-rumi-overlay.dtbo \
 		display/kalama-sde-display-cdp-overlay.dtbo \
 		display/kalama-sde-display-mtp-overlay.dtbo
+else
+dtbo-$(CONFIG_ARCH_KALAMA) += display/trustedvm-kalama-sde-display-mtp-overlay.dtbo \
+		  display/trustedvm-kalama-sde-display-cdp-overlay.dtbo \
+		  display/trustedvm-kalama-sde-display-rumi-overlay.dtbo \
+		  display/trustedvm-kalama-sde-display-qrd-overlay.dtbo
 endif
 ifeq ($(CONFIG_ARCH_WAIPIO), y)
         dtbo-y += display/waipio-sde.dtbo \
