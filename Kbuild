@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 dtbo-y += waipio-vidc.dtbo
 =======
@@ -56,6 +57,8 @@ clean-files	:= *.dtb *.dtbo
 =======
 ifneq ($(CONFIG_ARCH_KALAMA), y)
 >>>>>>> fc51bbcd (ARM: dts: msm: avoid compiling device tree for Kalama)
+=======
+>>>>>>> 7aa038e5 (Revert "ARM: dts: msm: avoid compiling device tree for Kalama")
 ifneq ($(CONFIG_ARCH_QTI_VM), y)
 <<<<<<< HEAD
 >>>>>>> 16b5e76c (ARM: dts: msm: add trusted VM files for waipio target)
@@ -78,6 +81,7 @@ dtbo-$(CONFIG_ARCH_WAIPIO) += display/trustedvm-waipio-sde-display-mtp-overlay.d
 		display/trustedvm-waipio-sde-display-qrd-overlay.dtbo
 endif
 <<<<<<< HEAD
+<<<<<<< HEAD
 endif
 =======
 
@@ -89,6 +93,8 @@ dtbo-$(CONFIG_ARCH_CAPE) += display/cape-sde.dtbo \
 endif
 
 >>>>>>> 7d2156a6 (ARM: dts: msm: add display dt nodes for cape target)
+=======
+>>>>>>> 7aa038e5 (Revert "ARM: dts: msm: avoid compiling device tree for Kalama")
 always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
 clean-files    := *.dtb *.dtbo
