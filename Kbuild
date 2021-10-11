@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 dtbo-y += waipio-vidc.dtbo
 =======
@@ -38,6 +39,9 @@ endif
 =======
 dtbo-y += waipio-v2-mmrm-test.dtbo
 >>>>>>> f088c49d (mmrm_test: Add clock rate info into dt file)
+=======
+dtbo-y += kalama-mmrm.dtbo
+>>>>>>> b72de0c8 (msm-mmrm: Add Kalama mmrm support)
 
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
