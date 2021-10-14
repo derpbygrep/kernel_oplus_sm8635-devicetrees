@@ -10,6 +10,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 dtbo-y += waipio-vidc.dtbo
 =======
@@ -95,6 +96,11 @@ endif
 >>>>>>> 7d2156a6 (ARM: dts: msm: add display dt nodes for cape target)
 =======
 >>>>>>> 7aa038e5 (Revert "ARM: dts: msm: avoid compiling device tree for Kalama")
+=======
+dtbo-y += display/kalama-sde.dtbo \
+		display/kalama-sde-display-rumi-overlay.dtbo
+
+>>>>>>> 45a59e5c (ARM: dts: msm: WB RUMI bring-up for Kalama)
 always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
 clean-files    := *.dtb *.dtbo
