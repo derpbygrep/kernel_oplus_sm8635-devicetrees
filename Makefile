@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 vendor := $(srctree)/$(src)
 
 ifneq "$(wildcard $(vendor)/qcom)" ""
@@ -27,6 +28,9 @@ KBUILD_OPTIONS+=KBUILD_EXTMOD_DTS=.
 =======
 KBUILD_OPTIONS += KBUILD_EXTMOD_DTS=.
 >>>>>>> 3db81193 (wlan: dts: Add initial files for WLAN device tree project)
+=======
+KBUILD_OPTIONS += KBUILD_EXTMOD_DTS=.
+>>>>>>> fd939759 (dts: Add initial files for Bluetooth device tree project)
 
 all: dtbs
 
@@ -35,6 +39,7 @@ clean:
 
 %:
 	$(MAKE) -C $(KERNEL_SRC) M=$(M) $@ $(KBUILD_OPTIONS)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -94,3 +99,5 @@ clean:
 >>>>>>> 9aed8346 (ARM: dts: msm: Initial commit for Adreno GPU)
 =======
 >>>>>>> 3db81193 (wlan: dts: Add initial files for WLAN device tree project)
+=======
+>>>>>>> fd939759 (dts: Add initial files for Bluetooth device tree project)

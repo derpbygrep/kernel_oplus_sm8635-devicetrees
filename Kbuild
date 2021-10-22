@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 dtbo-y += waipio-vidc.dtbo
 =======
@@ -116,3 +117,13 @@ dtbo-y += waipio-audio.dtbo \
 >>>>>>> 9aed8346 (ARM: dts: msm: Initial commit for Adreno GPU)
 =======
 >>>>>>> 3db81193 (wlan: dts: Add initial files for WLAN device tree project)
+=======
+ifeq ($(CONFIG_ARCH_WAIPIO),y)
+dtbo-y += waipio-bt.dtbo
+dtbo-y += waipio-kiwi-bt.dtbo
+endif
+
+always-y        := $(dtb-y) $(dtbo-y)
+subdir-y        := $(dts-dirs)
+clean-files     := *.dtb *.dtbo
+>>>>>>> fd939759 (dts: Add initial files for Bluetooth device tree project)
