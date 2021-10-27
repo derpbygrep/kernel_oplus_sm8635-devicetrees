@@ -11,6 +11,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ifeq ($(CONFIG_ARCH_WAIPIO), y)
 dtbo-y += waipio-vidc.dtbo
@@ -131,19 +132,27 @@ clean-files    := *.dtb *.dtbo
 >>>>>>> 267af5af (ARM: dts: msm: add support for devicetree overlay for waipio)
 =======
 ifeq ($(CONFIG_BUILD_ARM64_DT_OVERLAY), y)
+=======
+# Use current $(MSM_ARCH) to set config/ makefile path
+CAMERA_TARGET_MKFILE_PATH := $(CAMERA_DEVICETREE_ROOT)/config/$(MSM_ARCH).mk
+# Check to see if current target makefile exists
+CAMERA_TARGET_EXISTS := $(or $(and $(wildcard $(CAMERA_TARGET_MKFILE_PATH)),y),n)
+>>>>>>> b34b2827 (ARM: dts: msm: Remove deprecated config check)
 
-# Use the current MSM_ARCH as the target config/ Makefile
 # Since Kernel SI can support multiple ARCH's this allows only the current selected target ARCH
 # to compile.
-include $(CAMERA_DEVICETREE_ROOT)/config/$(MSM_ARCH).mk
-
+ifeq ($(CAMERA_TARGET_EXISTS), y)
+include $(CAMERA_TARGET_MKFILE_PATH)
 else
-$(error CONFIG_BUILD_ARM64_DT_OVERLAY is: $(CONFIG_BUILD_ARM64_DT_OVERLAY))
+# Print a warning but do not throw an error to allow bring-up of new targets!
+$(warning [$(MODNAME)] $(MSM_ARCH) is not a valid target, make sure config\ folder contains a makefile named $(MSM_ARCH).mk)
+$(warning [$(MODNAME)] driver is NOT being enabled!)
 endif
 
 always-y	:= $(dtbo-y) $(dtb-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
+<<<<<<< HEAD
 >>>>>>> 224fe549 (ARM: dts: msm: Add Makefile)
 =======
 >>>>>>> 16b5e76c (ARM: dts: msm: add trusted VM files for waipio target)
@@ -175,3 +184,5 @@ always-y        := $(dtb-y) $(dtbo-y)
 subdir-y        := $(dts-dirs)
 clean-files     := *.dtb *.dtbo
 >>>>>>> fd939759 (dts: Add initial files for Bluetooth device tree project)
+=======
+>>>>>>> b34b2827 (ARM: dts: msm: Remove deprecated config check)
