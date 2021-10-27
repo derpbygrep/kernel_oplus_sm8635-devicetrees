@@ -57,8 +57,12 @@ clean-files	:= *.dtb *.dtbo
 ifneq ($(CONFIG_ARCH_KALAMA), y)
 >>>>>>> fc51bbcd (ARM: dts: msm: avoid compiling device tree for Kalama)
 ifneq ($(CONFIG_ARCH_QTI_VM), y)
+<<<<<<< HEAD
 >>>>>>> 16b5e76c (ARM: dts: msm: add trusted VM files for waipio target)
 dtbo-y += display/waipio-sde.dtbo \
+=======
+dtbo-$(CONFIG_ARCH_WAIPIO) += display/waipio-sde.dtbo \
+>>>>>>> 7d2156a6 (ARM: dts: msm: add display dt nodes for cape target)
 		display/waipio-sde-display-mtp-overlay.dtbo \
 		display/waipio-sde-display-cphy-mtp-overlay.dtbo \
 		display/waipio-sde-display-cdp-overlay.dtbo \
@@ -68,12 +72,23 @@ dtbo-y += display/waipio-sde.dtbo \
 		display/waipio-sde-display-waipio-lemur-mtp-overlay.dtbo \
 		display/waipio-sde-display-rumi-overlay.dtbo
 else
-dtbo-y += display/trustedvm-waipio-sde-display-mtp-overlay.dtbo \
-	  display/trustedvm-waipio-sde-display-cdp-overlay.dtbo \
-	  display/trustedvm-waipio-sde-display-rumi-overlay.dtbo \
-	  display/trustedvm-waipio-sde-display-qrd-overlay.dtbo
+dtbo-$(CONFIG_ARCH_WAIPIO) += display/trustedvm-waipio-sde-display-mtp-overlay.dtbo \
+		display/trustedvm-waipio-sde-display-cdp-overlay.dtbo \
+		display/trustedvm-waipio-sde-display-rumi-overlay.dtbo \
+		display/trustedvm-waipio-sde-display-qrd-overlay.dtbo
 endif
+<<<<<<< HEAD
 endif
+=======
+
+ifneq ($(CONFIG_ARCH_QTI_VM), y)
+dtbo-$(CONFIG_ARCH_CAPE) += display/cape-sde.dtbo \
+		display/cape-sde-display-atp-overlay.dtbo \
+		display/cape-sde-display-cdp-overlay.dtbo \
+		display/cape-sde-display-mtp-overlay.dtbo
+endif
+
+>>>>>>> 7d2156a6 (ARM: dts: msm: add display dt nodes for cape target)
 always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
 clean-files    := *.dtb *.dtbo
