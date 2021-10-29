@@ -106,6 +106,7 @@ dtbo-$(CONFIG_ARCH_CAPE) += display/cape-sde.dtbo \
 		display/cape-sde-display-mtp-overlay.dtbo
 endif
 
+<<<<<<< HEAD
 >>>>>>> 7d2156a6 (ARM: dts: msm: add display dt nodes for cape target)
 =======
 >>>>>>> 7aa038e5 (Revert "ARM: dts: msm: avoid compiling device tree for Kalama")
@@ -114,6 +115,15 @@ dtbo-y += display/kalama-sde.dtbo \
 		display/kalama-sde-display-rumi-overlay.dtbo
 
 >>>>>>> 45a59e5c (ARM: dts: msm: WB RUMI bring-up for Kalama)
+=======
+ifneq ($(CONFIG_ARCH_QTI_VM), y)
+dtbo-$(CONFIG_ARCH_DIWALI) += display/diwali-sde.dtbo \
+		display/diwali-sde-display-atp-overlay.dtbo \
+		display/diwali-sde-display-idp-overlay.dtbo \
+		display/diwali-sde-display-idp-amoled-overlay.dtbo
+endif
+
+>>>>>>> 36e76372 (ARM: dts: msm: enable compilation of diwali display)
 always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
 clean-files    := *.dtb *.dtbo
