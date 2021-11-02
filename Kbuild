@@ -12,11 +12,20 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 
+ifeq ($(CONFIG_ARCH_WAIPIO), y)
 dtbo-y += waipio-vidc.dtbo
+<<<<<<< HEAD
 =======
 dtbo-y += gpu/waipio-gpu.dtbo \
 		gpu/waipio-v2-gpu.dtbo
 >>>>>>> 9aed8346 (ARM: dts: msm: Initial commit for Adreno GPU)
+=======
+endif
+
+ifeq ($(CONFIG_ARCH_KALAMA), y)
+dtbo-y += kalama-vidc.dtbo
+endif
+>>>>>>> 257196b5 (video: dts: Add support for Kalama platform)
 
 always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
