@@ -46,6 +46,10 @@ dtbo-y += waipio-v2-mmrm-test.dtbo
 dtbo-y += kalama-mmrm.dtbo
 >>>>>>> b72de0c8 (msm-mmrm: Add Kalama mmrm support)
 
+ifeq ($(CONFIG_ARCH_KALAMA),y)
+dtbo-y += kalama-cnss.dtbo
+endif
+
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
