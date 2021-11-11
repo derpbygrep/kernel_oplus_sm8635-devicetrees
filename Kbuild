@@ -12,6 +12,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ifeq ($(CONFIG_ARCH_WAIPIO), y)
 dtbo-y += waipio-vidc.dtbo
@@ -58,6 +59,18 @@ dtbo-y += kalama-mmrm.dtbo
 
 ifeq ($(CONFIG_ARCH_KALAMA),y)
 dtbo-y += kalama-cnss.dtbo
+=======
+
+ifeq ($(CONFIG_ARCH_KALAMA), y)
+dtbo-y += kalama-mmrm.dtbo
+endif
+
+ifeq ($(CONFIG_ARCH_WAIPIO), y)
+dtbo-y += waipio-mmrm.dtbo
+dtbo-y += waipio-mmrm-test.dtbo
+dtbo-y += waipio-v2-mmrm.dtbo
+dtbo-y += waipio-v2-mmrm-test.dtbo
+>>>>>>> 20a069bc (msm-mmrm: Fix Waipio devicetree build issue)
 endif
 
 always-y	:= $(dtb-y) $(dtbo-y)
