@@ -18,6 +18,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ifeq ($(CONFIG_ARCH_WAIPIO), y)
 dtbo-y += waipio-vidc.dtbo
@@ -27,6 +28,15 @@ dtbo-y += gpu/waipio-gpu.dtbo \
 		gpu/waipio-v2-gpu.dtbo
 >>>>>>> 9aed8346 (ARM: dts: msm: Initial commit for Adreno GPU)
 =======
+=======
+ifeq ($(CONFIG_ARCH_WAIPIO), y)
+dtbo-y += gpu/waipio-gpu.dtbo \
+		gpu/waipio-v2-gpu.dtbo
+endif
+
+ifeq ($(CONFIG_ARCH_KALAMA), y)
+dtbo-y += gpu/kalama-gpu.dtbo
+>>>>>>> 228c4a34 (ARM: dts: msm: Add support for Kalama GPU)
 endif
 
 ifeq ($(CONFIG_ARCH_KALAMA), y)
