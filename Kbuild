@@ -35,7 +35,9 @@ endif
 =======
 ifeq ($(CONFIG_ARCH_KALAMA), y)
 	dtbo-y += display/kalama-sde.dtbo \
-		display/kalama-sde-display-rumi-overlay.dtbo
+		display/kalama-sde-display-rumi-overlay.dtbo \
+		display/kalama-sde-display-cdp-overlay.dtbo \
+		display/kalama-sde-display-mtp-overlay.dtbo
 endif
 ifeq ($(CONFIG_ARCH_WAIPIO), y)
         dtbo-y += display/waipio-sde.dtbo \
