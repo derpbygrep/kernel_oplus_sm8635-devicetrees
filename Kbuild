@@ -19,6 +19,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ifeq ($(CONFIG_ARCH_WAIPIO), y)
 dtbo-y += waipio-vidc.dtbo
@@ -252,6 +253,12 @@ dtbo-y += kalama-audio.dtbo \
 =======
 >>>>>>> 3db81193 (wlan: dts: Add initial files for WLAN device tree project)
 =======
+=======
+ifeq ($(CONFIG_ARCH_KALAMA),y)
+dtbo-y += kalama-bt.dtbo
+endif
+
+>>>>>>> f243772d (btfm: dts: Add support for kalama target)
 ifeq ($(CONFIG_ARCH_WAIPIO),y)
 dtbo-y += waipio-bt.dtbo
 dtbo-y += waipio-kiwi-bt.dtbo
