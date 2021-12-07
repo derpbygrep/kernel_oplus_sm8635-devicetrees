@@ -14,6 +14,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ifeq ($(CONFIG_ARCH_WAIPIO), y)
 dtbo-y += waipio-vidc.dtbo
@@ -89,11 +90,16 @@ dtbo-y += waipio-mmrm-test.dtbo
 dtbo-y += waipio-v2-mmrm.dtbo
 dtbo-y += waipio-v2-mmrm-test.dtbo
 >>>>>>> 20a069bc (msm-mmrm: Fix Waipio devicetree build issue)
+=======
+ifeq ($(CONFIG_ARCH_KALAMA),y)
+dtbo-y += kalama-ipa.dtbo
+>>>>>>> 2820f9fe (ARM: dts: msm: Add ipa_hw support for KALAMA)
 endif
 
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 56985981 (msm-mmrm: Compile mmrm device tree)
@@ -225,3 +231,5 @@ clean-files     := *.dtb *.dtbo
 >>>>>>> fd939759 (dts: Add initial files for Bluetooth device tree project)
 =======
 >>>>>>> b34b2827 (ARM: dts: msm: Remove deprecated config check)
+=======
+>>>>>>> 2820f9fe (ARM: dts: msm: Add ipa_hw support for KALAMA)

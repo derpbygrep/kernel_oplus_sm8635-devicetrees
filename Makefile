@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 vendor := $(srctree)/$(src)
 
 ifneq "$(wildcard $(vendor)/qcom)" ""
@@ -31,6 +32,9 @@ KBUILD_OPTIONS += KBUILD_EXTMOD_DTS=.
 =======
 KBUILD_OPTIONS += KBUILD_EXTMOD_DTS=.
 >>>>>>> fd939759 (dts: Add initial files for Bluetooth device tree project)
+=======
+KBUILD_OPTIONS+=KBUILD_EXTMOD_DTS=.
+>>>>>>> 2820f9fe (ARM: dts: msm: Add ipa_hw support for KALAMA)
 
 all: dtbs
 
@@ -39,6 +43,7 @@ clean:
 
 %:
 	$(MAKE) -C $(KERNEL_SRC) M=$(M) $@ $(KBUILD_OPTIONS)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -101,3 +106,5 @@ clean:
 >>>>>>> 3db81193 (wlan: dts: Add initial files for WLAN device tree project)
 =======
 >>>>>>> fd939759 (dts: Add initial files for Bluetooth device tree project)
+=======
+>>>>>>> 2820f9fe (ARM: dts: msm: Add ipa_hw support for KALAMA)
