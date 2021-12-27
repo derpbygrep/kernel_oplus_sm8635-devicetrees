@@ -15,6 +15,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ifeq ($(CONFIG_ARCH_WAIPIO), y)
 dtbo-y += waipio-vidc.dtbo
@@ -233,3 +234,18 @@ clean-files     := *.dtb *.dtbo
 >>>>>>> b34b2827 (ARM: dts: msm: Remove deprecated config check)
 =======
 >>>>>>> 2820f9fe (ARM: dts: msm: Add ipa_hw support for KALAMA)
+=======
+dtbo-y += nxp/kalama-nfc.dtbo \
+	  nxp/kalama-nfc-mtp.dtbo \
+	  nxp/kalama-nfc-qrd.dtbo \
+	  nxp/kalama-nfc-cdp.dtbo
+
+dtbo-y += st/kalama-nfc.dtbo \
+	  st/kalama-nfc-mtp.dtbo \
+	  st/kalama-nfc-qrd.dtbo \
+	  st/kalama-nfc-cdp.dtbo
+
+always-y	:= $(dtb-y) $(dtbo-y)
+subdir-y	:= $(dts-dirs)
+clean-files	:= *.dtb *.dtbo
+>>>>>>> 6df60df1 (NFC:  Add I2C NFC device node for Kalama)

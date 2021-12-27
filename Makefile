@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 vendor := $(srctree)/$(src)
 
 ifneq "$(wildcard $(vendor)/qcom)" ""
@@ -88,11 +89,20 @@ dtbs:
 =======
 	$(MAKE) -C $(KERNEL_SRC) M=$(M) dtbs $(KBUILD_OPTIONS)
 >>>>>>> 61bd919c (audio: dts: remove modules from makefile)
+=======
+KBUILD_OPTIONS += KBUILD_EXTMOD_DTS=.
+
+all: dtbs
+
+%:
+	$(MAKE) -C $(KERNEL_SRC) M=$(M) $@ $(KBUILD_OPTIONS)
+>>>>>>> 6df60df1 (NFC:  Add I2C NFC device node for Kalama)
 
 modules_install:
 	$(MAKE) M=$(M) -C $(KERNEL_SRC) modules_install
 
 clean:
+<<<<<<< HEAD
 	$(MAKE) -C $(KERNEL_SRC) M=$(M) clean
 <<<<<<< HEAD
 >>>>>>> 224fe549 (ARM: dts: msm: Add Makefile)
@@ -108,3 +118,6 @@ clean:
 >>>>>>> fd939759 (dts: Add initial files for Bluetooth device tree project)
 =======
 >>>>>>> 2820f9fe (ARM: dts: msm: Add ipa_hw support for KALAMA)
+=======
+	$(MAKE) -C $(KERNEL_SRC) M=$(M) clean
+>>>>>>> 6df60df1 (NFC:  Add I2C NFC device node for Kalama)
