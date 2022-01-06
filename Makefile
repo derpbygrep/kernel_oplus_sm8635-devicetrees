@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 vendor := $(srctree)/$(src)
 
 ifneq "$(wildcard $(vendor)/qcom)" ""
@@ -36,6 +37,9 @@ KBUILD_OPTIONS += KBUILD_EXTMOD_DTS=.
 =======
 KBUILD_OPTIONS+=KBUILD_EXTMOD_DTS=.
 >>>>>>> 2820f9fe (ARM: dts: msm: Add ipa_hw support for KALAMA)
+=======
+KBUILD_OPTIONS+=KBUILD_EXTMOD_DTS=.
+>>>>>>> 33d788bc (Devicetree: eSE: To add eSE GPIO device node for kalama)
 
 all: dtbs
 
@@ -44,6 +48,7 @@ clean:
 
 %:
 	$(MAKE) -C $(KERNEL_SRC) M=$(M) $@ $(KBUILD_OPTIONS)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -121,3 +126,5 @@ clean:
 =======
 	$(MAKE) -C $(KERNEL_SRC) M=$(M) clean
 >>>>>>> 6df60df1 (NFC:  Add I2C NFC device node for Kalama)
+=======
+>>>>>>> 33d788bc (Devicetree: eSE: To add eSE GPIO device node for kalama)

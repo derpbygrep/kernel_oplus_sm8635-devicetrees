@@ -16,6 +16,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ifeq ($(CONFIG_ARCH_WAIPIO), y)
 dtbo-y += waipio-vidc.dtbo
@@ -96,10 +97,16 @@ ifeq ($(CONFIG_ARCH_KALAMA),y)
 dtbo-y += kalama-ipa.dtbo
 >>>>>>> 2820f9fe (ARM: dts: msm: Add ipa_hw support for KALAMA)
 endif
+=======
+dtbo-y += kalama-ese-mtp.dtbo
+dtbo-y += kalama-ese-cdp.dtbo
+dtbo-y += kalama-ese-qrd.dtbo
+>>>>>>> 33d788bc (Devicetree: eSE: To add eSE GPIO device node for kalama)
 
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -249,3 +256,5 @@ always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
 >>>>>>> 6df60df1 (NFC:  Add I2C NFC device node for Kalama)
+=======
+>>>>>>> 33d788bc (Devicetree: eSE: To add eSE GPIO device node for kalama)
