@@ -127,6 +127,7 @@ ifeq ($(CONFIG_ARCH_KALAMA), y)
 	endif
 endif
 
+<<<<<<< HEAD
 ifeq ($(CONFIG_ARCH_WAIPIO), y)
 dtbo-y += waipio-mmrm.dtbo
 dtbo-y += waipio-mmrm-test.dtbo
@@ -164,6 +165,12 @@ endif
 endif
 >>>>>>> 14e467a4 (ARM: dts: Add TVM device tree)
 
+=======
+ifeq ($(CONFIG_ARCH_SA8155),y)
+dtbo-y += sa8155p-cnss.dtbo
+endif
+
+>>>>>>> 1e1d08d0 (wlan: dts: Add support for hana-au)
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
