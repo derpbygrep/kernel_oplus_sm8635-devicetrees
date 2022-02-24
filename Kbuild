@@ -81,6 +81,7 @@ ifeq ($(CONFIG_ARCH_WAIPIO), y)
                   display/waipio-sde-display-rumi-overlay.dtbo
 >>>>>>> 66237747 (ARM: dts: msm: add target config based device tree compilation)
 
+<<<<<<< HEAD
 endif
 =======
 ifeq ($(CONFIG_ARCH_SA8155), y)
@@ -153,6 +154,13 @@ dtbo-y += kalama-ese-cdp.dtbo
 dtbo-y += kalama-ese-qrd.dtbo
 >>>>>>> 33d788bc (Devicetree: eSE: To add eSE GPIO device node for kalama)
 =======
+=======
+ifeq ($(CONFIG_ARCH_SA8155), y)
+dtbo-y += display/sm8150-sde.dtbo \
+          display/sa8155-adp-star-display.dtbo
+endif
+
+>>>>>>> 5f6fdead (ARM: dts: msm: add sa8155 configuration)
 ifneq ($(CONFIG_ARCH_QTI_VM), y)
 
 ifeq ($(CONFIG_ARCH_WAIPIO), y)
