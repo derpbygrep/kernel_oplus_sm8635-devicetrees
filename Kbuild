@@ -42,6 +42,7 @@ dtbo-y += gpu/kalama-gpu.dtbo
 >>>>>>> 228c4a34 (ARM: dts: msm: Add support for Kalama GPU)
 endif
 
+<<<<<<< HEAD
 ifeq ($(CONFIG_ARCH_KALAMA), y)
 dtbo-y += kalama-vidc.dtbo
 endif
@@ -81,6 +82,12 @@ ifeq ($(CONFIG_ARCH_WAIPIO), y)
 >>>>>>> 66237747 (ARM: dts: msm: add target config based device tree compilation)
 
 endif
+=======
+ifeq ($(CONFIG_ARCH_SA8155), y)
+dtbo-y += gpu/sa8155-v2-gpu.dtbo
+endif
+
+>>>>>>> cd849c3d (ARM: dts: msm: Add support for SA8155 GPU)
 always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
 clean-files    := *.dtb *.dtbo
