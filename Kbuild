@@ -173,6 +173,7 @@ endif
 endif
 =======
 
+<<<<<<< HEAD
 ifneq ($(CONFIG_ARCH_QTI_VM), y)
 dtbo-$(CONFIG_ARCH_CAPE) += display/cape-sde.dtbo \
 		display/cape-sde-display-atp-overlay.dtbo \
@@ -206,6 +207,8 @@ dtbo-$(CONFIG_ARCH_DIWALI) += display/trustedvm-diwali-sde-display-idp-overlay.d
 endif
 
 >>>>>>> 36e76372 (ARM: dts: msm: enable compilation of diwali display)
+=======
+>>>>>>> b7852667 (ARM: dts: msm: clean up Kbuild file for unsupported targets)
 always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
 clean-files    := *.dtb *.dtbo
