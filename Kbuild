@@ -21,6 +21,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ifeq ($(CONFIG_ARCH_WAIPIO), y)
 dtbo-y += waipio-vidc.dtbo
@@ -282,6 +283,9 @@ clean-files	:= *.dtb *.dtbo
 >>>>>>> 16b5e76c (ARM: dts: msm: add trusted VM files for waipio target)
 =======
 
+=======
+ifeq ($(CONFIG_ARCH_KALAMA), y)
+>>>>>>> 597e7d36 (Audio-devicetree : Kernel 5.15 audio bring-up)
 dtbo-y += kalama-audio.dtbo \
                  kalama-audio-cdp.dtbo \
                  kalama-audio-wsa883x-cdp.dtbo \
@@ -290,6 +294,11 @@ dtbo-y += kalama-audio.dtbo \
                  kalama-audio-qrd.dtbo \
                  kalama-audio-rcm.dtbo \
                  kalama-audio-rumi.dtbo
+endif
+
+ifeq ($(CONFIG_ARCH_SA8155), y)
+dtbo-y +=  sa8155-audio.dtbo
+endif
 
  always-y    := $(dtb-y) $(dtbo-y)
  subdir-y    := $(dts-dirs)
