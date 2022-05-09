@@ -38,8 +38,13 @@ dtbo-y += gpu/waipio-gpu.dtbo \
 endif
 
 ifeq ($(CONFIG_ARCH_KALAMA), y)
+<<<<<<< HEAD
 dtbo-y += gpu/kalama-gpu.dtbo
 >>>>>>> 228c4a34 (ARM: dts: msm: Add support for Kalama GPU)
+=======
+dtbo-y += kalama-vidc.dtbo
+dtbo-y += kalama-vidc-v2.dtbo
+>>>>>>> c4f05da0 (video: dts: Add support for Kailua V2 devices)
 endif
 
 <<<<<<< HEAD
