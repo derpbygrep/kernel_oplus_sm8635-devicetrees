@@ -361,13 +361,14 @@ dtbo-y += nxp/kalama-nfc.dtbo \
 	  nxp/kalama-nfc-cdp.dtbo
 
 dtbo-y += st/kalama-nfc.dtbo \
-	  st/kalama-nfc-mtp.dtbo \
-	  st/kalama-nfc-qrd.dtbo \
-	  st/kalama-nfc-cdp.dtbo
+	  st/kalama-nfc-mtp.dtbo
 
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
+<<<<<<< HEAD
 >>>>>>> 6df60df1 (NFC:  Add I2C NFC device node for Kalama)
 =======
 >>>>>>> 33d788bc (Devicetree: eSE: To add eSE GPIO device node for kalama)
+=======
+>>>>>>> 8f804df8 (STM NFC: devicetree: Remove the NFC DTS files for both CDP and QRD)
