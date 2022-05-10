@@ -25,6 +25,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ifeq ($(CONFIG_ARCH_WAIPIO), y)
 dtbo-y += waipio-vidc.dtbo
@@ -318,6 +319,17 @@ CAMERA_TARGET_EXISTS := $(or $(and $(wildcard $(CAMERA_TARGET_MKFILE_PATH)),y),n
 # to compile.
 ifeq ($(CAMERA_TARGET_EXISTS), y)
 include $(CAMERA_TARGET_MKFILE_PATH)
+=======
+# Use current $(MSM_ARCH) to set config/ makefile path
+SYNX_TARGET_MKFILE_PATH := $(SYNX_DEVICETREE_ROOT)/config/$(MSM_ARCH).mk
+# Check to see if current target makefile exists
+SYNX_TARGET_EXISTS := $(or $(and $(wildcard $(SYNX_TARGET_MKFILE_PATH)),y),n)
+
+# Since Kernel SI can support multiple ARCH's this allows only the current selected target ARCH
+# to compile.
+ifeq ($(SYNX_TARGET_EXISTS), y)
+include $(SYNX_TARGET_MKFILE_PATH)
+>>>>>>> e2656573 (msm: synx: enable building synx DT in Vendor SI)
 else
 # Print a warning but do not throw an error to allow bring-up of new targets!
 $(warning [$(MODNAME)] $(MSM_ARCH) is not a valid target, make sure config\ folder contains a makefile named $(MSM_ARCH).mk)
@@ -327,6 +339,7 @@ endif
 always-y	:= $(dtbo-y) $(dtb-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 224fe549 (ARM: dts: msm: Add Makefile)
 =======
@@ -500,3 +513,5 @@ always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
 >>>>>>> 6c40ce5e (ARM: dts: Add DSP devicetree files to Lanai)
+=======
+>>>>>>> e2656573 (msm: synx: enable building synx DT in Vendor SI)

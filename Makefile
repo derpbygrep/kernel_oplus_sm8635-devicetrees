@@ -12,6 +12,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 vendor := $(srctree)/$(src)
 
 ifneq "$(wildcard $(vendor)/qcom)" ""
@@ -91,10 +92,22 @@ KBUILD_OPTIONS += KERNEL_ROOT=$(ROOT_DIR)/$(KERNEL_DIR)
 KBUILD_OPTIONS += MODNAME=audio-devicetree
 
 >>>>>>> 3ea2f680 (audio: dts: Compile audio component devicetree as overlay)
+=======
+
+SYNX_DEVICETREE_ROOT=$(KERNEL_SRC)/$(M)
+SYNX_KERNEL_ROOT=$(SYNX_DEVICETREE_ROOT)/../../opensource/synx-kernel
+
+KBUILD_OPTIONS += SYNX_DEVICETREE_ROOT=$(KERNEL_SRC)/$(M)
+KBUILD_OPTIONS += KBUILD_DTC_INCLUDE=$(SYNX_KERNEL_ROOT)
+KBUILD_OPTIONS += KBUILD_EXTMOD_DTS=.
+KBUILD_OPTIONS += KERNEL_ROOT=$(ROOT_DIR)/$(KERNEL_DIR)
+KBUILD_OPTIONS += MODNAME=synx-devicetree
+>>>>>>> e2656573 (msm: synx: enable building synx DT in Vendor SI)
 
 all: dtbs
 
 dtbs:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	$(MAKE) -C $(KERNEL_SRC) M=$(M) dtbs $(KBUILD_OPTIONS)
@@ -112,11 +125,15 @@ all: dtbs
 %:
 	$(MAKE) -C $(KERNEL_SRC) M=$(M) $@ $(KBUILD_OPTIONS)
 >>>>>>> 6df60df1 (NFC:  Add I2C NFC device node for Kalama)
+=======
+	$(MAKE) -C $(KERNEL_SRC) M=$(M) dtbs $(KBUILD_OPTIONS)
+>>>>>>> e2656573 (msm: synx: enable building synx DT in Vendor SI)
 
 modules_install:
 	$(MAKE) M=$(M) -C $(KERNEL_SRC) modules_install
 
 clean:
+<<<<<<< HEAD
 <<<<<<< HEAD
 	$(MAKE) -C $(KERNEL_SRC) M=$(M) clean
 <<<<<<< HEAD
@@ -142,3 +159,6 @@ clean:
 >>>>>>> 82fb2209 (ARM: dts: msm: mm-drivers: add support for hw-fence feature on kalama)
 =======
 >>>>>>> 6c40ce5e (ARM: dts: Add DSP devicetree files to Lanai)
+=======
+	$(MAKE) -C $(KERNEL_SRC) M=$(M) clean
+>>>>>>> e2656573 (msm: synx: enable building synx DT in Vendor SI)
