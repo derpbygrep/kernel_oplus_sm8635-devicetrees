@@ -317,6 +317,7 @@ ifeq ($(CONFIG_ARCH_KALAMA), y)
 >>>>>>> 597e7d36 (Audio-devicetree : Kernel 5.15 audio bring-up)
 dtbo-y += kalama-audio.dtbo \
                  kalama-audio-cdp.dtbo \
+                 kalama-audio-cdp-nfc.dtbo \
                  kalama-audio-wsa883x-cdp.dtbo \
                  kalama-audio-mtp.dtbo \
                  kalama-audio-mtp-nfc.dtbo \
