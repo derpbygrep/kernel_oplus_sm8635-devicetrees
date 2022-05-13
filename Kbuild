@@ -161,8 +161,7 @@ dtbo-y += kalama-ese-qrd.dtbo
 =======
 =======
 ifeq ($(CONFIG_ARCH_SA8155), y)
-dtbo-y += display/sm8150-sde.dtbo \
-          display/sa8155-adp-star-display.dtbo
+dtbo-y += display/sa8155-adp-star-display.dtbo
 endif
 
 >>>>>>> 5f6fdead (ARM: dts: msm: add sa8155 configuration)
