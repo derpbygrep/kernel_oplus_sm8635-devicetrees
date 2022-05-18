@@ -211,7 +211,14 @@ ifeq ($(CONFIG_ARCH_SA8155),y)
 dtbo-y += sa8155p-cnss.dtbo
 endif
 
+<<<<<<< HEAD
 >>>>>>> 1e1d08d0 (wlan: dts: Add support for hana-au)
+=======
+ifeq ($(CONFIG_ARCH_SA8195),y)
+dtbo-y += sa8195p-cnss.dtbo
+endif
+
+>>>>>>> 716cb3db (wlan: dts: Add support for poipu-au)
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
