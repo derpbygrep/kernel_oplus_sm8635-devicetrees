@@ -40,6 +40,7 @@ endif
 
 ifeq ($(CONFIG_ARCH_KALAMA), y)
 <<<<<<< HEAD
+<<<<<<< HEAD
 dtbo-y += gpu/kalama-gpu.dtbo
 >>>>>>> 228c4a34 (ARM: dts: msm: Add support for Kalama GPU)
 =======
@@ -320,6 +321,10 @@ dtbo-y += kalama-audio.dtbo \
                  kalama-audio-qrd.dtbo \
                  kalama-audio-rcm.dtbo \
                  kalama-audio-rumi.dtbo
+=======
+dtbo-y += gpu/kalama-gpu.dtbo \
+		gpu/kalama-v2-gpu.dtbo
+>>>>>>> 40976c60 (ARM: dts: msm: Add support for Kalama v2 GPU)
 endif
 
 ifeq ($(CONFIG_ARCH_SA8155), y)
