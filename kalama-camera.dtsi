@@ -1459,6 +1459,7 @@
 		sys-cache-names = "small-1", "large-1", "large-2", "large-3", "large-4";
 		sys-cache-uids = <34 52 38 51 50>;
 		enable-smart-qos;
+		enable-cam-drv = <(CAM_DDR_DRV)>;
 		rt-wr-priority-min = <3>;
 		rt-wr-priority-max = <6>;
 		rt-wr-priority-clamp = <6>;
