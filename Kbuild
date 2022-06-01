@@ -324,6 +324,7 @@ dtbo-y += kalama-audio.dtbo \
                  kalama-audio-mtp.dtbo \
                  kalama-audio-mtp-nfc.dtbo \
                  kalama-audio-qrd.dtbo \
+                 kalama-audio-atp.dtbo \
                  kalama-audio-rcm.dtbo \
 <<<<<<< HEAD
                  kalama-audio-rumi.dtbo
