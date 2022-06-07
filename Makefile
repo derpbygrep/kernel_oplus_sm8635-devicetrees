@@ -10,6 +10,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 vendor := $(srctree)/$(src)
 
 ifneq "$(wildcard $(vendor)/qcom)" ""
@@ -40,6 +41,9 @@ KBUILD_OPTIONS+=KBUILD_EXTMOD_DTS=.
 =======
 KBUILD_OPTIONS+=KBUILD_EXTMOD_DTS=.
 >>>>>>> 33d788bc (Devicetree: eSE: To add eSE GPIO device node for kalama)
+=======
+KBUILD_OPTIONS+=KBUILD_EXTMOD_DTS=.
+>>>>>>> 82fb2209 (ARM: dts: msm: mm-drivers: add support for hw-fence feature on kalama)
 
 all: dtbs
 
@@ -48,6 +52,7 @@ clean:
 
 %:
 	$(MAKE) -C $(KERNEL_SRC) M=$(M) $@ $(KBUILD_OPTIONS)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -128,3 +133,5 @@ clean:
 >>>>>>> 6df60df1 (NFC:  Add I2C NFC device node for Kalama)
 =======
 >>>>>>> 33d788bc (Devicetree: eSE: To add eSE GPIO device node for kalama)
+=======
+>>>>>>> 82fb2209 (ARM: dts: msm: mm-drivers: add support for hw-fence feature on kalama)

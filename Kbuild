@@ -22,6 +22,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ifeq ($(CONFIG_ARCH_WAIPIO), y)
 dtbo-y += waipio-vidc.dtbo
@@ -381,3 +382,12 @@ clean-files	:= *.dtb *.dtbo
 >>>>>>> 33d788bc (Devicetree: eSE: To add eSE GPIO device node for kalama)
 =======
 >>>>>>> 8f804df8 (STM NFC: devicetree: Remove the NFC DTS files for both CDP and QRD)
+=======
+ifeq ($(CONFIG_ARCH_KALAMA), y)
+	dtbo-y += hw_fence/kalama-hw-fence.dtbo
+endif
+
+always-y    := $(dtb-y) $(dtbo-y)
+subdir-y    := $(dts-dirs)
+clean-files    := *.dtb *.dtbo
+>>>>>>> 82fb2209 (ARM: dts: msm: mm-drivers: add support for hw-fence feature on kalama)
