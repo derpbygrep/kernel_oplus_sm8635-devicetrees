@@ -325,11 +325,16 @@ dtbo-y += kalama-audio.dtbo \
                  kalama-audio-mtp-nfc.dtbo \
                  kalama-audio-qrd.dtbo \
                  kalama-audio-rcm.dtbo \
+<<<<<<< HEAD
                  kalama-audio-rumi.dtbo
 =======
 dtbo-y += gpu/kalama-gpu.dtbo \
 		gpu/kalama-v2-gpu.dtbo
 >>>>>>> 40976c60 (ARM: dts: msm: Add support for Kalama v2 GPU)
+=======
+                 kalama-audio-rumi.dtbo \
+                 kalama-audio-hdk.dtbo
+>>>>>>> 02b1c419 (audio dts: add support for kalama HDK device)
 endif
 
 ifeq ($(CONFIG_ARCH_SA8155), y)
