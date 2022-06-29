@@ -150,6 +150,7 @@ ifeq ($(CONFIG_ARCH_KALAMA), y)
 endif
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ifeq ($(CONFIG_ARCH_WAIPIO), y)
 dtbo-y += waipio-mmrm.dtbo
 dtbo-y += waipio-mmrm-test.dtbo
@@ -198,6 +199,12 @@ endif
 >>>>>>> 14e467a4 (ARM: dts: Add TVM device tree)
 
 =======
+=======
+ifeq ($(CONFIG_ARCH_KHAJE),y)
+dtbo-y += khaje-cnss.dtbo
+endif
+
+>>>>>>> 9b58c470 (ARM: dts: msm: Add icnss dtsi entries for khaje)
 ifeq ($(CONFIG_ARCH_SA8155),y)
 dtbo-y += sa8155p-cnss.dtbo
 endif
