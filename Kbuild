@@ -395,6 +395,10 @@ dtbo-y += gpu/kalama-gpu.dtbo \
 >>>>>>> dee1cf73 (ARM: dts: msm: Add the GPU pwrlevels for Kalamap-HHG)
 endif
 
+ifeq ($(CONFIG_ARCH_PINEAPPLE), y)
+dtbo-y += gpu/pineapple-gpu.dtbo
+endif
+
 ifeq ($(CONFIG_ARCH_SA8155), y)
 dtbo-y +=  sa8155-audio.dtbo
 endif
