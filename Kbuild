@@ -399,6 +399,15 @@ ifeq ($(CONFIG_ARCH_PINEAPPLE), y)
 dtbo-y += gpu/pineapple-gpu.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_PINEAPPLE), y)
+dtbo-y += pineapple-audio.dtbo \
+                 pineapple-audio-cdp.dtbo \
+                 pineapple-audio-mtp.dtbo \
+                 pineapple-audio-qrd.dtbo \
+                 pineapple-audio-rumi.dtbo
+endif
+
+
 ifeq ($(CONFIG_ARCH_SA8155), y)
 dtbo-y +=  sa8155-audio.dtbo
 endif

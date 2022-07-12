@@ -1,0 +1,10 @@
+/dts-v1/;
+/plugin/;
+
+#include "pineapple-audio-mtp.dtsi"
+ / {
+	model = "Qualcomm Technologies, Inc. Pineapple MTP";
+	compatible = "qcom,pineapple-mtp", "qcom,pineapple", "qcom,mtp";
+	qcom,msm-id = <557 0x10000>;
+	qcom,board-id = <0x10008 0>;
+};
