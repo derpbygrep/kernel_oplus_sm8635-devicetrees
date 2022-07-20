@@ -1461,6 +1461,13 @@
 		enable-smart-qos;
 		rt-wr-priority-min = <3>;
 		rt-wr-priority-max = <6>;
+		rt-wr-priority-clamp = <6>;
+		rt-wr-slope-factor = <100>;
+		rt-wr-leaststressed-clamp-threshold = <7>;
+		rt-wr-moststressed-clamp-threshold = <7>;
+		rt-wr-highstress-indicator-threshold = <100>;
+		rt-wr-lowstress-indicator-threshold = <0>;
+		rt-wr-bw-ratio-scale-factor = <1>;
 		status = "ok";
 
 		camera-bus-nodes {
@@ -1575,6 +1582,7 @@
 					rt-wr-niu;
 					niu-size = <134>;
 					priority-lut-low-offset = <0x7630>;
+					priority-lut-high-offset = <0x7634>;
 				};
 
 				level1_rt4_wr: level1-rt4-wr1 {
@@ -1586,6 +1594,7 @@
 					rt-wr-niu;
 					niu-size = <134>;
 					priority-lut-low-offset = <0x7C30>;
+					priority-lut-high-offset = <0x7C34>;
 				};
 
 				level1_rt3_wr: level1-rt3-wr {
@@ -1597,6 +1606,7 @@
 					rt-wr-niu;
 					niu-size = <92>;
 					priority-lut-low-offset = <0x7A30>;
+					priority-lut-high-offset = <0x7A34>;
 				};
 
 				level1_rt2_wr: level1-rt2-wr {
@@ -1608,6 +1618,7 @@
 					rt-wr-niu;
 					niu-size = <36>;
 					priority-lut-low-offset = <0x7830>;
+					priority-lut-high-offset = <0x7834>;
 				};
 
 				level1_rt0_rd: level1-rt0-rd {

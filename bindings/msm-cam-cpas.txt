@@ -241,6 +241,46 @@ First Level Node - CAM CPAS device
   Value type: <u32>
   Definition: Maximum priority value for rt write NIUs.
 
+- rt-wr-priority-clamp
+  Usage: optional
+  Value type: <u32>
+  Definition: Clamp priority value for rt write NIUs.
+
+- rt-wr-slope-factor
+  Usage: optional
+  Value type: <u32>
+  Definition: Slope factor value for rt write NIUs. Take in percentages
+    to avoid confusion, such as take value 100 for 1, take value 70 for 0.7.
+
+- rt-wr-leaststressed-clamp-threshold
+  Usage: optional
+  Value type: <u32>
+  Definition: Least stressed clamp threshold value for rt write NIUs.
+
+- rt-wr-moststressed-clamp-threshold
+  Usage: optional
+  Value type: <u32>
+  Definition: Most stressed clamp threshold value for rt write NIUs.
+
+- rt-wr-highstress-indicator-threshold
+  Usage: optional
+  Value type: <u32>
+  Definition: High stress indicator threshold value for rt write NIUs.
+    Take in percentages to avoid confusion, such as take value 100 for 1,
+    take value 50 for 0.5. If the buf bw ratio for a NIU is larger than
+    high stress indicator threshold, this NIU is more stressed.
+
+- rt-wr-lowstress-indicator-threshold
+  Usage: optional
+  Value type: <u32>
+  Definition: Low stress indicator threshold value for rt write NIUs.
+    Take in percentages to avoid confusion.
+
+- rt-wr-bw-ratio-scale-factor
+  Usage: optional
+  Value type: <u32>
+  Definition: BW ratio scale factor value for rt write NIUs.
+
 ===================================================================
 Third Level Node - CAMNOC Level nodes
 ===================================================================
@@ -331,6 +371,11 @@ Fourth Level Node - Generic CAMNOC node properties
   Usage: optional
   Value type: <u32>
   Definition: Priority lut low register offset of NIU represented by this node.
+
+- priority-lut-high-offset
+  Usage: optional
+  Value type: <u32>
+  Definition: Priority lut high register offset of NIU represented by this node.
 
 - bus-width-factor
   Usage: optional
@@ -435,6 +480,13 @@ Example:
 		enable-smart-qos;
 		rt-wr-priority-min = <3>;
 		rt-wr-priority-max = <6>;
+		rt-wr-priority-clamp = <6>;
+		rt-wr-slope-factor = <100>;
+		rt-wr-leaststressed-clamp-threshold = <7>;
+		rt-wr-moststressed-clamp-threshold = <7>;
+		rt-wr-highstress-indicator-threshold = <100>;
+		rt-wr-lowstress-indicator-threshold = <0>;
+		rt-wr-bw-ratio-scale-factor = <1>;
 		enable-cam-drv;
 		camera-bus-nodes {
 			level3-nodes {
@@ -484,6 +536,7 @@ Example:
 					rt-wr-niu;
 					niu-size = <175>;
 					priority-lut-low-offset = <0x5830>;
+					priority-lut-high-offset = <0x5834>;
 				};
 			};
 			level0-nodes {
