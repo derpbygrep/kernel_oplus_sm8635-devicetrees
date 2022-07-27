@@ -67,8 +67,8 @@
 			qcom,swr-clock-stop-mode0 = <1>;
 			qcom,swr-mstr-irq-wakeup-capable = <1>;
 			qcom,is-always-on = <1>;
-			wcd938x_tx_slave: wcd938x-tx-slave {
-				compatible = "qcom,wcd938x-slave";
+			wcd939x_tx_slave: wcd939x-tx-slave {
+				compatible = "qcom,wcd939x-slave";
 				reg = <0x0E 0x01170223>;
 			};
 
@@ -78,7 +78,7 @@
 				sound-name-prefix = "SWR_MIC3";
 				qcom,codec-name = "swr-dmic.04";
 				qcom,swr-dmic-supply = <3>;
-				qcom,wcd-handle = <&wcd938x_codec>;
+				qcom,wcd-handle = <&wcd939x_codec>;
 				status = "disabled";
 			};
 
@@ -88,7 +88,7 @@
 				sound-name-prefix = "SWR_MIC2";
 				qcom,codec-name = "swr-dmic.03";
 				qcom,swr-dmic-supply = <1>;
-				qcom,wcd-handle = <&wcd938x_codec>;
+				qcom,wcd-handle = <&wcd939x_codec>;
 				status = "disabled";
 			};
 
@@ -98,7 +98,7 @@
 				sound-name-prefix = "SWR_MIC1";
 				qcom,codec-name = "swr-dmic.02";
 				qcom,swr-dmic-supply = <1>;
-				qcom,wcd-handle = <&wcd938x_codec>;
+				qcom,wcd-handle = <&wcd939x_codec>;
 				status = "disabled";
 			};
 
@@ -108,7 +108,7 @@
 				sound-name-prefix = "SWR_MIC0";
 				qcom,codec-name = "swr-dmic.01";
 				qcom,swr-dmic-supply = <3>;
-				qcom,wcd-handle = <&wcd938x_codec>;
+				qcom,wcd-handle = <&wcd939x_codec>;
 				status = "disabled";
 			};
 		};
@@ -162,8 +162,8 @@
 				qcom,rx_swr_ch_map = <0 0x01 0x01 0 PCM_OUT1>;
 			};
 
-			wcd938x_rx_slave: wcd938x-rx-slave {
-				compatible = "qcom,wcd938x-slave";
+			wcd939x_rx_slave: wcd939x-rx-slave {
+				compatible = "qcom,wcd939x-slave";
 				reg = <0x0E 0x01170224>;
 			};
 		};
@@ -219,6 +219,7 @@
 				cdc-vdd-1p8-supply = <&L15B>;
 				qcom,cdc-vdd-1p8-voltage = <1800000 1800000>;
 				qcom,cdc-vdd-1p8-current = <20000>;
+				qcom,cdc-vdd-1p8-lpm-supported = <1>;
 				qcom,cdc-static-supplies = "cdc-vdd-1p8";
 				sound-name-prefix = "SpkrLeft";
 			};
@@ -237,6 +238,7 @@
 				cdc-vdd-1p8-supply = <&L15B>;
 				qcom,cdc-vdd-1p8-voltage = <1800000 1800000>;
 				qcom,cdc-vdd-1p8-current = <20000>;
+				qcom,cdc-vdd-1p8-lpm-supported = <1>;
 				qcom,cdc-static-supplies = "cdc-vdd-1p8";
 				sound-name-prefix = "SpkrRight";
 			};
@@ -294,6 +296,7 @@
 				cdc-vdd-1p8-supply = <&L15B>;
 				qcom,cdc-vdd-1p8-voltage = <1800000 1800000>;
 				qcom,cdc-vdd-1p8-current = <20000>;
+				qcom,cdc-vdd-1p8-lpm-supported = <1>;
 				qcom,cdc-static-supplies = "cdc-vdd-1p8";
 				sound-name-prefix = "Spkr2Left";
 			};
@@ -312,14 +315,15 @@
 				cdc-vdd-1p8-supply = <&L15B>;
 				qcom,cdc-vdd-1p8-voltage = <1800000 1800000>;
 				qcom,cdc-vdd-1p8-current = <20000>;
+				qcom,cdc-vdd-1p8-lpm-supported = <1>;
 				qcom,cdc-static-supplies = "cdc-vdd-1p8";
 				sound-name-prefix = "Spkr2Right";
 			};
 		};
 	};
 
-	wcd938x_codec: wcd938x-codec {
-		compatible = "qcom,wcd938x-codec";
+	wcd939x_codec: wcd939x-codec {
+		compatible = "qcom,wcd939x-codec";
 		qcom,split-codec = <1>;
 		qcom,rx_swr_ch_map = <0 HPH_L 0x1 0 HPH_L>,
 			<0 HPH_R 0x2 0 HPH_R>, <1 CLSH 0x1 0 CLSH>,
@@ -347,25 +351,33 @@
 			<OFFSET1_VAL0 LANE1>, <OFFSET1_VAL2 LANE0>, <OFFSET1_VAL1 LANE0>, <OFFSET1_VAL2 LANE0>,
 			<OFFSET1_VAL1 LANE0>, <OFFSET1_VAL1 LANE0>, <OFFSET1_VAL1 LANE0>, <OFFSET1_VAL1 LANE0>;
 
-		qcom,wcd-rst-gpio-node = <&wcd938x_rst_gpio>;
-		qcom,rx-slave = <&wcd938x_rx_slave>;
-		qcom,tx-slave = <&wcd938x_tx_slave>;
+		qcom,wcd-rst-gpio-node = <&wcd939x_rst_gpio>;
+		qcom,rx-slave = <&wcd939x_rx_slave>;
+		qcom,tx-slave = <&wcd939x_tx_slave>;
 
 		cdc-vdd-rxtx-supply = <&L15B>;
 		qcom,cdc-vdd-rxtx-voltage = <1800000 1800000>;
 		qcom,cdc-vdd-rxtx-current = <30000>;
+		qcom,cdc-vdd-rxtx-lpm-supported = <1>;
 
 		cdc-vddio-supply = <&L15B>;
 		qcom,cdc-vddio-voltage = <1800000 1800000>;
 		qcom,cdc-vddio-current = <30000>;
+		qcom,cdc-vddio-lpm-supported = <1>;
 
 		cdc-vdd-buck-supply = <&L15B>;
 		qcom,cdc-vdd-buck-voltage = <1800000 1800000>;
 		qcom,cdc-vdd-buck-current = <650000>;
+		qcom,cdc-vdd-buck-lpm-supported = <1>;
 
 		cdc-vdd-mic-bias-supply = <&BOB1>;
 		qcom,cdc-vdd-mic-bias-voltage = <3296000 3296000>;
 		qcom,cdc-vdd-mic-bias-current = <30000>;
+
+		cdc-vdd-px-supply = <&L3C>;
+		qcom,cdc-vdd-px-voltage = <1200000 1200000>;
+		qcom,cdc-vdd-px-current = <30000>;
+		qcom,cdc-vdd-px-lpm-supported = <1>;
 
 		qcom,cdc-micbias1-mv = <1800>;
 		qcom,cdc-micbias2-mv = <1800>;
@@ -374,8 +386,9 @@
 
 		qcom,cdc-static-supplies = "cdc-vdd-rxtx",
 					   "cdc-vddio",
-					   "cdc-vdd-buck",
-					   "cdc-vdd-mic-bias";
+					   "cdc-vdd-mic-bias",
+					   "cdc-vdd-px";
+		qcom,cdc-on-demand-supplies = "cdc-vdd-buck";
 	};
 
 };
@@ -454,10 +467,10 @@
 		qcom,cdc-dmic23-gpios = <&cdc_dmic23_gpios>;
 		qcom,cdc-dmic45-gpios = <&cdc_dmic45_gpios>;
 		asoc-codec  = <&stub_codec>, <&lpass_cdc>,
-			      <&wcd938x_codec>, <&swr_haptics>,
+			      <&wcd939x_codec>, <&swr_haptics>,
 			      <&wsa884x_0220>, <&wsa884x_0221>;
 		asoc-codec-names = "msm-stub-codec.1", "lpass-cdc",
-				   "wcd938x_codec", "swr-haptics",
+				   "wcd939x_codec", "swr-haptics",
 			   	"wsa-codec1", "wsa-codec2";
 		qcom,wsa-max-devs = <2>;
 		qcom,msm_audio_ssr_devs = <&audio_gpr>, <&lpi_tlmm>,
@@ -571,12 +584,11 @@
 		qcom,lpi-gpios;
 	};
 
-
-	wcd938x_rst_gpio: msm_cdc_pinctrl@32 {
+	wcd939x_rst_gpio: msm_cdc_pinctrl@32 {
 		compatible = "qcom,msm-cdc-pinctrl";
 		pinctrl-names = "aud_active", "aud_sleep";
-		pinctrl-0 = <&wcd938x_reset_active>;
-		pinctrl-1 = <&wcd938x_reset_sleep>;
+		pinctrl-0 = <&wcd939x_reset_active>;
+		pinctrl-1 = <&wcd939x_reset_sleep>;
 	};
 
 	clock_audio_va_1: va_core_clk {
