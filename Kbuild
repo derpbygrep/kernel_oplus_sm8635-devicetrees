@@ -27,6 +27,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ifeq ($(CONFIG_ARCH_WAIPIO), y)
 dtbo-y += waipio-vidc.dtbo
@@ -62,6 +63,11 @@ endif
 ifeq ($(CONFIG_ARCH_KALAMA), y)
 	dtbo-y += display/kalama-sde.dtbo \
 =======
+=======
+dtbo-$(CONFIG_ARCH_PINEAPPLE) += display/pineapple-sde.dtbo \
+		display/pineapple-sde-display-rumi-overlay.dtbo
+
+>>>>>>> 11f09044 (ARM: dts: msm: enable mdss for pineapple target)
 ifneq ($(CONFIG_ARCH_QTI_VM), y)
 dtbo-$(CONFIG_ARCH_KALAMA) += display/kalama-sde.dtbo \
 >>>>>>> 9264d8bc (ARM: dts: msm: Add trustedvm device tree files for Kalama target)

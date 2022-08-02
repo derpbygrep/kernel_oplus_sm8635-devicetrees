@@ -1,0 +1,3 @@
+&mdss_mdp {
+	qcom,sde-emulated-env;
+};
