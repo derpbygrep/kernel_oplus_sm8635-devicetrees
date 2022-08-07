@@ -23,6 +23,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ifeq ($(CONFIG_ARCH_WAIPIO), y)
 dtbo-y += waipio-vidc.dtbo
@@ -400,6 +401,9 @@ clean-files     := *.dtb *.dtbo
 =======
 >>>>>>> 2820f9fe (ARM: dts: msm: Add ipa_hw support for KALAMA)
 =======
+=======
+ifeq ($(CONFIG_ARCH_KALAMA),y)
+>>>>>>> f203ccd3 (NFC: Devicetree: Add I2C NFC device node for khaje)
 dtbo-y += nxp/kalama-nfc.dtbo \
 	  nxp/kalama-nfc-mtp.dtbo \
 	  nxp/kalama-nfc-qrd.dtbo \
@@ -417,6 +421,12 @@ dtbo-y += st/kalama-nfc.dtbo \
 dtbo-y += st/kalama-v2-nfc.dtbo \
 	  st/kalama-v2-nfc-mtp.dtbo \
 	  st/kalama-v2-nfc-cdp.dtbo
+endif
+
+ifeq ($(CONFIG_ARCH_KHAJE),y)
+dtbo-y += nxp/khaje-nfc-idp.dtbo \
+          nxp/khaje-nfc-qrd.dtbo
+endif
 
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
