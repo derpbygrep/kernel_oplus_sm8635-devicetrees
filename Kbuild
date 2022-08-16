@@ -347,6 +347,7 @@ dtbo-y += kalama-audio.dtbo \
                  kalama-audio-rumi.dtbo
 =======
 dtbo-y += gpu/kalama-gpu.dtbo \
+<<<<<<< HEAD
 		gpu/kalama-v2-gpu.dtbo
 >>>>>>> 40976c60 (ARM: dts: msm: Add support for Kalama v2 GPU)
 =======
@@ -362,6 +363,10 @@ dtbo-y += gpu/kalama-gpu.dtbo \
 =======
                  kalama-sg-audio-hhg.dtbo
 >>>>>>> 8d0288b1 (audio dts: audio dts: Add new SOCID  for Kalama.)
+=======
+		gpu/kalama-v2-gpu.dtbo \
+		gpu/kalamap-hhg-gpu.dtbo
+>>>>>>> dee1cf73 (ARM: dts: msm: Add the GPU pwrlevels for Kalamap-HHG)
 endif
 
 ifeq ($(CONFIG_ARCH_SA8155), y)
