@@ -24,6 +24,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ifeq ($(CONFIG_ARCH_WAIPIO), y)
 dtbo-y += waipio-vidc.dtbo
@@ -483,3 +484,12 @@ always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
 clean-files    := *.dtb *.dtbo
 >>>>>>> 82fb2209 (ARM: dts: msm: mm-drivers: add support for hw-fence feature on kalama)
+=======
+ifeq ($(CONFIG_ARCH_PINEAPPLE), y)
+dtbo-y += pineapple-dsp.dtbo
+endif
+
+always-y	:= $(dtb-y) $(dtbo-y)
+subdir-y	:= $(dts-dirs)
+clean-files	:= *.dtb *.dtbo
+>>>>>>> 6c40ce5e (ARM: dts: Add DSP devicetree files to Lanai)
