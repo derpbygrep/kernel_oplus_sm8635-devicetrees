@@ -31,6 +31,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 
+<<<<<<< HEAD
 ifeq ($(CONFIG_ARCH_WAIPIO), y)
 dtbo-y += waipio-vidc.dtbo
 <<<<<<< HEAD
@@ -515,6 +516,11 @@ dtbo-y += pineapple-ese-mtp.dtbo
 dtbo-y += pineapple-ese-cdp.dtbo
 dtbo-y += pineapple-ese-qrd.dtbo
 >>>>>>> 42c18c9d (eSE-devicetree: Added eSE device node probing for pineapple target)
+=======
+ifeq ($(CONFIG_ARCH_PINEAPPLE),y)
+dtbo-y += ubwcp-devicetree/pineapple-ubwcp.dtbo
+endif
+>>>>>>> 658d5ee0 (ARM: dts: msm: ubwcp: Add initial files for UBWCP)
 
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
