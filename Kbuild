@@ -138,17 +138,17 @@ dtbo-y += kalama-cnss.dtbo
 
 ifeq ($(CONFIG_ARCH_KALAMA), y)
 	ifneq ($(CONFIG_ARCH_QTI_VM), y)
-		dtbo-y += kalama-mmrm.dtbo
-		dtbo-y += kalama-mmrm-test.dtbo
-		dtbo-y += kalama-mmrm-v2.dtbo
-		dtbo-y += kalama-mmrm-test-v2.dtbo
+		dtbo-y += kalama/kalama-mmrm.dtbo
+		dtbo-y += kalama/kalama-mmrm-test.dtbo
+		dtbo-y += kalama/kalama-mmrm-v2.dtbo
+		dtbo-y += kalama/kalama-mmrm-test-v2.dtbo
 		ifeq ($(CONFIG_MSM_MMRM_VM),y)
-		    dtbo-y += kalama-mmrm-vm-be.dtbo
+		    dtbo-y += kalama/kalama-mmrm-vm-be.dtbo
 		endif
 	else
 		ifeq ($(CONFIG_MSM_MMRM_VM),y)
-		    dtbo-y += kalama-mmrm-vm-fe.dtbo
-		    dtbo-y += kalama-mmrm-vm-fe-test.dtbo
+		    dtbo-y += kalama/kalama-mmrm-vm-fe.dtbo
+		    dtbo-y += kalama/kalama-mmrm-vm-fe-test.dtbo
 		endif
 	endif
 endif
@@ -156,6 +156,7 @@ endif
 <<<<<<< HEAD
 <<<<<<< HEAD
 ifeq ($(CONFIG_ARCH_WAIPIO), y)
+<<<<<<< HEAD
 dtbo-y += waipio-mmrm.dtbo
 dtbo-y += waipio-mmrm-test.dtbo
 dtbo-y += waipio-v2-mmrm.dtbo
@@ -436,6 +437,12 @@ endif
 ifeq ($(CONFIG_ARCH_KHAJE),y)
 dtbo-y += nxp/khaje-nfc-idp.dtbo \
           nxp/khaje-nfc-qrd.dtbo
+=======
+dtbo-y += waipio/waipio-mmrm.dtbo
+dtbo-y += waipio/waipio-mmrm-test.dtbo
+dtbo-y += waipio/waipio-v2-mmrm.dtbo
+dtbo-y += waipio/waipio-v2-mmrm-test.dtbo
+>>>>>>> 349d82e3 (mmrm: dts: Move dts files to target-specific directories)
 endif
 
 always-y	:= $(dtb-y) $(dtbo-y)
