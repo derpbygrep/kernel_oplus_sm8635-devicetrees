@@ -3,7 +3,6 @@
 
 /* KalamaV2-specific changes */
 &msm_vidc {
-	qcom,allowed-clock-rates = <240000000 338000000
-		366000000 444000000 533333333>;
+	compatible = "qcom,sm8550-vidc-v2";
 };
 
