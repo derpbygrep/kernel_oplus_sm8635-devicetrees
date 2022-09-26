@@ -138,6 +138,11 @@ ifeq ($(CONFIG_ARCH_KALAMA),y)
 dtbo-y += kalama-cnss.dtbo
 =======
 
+ifeq ($(CONFIG_ARCH_PINEAPPLE), y)
+dtbo-y += pineapple/pineapple-mmrm.dtbo
+dtbo-y += pineapple/pineapple-mmrm-test.dtbo
+endif
+
 ifeq ($(CONFIG_ARCH_KALAMA), y)
 	ifneq ($(CONFIG_ARCH_QTI_VM), y)
 		dtbo-y += kalama/kalama-mmrm.dtbo
