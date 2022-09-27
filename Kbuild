@@ -182,6 +182,10 @@ endif
 >>>>>>> 5f6fdead (ARM: dts: msm: add sa8155 configuration)
 ifneq ($(CONFIG_ARCH_QTI_VM), y)
 
+ifeq ($(CONFIG_ARCH_PINEAPPLE), y)
+dtbo-y += pineapple-eva.dtbo
+endif
+
 ifeq ($(CONFIG_ARCH_KALAMA), y)
 dtbo-y += kalama-eva.dtbo
 endif
