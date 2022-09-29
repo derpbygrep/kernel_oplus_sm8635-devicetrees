@@ -46,8 +46,9 @@
 									435000000
 									480000000>;
 
-		resets = <&gcc GCC_VIDEO_AXI0_CLK_ARES>;
-		reset-names = "video_axi_reset";
+		resets = <&gcc GCC_VIDEO_AXI0_CLK_ARES>,
+				<&videocc VIDEO_CC_MVS0C_CLK_ARES>;
+		reset-names = "video_axi_reset", "video_core_reset";
 
 		qcom,reg-presets = <0xB0088 0x0 0x11>;
 
