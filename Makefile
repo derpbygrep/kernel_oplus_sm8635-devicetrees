@@ -13,6 +13,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 vendor := $(srctree)/$(src)
 
 ifneq "$(wildcard $(vendor)/qcom)" ""
@@ -103,10 +104,15 @@ KBUILD_OPTIONS += KBUILD_EXTMOD_DTS=.
 KBUILD_OPTIONS += KERNEL_ROOT=$(ROOT_DIR)/$(KERNEL_DIR)
 KBUILD_OPTIONS += MODNAME=synx-devicetree
 >>>>>>> e2656573 (msm: synx: enable building synx DT in Vendor SI)
+=======
+
+KBUILD_OPTIONS += KBUILD_EXTMOD_DTS=.
+>>>>>>> 1cb703bb (mm-sys-devicetree: build framework files)
 
 all: dtbs
 
 dtbs:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -128,11 +134,15 @@ all: dtbs
 =======
 	$(MAKE) -C $(KERNEL_SRC) M=$(M) dtbs $(KBUILD_OPTIONS)
 >>>>>>> e2656573 (msm: synx: enable building synx DT in Vendor SI)
+=======
+	$(MAKE) -C $(KERNEL_SRC) M=$(M) dtbs $(KBUILD_OPTIONS)
+>>>>>>> 1cb703bb (mm-sys-devicetree: build framework files)
 
 modules_install:
 	$(MAKE) M=$(M) -C $(KERNEL_SRC) modules_install
 
 clean:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	$(MAKE) -C $(KERNEL_SRC) M=$(M) clean
@@ -162,3 +172,6 @@ clean:
 =======
 	$(MAKE) -C $(KERNEL_SRC) M=$(M) clean
 >>>>>>> e2656573 (msm: synx: enable building synx DT in Vendor SI)
+=======
+	$(MAKE) -C $(KERNEL_SRC) M=$(M) clean
+>>>>>>> 1cb703bb (mm-sys-devicetree: build framework files)

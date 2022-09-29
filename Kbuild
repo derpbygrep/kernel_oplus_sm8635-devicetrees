@@ -26,6 +26,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ifeq ($(CONFIG_ARCH_WAIPIO), y)
 dtbo-y += waipio-vidc.dtbo
@@ -461,10 +462,14 @@ dtbo-y += waipio/waipio-v2-mmrm.dtbo
 dtbo-y += waipio/waipio-v2-mmrm-test.dtbo
 >>>>>>> 349d82e3 (mmrm: dts: Move dts files to target-specific directories)
 endif
+=======
+
+>>>>>>> 1cb703bb (mm-sys-devicetree: build framework files)
 
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 6df60df1 (NFC:  Add I2C NFC device node for Kalama)
 =======
@@ -519,3 +524,5 @@ clean-files	:= *.dtb *.dtbo
 >>>>>>> 6c40ce5e (ARM: dts: Add DSP devicetree files to Lanai)
 =======
 >>>>>>> e2656573 (msm: synx: enable building synx DT in Vendor SI)
+=======
+>>>>>>> 1cb703bb (mm-sys-devicetree: build framework files)
