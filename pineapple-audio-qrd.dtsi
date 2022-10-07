@@ -23,6 +23,21 @@
 	};
 };
 
+&wsa_macro {
+	qcom,wsa-bat-cfgs = <2>, <2>;
+};
+
+&wsa2_macro {
+	qcom,wsa-bat-cfgs = <2>, <2>;
+};
+
+&wcd939x_codec {
+	cdc-vdd-px-supply = <&L15B>;
+	qcom,cdc-vdd-px-voltage = <1800000 1800000>;
+	qcom,cdc-vdd-px-current = <650000>;
+	qcom,cdc-vdd-px-lpm-supported = <1>;
+};
+
 &pineapple_snd {
 	qcom,model = "pineapple-qrd-snd-card";
 
