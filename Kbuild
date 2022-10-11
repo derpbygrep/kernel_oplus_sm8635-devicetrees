@@ -232,6 +232,7 @@ ifeq ($(CONFIG_ARCH_SA8195),y)
 dtbo-y += sa8195p-cnss.dtbo
 endif
 
+<<<<<<< HEAD
 >>>>>>> 716cb3db (wlan: dts: Add support for poipu-au)
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
@@ -521,6 +522,10 @@ clean-files    := *.dtb *.dtbo
 =======
 ifeq ($(CONFIG_ARCH_PINEAPPLE), y)
 dtbo-y += pineapple-dsp.dtbo
+=======
+ifeq ($(CONFIG_ARCH_SDXPINN),y)
+dtbo-y += sdxpinn-cnss.dtbo
+>>>>>>> 0c178e27 (wlan: dts: Add CNSS device tree for sdxpinn)
 endif
 
 always-y	:= $(dtb-y) $(dtbo-y)
