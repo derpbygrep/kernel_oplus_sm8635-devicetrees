@@ -1,7 +1,7 @@
 &soc {
 	msm_vidc: qcom,vidc@aa00000 {
 		compatible = "qcom,sm8650-vidc";
-		status = "disabled";
+		status = "okay";
 
 		/* IOMMU Config */
 		#address-cells = <1>;
