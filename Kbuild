@@ -596,6 +596,7 @@ ifeq ($(CONFIG_ARCH_MONACO),y)
 dtbo-y += monaco-cnss.dtbo
 endif
 
+<<<<<<< HEAD
 ifeq ($(CONFIG_ARCH_PINEAPPLE),y)
 dtbo-y += pineapple-ipa.dtbo
 =======
@@ -607,6 +608,10 @@ dtbo-y += nxp/pineapple-nfc.dtbo \
           nxp/pineapple-nfc-mtp.dtbo \
           nxp/pineapple-nfc-qrd.dtbo
 >>>>>>> e4cdb0a2 (ARM: dts: msm: Add NFC device node for pineapple)
+=======
+ifeq ($(CONFIG_QTI_QUIN_GVM),y)
+dtbo-y += sa8155p-vm-cnss.dtbo
+>>>>>>> 60334255 (wlan: dts: autogvm: Add support for hana-au)
 endif
 
 always-y	:= $(dtb-y) $(dtbo-y)
