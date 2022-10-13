@@ -127,6 +127,7 @@
 				 <&apps_smmu 0x1044 0x0020>;
 			qcom,iommu-dma-addr-pool = <0x80000000 0x78000000>;
 			qcom,iommu-faults = "stall-disable", "HUPCF";
+			shared-cb = <8>;
 			dma-coherent;
 		};
 
