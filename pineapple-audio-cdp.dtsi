@@ -110,7 +110,6 @@
 			"wcd939x_codec", "swr-haptics",
 			"wsa-codec1", "wsa-codec2";
 	qcom,wsa-max-devs = <2>;
-
 	qcom,sec-mi2s-gpios = <&fm_i2s1_gpios>;
+	qcom,usbss-hsj-connect-enabled;
 };
-

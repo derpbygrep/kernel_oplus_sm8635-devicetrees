@@ -2632,6 +2632,11 @@ Optional properties:
 - qcom,msm_audio_ssr_devs: List the snd event framework clients
 - qcom,afe-rxtx-lb: AFE RX to TX loopback.
 - qcom,tlmm-gpio: TLMM gpio number for corresponding LPASS gpio
+- qcom,usbss-hsj-connect-enabled: Flag to indicate platform configuration where
+             SBU1/SBU2 are connected to GND/MIC on the headset jack while HPHL/R
+             are directly connected to jack without going through usbss. Machine
+             driver parses this flag and enables connection from AMIC2_USB to SBU2
+             and HPH_REF to SBU1.
 
 Example:
 	kalama_snd: sound {
