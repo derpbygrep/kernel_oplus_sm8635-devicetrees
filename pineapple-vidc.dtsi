@@ -7,7 +7,7 @@
 		#address-cells = <1>;
 		#size-cells = <1>;
 
-		reg = <0x0aa00000 0xF0000>;
+		reg = <0x0aa00000 0xFF000>;
 		interrupts = <GIC_SPI 174 IRQ_TYPE_LEVEL_HIGH>;
 
 		/* Supply */
