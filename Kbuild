@@ -561,12 +561,19 @@ ifeq ($(CONFIG_ARCH_SA8195), y)
 dtbo-y += gpu/sa8195p-gpu.dtbo
 endif
 
+<<<<<<< HEAD
 ifeq ($(CONFIG_ARCH_PINEAPPLE), y)
 dtbo-y += pineapple-vidc.dtbo
 endif
 
 =======
 >>>>>>> b3f75993 (ARM: dts: msm: remove Waipio target)
+=======
+ifeq ($(CONFIG_ARCH_MONACO), y)
+dtbo-y += gpu/monaco-gpu.dtbo
+endif
+
+>>>>>>> 6f3f558e (ARM: dts: msm: Add GPU support for monaco IoT)
 always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
 clean-files    := *.dtb *.dtbo
