@@ -1,0 +1,10 @@
+/dts-v1/;
+/plugin/;
+
+#include "pineapple-sde-display-cdp.dtsi"
+
+/ {
+	model = "Qualcomm Technologies, Inc. Pineapple CDP";
+	compatible = "qcom,pineapple-cdp", "qcom,pineapple", "qcom,cdp";
+	qcom,board-id = <0x1 0>;
+};
