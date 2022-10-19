@@ -262,6 +262,11 @@
 				qcom,sde-fp16-unmult = <0x200 0x00010000>;
 				qcom,sde-fp16-gc = <0x200 0x00010000>;
 				qcom,sde-fp16-csc = <0x200 0x00010000>;
+				qcom,sde-ucsc-igc = <0x700 0x00010000>;
+				qcom,sde-ucsc-unmult = <0x700 0x00010000>;
+				qcom,sde-ucsc-gc = <0x700 0x00010000>;
+				qcom,sde-ucsc-csc = <0x700 0x00010000>;
+				qcom,sde-ucsc-alpha-dither = <0x700 0x00010000>;
 			};
 
 			vcm@1 {
@@ -270,6 +275,11 @@
 				qcom,sde-fp16-unmult = <0x280 0x00010000>;
 				qcom,sde-fp16-gc = <0x280 0x00010000>;
 				qcom,sde-fp16-csc = <0x280 0x00010000>;
+				qcom,sde-ucsc-igc = <0x1700 0x00010000>;
+				qcom,sde-ucsc-unmult = <0x1700 0x00010000>;
+				qcom,sde-ucsc-gc = <0x1700 0x00010000>;
+				qcom,sde-ucsc-csc = <0x1700 0x00010000>;
+				qcom,sde-ucsc-alpha-dither = <0x1700 0x00010000>;
 			};
 		};
 
@@ -277,26 +287,28 @@
 			dgm@0 {
 				cell-index = <0>;
 				qcom,sde-dma-top-off = <0x700>;
-				qcom,sde-dma-igc = <0xa00 0x00050000>;
-				qcom,sde-dma-gc = <0xc00 0x00050000>;
-				qcom,sde-dma-inverse-pma;
-				qcom,sde-dma-csc-off = <0x800>;
 				qcom,sde-fp16-igc = <0x200 0x00010000>;
 				qcom,sde-fp16-unmult = <0x200 0x00010000>;
 				qcom,sde-fp16-gc = <0x200 0x00010000>;
 				qcom,sde-fp16-csc = <0x200 0x00010000>;
+				qcom,sde-ucsc-igc = <0x700 0x00010000>;
+				qcom,sde-ucsc-unmult = <0x700 0x00010000>;
+				qcom,sde-ucsc-gc = <0x700 0x00010000>;
+				qcom,sde-ucsc-csc = <0x700 0x00010000>;
+				qcom,sde-ucsc-alpha-dither = <0x700 0x00010000>;
 			};
 
 			dgm@1 {
 				cell-index = <1>;
-				qcom,sde-dma-igc = <0x1a00 0x00050000>;
-				qcom,sde-dma-gc = <0xc00 0x00050000>;
-				qcom,sde-dma-inverse-pma;
-				qcom,sde-dma-csc-off = <0x1800>;
 				qcom,sde-fp16-igc = <0x200 0x00010000>;
 				qcom,sde-fp16-unmult = <0x200 0x00010000>;
 				qcom,sde-fp16-gc = <0x200 0x00010000>;
 				qcom,sde-fp16-csc = <0x200 0x00010000>;
+				qcom,sde-ucsc-igc = <0x1700 0x00010000>;
+				qcom,sde-ucsc-unmult = <0x1700 0x00010000>;
+				qcom,sde-ucsc-gc = <0x1700 0x00010000>;
+				qcom,sde-ucsc-csc = <0x1700 0x00010000>;
+				qcom,sde-ucsc-alpha-dither = <0x1700 0x00010000>;
 			};
 		};
 
