@@ -281,6 +281,23 @@ First Level Node - CAM CPAS device
   Value type: <u32>
   Definition: BW ratio scale factor value for rt write NIUs.
 
+- domain-id
+  Usage: optional
+  Value type: <u32>
+  Definition: List of mapping between domain types and their IDs.
+              See dt-bindings/msm-camera.h for definitions of
+              supported domain types.
+
+- domain-id-support-clks
+  Usage: optional
+  Value type: <string>
+  Definition: Clocks needed to be turned on for domain-id support.
+              Note that this property builds on top of clock-names-option,
+              clocks-option, clock-rates-option and shared-clks-option
+              (if any of these clocks are shared), so the associated
+              properties for those need to be included for this
+              property to work.
+
 ===================================================================
 Third Level Node - CAMNOC Level nodes
 ===================================================================
@@ -446,6 +463,22 @@ Example:
 			<&clock_camcc CAM_CC_SLOW_AHB_CLK_SRC>,
 			<&clock_camcc CAM_CC_CAMNOC_AXI_CLK>;
 		src-clock-name = "slow_ahb_clk_src";
+		domain-id-support-clks = "ife_lite_csid_clk",
+			"ife_lite_ahb", "csid_clk_src", "csid_clk";
+		/* domain-id-support-clks property dependent on below clock option properties */
+		clock-names-option = "cam_icp_clk",
+			"ife_lite_csid_clk",
+			"ife_lite_ahb", "csid_clk_src", "csid_clk";
+		clocks-option = <&camcc CAM_CC_ICP_CLK>,
+			<&camcc CAM_CC_IFE_LITE_CSID_CLK>,
+			<&camcc CAM_CC_IFE_LITE_AHB_CLK>,
+			<&camcc CAM_CC_CSID_CLK_SRC>,
+			<&camcc CAM_CC_CSID_CLK>;
+		clock-rates-option = <400000000>,
+			<0>, <0>, <0>, <0>;
+		shared-clks-option = <0 0 0 1 0>;
+		domain-id = <CAM_CPAS_SECURE_DOMAIN 16>,
+			<CAM_CPAS_NON_SECURE_DOMAIN 0>;
 		clock-rates = <0 0 0 0 80000000 0>;
 		clock-cntl-level = "turbo";
 		qcom,cam-cx-ipeak = <&cx_ipeak_lm 8>;
