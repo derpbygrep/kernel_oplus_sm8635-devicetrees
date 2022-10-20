@@ -557,6 +557,10 @@ dtbo-y += sdxpinn-cnss.dtbo
 >>>>>>> 0c178e27 (wlan: dts: Add CNSS device tree for sdxpinn)
 endif
 
+ifeq ($(CONFIG_ARCH_PINEAPPLE),y)
+dtbo-y += pineapple-kiwi-cnss.dtbo
+endif
+
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
