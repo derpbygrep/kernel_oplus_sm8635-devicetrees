@@ -1,0 +1,12 @@
+/dts-v1/;
+/plugin/;
+
+#include "pineapple-v2-ese-common.dtsi"
+
+/ {
+    model = "Qualcomm Technologies, Inc. Pineapple CDP";
+    compatible = "qcom,pineapple-cdp", "qcom,pineapple", "qcom,cdp";
+    // AS of now for V2 devices, we have mapped the msm-id and board id same as V1. We would update this once we receive the specs of V2 devices.
+    qcom,msm-id = <557 0x10000>;
+    qcom,board-id = <1 0>;
+};
