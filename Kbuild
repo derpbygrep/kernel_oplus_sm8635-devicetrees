@@ -185,6 +185,7 @@ ifeq ($(CONFIG_ARCH_SA8155), y)
 dtbo-y += display/sa8155-adp-star-display.dtbo
 endif
 
+<<<<<<< HEAD
 >>>>>>> 5f6fdead (ARM: dts: msm: add sa8155 configuration)
 ifneq ($(CONFIG_ARCH_QTI_VM), y)
 
@@ -529,6 +530,8 @@ ifeq ($(CONFIG_ARCH_PINEAPPLE), y)
 dtbo-y += pineapple-vidc.dtbo
 endif
 
+=======
+>>>>>>> b3f75993 (ARM: dts: msm: remove Waipio target)
 always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
 clean-files    := *.dtb *.dtbo
