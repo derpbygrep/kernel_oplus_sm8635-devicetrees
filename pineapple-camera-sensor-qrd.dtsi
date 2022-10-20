@@ -680,7 +680,7 @@
 
 };
 
-&i3c0 {
+&i3c2 {
 	se-clock-frequency = <100000000>;
 	i3c-scl-hz = <12500000>;
 	dfs-index = <0>;
@@ -738,6 +738,32 @@
 		status = "ok";
 	};
 
+	ois_i3c_wide: qcom,ois@72 {
+		cell-index = <8>;
+		reg = <0x72 0x00 0x10>;
+		compatible = "qcom,cam-i2c-ois";
+		i3c-i2c-target;
+		cam_vaf-supply = <&L7M>;
+		cam_clk-supply = <&cam_cc_titan_top_gdsc>;
+		regulator-names = "cam_vaf", "cam_clk";
+		rgltr-cntrl-support;
+		rgltr-min-voltage = <2960000 0>;
+		rgltr-max-voltage = <2960000 0>;
+		rgltr-load-current = <119000 0>;
+		gpios = <&tlmm 101 0>,
+			<&tlmm 15 0>;
+		gpio-reset = <1>;
+		gpio-req-tbl-num = <0 1>;
+		gpio-req-tbl-flags = <1 0>;
+		gpio-req-tbl-label = "CAMIF_MCLK1",
+					"CAM_RESET1";
+		clocks = <&camcc CAM_CC_MCLK1_CLK>;
+		clock-names = "cam_clk";
+		clock-cntl-level = "nominal";
+		clock-rates = <24000000>;
+		status = "ok";
+	};
+
 	qcom,cam-sensor@34,36007660000 {
 		cell-index = <8>;
 		reg = <0x34 0x360 0x07660000>;
@@ -750,6 +776,7 @@
 		sensor-position-yaw = <180>;
 		actuator-src = <&actuator_i3c_triple_wide>;
 		eeprom-src = <&eeprom_i3c_wide>;
+		ois-src = <&ois_i3c_wide>;
 		led-flash-src = <&led_flash_triple_rear_wide>;
 		cam_vio-supply = <&L3N>;
 		cam_vdig-supply = <&L1N>;
