@@ -292,6 +292,16 @@ Optional properties:
 				-- qcom,sde-fp16-unmult: u32 offset and version of the FP16 Unmult hardware
 				-- qcom,sde-fp16-gc: u32 offset and version of the FP16 GC hardware
 				-- qcom,sde-fp16-csc: u32 offset and version of the FP16 CSC hardware
+				-- qcom,sde-ucsc-igc: u32 offset and version of the UCSC
+				IGC hardware
+				-- qcom,sde-ucsc-unmult: u32 offset and version of the UCSC
+				Unmult hardware
+				-- qcom,sde-ucsc-gc: u32 offset and version of the UCSC
+				GC hardware
+				-- qcom,sde-ucsc-csc: u32 offset and version of the UCSC
+				CSC hardware
+				-- qcom,sde-ucsc-alpha-dither: u32 offset and version of the UCSC
+				Alpha Dither hardware
 - qcom,sde-sspp-dma-blocks:	A node that lists the blocks inside the DMA hardware. There
 				can be more than one instance of this binding, in which case the
 				entry would be appended with dgm entry index. Each entry will
@@ -311,6 +321,16 @@ Optional properties:
 				-- qcom,sde-fp16-unmult: u32 offset and version of the FP16 Unmult hardware
 				-- qcom,sde-fp16-gc: u32 offset and version of the FP16 GC hardware
 				-- qcom,sde-fp16-csc: u32 offset and version of the FP16 CSC hardware
+				-- qcom,sde-ucsc-igc: u32 offset and version of the UCSC
+				IGC hardware
+				-- qcom,sde-ucsc-unmult: u32 offset and version of the UCSC
+				Unmult hardware
+				-- qcom,sde-ucsc-gc: u32 offset and version of the UCSC
+				GC hardware
+				-- qcom,sde-ucsc-csc: u32 offset and version of the UCSC
+				CSC hardware
+				-- qcom,sde-ucsc-alpha-dither: u32 offset and version of the UCSC
+				Alpha Dither hardware
 - qcom,sde-sspp-rgb-blocks:	A node that lists the blocks inside the RGB hardware. The
 				block entries will contain the offset and version (if needed)
 				of each feature block. The presence of a block entry
@@ -916,6 +936,11 @@ Example:
             qcom,sde-fp16-unmult = <0x200 0x00010000>;
             qcom,sde-fp16-gc = <0x200 0x00010000>;
             qcom,sde-fp16-csc = <0x200 0x00010000>;
+            qcom,sde-ucsc-igc = <0x700 0x00010000>;
+            qcom,sde-ucsc-unmult = <0x700 0x00010000>;
+            qcom,sde-ucsc-gc = <0x700 0x00010000>;
+            qcom,sde-ucsc-csc = <0x700 0x00010000>;
+            qcom,sde-ucsc-alpha-dither = <0x700 0x00010000>;
         };
 
         vcm@1 {
@@ -924,6 +949,11 @@ Example:
             qcom,sde-fp16-unmult = <0x280 0x00010000>;
             qcom,sde-fp16-gc = <0x280 0x00010000>;
             qcom,sde-fp16-csc = <0x280 0x00010000>;
+            qcom,sde-ucsc-igc = <0x1700 0x00010000>;
+            qcom,sde-ucsc-unmult = <0x1700 0x00010000>;
+            qcom,sde-ucsc-gc = <0x1700 0x00010000>;
+            qcom,sde-ucsc-csc = <0x1700 0x00010000>;
+            qcom,sde-ucsc-alpha-dither = <0x1700 0x00010000>;
         };
     };
 
@@ -939,6 +969,11 @@ Example:
             qcom,sde-fp16-unmult = <0x200 0x00010000>;
             qcom,sde-fp16-gc = <0x200 0x00010000>;
             qcom,sde-fp16-csc = <0x200 0x00010000>;
+            qcom,sde-ucsc-igc = <0x700 0x00010000>;
+            qcom,sde-ucsc-unmult = <0x700 0x00010000>;
+            qcom,sde-ucsc-gc = <0x700 0x00010000>;
+            qcom,sde-ucsc-csc = <0x700 0x00010000>;
+            qcom,sde-ucsc-alpha-dither = <0x700 0x00010000>;
         };
 
         dgm@1 {
@@ -951,6 +986,11 @@ Example:
             qcom,sde-fp16-unmult = <0x200 0x00010000>;
             qcom,sde-fp16-gc = <0x200 0x00010000>;
             qcom,sde-fp16-csc = <0x200 0x00010000>;
+            qcom,sde-ucsc-igc = <0x1700 0x00010000>;
+            qcom,sde-ucsc-unmult = <0x1700 0x00010000>;
+            qcom,sde-ucsc-gc = <0x1700 0x00010000>;
+            qcom,sde-ucsc-csc = <0x1700 0x00010000>;
+            qcom,sde-ucsc-alpha-dither = <0x1700 0x00010000>;
          };
     };
 
