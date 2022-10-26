@@ -509,6 +509,9 @@ Optional properties:
 - qcom,sde-vbif-qos-offline-wb-remap:	This u32 array is used to program vbif qos remapper register
 				priority for offline-wb clients. First 8 entries are for rp_remap
 				and the next 8 entries are for lvl_remap.
+- qcom,sde-vbif-qos-wb-rot-remap:	This u32 array is used to program vbif qos remapper register
+				priority for wb-rotation clients. First 8 entries are for rp_remap
+				and the next 8 entries are for lvl_remap.
 - qcom,sde-qos-refresh-rates:	This u32 array indicates danger, safe and creq luts
 				qos configuration for different refresh rates.
 - qcom,sde-danger-lut:		This u32 array of 16 cell property, with a format of
@@ -909,6 +912,7 @@ Example:
     qcom,sde-vbif-qos-lutdma-remap = <3 3 3 3 4 4 4 4 3 3 3 3 4 4 4 4>;
     qcom,sde-vbif-qos-offline-wb-remap = <3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3>;
     qcom,sde-vbif-qos-cnoc-remap = <3 3 4 4 5 5 5 5 3 3 3 3 3 3 3 3>;
+    qcom,sde-vbif-qos-wb-rot-remap = <4 4 5 5 5 5 5 6 4 4 5 5 5 5 5 6>;
 
     qcom,sde-reg-dma-off = <0 0x400>;
     qcom,sde-reg-dma-id = <0 1>;
