@@ -574,7 +574,14 @@ ifeq ($(CONFIG_ARCH_MONACO), y)
 dtbo-y += gpu/monaco-gpu.dtbo
 endif
 
+<<<<<<< HEAD
 >>>>>>> 6f3f558e (ARM: dts: msm: Add GPU support for monaco IoT)
+=======
+ifeq ($(CONFIG_ARCH_LEMANS), y)
+dtbo-y += gpu/lemans-gpu.dtbo
+endif
+
+>>>>>>> ce9b2b13 (ARM: dts: msm: Enable GPU for LeMans)
 always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
 clean-files    := *.dtb *.dtbo
