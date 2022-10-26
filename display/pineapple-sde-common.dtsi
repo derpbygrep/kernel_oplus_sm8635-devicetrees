@@ -251,7 +251,7 @@
 		qcom,sde-sspp-vig-blocks {
 			vcm@0 {
 				cell-index = <0>;
-				qcom,sde-vig-top-off = <0xa00>;
+				qcom,sde-vig-top-off = <0x700>;
 				qcom,sde-vig-csc-off = <0x1a00>;
 				qcom,sde-vig-qseed-off = <0xa00>;
 				qcom,sde-vig-qseed-size = <0xe0>;
