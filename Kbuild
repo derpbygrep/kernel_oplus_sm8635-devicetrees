@@ -29,6 +29,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ifeq ($(CONFIG_ARCH_WAIPIO), y)
 dtbo-y += waipio-vidc.dtbo
@@ -65,6 +66,9 @@ ifeq ($(CONFIG_ARCH_KALAMA), y)
 	dtbo-y += display/kalama-sde.dtbo \
 =======
 =======
+=======
+ifneq ($(CONFIG_ARCH_QTI_VM), y)
+>>>>>>> 64220878 (ARM: dts: msm: Add trustedvm device tree files for Pineapple target)
 dtbo-$(CONFIG_ARCH_PINEAPPLE) += display/pineapple-sde.dtbo \
 		display/pineapple-sde-display-rumi-overlay.dtbo \
 		display/pineapple-sde-display-cdp-overlay.dtbo \
@@ -72,6 +76,12 @@ dtbo-$(CONFIG_ARCH_PINEAPPLE) += display/pineapple-sde.dtbo \
 		display/pineapple-sde-display-qrd-overlay.dtbo \
 		display/pineapple-sde-display-cdp-nfc-overlay.dtbo \
 		display/pineapple-sde-display-mtp-nfc-overlay.dtbo
+else
+dtbo-$(CONFIG_ARCH_PINEAPPLE) += display/trustedvm-pineapple-sde-display-mtp-overlay.dtbo \
+		  display/trustedvm-pineapple-sde-display-cdp-overlay.dtbo \
+		  display/trustedvm-pineapple-sde-display-rumi-overlay.dtbo \
+		  display/trustedvm-pineapple-sde-display-qrd-overlay.dtbo
+endif
 
 >>>>>>> 11f09044 (ARM: dts: msm: enable mdss for pineapple target)
 ifneq ($(CONFIG_ARCH_QTI_VM), y)
