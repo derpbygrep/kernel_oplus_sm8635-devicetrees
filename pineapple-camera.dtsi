@@ -1404,8 +1404,8 @@
 				iova-mem-region-shared {
 					/* Shared region is 900MB long */
 					iova-region-name = "shared";
-					/* Start address: 0xc0800000 */
-					iova-region-start = <0x0 0xc0800000>;
+					/* Start address: 0xc1100000 */
+					iova-region-start = <0x0 0xc1100000>;
 					/* Length: 0x38400000 */
 					iova-region-len = <0x0 0x38400000>;
 					iova-region-id = <0x1>;
@@ -1413,23 +1413,59 @@
 				};
 
 				iova-mem-region-fwuncached-region {
-					/* FW uncached region is 7MB long */
+					/* FW uncached region is 15 MB long */
 					iova-region-name = "fw_uncached";
-					/* Start address: 0xc0000000 */
-					iova-region-start = <0x0 0xc0000000>;
-					/* Length: 0x700000 */
-					iova-region-len = <0x0 0x700000>;
+					/* Start address: 0xc0100000 */
+					iova-region-start = <0x0 0xc0100000>;
+					/* Length: 0xf00000 */
+					iova-region-len = <0x0 0xf00000>;
 					iova-region-id = <0x6>;
+					subregion_support;
 					status = "ok";
+
+					/* Used for HFI queues/sec heap */
+					iova-mem-region-generic-region {
+						iova-region-name = "icp_hfi";
+						iova-region-start = <0x0 0xc0100000>;
+						iova-region-len = <0x0 0x700000>;
+						iova-region-id = <0x0>;
+					};
+
+					/* Global Sync Memory for IPC */
+					iova-mem-region-global-sync-region {
+						iova-region-name = "global_sync";
+						iova-region-start = <0x0 0xc0800000>;
+						iova-region-len = <0x0 0x100000>;
+						iova-region-id = <0x2>;
+						phy-addr = <0x82600000>;
+					};
+				};
+
+				iova-mem-device-region {
+					/* Device region is appropriate 1MB */
+					iova-region-name = "device";
+					iova-region-start = <0x0 0xc1000000>;
+					iova-region-len = <0x0 0x100000>;
+					iova-region-id = <0x7>;
+					subregion_support;
+					status = "ok";
+
+					iova-mem-region-hwmutex {
+						iova-region-name = "hwmutex_reg";
+						iova-region-start = <0x0 0xc1000000>;
+						iova-region-len = <0x0 0x2000>;
+						iova-region-id = <0x1>;
+						phy-addr = <0x1f4a000>;
+					};
 				};
 
 				iova-mem-region-io {
 					/* IO region is approximately 60 GB */
 					iova-region-name = "io";
-					/* Start address: 0xf8c00000 */
-					iova-region-start = <0x0 0xf8c00000>;
+					/* Start address: 0xf9500000 */
+					iova-region-start = <0x0 0xf9500000>;
 					/* Length: 0xf07300000 */
-					iova-region-len = <0xf 0x07300000>;
+					iova-region-len = <0xf 0x06A00000>;
 					iova-region-id = <0x3>;
 					status = "ok";
 				};
@@ -1437,8 +1473,8 @@
 				iova-mem-qdss-region {
 					/* QDSS region is appropriate 1MB */
 					iova-region-name = "qdss";
-					/* Start address: 0xc0700000 */
-					iova-region-start = <0x0 0xc0700000>;
+					/* Start address: 0xc0000000 */
+					iova-region-start = <0x0 0xc0000000>;
 					/* Length: 0x100000 */
 					iova-region-len = <0x0 0x100000>;
 					iova-region-id = <0x5>;
@@ -3131,6 +3167,7 @@
 		icp_pc_en;
 		icp_use_pil;
 		ipe_bps_pc_en;
+		synx_signaling_en;
 	};
 
 	cam_icp: qcom,icp@ac00000 {
