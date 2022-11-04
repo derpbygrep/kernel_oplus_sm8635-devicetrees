@@ -34,6 +34,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 ifeq ($(CONFIG_ARCH_WAIPIO), y)
@@ -780,6 +781,18 @@ clean-files	:= *.dtb *.dtbo
 =======
 >>>>>>> 8f804df8 (STM NFC: devicetree: Remove the NFC DTS files for both CDP and QRD)
 =======
+=======
+ifeq ($(CONFIG_ARCH_PINEAPPLE), y)
+	dtbo-y += hw_fence/pineapple-hw-fence.dtbo \
+		pineapple-mm-rumi-overlay.dtbo \
+		pineapple-mm-cdp-overlay.dtbo \
+		pineapple-mm-mtp-overlay.dtbo \
+		pineapple-mm-qrd-overlay.dtbo \
+		pineapple-mm-mtp-nfc-overlay.dtbo \
+		pineapple-mm-cdp-nfc-overlay.dtbo
+endif
+
+>>>>>>> da6db6bd (ARM: dts: msm: mm-drivers: add support for hw-fence feature on pineapple)
 ifeq ($(CONFIG_ARCH_KALAMA), y)
 	dtbo-y += hw_fence/kalama-hw-fence.dtbo \
 		kalama-mm-rumi-overlay.dtbo \
