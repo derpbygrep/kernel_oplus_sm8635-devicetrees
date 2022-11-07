@@ -7,7 +7,7 @@
 		#address-cells = <1>;
 		#size-cells = <1>;
 
-		reg = <0x0aa00000 0xFF000>;
+		reg = <0x0aa00000 0xF0000>;
 		interrupts = <GIC_SPI 174 IRQ_TYPE_LEVEL_HIGH>;
 
 		/* Supply */
@@ -15,14 +15,15 @@
 		vcodec-supply = <&video_cc_mvs0_gdsc>;
 
 		/* Clocks */
-		clocks = <&gcc GCC_VIDEO_AXI0_CLK>,
+		clocks =
+			 <&gcc GCC_VIDEO_AXI0_CLK>,
 			 <&videocc VIDEO_CC_MVS0C_CLK>,
 			 <&videocc VIDEO_CC_MVS0_CLK>,
 			 <&videocc VIDEO_CC_MVS0_CLK_SRC>;
 		clock-names =
-			 "gcc_video_axi0",
-			 "core_clk",
-			 "vcodec_clk",
+			 "gcc_video_axi0_clk",
+			 "video_cc_mvs0c_clk",
+			 "video_cc_mvs0_clk",
 			 "video_cc_mvs0_clk_src";
 
 		/* Bus Interconnects */
@@ -41,10 +42,12 @@
 		/* Clock Resets */
 		resets =
 			 <&gcc GCC_VIDEO_AXI0_CLK_ARES>,
+			 /* <&videocc VIDEO_CC_XO_CLK_ARES>, */
 			 <&videocc VIDEO_CC_MVS0C_CLK_ARES>;
 		reset-names =
 			 "video_axi_reset",
-			 "video_core_reset";
+			 /* "video_xo_reset", */
+			 "video_mvs0c_reset";
 
 		/* MMUs */
 		non_secure_pixel_cb {
