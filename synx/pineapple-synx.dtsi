@@ -25,50 +25,50 @@
 
 			ipclite_signal_0 {
 				index = <0>;
-				mboxes = <&ipcc_compute_l0 IPCC_CLIENT_APSS
+				mboxes = <&ipcc_compute_l0 8
 					0>;
 					interrupt-parent = <&ipcc_compute_l0>;
-				interrupts = <IPCC_CLIENT_APSS
+				interrupts = <8
 					0
 					IRQ_TYPE_EDGE_RISING>;
 			};
 
 			ipclite_signal_1 {
 				index = <1>;
-				mboxes = <&ipcc_compute_l0 IPCC_CLIENT_BROADCAST
+				mboxes = <&ipcc_compute_l0 0xF000
 					1>;
 				interrupt-parent = <&ipcc_compute_l0>;
-				interrupts = <IPCC_CLIENT_BROADCAST
+				interrupts = <0xF000
 					1
 					IRQ_TYPE_EDGE_RISING>;
 			};
 
 			ipclite_signal_2 {
 				index = <2>;
-				mboxes = <&ipcc_compute_l0 IPCC_CLIENT_APSS
+				mboxes = <&ipcc_compute_l0 8
 					2>;
 				interrupt-parent = <&ipcc_compute_l0>;
-				interrupts = <IPCC_CLIENT_APSS
+				interrupts = <8
 					2
 					IRQ_TYPE_EDGE_RISING>;
 			};
 
 			ipclite_signal_3 {
 				index = <3>;
-				mboxes = <&ipcc_compute_l0 IPCC_CLIENT_APSS
+				mboxes = <&ipcc_compute_l0 8
 					3>;
 				interrupt-parent = <&ipcc_compute_l0>;
-				interrupts = <IPCC_CLIENT_APSS
+				interrupts = <8
 					3
 					IRQ_TYPE_EDGE_RISING>;
 			};
 
 			ipclite_signal_4 {
 				index = <4>;
-				mboxes = <&ipcc_compute_l0 IPCC_CLIENT_APSS
+				mboxes = <&ipcc_compute_l0 8
 					4>;
 				interrupt-parent = <&ipcc_compute_l0>;
-				interrupts = <IPCC_CLIENT_APSS
+				interrupts = <8
 					4
 					IRQ_TYPE_EDGE_RISING>;
 			};
@@ -81,50 +81,50 @@
 
 			ipclite_signal_0 {
 				index = <0>;
-				mboxes = <&ipcc_compute_l0 IPCC_CLIENT_CDSP
+				mboxes = <&ipcc_compute_l0 6
 					0>;
 				interrupt-parent = <&ipcc_compute_l0>;
-				interrupts = <IPCC_CLIENT_CDSP
+				interrupts = <6
 					0
 					IRQ_TYPE_EDGE_RISING>;
 			};
 
 			ipclite_signal_1 {
 				index = <1>;
-				mboxes = <&ipcc_compute_l0 IPCC_CLIENT_CDSP
+				mboxes = <&ipcc_compute_l0 6
 					1>;
 				interrupt-parent = <&ipcc_compute_l0>;
-				interrupts = <IPCC_CLIENT_CDSP
+				interrupts = <6
 					1
 					IRQ_TYPE_EDGE_RISING>;
 			};
 
 			ipclite_signal_2 {
 				index = <2>;
-				mboxes = <&ipcc_compute_l0 IPCC_CLIENT_CDSP
+				mboxes = <&ipcc_compute_l0 6
 					2>;
 				interrupt-parent = <&ipcc_compute_l0>;
-				interrupts = <IPCC_CLIENT_CDSP
+				interrupts = <6
 					2
 					IRQ_TYPE_EDGE_RISING>;
 			};
 
 			ipclite_signal_3 {
 				index = <3>;
-				mboxes = <&ipcc_compute_l0 IPCC_CLIENT_CDSP
+				mboxes = <&ipcc_compute_l0 6
 					3>;
 				interrupt-parent = <&ipcc_compute_l0>;
-				interrupts = <IPCC_CLIENT_CDSP
+				interrupts = <6
 					3
 					IRQ_TYPE_EDGE_RISING>;
 			};
 
 			ipclite_signal_4 {
 				index = <4>;
-				mboxes = <&ipcc_compute_l0 IPCC_CLIENT_CDSP
+				mboxes = <&ipcc_compute_l0 6
 					4>;
 				interrupt-parent = <&ipcc_compute_l0>;
-				interrupts = <IPCC_CLIENT_CDSP
+				interrupts = <6
 					4
 					IRQ_TYPE_EDGE_RISING>;
 			};
@@ -137,50 +137,50 @@
 
 			ipclite_signal_0 {
 				index = <0>;
-				mboxes = <&ipcc_compute_l0 IPCC_CLIENT_CVP
+				mboxes = <&ipcc_compute_l0 10
 					0>;
 				interrupt-parent = <&ipcc_compute_l0>;
-				interrupts = <IPCC_CLIENT_CVP
+				interrupts = <10
 					0
 					IRQ_TYPE_EDGE_RISING>;
 			};
 
 			ipclite_signal_1 {
 				index = <1>;
-				mboxes = <&ipcc_compute_l0 IPCC_CLIENT_CVP
+				mboxes = <&ipcc_compute_l0 10
 					1>;
 				interrupt-parent = <&ipcc_compute_l0>;
-				interrupts = <IPCC_CLIENT_CVP
+				interrupts = <10
 					1
 					IRQ_TYPE_EDGE_RISING>;
 			};
 
 			ipclite_signal_2 {
 				index = <2>;
-				mboxes = <&ipcc_compute_l0 IPCC_CLIENT_CVP
+				mboxes = <&ipcc_compute_l0 10
 					2>;
 				interrupt-parent = <&ipcc_compute_l0>;
-				interrupts = <IPCC_CLIENT_CVP
+				interrupts = <10
 					2
 					IRQ_TYPE_EDGE_RISING>;
 			};
 
 			ipclite_signal_3 {
 				index = <3>;
-				mboxes = <&ipcc_compute_l0 IPCC_CLIENT_CVP
+				mboxes = <&ipcc_compute_l0 10
 					3>;
 				interrupt-parent = <&ipcc_compute_l0>;
-				interrupts = <IPCC_CLIENT_CVP
+				interrupts = <10
 					3
 					IRQ_TYPE_EDGE_RISING>;
 			};
 
 			ipclite_signal_4 {
 				index = <4>;
-				mboxes = <&ipcc_compute_l0 IPCC_CLIENT_CVP
+				mboxes = <&ipcc_compute_l0 10
 					4>;
 				interrupt-parent = <&ipcc_compute_l0>;
-				interrupts = <IPCC_CLIENT_CVP
+				interrupts = <10
 					4
 					IRQ_TYPE_EDGE_RISING>;
 			};
@@ -193,50 +193,50 @@
 
 			ipclite_signal_0 {
 				index = <0>;
-				mboxes = <&ipcc_compute_l0 IPCC_CLIENT_VPU
+				mboxes = <&ipcc_compute_l0 12
 					0>;
 				interrupt-parent = <&ipcc_compute_l0>;
-				interrupts = <IPCC_CLIENT_VPU
+				interrupts = <12
 					0
 					IRQ_TYPE_EDGE_RISING>;
 			};
 
 			ipclite_signal_1 {
 				index = <1>;
-				mboxes = <&ipcc_compute_l0 IPCC_CLIENT_VPU
+				mboxes = <&ipcc_compute_l0 12
 					1>;
 				interrupt-parent = <&ipcc_compute_l0>;
-				interrupts = <IPCC_CLIENT_VPU
+				interrupts = <12
 					1
 					IRQ_TYPE_EDGE_RISING>;
 			};
 
 			ipclite_signal_2 {
 				index = <2>;
-				mboxes = <&ipcc_compute_l0 IPCC_CLIENT_VPU
+				mboxes = <&ipcc_compute_l0 12
 					2>;
 				interrupt-parent = <&ipcc_compute_l0>;
-				interrupts = <IPCC_CLIENT_VPU
+				interrupts = <12
 					2
 					IRQ_TYPE_EDGE_RISING>;
 			};
 
 			ipclite_signal_3 {
 				index = <3>;
-				mboxes = <&ipcc_compute_l0 IPCC_CLIENT_VPU
+				mboxes = <&ipcc_compute_l0 12
 					3>;
 				interrupt-parent = <&ipcc_compute_l0>;
-				interrupts = <IPCC_CLIENT_VPU
+				interrupts = <12
 					3
 					IRQ_TYPE_EDGE_RISING>;
 			};
 
 			ipclite_signal_4 {
 				index = <4>;
-				mboxes = <&ipcc_compute_l0 IPCC_CLIENT_VPU
+				mboxes = <&ipcc_compute_l0 12
 					4>;
 				interrupt-parent = <&ipcc_compute_l0>;
-				interrupts = <IPCC_CLIENT_VPU
+				interrupts = <12
 					4
 					IRQ_TYPE_EDGE_RISING>;
 			};
