@@ -8,5 +8,5 @@
 	model = "Qualcomm Technologies, Inc. Pineapple MTP - TrustedVM";
 	compatible = "qcom,pineapple-mtp", "qcom,pineapple", "qcom,pineapplep-mtp", "qcom,pineapplep", "qcom,mtp";
 	qcom,msm-id = <557 0x10000>, <557 0x20000>, <577 0x10000>, <577 0x20000>;
-	qcom,board-id = <0x8 0>;
+	qcom,board-id = <0x10008 0>;
 };
