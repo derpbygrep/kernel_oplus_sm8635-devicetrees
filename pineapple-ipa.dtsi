@@ -5,7 +5,7 @@
         qcom,interconnect,num-paths = <3>;
         interconnects = <&aggre2_noc MASTER_IPA &gem_noc SLAVE_LLCC>,
                 <&mc_virt MASTER_LLCC &mc_virt SLAVE_EBI1>,
-                <&gem_noc MASTER_APPSS_PROC &config_noc SLAVE_IPA_CFG>;
+                <&gem_noc MASTER_APPSS_PROC &cnoc_main SLAVE_IPA_CFG>;
         interconnect-names = "ipa_to_llcc", "llcc_to_ebi1", "appss_to_ipa";
         /* No vote */
         qcom,no-vote =
@@ -13,7 +13,7 @@
 
         /* SVS2 */
         qcom,svs2 =
-                <0 0 0 1300000 0 76800>;
+                <600000 0 600000 1300000 0 76800>;
 
         /* SVS */
         qcom,svs =
@@ -26,6 +26,14 @@
         /* TURBO */
         qcom,turbo =
                 <3600000 0 3600000 5500000 0 400000>;
+
         qcom,bus-vector-names = "MIN", "SVS2", "SVS", "NOMINAL",
                 "TURBO";
+};
+
+&ipa_smmu_ap {
+        qcom,additional-mapping =
+                /* modem tables in IMEM */
+                <0x14683000 0x14683000 0x2000>;
+	qcom,ipa-q6-smem-size = <36864>;
 };
