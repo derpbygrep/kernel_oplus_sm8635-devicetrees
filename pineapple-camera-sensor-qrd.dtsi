@@ -462,17 +462,17 @@
 		reg = <0x51>;
 		compatible = "qcom,cam-i2c-eeprom";
 		cam_vio-supply = <&L3N>;
-		cam_vdig-supply = <&L2N>;
+		cam_vdig-supply = <&L1M>;
 		cam_clk-supply = <&cam_cc_titan_top_gdsc>;
-		cam_vana-supply = <&L5N>;
+		cam_vana-supply = <&L3M>;
 		cam_v_custom1-supply = <&L4N>;
 		cam_vaf-supply = <&L7M>;
 		regulator-names = "cam_vio", "cam_vdig","cam_clk", "cam_vana",
 			"cam_v_custom1", "cam_vaf";
 		rgltr-cntrl-support;
-		rgltr-min-voltage = <1800000 1056000 0 2800000 1800000 2800000>;
-		rgltr-max-voltage = <1800000 1056000 0 2800000 1800000 2800000>;
-		rgltr-load-current = <6000 454000 0  77900 29400 103000>;
+		rgltr-min-voltage = <1800000 1104000 0 2800000 1800000 2960000>;
+		rgltr-max-voltage = <1800000 1104000 0 2800000 1800000 2960000>;
+		rgltr-load-current = <6000 644000 0  77900 82900 103000>;
 		gpio-no-mux = <0>;
 		pinctrl-names = "cam_default", "cam_suspend";
 		pinctrl-0 = <&cam_sensor_mclk2_active
@@ -550,18 +550,18 @@
 		eeprom-src = <&eeprom_aon_rear_uw>;
 		actuator-src = <&actuator_aon_rear_uw>;
 		cam_vio-supply = <&L3N>;
-		cam_vdig-supply = <&L2N>;
+		cam_vdig-supply = <&L1M>;
 		cam_clk-supply = <&cam_cc_titan_top_gdsc>;
-		cam_vana-supply = <&L5N>;
+		cam_vana-supply = <&L3M>;
 		cam_v_custom1-supply = <&L4N>;
 		cam_vaf-supply = <&L7M>;
 		regulator-names = "cam_vio", "cam_vdig","cam_clk", "cam_vana",
 			"cam_v_custom1", "cam_vaf";
 		rgltr-cntrl-support;
 		aon-camera-id = <AON_CAM2>;
-		rgltr-min-voltage = <1800000 1056000 0 2800000 1800000 2800000>;
-		rgltr-max-voltage = <1800000 1056000 0 2800000 1800000 2800000>;
-		rgltr-load-current = <6000 454000 0  77900 29400 103000>;
+		rgltr-min-voltage = <1800000 1104000 0 2800000 1800000 2960000>;
+		rgltr-max-voltage = <1800000 1104000 0 2800000 1800000 2960000>;
+		rgltr-load-current = <6000 644000 0  77900 82900 103000>;
 		gpio-no-mux = <0>;
 		pinctrl-names = "cam_default", "cam_suspend";
 		pinctrl-0 = <&cam_sensor_mclk2_active
@@ -594,7 +594,7 @@
 	i3c-scl-hz = <12500000>;
 	dfs-index = <0>;
 	i2c-scl-hz = <100000>;
-	status = "ok";
+	status = "disabled";
 
 	actuator_i3c_triple_wide: qcom,actuator@c {
 		cell-index = <8>;
@@ -607,7 +607,7 @@
 		rgltr-min-voltage = <2960000>;
 		rgltr-max-voltage = <2960000>;
 		rgltr-load-current = <119000>;
-		status = "ok";
+		status = "disabled";
 	};
 
 	eeprom_i3c_wide: qcom,eeprom@50 {
@@ -644,7 +644,7 @@
 		clock-names = "cam_clk";
 		clock-cntl-level = "nominal";
 		clock-rates = <24000000>;
-		status = "ok";
+		status = "disabled";
 	};
 
 	ois_i3c_wide: qcom,ois@72 {
@@ -670,7 +670,7 @@
 		clock-names = "cam_clk";
 		clock-cntl-level = "nominal";
 		clock-rates = <24000000>;
-		status = "ok";
+		status = "disabled";
 	};
 
 	qcom,cam-sensor@34,36007660000 {
@@ -717,6 +717,6 @@
 		clock-names = "cam_clk";
 		clock-cntl-level = "nominal";
 		clock-rates = <24000000>;
-		status = "ok";
+		status = "disabled";
 	};
 };
