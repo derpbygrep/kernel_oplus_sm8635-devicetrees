@@ -57,7 +57,7 @@
 		sde_te_active: sde_te_active {
 			mux {
 				pins = "gpio86";
-				function = "mdp_vsync_p";
+				function = "mdp_vsync";
 			};
 
 			config {
@@ -70,7 +70,7 @@
 		sde_te_suspend: sde_te_suspend {
 			mux {
 				pins = "gpio86";
-				function = "mdp_vsync_p";
+				function = "mdp_vsync";
 			};
 
 			config {
@@ -83,7 +83,7 @@
 		sde_te1_active: sde_te1_active {
 			mux {
 				pins = "gpio87";
-				function = "mdp_vsync_s";
+				function = "mdp_vsync";
 			};
 
 			config {
@@ -96,7 +96,7 @@
 		sde_te1_suspend: sde_te1_suspend {
 			mux {
 				pins = "gpio87";
-				function = "mdp_vsync_s";
+				function = "mdp_vsync";
 			};
 
 			config {
