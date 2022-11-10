@@ -107,6 +107,7 @@
 			qcom,iommu-dma-addr-pool = <0x60000000 0x78000000>;
 			qcom,iommu-faults = "stall-disable", "HUPCF";
 			qcom,iommu-vmid = <0xA>;	/* VMID_CP_PIXEL */
+			shared-cb = <3>;
 			dma-coherent;
 		};
 
