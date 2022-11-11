@@ -30,6 +30,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 ifeq ($(CONFIG_ARCH_WAIPIO), y)
@@ -597,6 +598,15 @@ endif
 
 ifeq ($(CONFIG_ARCH_PINEAPPLE),y)
 dtbo-y += pineapple-ipa.dtbo
+=======
+
+ifeq ($(CONFIG_ARCH_PINEAPPLE),y)
+dtbo-y += nxp/pineapple-nfc.dtbo \
+          nxp/pineapple-nfc-atp.dtbo \
+          nxp/pineapple-nfc-cdp.dtbo \
+          nxp/pineapple-nfc-mtp.dtbo \
+          nxp/pineapple-nfc-qrd.dtbo
+>>>>>>> e4cdb0a2 (ARM: dts: msm: Add NFC device node for pineapple)
 endif
 
 always-y	:= $(dtb-y) $(dtbo-y)
