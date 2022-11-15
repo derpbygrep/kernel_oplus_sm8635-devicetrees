@@ -12,6 +12,7 @@
 			pins = "gpio113";
 			bias-pull-up; /* PULL UP*/
 			drive-strength = <2>; /* 2 MA */
+			qcom,i2c_pull;
 		};
 	};
 
@@ -40,6 +41,7 @@
 			pins = "gpio114";
 			bias-pull-up; /* PULL UP*/
 			drive-strength = <2>; /* 2 MA */
+			qcom,i2c_pull;
 		};
 	};
 
@@ -68,6 +70,7 @@
 			pins = "gpio115";
 			bias-pull-up; /* PULL UP*/
 			drive-strength = <2>; /* 2 MA */
+			qcom,i2c_pull;
 		};
 	};
 
@@ -96,6 +99,7 @@
 			pins = "gpio116";
 			bias-pull-up; /* PULL UP*/
 			drive-strength = <2>; /* 2 MA */
+			qcom,i2c_pull;
 		};
 	};
 
@@ -124,6 +128,7 @@
 			pins = "gpio117";
 			bias-pull-up; /* PULL UP*/
 			drive-strength = <2>; /* 2 MA */
+			qcom,i2c_pull;
 		};
 	};
 
@@ -152,6 +157,7 @@
 			pins = "gpio118";
 			bias-pull-up; /* PULL UP*/
 			drive-strength = <2>; /* 2 MA */
+			qcom,i2c_pull;
 		};
 	};
 
@@ -181,6 +187,7 @@
 			pins = "gpio106";
 			bias-pull-up; /* PULL UP*/
 			drive-strength = <2>; /* 2 MA */
+			qcom,i2c_pull;
 		};
 	};
 
@@ -211,6 +218,7 @@
 			pins = "gpio108";
 			bias-pull-up; /* PULL UP*/
 			drive-strength = <2>; /* 2 MA */
+			qcom,i2c_pull;
 		};
 	};
 
@@ -240,6 +248,7 @@
 			pins = "gpio112";
 			bias-pull-up; /* PULL UP*/
 			drive-strength = <2>; /* 2 MA */
+			qcom,i2c_pull;
 		};
 	};
 
@@ -268,6 +277,7 @@
 			pins = "gpio153";
 			bias-pull-up; /* PULL UP*/
 			drive-strength = <2>; /* 2 MA */
+			qcom,i2c_pull;
 		};
 	};
 
@@ -296,6 +306,7 @@
 			pins = "gpio119";
 			bias-pull-up; /* PULL UP*/
 			drive-strength = <2>; /* 2 MA */
+			qcom,i2c_pull;
 		};
 	};
 
@@ -324,6 +335,7 @@
 			pins = "gpio120";
 			bias-pull-up; /* PULL UP*/
 			drive-strength = <2>; /* 2 MA */
+			qcom,i2c_pull;
 		};
 	};
 
@@ -401,7 +413,7 @@
 		/* MCLK2 */
 		mux {
 			pins = "gpio102";
-			function = "cam_mclk";
+			function = "cam_aon_mclk2";
 		};
 
 		config {
@@ -415,7 +427,7 @@
 		/* MCLK2 */
 		mux {
 			pins = "gpio102";
-			function = "cam_mclk";
+			function = "cam_aon_mclk2";
 		};
 
 		config {
@@ -629,6 +641,7 @@
 			pins = "gpio3";
 			bias-disable; /* No PULL */
 			drive-strength = <2>; /* 2 MA */
+			qcom,apps;
 		};
 	};
 
@@ -643,6 +656,7 @@
 			bias-pull-down; /* PULL DOWN */
 			drive-strength = <2>; /* 2 MA */
 			output-low;
+			qcom,remote;
 		};
 	};
 
@@ -675,12 +689,12 @@
 
 	cam_sensor_active_rst4: cam_sensor_active_rst4 {
 		mux {
-			pins = "gpio6";
+			pins = "gpio7";
 			function = "gpio";
 		};
 
 		config {
-			pins = "gpio6";
+			pins = "gpio7";
 			bias-disable; /* No PULL */
 			drive-strength = <2>; /* 2 MA */
 			qcom,apps;
@@ -689,12 +703,12 @@
 
 	cam_sensor_suspend_rst4: cam_sensor_suspend_rst4 {
 		mux {
-			pins = "gpio6";
+			pins = "gpio7";
 			function = "gpio";
 		};
 
 		config {
-			pins = "gpio6";
+			pins = "gpio7";
 			bias-pull-down; /* PULL DOWN */
 			drive-strength = <2>; /* 2 MA */
 			output-low;
