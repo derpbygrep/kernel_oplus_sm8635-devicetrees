@@ -434,7 +434,7 @@
 			"TX DMIC3", "MIC BIAS1",
 			"IN1_HPHL", "HPHL_OUT",
 			"IN2_HPHR", "HPHR_OUT",
-			"IN3_EAR", "EAR_OUT",
+			"IN3_EAR", "AUX_OUT",
 			"HAP_IN", "PCM_OUT",
 			"WSA SRC0_INP", "SRC0",
 			"WSA_TX DEC0_INP", "TX DEC0 MUX",
