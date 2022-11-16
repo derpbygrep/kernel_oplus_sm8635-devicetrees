@@ -1979,16 +1979,16 @@
 		};
 	};
 
-	/* WSA speaker reset pins */
+	/* WSA speaker - north reset pins */
 	spkr_02_sd_n {
 		spkr_02_sd_n_sleep: spkr_02_sd_n_sleep {
 			mux {
-				pins = "gpio17";
+				pins = "gpio21";
 				function = "gpio";
 			};
 
 			config {
-				pins = "gpio17";
+				pins = "gpio21";
 				drive-strength = <2>;   /* 2 mA */
 				bias-pull-down;
 				input-enable;
@@ -1997,42 +1997,12 @@
 
 		spkr_02_sd_n_active: spkr_02_sd_n_active {
 			mux {
-				pins = "gpio17";
+				pins = "gpio21";
 				function = "gpio";
 			};
 
 			config {
-				pins = "gpio17";
-				drive-strength = <16>;   /* 16 mA */
-				bias-disable;
-				output-high;
-			};
-		};
-	};
-
-	spkr_13_sd_n {
-		spkr_13_sd_n_sleep: spkr_13_sd_n_sleep {
-			mux {
-				pins = "gpio18";
-				function = "gpio";
-			};
-
-			config {
-				pins = "gpio18";
-				drive-strength = <2>;   /* 2 mA */
-				bias-pull-down;
-				input-enable;
-			};
-		};
-
-		spkr_13_sd_n_active: spkr_13_sd_n_active {
-			mux {
-				pins = "gpio18";
-				function = "gpio";
-			};
-
-			config {
-				pins = "gpio18";
+				pins = "gpio21";
 				drive-strength = <16>;   /* 16 mA */
 				bias-disable;
 				output-high;

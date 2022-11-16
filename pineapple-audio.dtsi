@@ -64,7 +64,6 @@
 	lpi_tlmm: lpi_pinctrl@6E80000 {
 		compatible = "qcom,lpi-pinctrl";
 		reg = <0x6E80000 0x0>;
-		qcom,slew-reg = <0x725A000 0x0>;
 		qcom,gpios-count = <23>;
 		gpio-controller;
 		#gpio-cells = <2>;
