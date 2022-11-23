@@ -527,6 +527,9 @@
 		pinctrl-1 = <&tx_swr_clk_sleep &tx_swr_data0_sleep
 			    &tx_swr_data1_sleep &tx_swr_data2_sleep>;
 		qcom,lpi-gpios;
+		qcom,chip-wakeup-reg = <0xf1a6008>;
+		qcom,chip-wakeup-maskbit = <7>;
+		qcom,chip-wakeup-default-val = <0x1>;
 		#gpio-cells = <0>;
 	};
 
