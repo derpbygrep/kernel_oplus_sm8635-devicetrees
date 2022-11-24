@@ -462,7 +462,14 @@ ifeq ($(CONFIG_ARCH_KALAMA),y)
 dtbo-y += kalama-bt.dtbo
 endif
 
+<<<<<<< HEAD
 >>>>>>> f243772d (btfm: dts: Add support for kalama target)
+=======
+ifeq ($(CONFIG_ARCH_PINEAPPLE),y)
+dtbo-y += pineapple-kiwi-bt.dtbo
+endif
+
+>>>>>>> 3790727b (btfm: dts: msm: Add support for pineapple target)
 ifeq ($(CONFIG_ARCH_WAIPIO),y)
 dtbo-y += waipio-bt.dtbo
 dtbo-y += waipio-kiwi-bt.dtbo
