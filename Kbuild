@@ -593,7 +593,16 @@ ifeq ($(CONFIG_ARCH_LEMANS), y)
 dtbo-y += gpu/lemans-gpu.dtbo
 endif
 
+<<<<<<< HEAD
 >>>>>>> ce9b2b13 (ARM: dts: msm: Enable GPU for LeMans)
+=======
+ifeq ($(CONFIG_ARCH_KONA), y)
+dtbo-y += gpu/kona-gpu.dtbo \
+		gpu/kona-v2-gpu.dtbo \
+		gpu/kona-v2.1-gpu.dtbo
+endif
+
+>>>>>>> ddff4562 (ARM: dts: msm: Add GPU support for kona IoT)
 always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
 clean-files    := *.dtb *.dtbo
