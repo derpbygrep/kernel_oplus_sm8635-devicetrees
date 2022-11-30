@@ -4,12 +4,12 @@
 			/* active state */
 			mux {
 				/* NFC Read Interrupt */
-				pins = "gpio55";
+				pins = "gpio75";
 				function = "gpio";
 			};
 
 			config {
-				pins = "gpio55";
+				pins = "gpio75";
 				drive-strength = <2>; /* 2 MA */
 				bias-pull-down;
 			};
@@ -19,12 +19,12 @@
 			/* sleep state */
 			mux {
 				/* NFC Read Interrupt */
-				pins = "gpio55";
+				pins = "gpio75";
 				function = "gpio";
 			};
 
 			config {
-				pins = "gpio55";
+				pins = "gpio75";
 				drive-strength = <2>; /* 2 MA */
 				bias-pull-down;
 			};
@@ -32,13 +32,13 @@
 
 		nfc_enable_active: nfc_enable_active {
 			mux {
-				/* Enable gpio */
-				pins = "gpio30";
+				/* Enable and Clock request gpios */
+				pins = "gpio34", "gpio35";
 				function = "gpio";
 			};
 
 			config {
-				pins = "gpio30";
+				pins = "gpio34", "gpio35";
 				drive-strength = <2>; /* 2 MA */
 				bias-disable;
 			};
@@ -46,12 +46,12 @@
 
 		nfc_enable_suspend: nfc_enable_suspend {
 			mux {
-				pins = "gpio30";
+				pins = "gpio34", "gpio35";
 				function = "gpio";
 			};
 
 			config {
-				pins = "gpio30";
+				pins = "gpio34", "gpio35";
 				drive-strength = <2>; /* 2 MA */
 				bias-disable;
 			};
