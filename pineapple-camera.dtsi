@@ -1517,11 +1517,12 @@
 		compatible = "qcom,cam-cpas";
 		label = "cpas";
 		arch-compat = "cpas_top";
-		reg-names = "cam_cpas_top", "cam_camnoc", "cam_rpmh";
+		reg-names = "cam_cpas_top", "cam_camnoc", "cam_rpmh", "cam_cesta";
 		reg = <0xac13000 0x1000>,
 			<0xac19000 0xac80>,
-			<0xbbf0000 0x1f00>;
-		reg-cam-base = <0x13000 0x19000 0x0bbf0000>;
+			<0xbbf0000 0x1f00>,
+			<0xadd7000 0x5000>;
+		reg-cam-base = <0x13000 0x19000 0x0bbf0000 0xadd7000>;
 		interrupt-names = "cpas_camnoc";
 		interrupts = <GIC_SPI 459 IRQ_TYPE_EDGE_RISING>;
 		camnoc-axi-min-ib-bw = <3000000000>;
