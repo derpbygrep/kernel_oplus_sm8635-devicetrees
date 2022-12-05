@@ -616,6 +616,7 @@
 			qcom,display-topology = <1 1 1>,
 						<2 2 1>;
 			qcom,default-topology-index = <1>;
+			qcom,qsync-mode-min-refresh-rate = <50>;
 		};
 
 		timing@1 { /* WQHD 60FPS vid mode*/
@@ -624,6 +625,7 @@
 			qcom,display-topology = <1 1 1>,
 						<2 2 1>;
 			qcom,default-topology-index = <1>;
+			qcom,qsync-mode-min-refresh-rate = <50>;
 		};
 
 		timing@2 { /* FHD+ 60FPS cmd mode*/
@@ -632,6 +634,7 @@
 			qcom,display-topology = <1 1 1>,
 						<2 2 1>;
 			qcom,default-topology-index = <1>;
+			qcom,qsync-mode-min-refresh-rate = <10>;
 		};
 
 		timing@3 { /* HD 60FPS cmd mode */
@@ -640,6 +643,7 @@
 			qcom,display-topology = <1 1 1>,
 						<2 2 1>;
 			qcom,default-topology-index = <1>;
+			qcom,qsync-mode-min-refresh-rate = <48>;
 		};
 
 		timing@4 { /* FHD+ 90FPS cmd mode*/
@@ -648,6 +652,7 @@
 			qcom,display-topology = <1 1 1>,
 						<2 2 1>;
 			qcom,default-topology-index = <1>;
+			qcom,qsync-mode-min-refresh-rate = <30>;
 		};
 
 		timing@5 { /* FHD+ 180 FPS cmd mode*/
@@ -655,6 +660,7 @@
 				1d 18 02 04 00 51 21];
 			qcom,display-topology = <2 2 1>;
 			qcom,default-topology-index = <0>;
+			qcom,qsync-mode-min-refresh-rate = <96>;
 		};
 
 		timing@6 { /* FHD+ 240 FPS cmd mode*/
@@ -662,6 +668,7 @@
 				27 1f 02 04 00 69 2a];
 			qcom,display-topology = <2 2 1>;
 			qcom,default-topology-index = <0>;
+			qcom,qsync-mode-min-refresh-rate = <110>;
 		};
 
 		timing@7 { /* FHD+ 120FPS cmd mode*/
@@ -670,6 +677,7 @@
 			qcom,display-topology = <1 1 1>,
 						<2 2 1>;
 			qcom,default-topology-index = <1>;
+			qcom,qsync-mode-min-refresh-rate = <40>;
 		};
 
 		timing@8 { /* FHD+ 144FPS cmd mode*/
@@ -678,6 +686,7 @@
 			qcom,display-topology = <1 1 1>,
 						<2 2 1>;
 			qcom,default-topology-index = <1>;
+			qcom,qsync-mode-min-refresh-rate = <60>;
 		};
 
 		timing@9 { /* WQHD 1FPS cmd mode*/
@@ -686,6 +695,7 @@
 			qcom,display-topology = <1 1 1>,
 						<2 2 1>;
 			qcom,default-topology-index = <1>;
+			qcom,qsync-mode-min-refresh-rate = <1>;
 		};
 
 		timing@10 { /* WQHD 5FPS cmd mode*/
@@ -694,6 +704,7 @@
 			qcom,display-topology = <1 1 1>,
 						<2 2 1>;
 			qcom,default-topology-index = <1>;
+			qcom,qsync-mode-min-refresh-rate = <1>;
 		};
 
 		timing@11 { /* WQHD 10FPS cmd mode*/
@@ -702,6 +713,7 @@
 			qcom,display-topology = <1 1 1>,
 						<2 2 1>;
 			qcom,default-topology-index = <1>;
+			qcom,qsync-mode-min-refresh-rate = <5>;
 		};
 
 		timing@12 { /* WQHD 24FPS cmd mode*/
@@ -710,6 +722,7 @@
 			qcom,display-topology = <1 1 1>,
 						<2 2 1>;
 			qcom,default-topology-index = <1>;
+			qcom,qsync-mode-min-refresh-rate = <15>;
 		};
 
 		timing@13 { /* WQHD 30FPS cmd mode*/
@@ -718,6 +731,7 @@
 			qcom,display-topology = <1 1 1>,
 						<2 2 1>;
 			qcom,default-topology-index = <1>;
+			qcom,qsync-mode-min-refresh-rate = <22>;
 		};
 
 		timing@14 { /* WQHD 60FPS cmd mode*/
@@ -726,6 +740,7 @@
 			qcom,display-topology = <1 1 1>,
 						<2 2 1>;
 			qcom,default-topology-index = <1>;
+			qcom,qsync-mode-min-refresh-rate = <30>;
 		};
 
 		timing@15 { /* WQHD 90FPS cmd mode*/
@@ -734,6 +749,7 @@
 			qcom,display-topology = <1 1 1>,
 						<2 2 1>;
 			qcom,default-topology-index = <1>;
+			qcom,qsync-mode-min-refresh-rate = <10>;
 		};
 
 		timing@16 { /* WQHD 120FPS cmd mode*/
@@ -741,6 +757,7 @@
 				0c 0b 02 04 00 24 11];
 			qcom,display-topology = <2 2 1>;
 			qcom,default-topology-index = <0>;
+			qcom,qsync-mode-min-refresh-rate = <1>;
 		};
 
 		timing@17 { /* WQHD 144FPS cmd mode*/
@@ -748,6 +765,7 @@
 				0e 0d 02 04 00 2b 12];
 			qcom,display-topology = <2 2 1>;
 			qcom,default-topology-index = <0>;
+			qcom,qsync-mode-min-refresh-rate = <5>;
 		};
 
 		timing@18 { /* WQHD 180FPS cmd mode*/
@@ -755,6 +773,7 @@
 				12 0f 02 04 00 34 15];
 			qcom,display-topology = <2 2 1>;
 			qcom,default-topology-index = <0>;
+			qcom,qsync-mode-min-refresh-rate = <30>;
 		};
 	};
 };

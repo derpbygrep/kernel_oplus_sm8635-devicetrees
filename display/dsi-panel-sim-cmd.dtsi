@@ -39,6 +39,7 @@
 		qcom,mdss-dsi-panel-peak-brightness = <4200000>;
 		qcom,mdss-dsi-panel-blackness-level = <3230>;
 		qcom,panel-ack-disabled;
+		qcom,qsync-enable;
 
 		qcom,mdss-dsi-display-timings {
 			timing@0 {
@@ -144,6 +145,15 @@
 				  39 01 00 00 00 00 06 b2 00 5d 01 02 49
 				];
 				qcom,cmd-mode-switch-out-commands-state = "dsi_lp_mode";
+				qcom,mdss-dsi-qsync-on-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-on-commands-state =
+					"dsi_hs_mode";
+				qcom,mdss-dsi-qsync-off-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-off-commands-state =
+					"dsi_hs_mode";
+
 				qcom,compression-mode = "dsc";
 				qcom,mdss-dsc-slice-height = <40>;
 				qcom,mdss-dsc-slice-width = <720>;
@@ -198,6 +208,15 @@
 					[05 01 00 00 32 00 02 28 00
 					05 01 00 00 78 00 02 10 00];
 				qcom,mdss-dsi-off-command-state = "dsi_hs_mode";
+				qcom,mdss-dsi-qsync-on-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-on-commands-state =
+					"dsi_hs_mode";
+				qcom,mdss-dsi-qsync-off-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-off-commands-state =
+					"dsi_hs_mode";
+
 				qcom,compression-mode = "dsc";
 				qcom,mdss-dsc-slice-height = <40>;
 				qcom,mdss-dsc-slice-width = <720>;
@@ -255,6 +274,14 @@
 					[05 01 00 00 32 00 02 28 00
 					05 01 00 00 78 00 02 10 00];
 				qcom,mdss-dsi-off-command-state = "dsi_hs_mode";
+				qcom,mdss-dsi-qsync-on-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-on-commands-state =
+					"dsi_hs_mode";
+				qcom,mdss-dsi-qsync-off-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-off-commands-state =
+					"dsi_hs_mode";
 
 				qcom,compression-mode = "dsc";
 				qcom,mdss-dsc-slice-height = <20>;
@@ -309,6 +336,14 @@
 					[05 01 00 00 32 00 02 28 00
 					05 01 00 00 78 00 02 10 00];
 				qcom,mdss-dsi-off-command-state = "dsi_hs_mode";
+				qcom,mdss-dsi-qsync-on-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-on-commands-state =
+					"dsi_hs_mode";
+				qcom,mdss-dsi-qsync-off-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-off-commands-state =
+					"dsi_hs_mode";
 
 				qcom,compression-mode = "dsc";
 				qcom,mdss-dsc-slice-height = <40>;
@@ -362,6 +397,14 @@
 					[05 01 00 00 32 00 02 28 00
 					05 01 00 00 78 00 02 10 00];
 				qcom,mdss-dsi-off-command-state = "dsi_hs_mode";
+				qcom,mdss-dsi-qsync-on-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-on-commands-state =
+					"dsi_hs_mode";
+				qcom,mdss-dsi-qsync-off-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-off-commands-state =
+					"dsi_hs_mode";
 
 				qcom,compression-mode = "dsc";
 				qcom,mdss-dsc-slice-height = <20>;
@@ -421,6 +464,14 @@
 					[05 01 00 00 32 00 02 28 00
 					05 01 00 00 78 00 02 10 00];
 				qcom,mdss-dsi-off-command-state = "dsi_hs_mode";
+				qcom,mdss-dsi-qsync-on-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-on-commands-state =
+					"dsi_hs_mode";
+				qcom,mdss-dsi-qsync-off-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-off-commands-state =
+					"dsi_hs_mode";
 
 				qcom,compression-mode = "dsc";
 				qcom,mdss-dsc-slice-height = <20>;
@@ -479,6 +530,14 @@
 					[05 01 00 00 32 00 02 28 00
 					05 01 00 00 78 00 02 10 00];
 				qcom,mdss-dsi-off-command-state = "dsi_hs_mode";
+				qcom,mdss-dsi-qsync-on-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-on-commands-state =
+					"dsi_hs_mode";
+				qcom,mdss-dsi-qsync-off-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-off-commands-state =
+					"dsi_hs_mode";
 
 				qcom,compression-mode = "dsc";
 				qcom,mdss-dsc-slice-height = <20>;
@@ -536,6 +595,14 @@
 					[05 01 00 00 32 00 02 28 00
 					05 01 00 00 78 00 02 10 00];
 				qcom,mdss-dsi-off-command-state = "dsi_hs_mode";
+				qcom,mdss-dsi-qsync-on-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-on-commands-state =
+					"dsi_hs_mode";
+				qcom,mdss-dsi-qsync-off-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-off-commands-state =
+					"dsi_hs_mode";
 
 				qcom,compression-mode = "dsc";
 				qcom,mdss-dsc-slice-height = <20>;
@@ -589,6 +656,14 @@
 					[05 01 00 00 32 00 02 28 00
 					05 01 00 00 78 00 02 10 00];
 				qcom,mdss-dsi-off-command-state = "dsi_hs_mode";
+				qcom,mdss-dsi-qsync-on-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-on-commands-state =
+					"dsi_hs_mode";
+				qcom,mdss-dsi-qsync-off-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-off-commands-state =
+					"dsi_hs_mode";
 
 				qcom,compression-mode = "dsc";
 				qcom,mdss-dsc-slice-height = <20>;
@@ -641,6 +716,14 @@
 					[05 01 00 00 32 00 02 28 00
 					05 01 00 00 78 00 02 10 00];
 				qcom,mdss-dsi-off-command-state = "dsi_hs_mode";
+				qcom,mdss-dsi-qsync-on-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-on-commands-state =
+					"dsi_hs_mode";
+				qcom,mdss-dsi-qsync-off-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-off-commands-state =
+					"dsi_hs_mode";
 
 				qcom,compression-mode = "dsc";
 				qcom,mdss-dsc-slice-height = <20>;
@@ -693,6 +776,14 @@
 					[05 01 00 00 32 00 02 28 00
 					05 01 00 00 78 00 02 10 00];
 				qcom,mdss-dsi-off-command-state = "dsi_hs_mode";
+				qcom,mdss-dsi-qsync-on-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-on-commands-state =
+					"dsi_hs_mode";
+				qcom,mdss-dsi-qsync-off-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-off-commands-state =
+					"dsi_hs_mode";
 
 				qcom,compression-mode = "dsc";
 				qcom,mdss-dsc-slice-height = <20>;
@@ -745,6 +836,14 @@
 					[05 01 00 00 32 00 02 28 00
 					05 01 00 00 78 00 02 10 00];
 				qcom,mdss-dsi-off-command-state = "dsi_hs_mode";
+				qcom,mdss-dsi-qsync-on-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-on-commands-state =
+					"dsi_hs_mode";
+				qcom,mdss-dsi-qsync-off-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-off-commands-state =
+					"dsi_hs_mode";
 
 				qcom,compression-mode = "dsc";
 				qcom,mdss-dsc-slice-height = <20>;
@@ -797,6 +896,14 @@
 					[05 01 00 00 32 00 02 28 00
 					05 01 00 00 78 00 02 10 00];
 				qcom,mdss-dsi-off-command-state = "dsi_hs_mode";
+				qcom,mdss-dsi-qsync-on-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-on-commands-state =
+					"dsi_hs_mode";
+				qcom,mdss-dsi-qsync-off-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-off-commands-state =
+					"dsi_hs_mode";
 
 				qcom,compression-mode = "dsc";
 				qcom,mdss-dsc-slice-height = <20>;
@@ -849,6 +956,14 @@
 					[05 01 00 00 32 00 02 28 00
 					05 01 00 00 78 00 02 10 00];
 				qcom,mdss-dsi-off-command-state = "dsi_hs_mode";
+				qcom,mdss-dsi-qsync-on-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-on-commands-state =
+					"dsi_hs_mode";
+				qcom,mdss-dsi-qsync-off-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-off-commands-state =
+					"dsi_hs_mode";
 
 				qcom,compression-mode = "dsc";
 				qcom,mdss-dsc-slice-height = <20>;
@@ -901,6 +1016,14 @@
 					[05 01 00 00 32 00 02 28 00
 					05 01 00 00 78 00 02 10 00];
 				qcom,mdss-dsi-off-command-state = "dsi_hs_mode";
+				qcom,mdss-dsi-qsync-on-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-on-commands-state =
+					"dsi_hs_mode";
+				qcom,mdss-dsi-qsync-off-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-off-commands-state =
+					"dsi_hs_mode";
 
 				qcom,compression-mode = "dsc";
 				qcom,mdss-dsc-slice-height = <20>;
@@ -952,6 +1075,14 @@
 					[05 01 00 00 32 00 02 28 00
 					05 01 00 00 78 00 02 10 00];
 				qcom,mdss-dsi-off-command-state = "dsi_hs_mode";
+				qcom,mdss-dsi-qsync-on-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-on-commands-state =
+					"dsi_hs_mode";
+				qcom,mdss-dsi-qsync-off-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-off-commands-state =
+					"dsi_hs_mode";
 
 				qcom,compression-mode = "dsc";
 				qcom,mdss-dsc-slice-height = <20>;
@@ -1003,6 +1134,14 @@
 					[05 01 00 00 32 00 02 28 00
 					05 01 00 00 78 00 02 10 00];
 				qcom,mdss-dsi-off-command-state = "dsi_hs_mode";
+				qcom,mdss-dsi-qsync-on-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-on-commands-state =
+					"dsi_hs_mode";
+				qcom,mdss-dsi-qsync-off-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-off-commands-state =
+					"dsi_hs_mode";
 
 				qcom,compression-mode = "dsc";
 				qcom,mdss-dsc-slice-height = <20>;
@@ -1054,6 +1193,14 @@
 					[05 01 00 00 32 00 02 28 00
 					05 01 00 00 78 00 02 10 00];
 				qcom,mdss-dsi-off-command-state = "dsi_hs_mode";
+				qcom,mdss-dsi-qsync-on-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-on-commands-state =
+					"dsi_hs_mode";
+				qcom,mdss-dsi-qsync-off-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-off-commands-state =
+					"dsi_hs_mode";
 
 				qcom,compression-mode = "dsc";
 				qcom,mdss-dsc-slice-height = <20>;
@@ -1105,6 +1252,14 @@
 					[05 01 00 00 32 00 02 28 00
 					05 01 00 00 78 00 02 10 00];
 				qcom,mdss-dsi-off-command-state = "dsi_hs_mode";
+				qcom,mdss-dsi-qsync-on-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-on-commands-state =
+					"dsi_hs_mode";
+				qcom,mdss-dsi-qsync-off-commands =
+					[15 01 00 00 00 00 02 51 00];
+				qcom,mdss-dsi-qsync-off-commands-state =
+					"dsi_hs_mode";
 
 				qcom,compression-mode = "dsc";
 				qcom,mdss-dsc-slice-height = <20>;
