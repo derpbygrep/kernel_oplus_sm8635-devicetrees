@@ -780,12 +780,19 @@
 
 &dsi_sim_vid {
 	qcom,dsi-select-clocks = "pll_byte_clk0", "pll_dsi_clk0";
+	qcom,dsi-supported-dfps-list = <144 120 90 60 30 10 1>;
+	qcom,mdss-dsi-pan-enable-dynamic-fps;
+	qcom,mdss-dsi-pan-fps-update = "dfps_immediate_porch_mode_vfp";
+
+	qcom,qsync-enable;
+	qcom,dsi-supported-qsync-min-fps-list = <90 70 50 30 20 5 1>;
+	qcom,dsi-qsync-avr-step-list = <1440 840 450 180 60 20 0>;
+
 	qcom,mdss-dsi-display-timings {
 		timing@0 {
-			qcom,mdss-dsi-panel-phy-timings = [01 05 01 01 03 03 01
-				01 01 02 04 00 06 06];
-			qcom,display-topology = <1 0 1>,
-						<2 0 1>;
+			qcom,mdss-dsi-panel-phy-timings = [00 24 0a 0a 1a 24 0a
+				0a 09 02 04 00 1e 0f];
+			qcom,display-topology = <2 2 1>;
 			qcom,default-topology-index = <0>;
 		};
 	};
