@@ -679,6 +679,83 @@
 						<2 2 1>;
 			qcom,default-topology-index = <1>;
 		};
+
+		timing@9 { /* WQHD 1FPS cmd mode*/
+			qcom,mdss-dsi-panel-phy-timings = [00 18 06 06 15 20 06
+				06 07 02 04 00 15 0b];
+			qcom,display-topology = <1 1 1>,
+						<2 2 1>;
+			qcom,default-topology-index = <1>;
+		};
+
+		timing@10 { /* WQHD 5FPS cmd mode*/
+			qcom,mdss-dsi-panel-phy-timings = [00 18 06 06 15 20 06
+				06 07 02 04 00 15 0b];
+			qcom,display-topology = <1 1 1>,
+						<2 2 1>;
+			qcom,default-topology-index = <1>;
+		};
+
+		timing@11 { /* WQHD 10FPS cmd mode*/
+			qcom,mdss-dsi-panel-phy-timings = [00 18 06 06 15 20 06
+				06 07 02 04 00 15 0b];
+			qcom,display-topology = <1 1 1>,
+						<2 2 1>;
+			qcom,default-topology-index = <1>;
+		};
+
+		timing@12 { /* WQHD 24FPS cmd mode*/
+			qcom,mdss-dsi-panel-phy-timings = [00 18 06 06 15 20 06
+				06 07 02 04 00 15 0b];
+			qcom,display-topology = <1 1 1>,
+						<2 2 1>;
+			qcom,default-topology-index = <1>;
+		};
+
+		timing@13 { /* WQHD 30FPS cmd mode*/
+			qcom,mdss-dsi-panel-phy-timings = [00 18 06 06 15 20 06
+				06 07 02 04 00 15 0b];
+			qcom,display-topology = <1 1 1>,
+						<2 2 1>;
+			qcom,default-topology-index = <1>;
+		};
+
+		timing@14 { /* WQHD 60FPS cmd mode*/
+			qcom,mdss-dsi-panel-phy-timings = [00 18 06 06 15 20 06
+				06 07 02 04 00 15 0b];
+			qcom,display-topology = <1 1 1>,
+						<2 2 1>;
+			qcom,default-topology-index = <1>;
+		};
+
+		timing@15 { /* WQHD 90FPS cmd mode*/
+			qcom,mdss-dsi-panel-phy-timings = [00 22 09 09 19 23 09
+				09 09 02 04 00 1d 0e];
+			qcom,display-topology = <1 1 1>,
+						<2 2 1>;
+			qcom,default-topology-index = <1>;
+		};
+
+		timing@16 { /* WQHD 120FPS cmd mode*/
+			qcom,mdss-dsi-panel-phy-timings = [00 2c 0c 0c 1d 27 0c
+				0c 0b 02 04 00 24 11];
+			qcom,display-topology = <2 2 1>;
+			qcom,default-topology-index = <0>;
+		};
+
+		timing@17 { /* WQHD 144FPS cmd mode*/
+			qcom,mdss-dsi-panel-phy-timings = [00 38 0e 0e 17 14 0e
+				0e 0d 02 04 00 2b 12];
+			qcom,display-topology = <2 2 1>;
+			qcom,default-topology-index = <0>;
+		};
+
+		timing@18 { /* WQHD 180FPS cmd mode*/
+			qcom,mdss-dsi-panel-phy-timings = [00 44 11 12 1c 18 11
+				12 0f 02 04 00 34 15];
+			qcom,display-topology = <2 2 1>;
+			qcom,default-topology-index = <0>;
+		};
 	};
 };
 
