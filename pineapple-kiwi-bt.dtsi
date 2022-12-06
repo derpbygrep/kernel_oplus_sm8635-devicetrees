@@ -1,7 +1,4 @@
 #include <dt-bindings/interconnect/qcom,pineapple.h>
-#include <dt-bindings/clock/qcom,rpmh.h>
-#include <dt-bindings/regulator/qcom,rpmh-regulator-levels.h>
-#include <dt-bindings/soc/qcom,rpmh-rsc.h>
 
 &tlmm {
         bt_en_sleep: bt_en_sleep {
@@ -54,13 +51,7 @@
 				"{class: wlan_pdc, ss: rf, res: s1c.v, upval: 1316}",
 				"{class: wlan_pdc, ss: rf, res: s1c.v, dwnval: 944}",
 				"{class: wlan_pdc, ss: rf, res: s6c.v, upval: 1864}",
-				"{class: wlan_pdc, ss: rf, res: s6c.v, dwnval: 1820}",
-				"{class: wlan_pdc, ss: rf, res: l6k.v, upval: 1776}",
-				"{class: wlan_pdc, ss: rf, res: l6k.v, dwnval: 1776}",
-				"{class: wlan_pdc, ss: rf, res: l15b.v, upval: 1800}",
-				"{class: wlan_pdc, ss: rf, res: l15b.v, dwnval: 1800}",
-				"{class: wlan_pdc, ss: rf, res: l3c.v, upval: 1200}",
-				"{class: wlan_pdc, ss: rf, res: l3c.v, dwnval: 1200}";
+				"{class: wlan_pdc, ss: rf, res: s6c.v, dwnval: 1820}";
 	};
 	slim_msm: slim@6C40000 {
 		status =  "ok";
