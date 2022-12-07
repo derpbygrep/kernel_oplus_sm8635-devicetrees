@@ -432,7 +432,8 @@ dtbo-y += pineapple-audio.dtbo \
                  pineapple-audio-mtp-nfc.dtbo \
                  pineapple-audio-qrd.dtbo \
                  pineapple-audio-atp.dtbo \
-                 pineapple-audio-rumi.dtbo
+                 pineapple-audio-rumi.dtbo \
+                 pineapple-audio-rcm.dtbo
 endif
 
 
