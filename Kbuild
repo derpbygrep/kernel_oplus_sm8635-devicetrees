@@ -655,6 +655,10 @@ dtbo-y += pineapple-fingerprint.dtbo
 >>>>>>> 6cd3bca3 (fingerprint-devicetree: Move QBT DTSI configs to Vendor SI)
 endif
 
+ifeq ($(CONFIG_ARCH_SA525),y)
+dtbo-y += sa525m-cnss.dtbo
+endif
+
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
