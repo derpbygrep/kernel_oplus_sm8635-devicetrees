@@ -637,6 +637,7 @@ endif
 >>>>>>> 28991781 (wlan: dts: Add support for lemans)
 ifeq ($(CONFIG_QTI_QUIN_GVM),y)
 dtbo-y += sa8155p-vm-cnss.dtbo
+<<<<<<< HEAD
 >>>>>>> 60334255 (wlan: dts: autogvm: Add support for hana-au)
 =======
 
@@ -644,6 +645,9 @@ dtbo-y += st/pineapple-nfc.dtbo \
           st/pineapple-nfc-mtp.dtbo \
           st/pineapple-nfc-cdp.dtbo
 >>>>>>> eaeccc46 (STM NFC: devicetree: Add I2C NFC DTS parameters for Lanai)
+=======
+dtbo-y += sa8195p-vm-cnss.dtbo
+>>>>>>> 542eaab0 (wlan: dts: autogvm: Add support for poipu-au)
 endif
 
 always-y	:= $(dtb-y) $(dtbo-y)
