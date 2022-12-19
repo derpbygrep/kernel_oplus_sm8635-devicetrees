@@ -1,6 +1,7 @@
 /dts-v1/;
 /plugin/;
 
+#include <dt-bindings/soc/qcom,ipcc.h>
 #include <dt-bindings/interrupt-controller/arm-gic.h>
 #include "pineapple-synx.dtsi"
 
