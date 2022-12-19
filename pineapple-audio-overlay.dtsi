@@ -355,15 +355,15 @@
 		qcom,rx-slave = <&wcd939x_rx_slave>;
 		qcom,tx-slave = <&wcd939x_tx_slave>;
 
-		cdc-vdd-rxtx-supply = <&L15B>;
-		qcom,cdc-vdd-rxtx-voltage = <1800000 1800000>;
-		qcom,cdc-vdd-rxtx-current = <30000>;
-		qcom,cdc-vdd-rxtx-lpm-supported = <1>;
+		cdc-vdd-rx-supply = <&L15B>;
+		qcom,cdc-vdd-rx-voltage = <1800000 1800000>;
+		qcom,cdc-vdd-rx-current = <30000>;
+		qcom,cdc-vdd-rx-lpm-supported = <1>;
 
-		cdc-vddio-supply = <&L15B>;
-		qcom,cdc-vddio-voltage = <1800000 1800000>;
-		qcom,cdc-vddio-current = <30000>;
-		qcom,cdc-vddio-lpm-supported = <1>;
+		cdc-vdd-tx-supply = <&L15B>;
+		qcom,cdc-vdd-tx-voltage = <1800000 1800000>;
+		qcom,cdc-vdd-tx-current = <30000>;
+		qcom,cdc-vdd-tx-lpm-supported = <1>;
 
 		cdc-vdd-buck-supply = <&L15B>;
 		qcom,cdc-vdd-buck-voltage = <1800000 1800000>;
@@ -384,8 +384,8 @@
 		qcom,cdc-micbias3-mv = <1800>;
 		qcom,cdc-micbias4-mv = <1800>;
 
-		qcom,cdc-static-supplies = "cdc-vdd-rxtx",
-					   "cdc-vddio",
+		qcom,cdc-static-supplies = "cdc-vdd-rx",
+					   "cdc-vdd-tx",
 					   "cdc-vdd-mic-bias",
 					   "cdc-vdd-px";
 		qcom,cdc-on-demand-supplies = "cdc-vdd-buck";
