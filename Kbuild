@@ -31,6 +31,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 ifeq ($(CONFIG_ARCH_WAIPIO), y)
@@ -648,13 +649,20 @@ dtbo-y += st/pineapple-nfc.dtbo \
 =======
 dtbo-y += sa8195p-vm-cnss.dtbo
 >>>>>>> 542eaab0 (wlan: dts: autogvm: Add support for poipu-au)
+=======
+ifeq ($(CONFIG_ARCH_PINEAPPLE), y)
+dtbo-y += pineapple-fingerprint.dtbo
+>>>>>>> 6cd3bca3 (fingerprint-devicetree: Move QBT DTSI configs to Vendor SI)
 endif
 
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
+<<<<<<< HEAD
 >>>>>>> 6c40ce5e (ARM: dts: Add DSP devicetree files to Lanai)
 =======
 >>>>>>> e2656573 (msm: synx: enable building synx DT in Vendor SI)
 =======
 >>>>>>> 1cb703bb (mm-sys-devicetree: build framework files)
+=======
+>>>>>>> 6cd3bca3 (fingerprint-devicetree: Move QBT DTSI configs to Vendor SI)

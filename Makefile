@@ -14,6 +14,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 vendor := $(srctree)/$(src)
 
 ifneq "$(wildcard $(vendor)/qcom)" ""
@@ -50,6 +51,9 @@ KBUILD_OPTIONS+=KBUILD_EXTMOD_DTS=.
 =======
 KBUILD_OPTIONS+=KBUILD_EXTMOD_DTS=.
 >>>>>>> 6c40ce5e (ARM: dts: Add DSP devicetree files to Lanai)
+=======
+KBUILD_OPTIONS+=KBUILD_EXTMOD_DTS=.
+>>>>>>> 6cd3bca3 (fingerprint-devicetree: Move QBT DTSI configs to Vendor SI)
 
 all: dtbs
 
@@ -58,6 +62,7 @@ clean:
 
 %:
 	$(MAKE) -C $(KERNEL_SRC) M=$(M) $@ $(KBUILD_OPTIONS)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -175,3 +180,5 @@ clean:
 =======
 	$(MAKE) -C $(KERNEL_SRC) M=$(M) clean
 >>>>>>> 1cb703bb (mm-sys-devicetree: build framework files)
+=======
+>>>>>>> 6cd3bca3 (fingerprint-devicetree: Move QBT DTSI configs to Vendor SI)
