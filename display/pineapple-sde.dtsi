@@ -4,6 +4,7 @@
 #include <dt-bindings/interconnect/qcom,pineapple.h>
 #include <dt-bindings/clock/qcom,rpmh.h>
 #include <dt-bindings/clock/qcom,tcsrcc-pineapple.h>
+#include <dt-bindings/arm/msm/qti-smmu-proxy-dt-ids.h>
 #include "pineapple-sde-common.dtsi"
 
 &soc {
@@ -209,6 +210,7 @@
 	qcom,hw-fence-sw-version = <0x1>;
 
 	mmcx-supply = <&VDD_MMCX_LEVEL>;
+	qti,smmu-proxy-cb-id = <QTI_SMMU_PROXY_DISPLAY_CB>;
 
 	qcom,sde-vm-exclude-reg-names = "ipcc_reg";
 
