@@ -6,7 +6,6 @@
 / {
     model = "Qualcomm Technologies, Inc. Kalama MTP";
     compatible = "qcom,kalama-mtp", "qcom,kalama", "qcom,mtp";
-    //AS of now for V2 devices, we have mapped the msm-id and board id same as V1. We would update this once we receive the specs of V2 devices.
-    qcom,msm-id = <557 0x10000>;
-    qcom,board-id = <8 0>;
+    qcom,msm-id = <557 0x20000>;
+    qcom,board-id = <0x50008 0>;
 };
