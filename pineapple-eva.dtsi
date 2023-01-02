@@ -13,24 +13,26 @@
 		cvp-core-supply = <&video_cc_mvs1_gdsc>;
 
 		/* Clocks */
-		clock-names = "gcc_video_axi1", "cvp_clk", "core_clk",
+		clock-names = "gcc_video_axi1", "sleep_clk", "cvp_clk", "core_clk",
 				"video_cc_mvs1_clk_src";
-		clock-ids = <GCC_VIDEO_AXI1_CLK VIDEO_CC_MVS1C_CLK
+		clock-ids = <GCC_VIDEO_AXI1_CLK VIDEO_CC_SLEEP_CLK VIDEO_CC_MVS1C_CLK
 			VIDEO_CC_MVS1_CLK VIDEO_CC_MVS1_CLK_SRC>;
 		clocks = <&gcc GCC_VIDEO_AXI1_CLK>,
+			<&videocc VIDEO_CC_SLEEP_CLK>,
 			<&videocc VIDEO_CC_MVS1C_CLK>,
 			<&videocc VIDEO_CC_MVS1_CLK>,
 			<&videocc VIDEO_CC_MVS1_CLK_SRC>;
-		qcom,proxy-clock-names = "gcc_video_axi1",
+		qcom,proxy-clock-names = "gcc_video_axi1", "sleep_clk",
 			"cvp_clk", "core_clk", "video_cc_mvs1_clk_src";
 
-		qcom,clock-configs = <0x0 0x0 0x0 0x1>;
+		qcom,clock-configs = <0x0 0x0 0x0 0x0 0x1>;
 		qcom,allowed-clock-rates = <350000000 450000000 500000000 550000000>;
 
 		resets = <&gcc GCC_VIDEO_AXI1_CLK_ARES>,
+		    <&videocc VIDEO_CC_XO_CLK_ARES>,
 			<&videocc VIDEO_CC_MVS1C_CLK_ARES>;
-		reset-names = "cvp_axi_reset", "cvp_core_reset";
-		reset-power-status = <0x2 0x2>;
+		reset-names = "cvp_axi_reset", "cvp_xo_reset","cvp_core_reset";
+		reset-power-status = <0x2 0x2 0x2>;
 
 		qcom,reg-presets = <0xB0088 0x0>;
 		qcom,ipcc-reg = <0x400000 0x100000>;
