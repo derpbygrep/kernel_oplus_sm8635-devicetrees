@@ -32,7 +32,7 @@
 		    <&videocc VIDEO_CC_XO_CLK_ARES>,
 			<&videocc VIDEO_CC_MVS1C_CLK_ARES>;
 		reset-names = "cvp_axi_reset", "cvp_xo_reset","cvp_core_reset";
-		reset-power-status = <0x2 0x2 0x2>;
+		reset-power-status = <0x0 0x1 0x0>;
 
 		qcom,reg-presets = <0xB0088 0x0>;
 		qcom,ipcc-reg = <0x400000 0x100000>;
@@ -69,12 +69,12 @@
 		};
 
 		/* MMUs */
-		/* dummy cb is used to get secure camera buffer IPA */
+		/* dummy cb is used to get secure camera buffer IPA
 		cvp_dummy_cb {
 			compatible = "qcom,msm-cvp,context-bank";
 			label = "cvp_dummy";
 			buffer-types = <0xfff>;
-		};
+		};*/
 
 		cvp_non_secure_cb {
 			compatible = "qcom,msm-cvp,context-bank";
