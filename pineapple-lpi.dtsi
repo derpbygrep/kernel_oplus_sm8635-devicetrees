@@ -554,7 +554,7 @@
 			};
 		};
 
-		lpi_i2s4_sck_active: lpi_i2s_sck_active {
+		lpi_i2s4_sck_active: lpi_i2s4_sck_active {
 			mux {
 				pins = "gpio19";
 				function = "func1";

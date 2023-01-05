@@ -397,13 +397,13 @@
 &spf_core_platform  {
 	pineapple_snd: sound {
 		qcom,model = "pineapple-mtp-snd-card";
-		qcom,msm-mi2s-master = <1>, <1>, <1>, <1>, <1>, <1>;
-		qcom,mi2s-tdm-is-hw-vote-needed = <1>, <0>, <1>, <0>, <0>, <0>;
+		qcom,msm-mi2s-master = <1>, <1>, <1>, <1>, <1>, <1>, <1>;
+		qcom,mi2s-tdm-is-hw-vote-needed = <1>, <0>, <1>, <0>, <1>, <0>, <0>;
 		qcom,wcn-bt = <1>;
 		qcom,ext-disp-audio-rx = <1>;
 		qcom,tdm-max-slots = <8>;
-		qcom,tdm-clk-attribute = <0x1>, <0x1>, <0x1>, <0x1>, <0x1>, <0x1>;
-		qcom,mi2s-clk-attribute = <0x1>, <0x1>, <0x1>, <0x1>, <0x1>, <0x1>;
+		qcom,tdm-clk-attribute = <0x1>, <0x1>, <0x1>, <0x1>, <0x1>, <0x1>, <0x1>;
+		qcom,mi2s-clk-attribute = <0x1>, <0x1>, <0x1>, <0x1>, <0x1>, <0x1>, <0x1>;
 		qcom,audio-routing =
 			"AMIC1", "Analog Mic1",
 			"AMIC1", "MIC BIAS1",
@@ -481,6 +481,17 @@
 		qcom,upd_ear_pa_reg_addr = <0x300A>;
 	};
 
+	cdc_pri_mi2s_gpios: pri_mi2s_pinctrl {
+		status = "disabled";
+		compatible = "qcom,msm-cdc-pinctrl";
+		pinctrl-names = "aud_active", "aud_sleep";
+		pinctrl-0 = <&i2s0_sck_active &i2s0_ws_active
+				&i2s0_sd0_active &i2s0_sd1_active>;
+		pinctrl-1 = <&i2s0_sck_sleep &i2s0_ws_sleep
+				&i2s0_sd0_sleep &i2s0_sd1_sleep>;
+		#gpio-cells = <0>;
+	};
+
 	fm_i2s1_gpios: fm_i2s1_pinctrl {
 		compatible = "qcom,msm-cdc-pinctrl";
 		pinctrl-names = "aud_active", "aud_sleep";
@@ -488,6 +499,73 @@
 				&i2s1_sd0_active>;
 		pinctrl-1 = <&i2s1_sck_sleep &i2s1_ws_sleep
 				&i2s1_sd0_sleep>;
+		#gpio-cells = <0>;
+	};
+
+	cdc_tert_mi2s_gpios: tert_mi2s_pinctrl {
+		status = "disabled";
+		compatible = "qcom,msm-cdc-pinctrl";
+		pinctrl-names = "aud_active", "aud_sleep";
+		pinctrl-0 = <&lpi_i2s4_sck_active &lpi_i2s4_ws_active
+				&lpi_i2s4_sd0_active &lpi_i2s4_sd1_active>;
+		pinctrl-1 = <&lpi_i2s4_sck_sleep &lpi_i2s4_ws_sleep
+				&lpi_i2s4_sd0_sleep &lpi_i2s4_sd1_sleep>;
+		qcom,lpi-gpios;
+		qcom,tlmm-pins = <185 187>;
+		#gpio-cells = <0>;
+	};
+
+	cdc_quat_mi2s_gpios: quat_mi2s_pinctrl {
+		status = "disabled";
+		compatible = "qcom,msm-cdc-pinctrl";
+		pinctrl-names = "aud_active", "aud_sleep";
+		pinctrl-0 = <&quat_mi2s_sck_active &quat_mi2s_ws_active
+				&quat_mi2s_sd0_active &quat_mi2s_sd1_active
+				&quat_mi2s_sd2_active &quat_mi2s_sd3_active>;
+		pinctrl-1 = <&quat_mi2s_sck_sleep &quat_mi2s_ws_sleep
+				&quat_mi2s_sd0_sleep &quat_mi2s_sd1_sleep
+				&quat_mi2s_sd2_sleep &quat_mi2s_sd3_sleep>;
+		qcom,lpi-gpios;
+		qcom,tlmm-pins = <166 169>;
+		#gpio-cells = <0>;
+	};
+
+	cdc_quin_mi2s_gpios: quin_mi2s_pinctrl {
+		status = "disabled";
+		compatible = "qcom,msm-cdc-pinctrl";
+		pinctrl-names = "aud_active", "aud_sleep";
+		pinctrl-0 = <&lpi_i2s1_sck_active &lpi_i2s1_ws_active
+				&lpi_i2s1_sd0_active &lpi_i2s1_sd1_active>;
+		pinctrl-1 = <&lpi_i2s1_sck_sleep &lpi_i2s1_ws_sleep
+				&lpi_i2s1_sd0_sleep &lpi_i2s1_sd1_sleep>;
+		qcom,lpi-gpios;
+		qcom,tlmm-pins = <171 172 174>;
+		#gpio-cells = <0>;
+	};
+
+	cdc_sen_mi2s_gpios: sen_mi2s_pinctrl {
+		status = "disabled";
+		compatible = "qcom,msm-cdc-pinctrl";
+		pinctrl-names = "aud_active", "aud_sleep";
+		pinctrl-0 = <&lpi_i2s2_sck_active &lpi_i2s2_ws_active
+				&lpi_i2s2_sd0_active &lpi_i2s2_sd1_active>;
+		pinctrl-1 = <&lpi_i2s2_sck_sleep &lpi_i2s2_ws_sleep
+				&lpi_i2s2_sd0_sleep &lpi_i2s2_sd1_sleep>;
+		qcom,lpi-gpios;
+		qcom,tlmm-pins = <176 181>;
+		#gpio-cells = <0>;
+	};
+
+	cdc_sep_mi2s_gpios: sep_mi2s_pinctrl {
+		status = "disabled";
+		compatible = "qcom,msm-cdc-pinctrl";
+		pinctrl-names = "aud_active", "aud_sleep";
+		pinctrl-0 = <&lpi_i2s3_sck_active &lpi_i2s3_ws_active
+				&lpi_i2s3_sd0_active &lpi_i2s3_sd1_active>;
+		pinctrl-1 = <&lpi_i2s3_sck_sleep &lpi_i2s3_ws_sleep
+				&lpi_i2s3_sd0_sleep &lpi_i2s3_sd1_sleep>;
+		qcom,lpi-gpios;
+		qcom,tlmm-pins = <177 182>;
 		#gpio-cells = <0>;
 	};
 

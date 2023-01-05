@@ -24,8 +24,32 @@
 	status = "disabled";
 };
 
+&cdc_pri_mi2s_gpios {
+	status = "disabled";
+};
+
 &fm_i2s1_gpios {
 	status = "ok";
+};
+
+&cdc_tert_mi2s_gpios {
+	status = "disabled";
+};
+
+&cdc_quat_mi2s_gpios {
+	status = "disabled";
+};
+
+&cdc_quin_mi2s_gpios {
+	status = "disabled";
+};
+
+&cdc_sen_mi2s_gpios {
+	status = "disabled";
+};
+
+&cdc_sep_mi2s_gpios {
+	status = "disabled";
 };
 
 &pineapple_snd {
@@ -110,6 +134,12 @@
 			"wcd939x_codec", "swr-haptics",
 			"wsa-codec1", "wsa-codec2";
 	qcom,wsa-max-devs = <2>;
+	qcom,pri-mi2s-gpios = <&cdc_pri_mi2s_gpios>;
 	qcom,sec-mi2s-gpios = <&fm_i2s1_gpios>;
+	qcom,tert-mi2s-gpios = <&cdc_tert_mi2s_gpios>;
+	qcom,quat-mi2s-gpios = <&cdc_quat_mi2s_gpios>;
+	qcom,quin-mi2s-gpios = <&cdc_quin_mi2s_gpios>;
+	qcom,sen-mi2s-gpios = <&cdc_sen_mi2s_gpios>;
+	qcom,sep-mi2s-gpios = <&cdc_sep_mi2s_gpios>;
 	qcom,usbss-hsj-connect-enabled;
 };
