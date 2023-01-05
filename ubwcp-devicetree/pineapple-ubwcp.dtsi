@@ -14,6 +14,9 @@
 		regulator-name = "vdd";
 		vdd-supply = <&apss_ubwcp_pwr_ctrl>;
 
+		clocks = <&gcc GCC_CPUSS_UBWCP_CLK_SRC>;
+		clock-names = "ubwcp_clk";
+
 		interrupts = <GIC_SPI 759 IRQ_TYPE_LEVEL_HIGH>, /* range ck read miss */
 					<GIC_SPI 760 IRQ_TYPE_LEVEL_HIGH>, /* range ck write miss */
 					<GIC_SPI 761 IRQ_TYPE_LEVEL_HIGH>, /* encode */
