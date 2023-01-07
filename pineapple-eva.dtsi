@@ -45,8 +45,8 @@
 		ipclite_mappings = <0xFE500000 0x100000 0x82600000>;
 		/* DEVICE mapping */
 		hwmutex_mappings = <0xFFB00000 0x2000 0x1f4a000>;
-		/* CVP AON region mapping */
-		aon_mappings = <0xFFFE0000 0x1000 0x0ABE0000>;
+		/* DEVICE mapping */
+		aon_mappings = <0xFF80F000 0x1000 0x0ABE0000>;
 
 		/* CVP Firmware ELF image name */
 		cvp,firmware-name = "evass";
