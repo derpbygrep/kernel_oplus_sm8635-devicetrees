@@ -172,6 +172,7 @@
 	wsa_macro: wsa-macro@6B00000 {
 		compatible = "qcom,lpass-cdc-wsa-macro";
 		reg = <0x6B00000 0x0>;
+		wsa_data_fs_ctl_reg = <0x6B6F000>;
 		qcom,wsa-swr-gpios = <&wsa_swr_gpios>;
 		qcom,wsa-bat-cfgs= <1>, <1>;
 		qcom,wsa-rloads= <2>, <2>;
@@ -248,6 +249,7 @@
 	wsa2_macro: wsa2-macro@6AA0000 {
 		compatible = "qcom,lpass-cdc-wsa2-macro";
 		reg = <0x6AA0000 0x0>;
+		wsa_data_fs_ctl_reg = <0x6B6F000>;
 		qcom,wsa2-swr-gpios = <&wsa2_swr_gpios>;
 		qcom,wsa-bat-cfgs= <1>, <1>;
 		qcom,wsa-rloads= <2>, <2>;
