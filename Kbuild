@@ -659,12 +659,16 @@ dtbo-y += st/pineapple-nfc.dtbo \
 =======
 dtbo-y += sa8195p-vm-cnss.dtbo
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 542eaab0 (wlan: dts: autogvm: Add support for poipu-au)
 =======
 ifeq ($(CONFIG_ARCH_PINEAPPLE), y)
 dtbo-y += pineapple-fingerprint.dtbo
 >>>>>>> 6cd3bca3 (fingerprint-devicetree: Move QBT DTSI configs to Vendor SI)
 =======
+=======
+dtbo-y += sa8295p-vm-cnss.dtbo
+>>>>>>> b64a1f34 (wlan: dts: autogvm: Add support for direwolf)
 dtbo-y += direwolf-vm-dual-cnss.dtbo
 >>>>>>> 3aefbc09 (cnss2: Add cnss2 device tree for gen4 kernel 5.15)
 endif
