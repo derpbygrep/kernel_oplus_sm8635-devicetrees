@@ -658,11 +658,15 @@ dtbo-y += st/pineapple-nfc.dtbo \
 >>>>>>> eaeccc46 (STM NFC: devicetree: Add I2C NFC DTS parameters for Lanai)
 =======
 dtbo-y += sa8195p-vm-cnss.dtbo
+<<<<<<< HEAD
 >>>>>>> 542eaab0 (wlan: dts: autogvm: Add support for poipu-au)
 =======
 ifeq ($(CONFIG_ARCH_PINEAPPLE), y)
 dtbo-y += pineapple-fingerprint.dtbo
 >>>>>>> 6cd3bca3 (fingerprint-devicetree: Move QBT DTSI configs to Vendor SI)
+=======
+dtbo-y += direwolf-vm-dual-cnss.dtbo
+>>>>>>> 3aefbc09 (cnss2: Add cnss2 device tree for gen4 kernel 5.15)
 endif
 
 ifeq ($(CONFIG_ARCH_SA525),y)
