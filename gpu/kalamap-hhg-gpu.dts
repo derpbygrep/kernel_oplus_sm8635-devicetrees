@@ -11,12 +11,12 @@
 #include <dt-bindings/interrupt-controller/arm-gic.h>
 
 #include "kalama-v2-gpu.dtsi"
-#include "kalamap-hhg-gpu-pwrlevels.dtsi"
+#include "kalama-hhg-gpu-pwrlevels.dtsi"
 
 / {
 	model = "Qualcomm Technologies, Inc. Kalama HHG";
 	compatible = "qcom,kalamap-hhg";
-	qcom,msm-id = <601 0x20000>;
+	qcom,msm-id = <600 0x20000>, <601 0x20000>;
 	qcom,board-id = <0 0>;
 };
 

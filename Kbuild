@@ -418,7 +418,6 @@ dtbo-y += gpu/kalama-gpu.dtbo \
 >>>>>>> 8d0288b1 (audio dts: audio dts: Add new SOCID  for Kalama.)
 =======
 		gpu/kalama-v2-gpu.dtbo \
-		gpu/kalama-hhg-gpu.dtbo \
 		gpu/kalamap-hhg-gpu.dtbo
 >>>>>>> dee1cf73 (ARM: dts: msm: Add the GPU pwrlevels for Kalamap-HHG)
 endif
