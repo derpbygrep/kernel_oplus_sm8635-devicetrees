@@ -9,8 +9,7 @@
 		interrupt-parent = <&intc>;
 		reg = <0x17980000 0x10000>;
 		#ula_range-cells = <2>;
-		ula_range = <0x2 0x00000000 0x2 0x00000000>;
-
+		ula_range = <0x2 0x00000000 0x0 0x80000000>;
 		regulator-name = "vdd";
 		vdd-supply = <&apss_ubwcp_pwr_ctrl>;
 
