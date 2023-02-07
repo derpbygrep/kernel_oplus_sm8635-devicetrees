@@ -44,6 +44,8 @@
 		/* UC region mapping */
 		ipclite_mappings = <0xFE500000 0x100000 0x82600000>;
 		/* DEVICE mapping */
+		aon_timer_mappings = <0xFFA00000 0x1000 0xc220000>;
+		/* DEVICE mapping */
 		hwmutex_mappings = <0xFFB00000 0x2000 0x1f4a000>;
 		/* DEVICE mapping */
 		aon_mappings = <0xFF80F000 0x1000 0x0ABE0000>;
