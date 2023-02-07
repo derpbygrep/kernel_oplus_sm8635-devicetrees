@@ -635,6 +635,7 @@ dtbo-y += nxp/pineapple-nfc.dtbo \
           nxp/pineapple-nfc-atp.dtbo \
           nxp/pineapple-nfc-cdp.dtbo \
           nxp/pineapple-nfc-mtp.dtbo \
+<<<<<<< HEAD
           nxp/pineapple-nfc-qrd.dtbo
 <<<<<<< HEAD
 >>>>>>> e4cdb0a2 (ARM: dts: msm: Add NFC device node for pineapple)
@@ -650,6 +651,10 @@ dtbo-y += sa8155p-vm-cnss.dtbo
 <<<<<<< HEAD
 >>>>>>> 60334255 (wlan: dts: autogvm: Add support for hana-au)
 =======
+=======
+          nxp/pineapple-nfc-qrd.dtbo \
+          nxp/pineapple-nfc-rcm.dtbo
+>>>>>>> 7eed23e3 (nfc-devicetree: Add NFC dtsi changes to support rcm varient)
 
 dtbo-y += st/pineapple-nfc.dtbo \
           st/pineapple-nfc-mtp.dtbo \
