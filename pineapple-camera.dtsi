@@ -1399,7 +1399,7 @@
 				<&apps_smmu 0x1880 0x00>;
 			cam-smmu-label = "icp";
 			qcom,iommu-faults = "stall-disable", "non-fatal";
-			qcom,iommu-dma-addr-pool = <0x0 0xf8c00000 0xf 0x07300000>;
+			qcom,iommu-dma-addr-pool = <0x0 0xf9500000 0xf 0x06a00000>;
 			dma-coherent;
 			icp_iova_mem_map: iova-mem-map {
 				iova-mem-region-shared {
@@ -1416,8 +1416,8 @@
 				iova-mem-region-fwuncached-region {
 					/* FW uncached region is 15 MB long */
 					iova-region-name = "fw_uncached";
-					/* Start address: 0xc0100000 */
-					iova-region-start = <0x0 0xc0100000>;
+					/* Start address: 0xc0200000 */
+					iova-region-start = <0x0 0xc0200000>;
 					/* Length: 0xf00000 */
 					iova-region-len = <0x0 0xf00000>;
 					iova-region-id = <0x6>;
@@ -1427,7 +1427,7 @@
 					/* Used for HFI queues/sec heap */
 					iova-mem-region-generic-region {
 						iova-region-name = "icp_hfi";
-						iova-region-start = <0x0 0xc0100000>;
+						iova-region-start = <0x0 0xc0300000>;
 						iova-region-len = <0x0 0x700000>;
 						iova-region-id = <0x0>;
 					};
@@ -1435,9 +1435,9 @@
 					/* Global Sync Memory for IPC */
 					iova-mem-region-global-sync-region {
 						iova-region-name = "global_sync";
-						iova-region-start = <0x0 0xc0800000>;
+						iova-region-start = <0x0 0xc0200000>;
 						iova-region-len = <0x0 0x100000>;
-						iova-region-id = <0x2>;
+						iova-region-id = <0x3>;
 						phy-addr = <0x82600000>;
 					};
 				};
@@ -1445,18 +1445,34 @@
 				iova-mem-device-region {
 					/* Device region is appropriate 1MB */
 					iova-region-name = "device";
-					iova-region-start = <0x0 0xc1000000>;
+					iova-region-start = <0x0 0xc0100000>;
 					iova-region-len = <0x0 0x100000>;
 					iova-region-id = <0x7>;
 					subregion_support;
 					status = "ok";
 
-					iova-mem-region-hwmutex {
-						iova-region-name = "hwmutex_reg";
-						iova-region-start = <0x0 0xc1000000>;
-						iova-region-len = <0x0 0x2000>;
+					iova-mem-region-synx-hwmutex {
+						iova-region-name = "synx_hwmutex";
+						iova-region-start = <0x0 0xc0100000>;
+						iova-region-len = <0x0 0x1000>;
 						iova-region-id = <0x1>;
 						phy-addr = <0x1f4a000>;
+					};
+
+					iova-mem-region-ipc-hwmutex {
+						iova-region-name = "ipc_hwmutex";
+						iova-region-start = <0x0 0xc0101000>;
+						iova-region-len = <0x0 0x1000>;
+						iova-region-id = <0x2>;
+						phy-addr = <0x1f4b000>;
+					};
+
+					iova-mem-region-global_cntr {
+						iova-region-name = "global_cntr";
+						iova-region-start = <0x0 0xc0102000>;
+						iova-region-len = <0x0 0x1000>;
+						iova-region-id = <0x4>;
+						phy-addr = <0xc220000>;
 					};
 				};
 
@@ -1465,8 +1481,8 @@
 					iova-region-name = "io";
 					/* Start address: 0xf9500000 */
 					iova-region-start = <0x0 0xf9500000>;
-					/* Length: 0xf07300000 */
-					iova-region-len = <0xf 0x06A00000>;
+					/* Length: 0xf06a00000 */
+					iova-region-len = <0xf 0x06a00000>;
 					iova-region-id = <0x3>;
 					status = "ok";
 				};
