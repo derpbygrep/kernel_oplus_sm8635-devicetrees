@@ -2637,6 +2637,8 @@ Optional properties:
              are directly connected to jack without going through usbss. Machine
              driver parses this flag and enables connection from AMIC2_USB to SBU2
              and HPH_REF to SBU1.
+- qcom,wcd-disable-legacy-surge: Flag to indicate a platform configuration where instead of legacy
+            headphone surge protection, an alternate surge protection routine is executed.
 
 Example:
 	kalama_snd: sound {
