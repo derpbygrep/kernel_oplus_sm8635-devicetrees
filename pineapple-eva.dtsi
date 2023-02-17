@@ -73,12 +73,13 @@
 		};
 
 		/* MMUs */
-		/* dummy cb is used to get secure camera buffer IPA
-		cvp_dummy_cb {
+		/* Camera cb is used to get secure camera buffer IPA */
+		cvp_camera_cb {
 			compatible = "qcom,msm-cvp,context-bank";
-			label = "cvp_dummy";
+			label = "cvp_camera";
 			buffer-types = <0xfff>;
-		};*/
+			qti,smmu-proxy-cb-id = <QTI_SMMU_PROXY_EVA_CB>;
+		};
 
 		cvp_non_secure_cb {
 			compatible = "qcom,msm-cvp,context-bank";

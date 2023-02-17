@@ -6,6 +6,7 @@
 #include <dt-bindings/interconnect/qcom,pineapple.h>
 #include <dt-bindings/clock/qcom,videocc-pineapple.h>
 #include <dt-bindings/clock/qcom,gcc-pineapple.h>
+#include <dt-bindings/arm/msm/qti-smmu-proxy-dt-ids.h>
 #include "pineapple-eva.dtsi"
 
 / {
