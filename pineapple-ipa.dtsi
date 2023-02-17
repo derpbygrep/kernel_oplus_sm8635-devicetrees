@@ -29,6 +29,9 @@
 
         qcom,bus-vector-names = "MIN", "SVS2", "SVS", "NOMINAL",
                 "TURBO";
+
+        /* Low Latency pipe alloc factor */
+        qcom,ipa-gen-rx-ll-pool-sz-factor = <1>;
 };
 
 &ipa_smmu_ap {
