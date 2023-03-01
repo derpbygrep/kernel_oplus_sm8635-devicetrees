@@ -1,6 +1,9 @@
+#include <dt-bindings/ipclite-signals.h>
+
 &soc {
 	#address-cells = <1>;
 	#size-cells = <1>;
+	interrupt-parent = <&intc>;
 
 	ipcc_compute_l0: qcom,ipcc_compute_l0@443000 {
 		compatible = "qcom,ipcc";
