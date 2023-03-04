@@ -151,8 +151,8 @@
 				<4 LO 0x1>, <5 DSD_L 0x1>,
 				<5 DSD_R 0x2>, <6 PCM_OUT1 0x01>,
 				<7 GPPO 0x03>, <8 HAPT 0x03>,
-				<9 HIFI 0x03>, <10 HPTH 0x03>,
-				<11 CMPT 0x03>, <12 IPCM 0x03>;
+				<9 HIFI_PCM_L 0x01>, <9 HIFI_PCM_R 0x2>,
+				<10 HPTH 0x03>, <11 CMPT 0x03>, <12 IPCM 0x03>;
 			qcom,swr-num-dev = <2>;
 			qcom,swr-clock-stop-mode0 = <1>;
 			swr_haptics: swr_haptics@f0170220 {
@@ -329,8 +329,8 @@
 			<0 HPH_R 0x2 0 HPH_R>, <1 CLSH 0x1 0 CLSH>,
 			<2 COMP_L 0x1 0 COMP_L>, <2 COMP_R 0x2 0 COMP_R>,
 			<3 LO 0x1 0 LO>, <4 DSD_L 0x1 0 DSD_L>,
-			<4 DSD_R 0x2 0 DSD_R>, <5 HIFI_PCM_L 0x1 0 HIFI>,
-			<5 HIFI_PCM_R 0x2 0 HIFI>;
+			<4 DSD_R 0x2 0 DSD_R>, <5 HIFI_PCM_L 0x1 0 HIFI_PCM_L>,
+			<5 HIFI_PCM_R 0x2 0 HIFI_PCM_R>;
 
 		qcom,tx_swr_ch_map = <0 ADC1 0x1 0 SWRM_TX1_CH1>,
 			<0 ADC2 0x2 0 SWRM_TX1_CH2>,
