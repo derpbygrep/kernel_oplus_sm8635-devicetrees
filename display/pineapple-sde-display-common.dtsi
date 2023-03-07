@@ -769,8 +769,8 @@
 		};
 
 		timing@18 { /* WQHD 180FPS cmd mode*/
-			qcom,mdss-dsi-panel-phy-timings = [00 44 11 12 1c 18 11
-				12 0f 02 04 00 34 15];
+			qcom,mdss-dsi-panel-phy-timings = [00 3d 0f 0f 19 15 0f
+				10 0e 02 04 00 2f 13];
 			qcom,display-topology = <2 2 1>;
 			qcom,default-topology-index = <0>;
 			qcom,qsync-mode-min-refresh-rate = <30>;

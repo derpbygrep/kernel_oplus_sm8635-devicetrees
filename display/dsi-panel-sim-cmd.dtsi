@@ -1214,7 +1214,7 @@
 			timing@18 {
 				cell-index = <18>;
 				qcom,mdss-dsi-panel-width = <1440>;
-				qcom,mdss-dsi-panel-height = <3660>;
+				qcom,mdss-dsi-panel-height = <3200>;
 				qcom,mdss-dsi-h-front-porch = <20>;
 				qcom,mdss-dsi-h-back-porch = <12>;
 				qcom,mdss-dsi-h-pulse-width = <4>;
