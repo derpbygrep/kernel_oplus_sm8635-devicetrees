@@ -688,6 +688,10 @@ ifeq ($(CONFIG_ARCH_KONA),y)
 dtbo-y += kona-iot-vc-cnss.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_QTI_VM), y)
+dtbo-y += pineapple-dsp-trustedvm.dtbo
+endif
+
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
