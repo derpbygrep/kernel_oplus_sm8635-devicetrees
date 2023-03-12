@@ -2641,6 +2641,53 @@ Optional properties:
             headphone surge protection, an alternate surge protection routine is executed.
 - qcom,audio-core-list: this property is used to set audio cpu cores affinity list,
             <0> indicates cpu0, <1> indicates cpu1, <2> indicates cpu2 and so on.
+- qcom,xtalk-config: Indicates the type of crosstalk to support. 0 for no crosstalk, 1 for digital
+		     crosstalk, and 2 for analog crosstalk.
+- qcom,xtalk-r-gnd-int-fet-mohms: Crosstalk impact of the resistive components between
+				  qcom,xtalk-r-gnd-par-route1-mohms and ground (digital), or
+				  qcom,xtalk-r-gnd-ext-fet-mohms and ground (analog), in milliohms.
+				  Internal to the WCD9395 device. Can also be interpreted as the
+				  SBU ground path resistance.
+- qcom,xtalk-r-gnd-par-route1-mohms: Crosstalk impact of the parasitic resistance between the
+				     feedback tap point and qcom,xtalk-r-gnd-int-fet-mohms (digital)
+				     , or 1/2 of of the parasitic resistance between the feedback
+				     tap point and qcom,xtalk-r-gnd-ext-fet-mohms (analog) in
+				     milliohms.
+- qcom,xtalk-r-gnd-par-route2-mohms: Crosstalk impact of the parastic resistance between
+				     qcom,xtalk-r-gnd-ext-fet-mohms and the feedback tap point
+				     (digital), or 1/2 of the parasitic resistance between the
+				     feedback tap point and qcom,xtalk-r-gnd-ext-fet-mohms (analog)
+				     in milliohms.
+- qcom,xtalk-r-gnd-ext-fet-mohms: Crosstalk impact of the transistor between
+				  qcom,xtalk-r-conn-par-load-neg-mohms and
+				  qcom,xtalk-r-gnd-par-route2-mohms (digital), or
+				  qcom,xtalk-r-gnd-par-route{1,2}-mohms and
+				  qcom,xtalk-r-gnd-int-fet-mohms (analog), in milliohms. Attainable
+				  from the device datasheet via the R_ds_on paramater.
+- qcom,xtalk-r-conn-par-load-neg-mohms: Crosstalk impact of the parasitic resistance from the audio
+					connector load to qcom,xtalk-r-gnd-ext-fet-mohms (digital),
+					or the audio connector load to the feedback tap point
+					(analog) in milliohms.
+- qcom,xtalk-r-aud-int-fet-l-mohms: Crosstalk impact of the resistive components between the PA
+				    output and qcom,xtalk-r-aud-ext-fet-l-mohms, in milliohms.
+				    Internal to the WCD9395 device.
+- qcom,xtalk-r-aud-int-fet-r-mohms: Crosstalk impact of the resistive components between the PA
+				    output and qcom,xtalk-r-aud-ext-fet-r-mohms, in milliohms.
+				    Internal to the WCD9395 device.
+- qcom,xtalk-r-aud-ext-fet-l-mohms: Crosstalk impact of the transistor between
+				    qcom,xtalk-r-aud-int-fet-l-mohms and
+				    qcom,xtalk-r-conn-par-load-pos-l-mohms, in milliohms. Attainable
+				    from the device datasheet via the R_ds_on paramater.
+- qcom,xtalk-r-aud-ext-fet-r-mohms: Crosstalk impact of the transistor between
+				    qcom,xtalk-r-aud-int-fet-r-mohms and
+				    qcom,xtalk-r-conn-par-load-pos-r-mohms, in milliohms. Attainable
+				    from the device datasheet via the R_ds_on paramater.
+- qcom,xtalk-r-conn-par-load-pos-l-mohms: Crosstalk impact of the parasitic resistances in the PA
+					  output left load to the audio connector left load
+					  aggregated into one parameter, in milliohms.
+- qcom,xtalk-r-conn-par-load-pos-r-mohms: Crosstalk impact of the parasitic resistances in the PA
+					  output right load to the audio connector right load
+					  aggregated into one parameter, in milliohms.
 
 Example:
 	kalama_snd: sound {
