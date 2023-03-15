@@ -2257,7 +2257,8 @@
 					constituent-paths =
 					<CAM_CPAS_PATH_DATA_IPE_WR_VID
 					CAM_CPAS_PATH_DATA_IPE_WR_DISP
-					CAM_CPAS_PATH_DATA_IPE_WR_REF>;
+					CAM_CPAS_PATH_DATA_IPE_WR_REF
+					CAM_CPAS_PATH_DATA_IPE_WR_APP>;
 					parent-node = <&level2_nrt_wr>;
 				};
 
