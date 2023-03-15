@@ -2639,12 +2639,15 @@ Optional properties:
              and HPH_REF to SBU1.
 - qcom,wcd-disable-legacy-surge: Flag to indicate a platform configuration where instead of legacy
             headphone surge protection, an alternate surge protection routine is executed.
+- qcom,audio-core-list: this property is used to set audio cpu cores affinity list,
+            <0> indicates cpu0, <1> indicates cpu1, <2> indicates cpu2 and so on.
 
 Example:
 	kalama_snd: sound {
 		compatible = "qcom,kalama-asoc-snd";
 		qcom,mi2s-audio-intf = <1>;
 		qcom,auxpcm-audio-intf = <1>;
+		qcom,audio-core-list = <0>, <1>;
 		qcom,tdm-clk-attribute = <0x1>, <0x1>, <0x1>, <0x1>, <0x1>, <0x1>;
 		qcom,mi2s-clk-attribute = <0x1>, <0x1>, <0x1>, <0x1>, <0x1>, <0x1>;
 		qcom,wcn-bt = <0>;
