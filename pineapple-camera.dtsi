@@ -1760,7 +1760,7 @@
 				camnoc-max-needed;
 				level1_rt1_wr: level1-rt1-wr {
 					cell-index = <8>;
-					node-name = "level1-ife-ubwc-linear-wr";
+					node-name = " level1-rt1-ife-ubwc-wr";
 					parent-node = <&level2_rt_wr>;
 					traffic-merge-type =
 					<CAM_CPAS_TRAFFIC_MERGE_SUM>;
@@ -1770,21 +1770,21 @@
 					priority-lut-high-offset = <0x9234>;
 				};
 
-				level1_rt4_wr: level1-rt4-wr1 {
+				level1_rt2_wr: level1-rt2-wr {
 					cell-index = <9>;
-					node-name = "level1-ife-rdi-wr";
+					node-name = "level1-rt2-ife-stats";
 					parent-node = <&level2_rt_wr>;
 					traffic-merge-type =
 					<CAM_CPAS_TRAFFIC_MERGE_SUM>;
 					rt-wr-niu;
-					niu-size = <134>;
-					priority-lut-low-offset = <0x9830>;
-					priority-lut-high-offset = <0x9834>;
+					niu-size = <36>;
+					priority-lut-low-offset = <0x9430>;
+					priority-lut-high-offset = <0x9434>;
 				};
 
 				level1_rt3_wr: level1-rt3-wr {
 					cell-index = <10>;
-					node-name = "level1-ife-pdaf-lite";
+					node-name = "level1-rt3-ife-pdaf-lite";
 					parent-node = <&level2_rt_wr>;
 					traffic-merge-type =
 					<CAM_CPAS_TRAFFIC_MERGE_SUM>;
@@ -1794,16 +1794,16 @@
 					priority-lut-high-offset = <0x9634>;
 				};
 
-				level1_rt2_wr: level1-rt2-wr {
+				level1_rt4_wr: level1-rt4-wr1 {
 					cell-index = <11>;
-					node-name = "level1-ife-stats";
+					node-name = "level1-rt4-ife-rdi-wr";
 					parent-node = <&level2_rt_wr>;
 					traffic-merge-type =
 					<CAM_CPAS_TRAFFIC_MERGE_SUM>;
 					rt-wr-niu;
-					niu-size = <36>;
-					priority-lut-low-offset = <0x9430>;
-					priority-lut-high-offset = <0x9434>;
+					niu-size = <134>;
+					priority-lut-low-offset = <0x9830>;
+					priority-lut-high-offset = <0x9834>;
 				};
 
 				level1_rt0_rd: level1-rt0-rd {
