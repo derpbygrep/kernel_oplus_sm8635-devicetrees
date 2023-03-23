@@ -24,6 +24,7 @@
 		cell-index = <0>;
 		compatible = "qcom,dp-display";
 
+		usb-phy = <&usb_qmp_dp_phy>;
 		qcom,ext-disp = <&ext_disp>;
 		usb-controller = <&usb0>;
 		qcom,altmode-dev = <&altmode 0>;
