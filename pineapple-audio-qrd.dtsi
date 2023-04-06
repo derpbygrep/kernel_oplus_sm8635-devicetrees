@@ -36,19 +36,20 @@
 	qcom,cdc-vdd-px-voltage = <1800000 1800000>;
 	qcom,cdc-vdd-px-current = <650000>;
 	qcom,cdc-vdd-px-lpm-supported = <1>;
-	/* 0 for no crosstalk, 1 for digital crosstalk, and 2 for analog crosstalk */
-	qcom,xtalk-config = <2>;
-	qcom,xtalk-r-gnd-int-fet-mohms = <200>;
-	qcom,xtalk-r-gnd-par-route1-mohms = <50>;
-	qcom,xtalk-r-gnd-par-route2-mohms = <50>;
-	qcom,xtalk-r-gnd-ext-fet-mohms = <650>;
-	qcom,xtalk-r-conn-par-load-neg-mohms = <125>;
-	qcom,xtalk-r-aud-int-fet-l-mohms = <200>;
-	qcom,xtalk-r-aud-int-fet-r-mohms = <200>;
-	qcom,xtalk-r-aud-ext-fet-l-mohms = <650>;
-	qcom,xtalk-r-aud-ext-fet-r-mohms = <650>;
-	qcom,xtalk-r-conn-par-load-pos-l-mohms = <7550>;
-	qcom,xtalk-r-conn-par-load-pos-r-mohms = <7550>;
+	/* 0 for digital crosstalk disabled,
+	 * 1 for digital crosstalk with local sensed a-xtalk enabled, and
+	 * 2 for digital crosstalk with remote sensed a-xtalk enabled.
+	 */
+	qcom,usbcss-hs-xtalk-config = <2>;
+	qcom,usbcss-hs-rdson = <600>;
+	qcom,usbcss-hs-r2 = <7550>;
+	qcom,usbcss-hs-r3 = <1>;
+	qcom,usbcss-hs-r4 = <330>;
+	qcom,usbcss-hs-r5 = <5>;
+	qcom,usbcss-hs-r6 = <1>;
+	qcom,usbcss-hs-r7 = <5>;
+	qcom,usbcss-hs-lin-k-aud = <13>;
+	qcom,usbcss-hs-lin-k-gnd = <13>;
 };
 
 &pineapple_snd {
