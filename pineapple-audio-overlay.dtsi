@@ -477,9 +477,52 @@
 		qcom,wsa-max-devs = <2>;
 		qcom,msm_audio_ssr_devs = <&audio_gpr>, <&lpi_tlmm>,
 				  <&lpass_cdc>;
+
+		/*
+		 * ====================
+		 * UPD backend - WSA
+		 * ====================
+		 *
+		 * Mute/Unmute the interpolator
+		 * ------------------------------
+		 * Register: LPASS_WSA_CDC_RX0_RX_PATH_MIX_CTL - 0x6B00418
+		 *
+		 * Send control commands to the peripheral from the soundwire controller
+		 * -----------------------------------------------------------------------
+		 * Register: LPASS_WSA_SWR_MSTR_WSA_SWRM_CPUn_CMD_FIFO_WR_CMD - 0x6B14020
+		 *
+		 * Enable/Disable ear piece
+		 * --------------------------
+		 * Register: DIG_CTRL0_PA_FSM_EN - 0x3430
+		 *
+		 */
+		qcom,upd_backends_used = "wsa";
+		qcom,upd_lpass_reg_addr = <0x6B00418 0x6B14020>;
+		qcom,upd_ear_pa_reg_addr = <0x3430>;
+
+		/*
+		 * ====================
+		 * UPD backend - WCD
+		 * ====================
+		 *
+		 * Mute/Unmute the interpolator
+		 * ------------------------------
+		 * Register: LPASS_WCD_CDC_RX0_RX_PATH_MIX_CTL - 0x6AC0418
+		 *
+		 * Send control commands to the wcd from the soundwire controller
+		 * ----------------------------------------------------------------
+		 * Register: LPASS_WCD_SWR_MSTR_WSA_SWRM_CPUn_CMD_FIFO_WR_CMD - 0x6D34020
+		 *
+		 * Enable/Disable ear piece
+		 * --------------------------
+		 * Register: DIG_CTRL0_PA_FSM_EN - 0x300A
+		 *
+		 */
+		/*
 		qcom,upd_backends_used = "wcd";
-		qcom,upd_lpass_reg_addr = <0x00000418 0x33B0300>;
+		qcom,upd_lpass_reg_addr = <0x6AC0418 0x6D34020>;
 		qcom,upd_ear_pa_reg_addr = <0x300A>;
+		*/
 	};
 
 	cdc_pri_mi2s_gpios: pri_mi2s_pinctrl {
