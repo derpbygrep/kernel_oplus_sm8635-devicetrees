@@ -257,7 +257,14 @@ ifeq ($(CONFIG_ARCH_BLAIR),y)
 dtbo-y += blair-cnss.dtbo
 endif
 
+<<<<<<< HEAD
 >>>>>>> b84450e6 (ARM: dts: msm: Add wlan related dtsi file for blair)
+=======
+ifeq ($(CONFIG_ARCH_CROW),y)
+dtbo-y += crow-cnss.dtbo
+endif
+
+>>>>>>> d61f4951 (ARM: dts: msm: Add wlan related dtsi file for crow)
 ifeq ($(CONFIG_ARCH_SA8155),y)
 dtbo-y += sa8155p-cnss.dtbo
 endif
