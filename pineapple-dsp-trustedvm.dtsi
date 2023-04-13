@@ -17,6 +17,7 @@
 			dma-coherent;
 			qrtr-gen-pool = <&fastrpc_compute_cb1>;
 			frpc-gen-addr-pool = <0x70000000 0x9000>;
+			pd-type = <4>;	/* SECURE_STATICPD */
 		};
 	};
 
