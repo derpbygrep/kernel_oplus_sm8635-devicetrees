@@ -427,7 +427,8 @@ dtbo-y += gpu/kalama-gpu.dtbo \
 endif
 
 ifeq ($(CONFIG_ARCH_PINEAPPLE), y)
-dtbo-y += gpu/pineapple-gpu.dtbo
+dtbo-y += gpu/pineapple-gpu.dtbo \
+		gpu/pineapple-v2-gpu.dtbo
 endif
 
 ifeq ($(CONFIG_ARCH_PINEAPPLE), y)
