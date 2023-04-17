@@ -19,12 +19,15 @@
 		hwlocks = <&tcsr_mutex 11>;
 		#address-cells = <1>;
 		#size-cells = <1>;
+		major_version = <1>;
+		minor_version = <0>;
+		feature_mask_low = <0x0003>;
+		feature_mask_high = <0x0000>;
 		ranges;
 
 		ipclite_apss: apss {
 			qcom,remote-pid = <0>;
 			label = "apss";
-			global_atomic = <1>;
 
 			ipclite_signal_0 {
 				index = <0>;
@@ -90,7 +93,6 @@
 		ipclite_cdsp: cdsp {
 			qcom,remote-pid = <5>;
 			label = "cdsp";
-			global_atomic = <1>;
 
 			ipclite_signal_0 {
 				index = <0>;
@@ -156,7 +158,6 @@
 		ipclite_cvp: cvp {
 			qcom,remote-pid = <6>;
 			label = "cvp";
-			global_atomic = <1>;
 
 			ipclite_signal_0 {
 				index = <0>;
@@ -222,7 +223,6 @@
 		ipclite_cam: cam {
 			qcom,remote-pid = <7>;
 			label = "cam";
-			global_atomic = <1>;
 
 			ipclite_signal_0 {
 				index = <0>;
