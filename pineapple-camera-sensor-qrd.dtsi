@@ -407,6 +407,7 @@
 &qupv3_se9_i2c {
 	status = "ok";
 	qcom,clk-freq-out = <1000000>;
+	qcom,pm-ctrl-client;
 
 	actuator_triple_uw: qcom,actuator1 {
 		cell-index = <1>;
@@ -593,6 +594,7 @@
 	i3c-scl-hz = <12500000>;
 	dfs-index = <0>;
 	i2c-scl-hz = <1000000>;
+	qcom,pm-ctrl-client;
 	status = "ok";
 
 	actuator_i3c_triple_wide: qcom,actuator@c {
