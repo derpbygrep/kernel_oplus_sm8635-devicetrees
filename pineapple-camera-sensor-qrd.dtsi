@@ -406,6 +406,7 @@
 
 &qupv3_se9_i2c {
 	status = "ok";
+	qcom,high-perf;
 	qcom,clk-freq-out = <1000000>;
 	qcom,pm-ctrl-client;
 
