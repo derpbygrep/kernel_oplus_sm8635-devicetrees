@@ -672,7 +672,15 @@ ifeq ($(CONFIG_ARCH_BLAIR), y)
 dtbo-y += gpu/blair-gpu.dtbo
 endif
 
+<<<<<<< HEAD
 >>>>>>> 65cdc137 (ARM: dts: msm: Add initial support for blair GPU)
+=======
+ifeq ($(CONFIG_ARCH_TRINKET), y)
+dtbo-y += gpu/trinket-gpu.dtbo \
+		gpu/trinketp-gpu.dtbo
+endif
+
+>>>>>>> 06b67afd (ARM: dts: msm: Add GPU support for trinket IoT)
 always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
 clean-files    := *.dtb *.dtbo
