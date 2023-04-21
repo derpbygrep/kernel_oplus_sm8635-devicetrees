@@ -10,8 +10,8 @@
 #include "pineapple-eva.dtsi"
 
 / {
-	model = "Qualcomm Technologies, Inc. pineapple v1 SoC";
+	model = "Qualcomm Technologies, Inc. pineapple v1,v2 SoC";
 	compatible = "qcom,pineapple";
-	qcom,msm-id = <557 0x10000>;
+	qcom,msm-id = <557 0x10000>, <557 0x20000>;
 	qcom,board-id = <0 0>, <15 0>, <8 0>, <11 0>, <1 0>;
 };
