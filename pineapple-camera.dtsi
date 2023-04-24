@@ -1403,23 +1403,23 @@
 			dma-coherent;
 			icp_iova_mem_map: iova-mem-map {
 				iova-mem-region-shared {
-					/* Shared region is 900MB long */
+					/* Shared region is ~900MB long */
 					iova-region-name = "shared";
-					/* Start address: 0xc1100000 */
-					iova-region-start = <0x0 0xc1100000>;
-					/* Length: 0x38400000 */
-					iova-region-len = <0x0 0x38400000>;
+					/* Start address: 0xc0700000 */
+					iova-region-start = <0x0 0xc0700000>;
+					/* Length: 0x38e00000 */
+					iova-region-len = <0x0 0x38e00000>;
 					iova-region-id = <0x1>;
 					status = "ok";
 				};
 
 				iova-mem-region-fwuncached-region {
-					/* FW uncached region is 15 MB long */
+					/* FW uncached region is 5 MB long */
 					iova-region-name = "fw_uncached";
 					/* Start address: 0xc0200000 */
 					iova-region-start = <0x0 0xc0200000>;
-					/* Length: 0xf00000 */
-					iova-region-len = <0x0 0xf00000>;
+					/* Length: 0x500000 */
+					iova-region-len = <0x0 0x500000>;
 					iova-region-id = <0x6>;
 					subregion_support;
 					status = "ok";
@@ -1428,7 +1428,8 @@
 					iova-mem-region-generic-region {
 						iova-region-name = "icp_hfi";
 						iova-region-start = <0x0 0xc0300000>;
-						iova-region-len = <0x0 0x700000>;
+						/* Length: 0x200000 */
+						iova-region-len = <0x0 0x200000>;
 						iova-region-id = <0x0>;
 					};
 
@@ -1436,6 +1437,7 @@
 					iova-mem-region-global-sync-region {
 						iova-region-name = "global_sync";
 						iova-region-start = <0x0 0xc0200000>;
+						/* Length: 0x100000 */
 						iova-region-len = <0x0 0x100000>;
 						iova-region-id = <0x3>;
 						phy-addr = <0x82600000>;
