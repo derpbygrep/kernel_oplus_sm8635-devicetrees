@@ -20,7 +20,6 @@
 		compatible = "qcom,gpu-pwrlevels";
 
 		qcom,initial-pwrlevel = <11>;
-		qcom,initial-min-pwrlevel = <11>;
 
 		/* Turbo */
 		qcom,gpu-pwrlevel@0 {
@@ -172,17 +171,6 @@
 			qcom,bus-freq = <1>;
 			qcom,bus-min = <1>;
 			qcom,bus-max = <3>;
-		};
-
-		/* Low_SVS_D2 */
-		qcom,gpu-pwrlevel@12 {
-			reg = <12>;
-			qcom,gpu-freq = <124800000>;
-			qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D2>;
-
-			qcom,bus-freq = <1>;
-			qcom,bus-min = <1>;
-			qcom,bus-max = <1>;
 		};
 	};
 };
