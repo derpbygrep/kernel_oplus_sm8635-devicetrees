@@ -23,7 +23,6 @@
 
 	qrtr-genpool {
 		compatible = "qcom,qrtr-genpool";
-		gen-pool = <&fastrpc_compute_cb1>;
 		interrupt-parent = <&ipcc_mproc_ns1>;
 		interrupts = <IPCC_CLIENT_CDSP 0 IRQ_TYPE_EDGE_RISING>,
 				<IPCC_CLIENT_CDSP 1 IRQ_TYPE_EDGE_RISING>;
