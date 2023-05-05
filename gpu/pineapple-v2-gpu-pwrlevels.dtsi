@@ -19,6 +19,7 @@
 		#size-cells = <0>;
 
 		compatible = "qcom,gpu-pwrlevels-bins";
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 		qcom,gpu-pwrlevels-0 {
@@ -57,6 +58,23 @@
 			/* Turbo_L1 */
 			qcom,gpu-pwrlevel@1 {
 				reg = <1>;
+=======
+
+		qcom,gpu-pwrlevels-0 {
+			#address-cells = <1>;
+			#size-cells = <0>;
+
+			qcom,sku-codes = <SKU_CODE(PCODE_UNKNOWN, FC_AC)
+					SKU_CODE(PCODE_0, FC_Y0)
+					SKU_CODE(PCODE_1, FC_Y0)
+					SKU_CODE(PCODE_0, FC_Y1)>;
+
+			qcom,initial-pwrlevel = <13>;
+
+			/* Turbo_L1 */
+			qcom,gpu-pwrlevel@0 {
+				reg = <0>;
+>>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
 				qcom,gpu-freq = <1000000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO_L1>;
 
@@ -68,8 +86,13 @@
 			};
 
 			/* Turbo_L1 */
+<<<<<<< HEAD
 			qcom,gpu-pwrlevel@2 {
 				reg = <2>;
+=======
+			qcom,gpu-pwrlevel@1 {
+				reg = <1>;
+>>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
 				qcom,gpu-freq = <950000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO_L1>;
 
@@ -79,8 +102,13 @@
 			};
 
 			/* Turbo */
+<<<<<<< HEAD
 			qcom,gpu-pwrlevel@3 {
 				reg = <3>;
+=======
+			qcom,gpu-pwrlevel@2 {
+				reg = <2>;
+>>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
 				qcom,gpu-freq = <903000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO>;
 
@@ -92,8 +120,13 @@
 			};
 
 			/* Nom_L1 */
+<<<<<<< HEAD
 			qcom,gpu-pwrlevel@4 {
 				reg = <4>;
+=======
+			qcom,gpu-pwrlevel@3 {
+				reg = <3>;
+>>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
 				qcom,gpu-freq = <834000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_NOM_L1>;
 
@@ -105,8 +138,13 @@
 			};
 
 			/* Nom */
+<<<<<<< HEAD
 			qcom,gpu-pwrlevel@5 {
 				reg = <5>;
+=======
+			qcom,gpu-pwrlevel@4 {
+				reg = <4>;
+>>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
 				qcom,gpu-freq = <770000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_NOM>;
 
@@ -118,8 +156,13 @@
 			};
 
 			/* SVS_L2 */
+<<<<<<< HEAD
 			qcom,gpu-pwrlevel@6 {
 				reg = <6>;
+=======
+			qcom,gpu-pwrlevel@5 {
+				reg = <5>;
+>>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
 				qcom,gpu-freq = <720000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L2>;
 
@@ -131,8 +174,13 @@
 			};
 
 			/* SVS_L1 */
+<<<<<<< HEAD
 			qcom,gpu-pwrlevel@7 {
 				reg = <7>;
+=======
+			qcom,gpu-pwrlevel@6 {
+				reg = <6>;
+>>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
 				qcom,gpu-freq = <680000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L1>;
 
@@ -144,8 +192,13 @@
 			};
 
 			/* SVS_L0 */
+<<<<<<< HEAD
 			qcom,gpu-pwrlevel@8 {
 				reg = <8>;
+=======
+			qcom,gpu-pwrlevel@7 {
+				reg = <7>;
+>>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
 				qcom,gpu-freq = <629000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L0>;
 
@@ -157,8 +210,13 @@
 			};
 
 			/* SVS */
+<<<<<<< HEAD
 			qcom,gpu-pwrlevel@9 {
 				reg = <9>;
+=======
+			qcom,gpu-pwrlevel@8 {
+				reg = <8>;
+>>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
 				qcom,gpu-freq = <578000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS>;
 
@@ -170,8 +228,13 @@
 			};
 
 			/* Low_SVS_L1 */
+<<<<<<< HEAD
 			qcom,gpu-pwrlevel@10 {
 				reg = <10>;
+=======
+			qcom,gpu-pwrlevel@9 {
+				reg = <9>;
+>>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
 				qcom,gpu-freq = <500000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_L1>;
 
@@ -183,8 +246,13 @@
 			};
 
 			/* Low_SVS */
+<<<<<<< HEAD
 			qcom,gpu-pwrlevel@11 {
 				reg = <11>;
+=======
+			qcom,gpu-pwrlevel@10 {
+				reg = <10>;
+>>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
 				qcom,gpu-freq = <422000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS>;
 
@@ -196,8 +264,13 @@
 			};
 
 			/* Low_SVS_D0 */
+<<<<<<< HEAD
 			qcom,gpu-pwrlevel@12 {
 				reg = <12>;
+=======
+			qcom,gpu-pwrlevel@11 {
+				reg = <11>;
+>>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
 				qcom,gpu-freq = <366000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D0>;
 
@@ -209,8 +282,13 @@
 			};
 
 			/* Low_SVS_D1 */
+<<<<<<< HEAD
 			qcom,gpu-pwrlevel@13 {
 				reg = <13>;
+=======
+			qcom,gpu-pwrlevel@12 {
+				reg = <12>;
+>>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
 				qcom,gpu-freq = <310000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
@@ -220,14 +298,23 @@
 			};
 
 			/* Low_SVS_D2 */
+<<<<<<< HEAD
 			qcom,gpu-pwrlevel@14 {
 				reg = <14>;
+=======
+			qcom,gpu-pwrlevel@13 {
+				reg = <13>;
+>>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
 				qcom,gpu-freq = <231000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D2>;
 
 				qcom,bus-freq = <1>;
 				qcom,bus-min = <1>;
+<<<<<<< HEAD
 				qcom,bus-max = <1>;
+=======
+				qcom,bus-max = <3>;
+>>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
 			};
 		};
 
@@ -235,6 +322,7 @@
 			#address-cells = <1>;
 			#size-cells = <0>;
 
+<<<<<<< HEAD
 			qcom,sku-codes = <SKU_CODE(PCODE_UNKNOWN, FC_AC)
 					SKU_CODE(PCODE_0, FC_Y0)
 					SKU_CODE(PCODE_1, FC_Y0)
@@ -458,11 +546,62 @@
 				reg = <2>;
 				qcom,gpu-freq = <770000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_NOM>;
+=======
+			qcom,sku-codes = <SKU_CODE(PCODE_UNKNOWN, FC_UNKNOWN)>;
+
+			qcom,initial-pwrlevel = <11>;
+
+			/* Turbo */
+			qcom,gpu-pwrlevel@0 {
+				reg = <0>;
+				qcom,gpu-freq = <903000000>;
+				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO>;
+
+				qcom,bus-freq = <9>;
+				qcom,bus-min = <9>;
+				qcom,bus-max = <9>;
+
+				qcom,acd-level = <ACD_LEVEL_TURBO>;
+			};
+
+			/* Nom_L1 */
+			qcom,gpu-pwrlevel@1 {
+				reg = <1>;
+				qcom,gpu-freq = <834000000>;
+				qcom,level = <RPMH_REGULATOR_LEVEL_NOM_L1>;
+
+				qcom,bus-freq = <8>;
+				qcom,bus-min = <7>;
+				qcom,bus-max = <9>;
+
+				qcom,acd-level = <ACD_LEVEL_NOM_L1>;
+			};
+
+			/* Nom */
+			qcom,gpu-pwrlevel@2 {
+				reg = <2>;
+				qcom,gpu-freq = <770000000>;
+				qcom,level = <RPMH_REGULATOR_LEVEL_NOM>;
 
 				qcom,bus-freq = <7>;
 				qcom,bus-min = <6>;
 				qcom,bus-max = <9>;
 
+				qcom,acd-level = <ACD_LEVEL_NOM>;
+			};
+
+			/* SVS_L2 */
+			qcom,gpu-pwrlevel@3 {
+				reg = <3>;
+				qcom,gpu-freq = <720000000>;
+				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L2>;
+>>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
+
+				qcom,bus-freq = <7>;
+				qcom,bus-min = <6>;
+				qcom,bus-max = <9>;
+
+<<<<<<< HEAD
 				qcom,acd-level = <ACD_LEVEL_NOM>;
 			};
 
@@ -523,11 +662,74 @@
 				reg = <7>;
 				qcom,gpu-freq = <500000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_L1>;
+=======
+				qcom,acd-level = <ACD_LEVEL_SVS_L2>;
+			};
+
+			/* SVS_L1 */
+			qcom,gpu-pwrlevel@4 {
+				reg = <4>;
+				qcom,gpu-freq = <680000000>;
+				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L1>;
+
+				qcom,bus-freq = <7>;
+				qcom,bus-min = <5>;
+				qcom,bus-max = <9>;
+
+				qcom,acd-level = <ACD_LEVEL_SVS_L1>;
+			};
+
+			/* SVS_L0 */
+			qcom,gpu-pwrlevel@5 {
+				reg = <5>;
+				qcom,gpu-freq = <629000000>;
+				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L0>;
+
+				qcom,bus-freq = <6>;
+				qcom,bus-min = <3>;
+				qcom,bus-max = <7>;
+
+				qcom,acd-level = <ACD_LEVEL_SVS_L0>;
+			};
+
+			/* SVS */
+			qcom,gpu-pwrlevel@6 {
+				reg = <6>;
+				qcom,gpu-freq = <578000000>;
+				qcom,level = <RPMH_REGULATOR_LEVEL_SVS>;
+
+				qcom,bus-freq = <5>;
+				qcom,bus-min = <2>;
+				qcom,bus-max = <7>;
+
+				qcom,acd-level = <ACD_LEVEL_SVS>;
+			};
+
+			/* Low_SVS_L1 */
+			qcom,gpu-pwrlevel@7 {
+				reg = <7>;
+				qcom,gpu-freq = <500000000>;
+				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_L1>;
 
 				qcom,bus-freq = <5>;
 				qcom,bus-min = <1>;
 				qcom,bus-max = <5>;
 
+				qcom,acd-level = <ACD_LEVEL_LOW_SVS_L1>;
+			};
+
+			/* Low_SVS */
+			qcom,gpu-pwrlevel@8 {
+				reg = <8>;
+				qcom,gpu-freq = <422000000>;
+				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS>;
+>>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
+
+				qcom,bus-freq = <5>;
+				qcom,bus-min = <1>;
+				qcom,bus-max = <5>;
+
+<<<<<<< HEAD
 				qcom,acd-level = <ACD_LEVEL_LOW_SVS_L1>;
 			};
 
@@ -544,6 +746,11 @@
 				qcom,acd-level = <ACD_LEVEL_LOW_SVS>;
 			};
 
+=======
+				qcom,acd-level = <ACD_LEVEL_LOW_SVS>;
+			};
+
+>>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
 			/* Low_SVS_D0 */
 			qcom,gpu-pwrlevel@9 {
 				reg = <9>;
@@ -576,7 +783,11 @@
 
 				qcom,bus-freq = <1>;
 				qcom,bus-min = <1>;
+<<<<<<< HEAD
 				qcom,bus-max = <1>;
+=======
+				qcom,bus-max = <3>;
+>>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
 			};
 		};
 	};
