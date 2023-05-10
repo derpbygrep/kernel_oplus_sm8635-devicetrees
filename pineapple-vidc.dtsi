@@ -55,6 +55,7 @@
 			iommus = <&apps_smmu 0x1947 0x0000>;
 			qcom,iommu-dma-addr-pool = <0x00100000 0xdff00000>;
 			qcom,iommu-faults = "non-fatal";
+			qcom,iova-best-fit;
 			dma-coherent;
 		};
 
@@ -63,6 +64,7 @@
 			iommus = <&apps_smmu 0x1940 0x0000>;
 			qcom,iommu-dma-addr-pool = <0x25800000 0xba800000>;
 			qcom,iommu-faults = "non-fatal";
+			qcom,iova-best-fit;
 			dma-coherent;
 		};
 
@@ -72,6 +74,7 @@
 			qcom,iommu-dma-addr-pool = <0x01000000 0x24800000>;
 			qcom,iommu-faults = "non-fatal";
 			qcom,iommu-vmid = <0xB>; /* VMID_CP_NON_PIXEL */
+			qcom,iova-best-fit;
 			qcom,secure-context-bank;
 		};
 
@@ -81,6 +84,7 @@
 			qcom,iommu-dma-addr-pool = <0x00500000 0xdfb00000>;
 			qcom,iommu-faults = "non-fatal";
 			qcom,iommu-vmid = <0x9>; /* VMID_CP_BITSTREAM */
+			qcom,iova-best-fit;
 			qcom,secure-context-bank;
 		};
 
@@ -90,6 +94,7 @@
 			qcom,iommu-dma-addr-pool = <0x00500000 0xdfb00000>;
 			qcom,iommu-faults = "non-fatal";
 			qcom,iommu-vmid = <0xA>; /* VMID_CP_PIXEL */
+			qcom,iova-best-fit;
 			qcom,secure-context-bank;
 		};
 	};
