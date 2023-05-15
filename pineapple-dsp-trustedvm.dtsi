@@ -12,7 +12,7 @@
 			compatible = "qcom,msm-fastrpc-compute-cb";
 			label = "cdsprpc-smd";
 			iommus = <&apps_smmu 0xC0B 0x0>;
-			qcom,iommu-dma-addr-pool = <0x80000000 0x78000000>;
+			qcom,iommu-dma-addr-pool = <0x10000000 0xF0000000>;
 			qcom,iommu-faults = "stall-disable", "HUPCF";
 			dma-coherent;
 			qrtr-gen-pool = <&fastrpc_compute_cb1>;
