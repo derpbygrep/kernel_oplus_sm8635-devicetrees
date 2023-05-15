@@ -26,6 +26,7 @@
 			qcom,sku-codes = <SKU_CODE(PCODE_UNKNOWN, FC_AC)>;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			qcom,speed-bin = <2>;
 =======
 =======
@@ -205,6 +206,8 @@
 
 			qcom,sku-codes = <SKU_CODE(PCODE_UNKNOWN, FC_AC)>;
 >>>>>>> 368c0024 (ARM: dts: msm: Add the speed bin cell on pineapple GPU)
+=======
+>>>>>>> 502dd21d (Revert "ARM: dts: msm: Add the speed bin cell on pineapple GPU")
 
 			qcom,initial-pwrlevel = <11>;
 			qcom,initial-min-pwrlevel = <11>;
@@ -723,7 +726,7 @@
 			};
 		};
 
-		qcom,gpu-pwrlevels-2 {
+		qcom,gpu-pwrlevels-1 {
 			#address-cells = <1>;
 			#size-cells = <0>;
 
@@ -899,7 +902,7 @@
 			};
 		};
 
-		qcom,gpu-pwrlevels-3 {
+		qcom,gpu-pwrlevels-2 {
 			#address-cells = <1>;
 			#size-cells = <0>;
 
