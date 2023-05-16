@@ -650,7 +650,14 @@ dtbo-y += gpu/kona-gpu.dtbo \
 		gpu/kona-v2.1-gpu.dtbo
 endif
 
+<<<<<<< HEAD
 >>>>>>> ddff4562 (ARM: dts: msm: Add GPU support for kona IoT)
+=======
+ifeq ($(CONFIG_ARCH_BLAIR), y)
+dtbo-y += gpu/blair-gpu.dtbo
+endif
+
+>>>>>>> 65cdc137 (ARM: dts: msm: Add initial support for blair GPU)
 always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
 clean-files    := *.dtb *.dtbo
