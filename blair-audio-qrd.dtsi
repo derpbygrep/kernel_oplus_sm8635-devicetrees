@@ -1,0 +1,16 @@
+#include "blair-audio-overlay.dtsi"
+
+&wsa881x_analog_reset_gpio {
+	compatible = "qcom,msm-cdc-pinctrl";
+	pinctrl-names = "aud_active", "aud_sleep";
+	pinctrl-0 = <&spkr_1_sd_n_active>;
+	pinctrl-1 = <&spkr_1_sd_n_sleep>;
+};
+
+&wsa881x_i2c_e {
+	cdc-vdd-1p8-supply = <&L11A>;
+};
+
+&holi_snd {
+	qcom,model = "blair-qrd-snd-card";
+};

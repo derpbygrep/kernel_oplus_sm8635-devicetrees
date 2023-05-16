@@ -486,6 +486,13 @@ dtbo-y += khaje-audio.dtbo \
 		khaje-nowcd.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_BLAIR), y)
+dtbo-y += blair-audio.dtbo \
+		blair-audio-mtp.dtbo \
+		blair-audio-mtp-usbc.dtbo \
+		blair-audio-qrd.dtbo
+endif
+
  always-y    := $(dtb-y) $(dtbo-y)
  subdir-y    := $(dts-dirs)
  clean-files    := *.dtb *.dtbo
