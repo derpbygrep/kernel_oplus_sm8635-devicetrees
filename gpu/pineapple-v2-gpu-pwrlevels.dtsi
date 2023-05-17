@@ -12,14 +12,14 @@
 #define ACD_LEVEL_LOW_SVS_D0  0xc02f5ffd
 
 &msm_gpu {
+	qcom,initial-pwrlevel = <11>;
+
 	/* Power levels */
 	qcom,gpu-pwrlevels {
 		#address-cells = <1>;
 		#size-cells = <0>;
 
 		compatible = "qcom,gpu-pwrlevels";
-
-		qcom,initial-pwrlevel = <11>;
 
 		/* Turbo */
 		qcom,gpu-pwrlevel@0 {
