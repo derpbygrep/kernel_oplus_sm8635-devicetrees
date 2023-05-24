@@ -250,7 +250,14 @@ ifeq ($(CONFIG_ARCH_KHAJE),y)
 dtbo-y += khaje-cnss.dtbo
 endif
 
+<<<<<<< HEAD
 >>>>>>> 9b58c470 (ARM: dts: msm: Add icnss dtsi entries for khaje)
+=======
+ifeq ($(CONFIG_ARCH_BLAIR),y)
+dtbo-y += blair-cnss.dtbo
+endif
+
+>>>>>>> b84450e6 (ARM: dts: msm: Add wlan related dtsi file for blair)
 ifeq ($(CONFIG_ARCH_SA8155),y)
 dtbo-y += sa8155p-cnss.dtbo
 endif
@@ -690,6 +697,7 @@ dtbo-y += direwolf-vm-dual-cnss.dtbo
 dtbo-y += lemans-vm-cnss.dtbo
 >>>>>>> 728131b8 (ARM: dts: msm: Add cnss dt on Lemans LV GVM)
 endif
+
 
 ifeq ($(CONFIG_ARCH_SA525),y)
 dtbo-y += sa525m-cnss.dtbo
