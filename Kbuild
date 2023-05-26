@@ -491,6 +491,10 @@ dtbo-y += waipio-bt.dtbo
 dtbo-y += waipio-kiwi-bt.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_BLAIR),y)
+dtbo-y += blair-bt.dtbo
+endif
+
 always-y        := $(dtb-y) $(dtbo-y)
 subdir-y        := $(dts-dirs)
 clean-files     := *.dtb *.dtbo
