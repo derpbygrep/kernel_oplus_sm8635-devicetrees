@@ -18,6 +18,7 @@
 			qcom,iommu-dma-addr-pool = <0x10000000 0xF0000000>;
 			qcom,iommu-faults = "stall-disable", "HUPCF";
 			dma-coherent;
+			qcom,iova-best-fit;
 			pd-type = <1>;	/* ROOT_PD */
 		};
 
@@ -30,6 +31,7 @@
 			qcom,iommu-dma-addr-pool = <0x10000000 0xF0000000>;
 			qcom,iommu-faults = "stall-disable", "HUPCF";
 			dma-coherent;
+			qcom,iova-best-fit;
 			pd-type = <7>;	/* USERPD */
 		};
 
@@ -42,6 +44,7 @@
 			qcom,iommu-dma-addr-pool = <0x10000000 0xF0000000>;
 			qcom,iommu-faults = "stall-disable", "HUPCF";
 			dma-coherent;
+			qcom,iova-best-fit;
 			pd-type = <7>;	/* USERPD */
 		};
 
@@ -54,6 +57,7 @@
 			qcom,iommu-dma-addr-pool = <0x10000000 0xF0000000>;
 			qcom,iommu-faults = "stall-disable", "HUPCF";
 			dma-coherent;
+			qcom,iova-best-fit;
 			pd-type = <7>;	/* USERPD */
 		};
 
@@ -66,6 +70,7 @@
 			qcom,iommu-dma-addr-pool = <0x10000000 0xF0000000>;
 			qcom,iommu-faults = "stall-disable", "HUPCF";
 			dma-coherent;
+			qcom,iova-best-fit;
 			pd-type = <7>;	/* USERPD */
 		};
 
@@ -78,6 +83,7 @@
 			qcom,iommu-dma-addr-pool = <0x10000000 0xF0000000>;
 			qcom,iommu-faults = "stall-disable", "HUPCF";
 			dma-coherent;
+			qcom,iova-best-fit;
 			pd-type = <7>;	/* USERPD */
 		};
 
@@ -90,6 +96,7 @@
 			qcom,iommu-dma-addr-pool = <0x10000000 0xF0000000>;
 			qcom,iommu-faults = "stall-disable", "HUPCF";
 			dma-coherent;
+			qcom,iova-best-fit;
 			pd-type = <7>;	/* USERPD */
 		};
 
@@ -102,6 +109,7 @@
 			qcom,iommu-dma-addr-pool = <0x10000000 0xF0000000>;
 			qcom,iommu-faults = "stall-disable", "HUPCF";
 			dma-coherent;
+			qcom,iova-best-fit;
 			pd-type = <7>;	/* USERPD */
 		};
 
@@ -117,6 +125,7 @@
 			qcom,iommu-vmid = <0xA>;	/* VMID_CP_PIXEL */
 			shared-cb = <3>;
 			dma-coherent;
+			qcom,iova-best-fit;
 			pd-type = <6>;	/* CPZ_USERPD */
 		};
 
@@ -128,6 +137,7 @@
 			qcom,iommu-dma-addr-pool = <0x10000000 0xF0000000>;
 			qcom,iommu-faults = "stall-disable", "HUPCF";
 			dma-coherent;
+			qcom,iova-best-fit;
 			pd-type = <1>;	/* ROOT_PD */
 		};
 
@@ -140,6 +150,7 @@
 			qcom,iommu-faults = "stall-disable", "HUPCF";
 			shared-cb = <8>;
 			dma-coherent;
+			qcom,iova-best-fit;
 			pd-type = <3>;	/* SENSORS_STATICPD */
 		};
 
@@ -151,6 +162,7 @@
 			qcom,iommu-dma-addr-pool = <0x10000000 0xF0000000>;
 			qcom,iommu-faults = "stall-disable", "HUPCF";
 			dma-coherent;
+			qcom,iova-best-fit;
 			pd-type = <2>;	/* AUDIO_STATICPD */
 		};
 
@@ -162,6 +174,7 @@
 			qcom,iommu-dma-addr-pool = <0x10000000 0xF0000000>;
 			qcom,iommu-faults = "stall-disable", "HUPCF";
 			dma-coherent;
+			qcom,iova-best-fit;
 			pd-type = <7>;	/* USERPD */
 		};
 
@@ -174,6 +187,7 @@
 			qcom,iommu-dma-addr-pool = <0x10000000 0xF0000000>;
 			qcom,iommu-faults = "stall-disable", "HUPCF";
 			dma-coherent;
+			qcom,iova-best-fit;
 			pd-type = <7>;	/* USERPD */
 		};
 
@@ -186,6 +200,7 @@
 			qcom,iommu-dma-addr-pool = <0x10000000 0xF0000000>;
 			qcom,iommu-faults = "stall-disable", "HUPCF";
 			dma-coherent;
+			qcom,iova-best-fit;
 			pd-type = <7>;	/* USERPD */
 		};
 
@@ -198,6 +213,7 @@
 			qcom,iommu-dma-addr-pool = <0x10000000 0xF0000000>;
 			qcom,iommu-faults = "stall-disable", "HUPCF";
 			dma-coherent;
+			qcom,iova-best-fit;
 			pd-type = <7>;	/* USERPD */
 		};
 
@@ -210,6 +226,7 @@
 			qcom,iommu-dma-addr-pool = <0x10000000 0xF0000000>;
 			qcom,iommu-faults = "stall-disable", "HUPCF";
 			dma-coherent;
+			qcom,iova-best-fit;
 			pd-type = <7>;	/* USERPD */
 		};
 	};
