@@ -1,0 +1,21 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+	model = "Qualcomm Technologies, Inc. Pineapple SoC";
+	compatible = "qcom,pineapple", "qcom,pineapple";
+	qcom,msm-id = <557 0x20000>, <577 0x20000>;
+	qcom,board-id = <8 0>, <0x50008 0>;
+
+	fragment@0 {
+		target = <&cam_ipe0>;
+		__overlay__ {
+			clock-rates =
+			<0 0 0 475000000 0 0 0>,
+			<0 0 0 575000000 0 0 0>,
+			<0 0 0 675000000 0 0 0>,
+			<0 0 0 825000000 0 0 0>,
+			<0 0 0 825000000 0 0 0>;
+		};
+	};
+};
