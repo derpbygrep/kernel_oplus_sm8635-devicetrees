@@ -173,6 +173,7 @@ dtbo-y += pineapple/pineapple-mmrm-test.dtbo
 dtbo-y += pineapple/pineapple-mmrm-test-v2.dtbo
 endif
 
+<<<<<<< HEAD
 ifeq ($(CONFIG_ARCH_KALAMA), y)
 	ifneq ($(CONFIG_ARCH_QTI_VM), y)
 		dtbo-y += kalama/kalama-mmrm.dtbo
@@ -248,6 +249,12 @@ endif
 
 =======
 =======
+=======
+ifeq ($(CONFIG_ARCH_QCS405),y)
+dtbo-y += qcs405-icnss.dtbo
+endif
+
+>>>>>>> 320228ec (wlan: dts: Add icnss2 node support for QCS405 target)
 ifeq ($(CONFIG_ARCH_KHAJE),y)
 dtbo-y += khaje-cnss.dtbo
 endif
