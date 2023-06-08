@@ -601,6 +601,7 @@ dtbo-y += gpu/sa8195p-gpu.dtbo
 endif
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ifeq ($(CONFIG_ARCH_PINEAPPLE), y)
 dtbo-y += pineapple-vidc.dtbo
 dtbo-y += pineapple-vidc-v2.dtbo
@@ -609,6 +610,12 @@ endif
 =======
 >>>>>>> b3f75993 (ARM: dts: msm: remove Waipio target)
 =======
+=======
+ifeq ($(CONFIG_ARCH_SA6155), y)
+dtbo-y += gpu/sa6155p-gpu.dtbo
+endif
+
+>>>>>>> 9c0ebdcd (ARM: dts: msm: Add support for SA6155 GPU)
 ifeq ($(CONFIG_ARCH_MONACO), y)
 dtbo-y += gpu/monaco-gpu.dtbo
 endif
