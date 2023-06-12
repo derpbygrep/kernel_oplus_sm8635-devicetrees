@@ -14,10 +14,11 @@
 #include <dt-bindings/interconnect/qcom,epss-l3.h>
 
 #include "lemans-gpu.dtsi"
+#include "lemans-gpu-pwrlevel-ivi-adas-star.dtsi"
 
 / {
 	model = "Qualcomm Technologies, Inc. Lemans SoC";
 	compatible = "qcom,lemans";
-	qcom,msm-id = <532 0x10000>;
+	qcom,msm-id = <533 0x10000>, <534 0x10000>;
 	qcom,board-id = <0 0>;
 };

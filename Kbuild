@@ -617,7 +617,8 @@ endif
 >>>>>>> 6f3f558e (ARM: dts: msm: Add GPU support for monaco IoT)
 =======
 ifeq ($(CONFIG_ARCH_LEMANS), y)
-dtbo-y += gpu/lemans-gpu.dtbo
+dtbo-y += gpu/lemans-gpu.dtbo \
+		gpu/lemans-gpu-ivi-adas-star.dtbo
 endif
 
 <<<<<<< HEAD
