@@ -449,6 +449,7 @@ endif
 ifeq ($(CONFIG_ARCH_PINEAPPLE), y)
 dtbo-y += pineapple-audio.dtbo \
                  pineapple-audio-cdp.dtbo \
+                 pineapple-audio-wsa883x-cdp.dtbo \
                  pineapple-audio-cdp-nfc.dtbo \
                  pineapple-audio-mtp.dtbo \
                  pineapple-audio-mtp-nfc.dtbo \
