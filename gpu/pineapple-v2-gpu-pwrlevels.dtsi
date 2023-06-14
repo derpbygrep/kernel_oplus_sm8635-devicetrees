@@ -1,5 +1,8 @@
 /* ACD Control register values */
+<<<<<<< HEAD
 #define ACD_LEVEL_TURBO_L2    0x882a5ffd
+=======
+>>>>>>> 8ac098f3 ([DNM] ARM: dts: msm: Update ACD values for pineapple v2 release devices)
 #define ACD_LEVEL_TURBO_L1    0x882a5ffd
 #define ACD_LEVEL_TURBO       0x882a5ffd
 #define ACD_LEVEL_NOM_L1      0x882a5ffd
@@ -524,10 +527,15 @@
 				qcom,bus-min = <1>;
 				qcom,bus-max = <1>;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 				qcom,acd-level = <ACD_LEVEL_LOW_SVS_D2>;
 =======
 >>>>>>> ef30387f (ARM: dts: msm: Reduce Low_SVS_D2 bus max vote for pineapple GPU)
+=======
+
+				qcom,acd-level = <ACD_LEVEL_LOW_SVS_D2>;
+>>>>>>> 8ac098f3 ([DNM] ARM: dts: msm: Update ACD values for pineapple v2 release devices)
 			};
 		};
 
@@ -863,6 +871,7 @@
 <<<<<<< HEAD
 				qcom,bus-max = <1>;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 				qcom,bus-max = <3>;
 >>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
@@ -873,6 +882,10 @@
 =======
 				qcom,bus-max = <1>;
 >>>>>>> ef30387f (ARM: dts: msm: Reduce Low_SVS_D2 bus max vote for pineapple GPU)
+=======
+
+				qcom,acd-level = <ACD_LEVEL_LOW_SVS_D2>;
+>>>>>>> 8ac098f3 ([DNM] ARM: dts: msm: Update ACD values for pineapple v2 release devices)
 			};
 =======
 			qcom,bus-freq = <1>;
