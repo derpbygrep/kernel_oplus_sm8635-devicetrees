@@ -26,7 +26,7 @@
 			compatible = "qcom,ubwcp-context-bank-desc";
 			label = "cb_desc";
 			iommus = <&ubwcp_smmu 0x0001 0x0000>;
-			qcom,iommu-faults = "non-fatal";
+			qcom,iommu-faults = "non-fatal", "stall-disable";
 			dma-coherent;
 		};
 
@@ -35,7 +35,7 @@
 			compatible = "qcom,ubwcp-context-bank-buf";
 			label = "cb_buf";
 			iommus = <&ubwcp_smmu 0x0000 0x0000>;
-			qcom,iommu-faults = "non-fatal";
+			qcom,iommu-faults = "non-fatal", "stall-disable";
 			dma-coherent;
 		};
 	};
