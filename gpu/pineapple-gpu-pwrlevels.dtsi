@@ -199,7 +199,7 @@
 
 				qcom,bus-freq = <1>;
 				qcom,bus-min = <1>;
-				qcom,bus-max = <3>;
+				qcom,bus-max = <1>;
 			};
 		};
 
@@ -367,7 +367,7 @@
 
 				qcom,bus-freq = <1>;
 				qcom,bus-min = <1>;
-				qcom,bus-max = <3>;
+				qcom,bus-max = <1>;
 			};
 
 			/* Low_SVS_D2 */
@@ -556,7 +556,7 @@
 
 				qcom,bus-freq = <1>;
 				qcom,bus-min = <1>;
-				qcom,bus-max = <3>;
+				qcom,bus-max = <1>;
 			};
 
 			/* Low_SVS_D2 */
@@ -1052,7 +1052,7 @@
 
 				qcom,bus-freq = <1>;
 				qcom,bus-min = <1>;
-				qcom,bus-max = <3>;
+				qcom,bus-max = <1>;
 			};
 		};
 	};
