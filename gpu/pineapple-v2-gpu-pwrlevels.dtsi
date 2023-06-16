@@ -523,8 +523,11 @@
 				qcom,bus-freq = <1>;
 				qcom,bus-min = <1>;
 				qcom,bus-max = <1>;
+<<<<<<< HEAD
 
 				qcom,acd-level = <ACD_LEVEL_LOW_SVS_D2>;
+=======
+>>>>>>> ef30387f (ARM: dts: msm: Reduce Low_SVS_D2 bus max vote for pineapple GPU)
 			};
 		};
 
@@ -857,6 +860,7 @@
 				qcom,bus-freq = <1>;
 				qcom,bus-min = <1>;
 <<<<<<< HEAD
+<<<<<<< HEAD
 				qcom,bus-max = <1>;
 <<<<<<< HEAD
 =======
@@ -866,6 +870,9 @@
 
 				qcom,acd-level = <ACD_LEVEL_LOW_SVS_D2>;
 >>>>>>> d6cabb02 (ARM: dts: msm: Update ACD values for pineapple v2 devices)
+=======
+				qcom,bus-max = <1>;
+>>>>>>> ef30387f (ARM: dts: msm: Reduce Low_SVS_D2 bus max vote for pineapple GPU)
 			};
 =======
 			qcom,bus-freq = <1>;
