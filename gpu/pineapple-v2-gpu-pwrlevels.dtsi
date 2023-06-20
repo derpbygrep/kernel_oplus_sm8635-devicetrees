@@ -19,9 +19,19 @@
 
 		compatible = "qcom,gpu-pwrlevels-bins";
 
+<<<<<<< HEAD
 		qcom,gpu-pwrlevels-0 {
 			#address-cells = <1>;
 			#size-cells = <0>;
+=======
+		qcom,initial-pwrlevel = <11>;
+
+		/* Turbo */
+		qcom,gpu-pwrlevel@0 {
+			reg = <0>;
+			qcom,gpu-freq = <903000000>;
+			qcom,level = <RPMH_REGULATOR_LEVEL_TURBO>;
+>>>>>>> 520c79d5 (Revert "ARM: dts: msm: Set correct default frequency for pineapple v2")
 
 			qcom,sku-codes = <SKU_CODE(PCODE_UNKNOWN, FC_AC)
 					SKU_CODE(PCODE_0, FC_Y0)
