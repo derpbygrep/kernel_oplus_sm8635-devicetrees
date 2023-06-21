@@ -487,7 +487,6 @@
 		qcom,auxpcm-audio-intf;
 		qcom,msm-mi2s-master = <1>, <1>, <1>, <1>, <1>;
 
-		qcom,sec-tdm-gpios = <&tdm_sec_rx>;
 		qcom,tert-tdm-gpios = <&tdm_tert_rx>;
 		qcom,quat-tdm-gpios = <&tdm_quat_rx>;
 		qcom,quin-tdm-gpios = <&tdm_quin_rx>;
