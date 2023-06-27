@@ -265,7 +265,14 @@ ifeq ($(CONFIG_ARCH_CROW),y)
 dtbo-y += crow-cnss.dtbo
 endif
 
+<<<<<<< HEAD
 >>>>>>> d61f4951 (ARM: dts: msm: Add wlan related dtsi file for crow)
+=======
+ifeq ($(CONFIG_ARCH_SA6155),y)
+dtbo-y += sa6155p-cnss.dtbo
+endif
+
+>>>>>>> 051f14fe (wlan: dts: Add support for sa6155p platform)
 ifeq ($(CONFIG_ARCH_SA8155),y)
 dtbo-y += sa8155p-cnss.dtbo
 endif
