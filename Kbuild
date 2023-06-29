@@ -784,7 +784,9 @@ dtbo-y += nxp/pineapple-nfc.dtbo \
 =======
 =======
 ifeq ($(CONFIG_ARCH_LEMANS),y)
+ifneq ($(CONFIG_ARCH_QTI_VM),y)
 dtbo-y += lemans-cnss.dtbo
+endif
 endif
 
 >>>>>>> 28991781 (wlan: dts: Add support for lemans)
