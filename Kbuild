@@ -761,6 +761,10 @@ dtbo-y += blair-dsp.dtbo
 >>>>>>> 5f15a294 (ARM: dts: msm: Add blair dts and dtsi files)
 endif
 
+ifeq ($(CONFIG_ARCH_BLAIR),y)
+dtbo-y += blair-ipa.dtbo
+endif
+
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
