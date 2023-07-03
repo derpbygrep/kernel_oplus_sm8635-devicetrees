@@ -740,6 +740,7 @@ ifeq ($(CONFIG_ARCH_QTI_VM), y)
 dtbo-y += pineapple-dsp-trustedvm.dtbo
 endif
 
+<<<<<<< HEAD
 ifeq ($(CONFIG_ARCH_BLAIR),y)
 dtbo-y += nxp/blair-nfc.dtbo \
           nxp/blair-nfc-atp.dtbo \
@@ -747,6 +748,10 @@ dtbo-y += nxp/blair-nfc.dtbo \
           nxp/blair-nfc-mtp.dtbo \
           nxp/blair-nfc-qrd.dtbo
 
+=======
+ifeq ($(CONFIG_ARCH_BLAIR), y)
+dtbo-y += blair-dsp.dtbo
+>>>>>>> 5f15a294 (ARM: dts: msm: Add blair dts and dtsi files)
 endif
 
 always-y	:= $(dtb-y) $(dtbo-y)
