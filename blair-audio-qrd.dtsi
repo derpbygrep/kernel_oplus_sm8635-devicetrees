@@ -22,7 +22,7 @@
 &holi_snd {
 	qcom,model = "blair-qrd-snd-card";
 	qcom,msm-mi2s-master = <1>, <1>, <1>, <1>;
-	qcom,wcn-btfm = <0>;
+	qcom,wcn-btfm = <1>;
 	qcom,audio-routing =
 		"AMIC1", "Analog Mic1",
 		"Analog Mic1", "MIC BIAS1",
