@@ -15,11 +15,14 @@
 #define ACD_LEVEL_LOW_SVS_D2  0xc82f5ffd
 
 &msm_gpu {
+	qcom,initial-pwrlevel = <11>;
+
 	/* Power levels */
-	qcom,gpu-pwrlevel-bins {
+	qcom,gpu-pwrlevels {
 		#address-cells = <1>;
 		#size-cells = <0>;
 
+<<<<<<< HEAD
 		compatible = "qcom,gpu-pwrlevels-bins";
 <<<<<<< HEAD
 
@@ -61,16 +64,21 @@
 			qcom,gpu-pwrlevel@1 {
 				reg = <1>;
 =======
+=======
+		compatible = "qcom,gpu-pwrlevels";
+>>>>>>> 92c066c7 (Revert "ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2")
 
-		qcom,gpu-pwrlevels-0 {
-			#address-cells = <1>;
-			#size-cells = <0>;
+		/* Turbo */
+		qcom,gpu-pwrlevel@0 {
+			reg = <0>;
+			qcom,gpu-freq = <903000000>;
+			qcom,level = <RPMH_REGULATOR_LEVEL_TURBO>;
 
-			qcom,sku-codes = <SKU_CODE(PCODE_UNKNOWN, FC_AC)
-					SKU_CODE(PCODE_0, FC_Y0)
-					SKU_CODE(PCODE_1, FC_Y0)
-					SKU_CODE(PCODE_0, FC_Y1)>;
+			qcom,bus-freq = <9>;
+			qcom,bus-min = <9>;
+			qcom,bus-max = <9>;
 
+<<<<<<< HEAD
 			qcom,initial-pwrlevel = <13>;
 
 			/* Turbo_L1 */
@@ -523,37 +531,51 @@
 		qcom,gpu-pwrlevels-2 {
 			#address-cells = <1>;
 			#size-cells = <0>;
+=======
+			qcom,acd-level = <ACD_LEVEL_TURBO>;
+		};
 
-			qcom,sku-codes = <SKU_CODE(PCODE_UNKNOWN, FC_UNKNOWN)>;
+		/* Nom_L1 */
+		qcom,gpu-pwrlevel@1 {
+			reg = <1>;
+			qcom,gpu-freq = <834000000>;
+			qcom,level = <RPMH_REGULATOR_LEVEL_NOM_L1>;
+>>>>>>> 92c066c7 (Revert "ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2")
 
-			qcom,initial-pwrlevel = <11>;
+			qcom,bus-freq = <8>;
+			qcom,bus-min = <7>;
+			qcom,bus-max = <9>;
 
-			/* Turbo */
-			qcom,gpu-pwrlevel@0 {
-				reg = <0>;
-				qcom,gpu-freq = <903000000>;
-				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO>;
+			qcom,acd-level = <ACD_LEVEL_NOM_L1>;
+		};
 
-				qcom,bus-freq = <9>;
-				qcom,bus-min = <9>;
-				qcom,bus-max = <9>;
+		/* Nom */
+		qcom,gpu-pwrlevel@2 {
+			reg = <2>;
+			qcom,gpu-freq = <770000000>;
+			qcom,level = <RPMH_REGULATOR_LEVEL_NOM>;
 
-				qcom,acd-level = <ACD_LEVEL_TURBO>;
-			};
+			qcom,bus-freq = <7>;
+			qcom,bus-min = <6>;
+			qcom,bus-max = <9>;
 
-			/* Nom_L1 */
-			qcom,gpu-pwrlevel@1 {
-				reg = <1>;
-				qcom,gpu-freq = <834000000>;
-				qcom,level = <RPMH_REGULATOR_LEVEL_NOM_L1>;
+			qcom,acd-level = <ACD_LEVEL_NOM>;
+		};
 
-				qcom,bus-freq = <8>;
-				qcom,bus-min = <7>;
-				qcom,bus-max = <9>;
+		/* SVS_L2 */
+		qcom,gpu-pwrlevel@3 {
+			reg = <3>;
+			qcom,gpu-freq = <720000000>;
+			qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L2>;
 
-				qcom,acd-level = <ACD_LEVEL_NOM_L1>;
-			};
+			qcom,bus-freq = <7>;
+			qcom,bus-min = <6>;
+			qcom,bus-max = <9>;
 
+			qcom,acd-level = <ACD_LEVEL_SVS_L2>;
+		};
+
+<<<<<<< HEAD
 			/* Nom */
 			qcom,gpu-pwrlevel@2 {
 				reg = <2>;
@@ -595,14 +617,22 @@
 				reg = <2>;
 				qcom,gpu-freq = <770000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_NOM>;
+=======
+		/* SVS_L1 */
+		qcom,gpu-pwrlevel@4 {
+			reg = <4>;
+			qcom,gpu-freq = <680000000>;
+			qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L1>;
+>>>>>>> 92c066c7 (Revert "ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2")
 
-				qcom,bus-freq = <7>;
-				qcom,bus-min = <6>;
-				qcom,bus-max = <9>;
+			qcom,bus-freq = <7>;
+			qcom,bus-min = <5>;
+			qcom,bus-max = <9>;
 
-				qcom,acd-level = <ACD_LEVEL_NOM>;
-			};
+			qcom,acd-level = <ACD_LEVEL_SVS_L1>;
+		};
 
+<<<<<<< HEAD
 			/* SVS_L2 */
 			qcom,gpu-pwrlevel@3 {
 				reg = <3>;
@@ -623,53 +653,61 @@
 				reg = <3>;
 				qcom,gpu-freq = <720000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L2>;
+=======
+		/* SVS_L0 */
+		qcom,gpu-pwrlevel@5 {
+			reg = <5>;
+			qcom,gpu-freq = <629000000>;
+			qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L0>;
+>>>>>>> 92c066c7 (Revert "ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2")
 
-				qcom,bus-freq = <7>;
-				qcom,bus-min = <6>;
-				qcom,bus-max = <9>;
+			qcom,bus-freq = <6>;
+			qcom,bus-min = <4>;
+			qcom,bus-max = <7>;
 
-				qcom,acd-level = <ACD_LEVEL_SVS_L2>;
-			};
+			qcom,acd-level = <ACD_LEVEL_SVS_L0>;
+		};
 
-			/* SVS_L1 */
-			qcom,gpu-pwrlevel@4 {
-				reg = <4>;
-				qcom,gpu-freq = <680000000>;
-				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L1>;
+		/* SVS */
+		qcom,gpu-pwrlevel@6 {
+			reg = <6>;
+			qcom,gpu-freq = <578000000>;
+			qcom,level = <RPMH_REGULATOR_LEVEL_SVS>;
 
-				qcom,bus-freq = <7>;
-				qcom,bus-min = <5>;
-				qcom,bus-max = <9>;
+			qcom,bus-freq = <5>;
+			qcom,bus-min = <4>;
+			qcom,bus-max = <7>;
 
-				qcom,acd-level = <ACD_LEVEL_SVS_L1>;
-			};
+			qcom,acd-level = <ACD_LEVEL_SVS>;
+		};
 
-			/* SVS_L0 */
-			qcom,gpu-pwrlevel@5 {
-				reg = <5>;
-				qcom,gpu-freq = <629000000>;
-				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L0>;
+		/* Low_SVS_L1 */
+		qcom,gpu-pwrlevel@7 {
+			reg = <7>;
+			qcom,gpu-freq = <500000000>;
+			qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_L1>;
 
-				qcom,bus-freq = <6>;
-				qcom,bus-min = <3>;
-				qcom,bus-max = <7>;
+			qcom,bus-freq = <5>;
+			qcom,bus-min = <3>;
+			qcom,bus-max = <7>;
 
-				qcom,acd-level = <ACD_LEVEL_SVS_L0>;
-			};
+			qcom,acd-level = <ACD_LEVEL_LOW_SVS_L1>;
+		};
 
-			/* SVS */
-			qcom,gpu-pwrlevel@6 {
-				reg = <6>;
-				qcom,gpu-freq = <578000000>;
-				qcom,level = <RPMH_REGULATOR_LEVEL_SVS>;
+		/* Low_SVS */
+		qcom,gpu-pwrlevel@8 {
+			reg = <8>;
+			qcom,gpu-freq = <422000000>;
+			qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS>;
 
-				qcom,bus-freq = <5>;
-				qcom,bus-min = <2>;
-				qcom,bus-max = <7>;
+			qcom,bus-freq = <5>;
+			qcom,bus-min = <3>;
+			qcom,bus-max = <7>;
 
-				qcom,acd-level = <ACD_LEVEL_SVS>;
-			};
+			qcom,acd-level = <ACD_LEVEL_LOW_SVS>;
+		};
 
+<<<<<<< HEAD
 			/* Low_SVS_L1 */
 			qcom,gpu-pwrlevel@7 {
 				reg = <7>;
@@ -723,14 +761,22 @@
 				reg = <7>;
 				qcom,gpu-freq = <500000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_L1>;
+=======
+		/* Low_SVS_D0 */
+		qcom,gpu-pwrlevel@9 {
+			reg = <9>;
+			qcom,gpu-freq = <366000000>;
+			qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D0>;
+>>>>>>> 92c066c7 (Revert "ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2")
 
-				qcom,bus-freq = <5>;
-				qcom,bus-min = <1>;
-				qcom,bus-max = <5>;
+			qcom,bus-freq = <3>;
+			qcom,bus-min = <2>;
+			qcom,bus-max = <5>;
 
-				qcom,acd-level = <ACD_LEVEL_LOW_SVS_L1>;
-			};
+			qcom,acd-level = <ACD_LEVEL_LOW_SVS_D0>;
+		};
 
+<<<<<<< HEAD
 			/* Low_SVS */
 			qcom,gpu-pwrlevel@8 {
 				reg = <8>;
@@ -751,14 +797,26 @@
 				reg = <8>;
 				qcom,gpu-freq = <422000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS>;
+=======
+		/* Low_SVS_D1 */
+		qcom,gpu-pwrlevel@10 {
+			reg = <10>;
+			qcom,gpu-freq = <310000000>;
+			qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
+>>>>>>> 92c066c7 (Revert "ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2")
 
-				qcom,bus-freq = <5>;
-				qcom,bus-min = <1>;
-				qcom,bus-max = <5>;
+			qcom,bus-freq = <1>;
+			qcom,bus-min = <1>;
+			qcom,bus-max = <4>;
+		};
 
-				qcom,acd-level = <ACD_LEVEL_LOW_SVS>;
-			};
+		/* Low_SVS_D2 */
+		qcom,gpu-pwrlevel@11 {
+			reg = <11>;
+			qcom,gpu-freq = <231000000>;
+			qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D2>;
 
+<<<<<<< HEAD
 =======
 				qcom,acd-level = <ACD_LEVEL_LOW_SVS>;
 			};
@@ -809,6 +867,11 @@
 				qcom,acd-level = <ACD_LEVEL_LOW_SVS_D2>;
 >>>>>>> d6cabb02 (ARM: dts: msm: Update ACD values for pineapple v2 devices)
 			};
+=======
+			qcom,bus-freq = <1>;
+			qcom,bus-min = <1>;
+			qcom,bus-max = <3>;
+>>>>>>> 92c066c7 (Revert "ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2")
 		};
 	};
 };

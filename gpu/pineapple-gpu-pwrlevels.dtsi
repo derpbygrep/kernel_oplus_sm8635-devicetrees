@@ -288,7 +288,7 @@
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L0>;
 
 				qcom,bus-freq = <6>;
-				qcom,bus-min = <3>;
+				qcom,bus-min = <4>;
 				qcom,bus-max = <7>;
 
 				qcom,acd-level = <ACD_LEVEL_SVS_L0>;
@@ -301,7 +301,7 @@
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS>;
 
 				qcom,bus-freq = <5>;
-				qcom,bus-min = <2>;
+				qcom,bus-min = <4>;
 				qcom,bus-max = <7>;
 
 				qcom,acd-level = <ACD_LEVEL_SVS>;
@@ -314,8 +314,8 @@
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_L1>;
 
 				qcom,bus-freq = <5>;
-				qcom,bus-min = <1>;
-				qcom,bus-max = <5>;
+				qcom,bus-min = <3>;
+				qcom,bus-max = <7>;
 
 				qcom,acd-level = <ACD_LEVEL_LOW_SVS_L1>;
 			};
@@ -327,8 +327,8 @@
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS>;
 
 				qcom,bus-freq = <5>;
-				qcom,bus-min = <1>;
-				qcom,bus-max = <5>;
+				qcom,bus-min = <3>;
+				qcom,bus-max = <7>;
 
 				qcom,acd-level = <ACD_LEVEL_LOW_SVS>;
 			};
@@ -340,8 +340,8 @@
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D0>;
 
 				qcom,bus-freq = <3>;
-				qcom,bus-min = <1>;
-				qcom,bus-max = <3>;
+				qcom,bus-min = <2>;
+				qcom,bus-max = <5>;
 
 				qcom,acd-level = <ACD_LEVEL_LOW_SVS_D0>;
 			};
@@ -354,7 +354,7 @@
 
 				qcom,bus-freq = <1>;
 				qcom,bus-min = <1>;
-				qcom,bus-max = <3>;
+				qcom,bus-max = <4>;
 			};
 
 			/* Low_SVS_D2 */
