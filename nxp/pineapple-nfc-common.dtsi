@@ -13,7 +13,7 @@
 		qcom,sn-szone = "enable";
 		qcom,sn-vdd-1p8-supply = <&L3C>;
 		qcom,sn-vdd-1p8-voltage = <1200000 1200000>;
-		qcom,sn-vdd-1p8-current = <157000>;
+		qcom,sn-vdd-1p8-current = <6700>;
 		interrupt-parent = <&tlmm>;
 		interrupts = <75 0>;
 		interrupt-names = "nfc_irq";
