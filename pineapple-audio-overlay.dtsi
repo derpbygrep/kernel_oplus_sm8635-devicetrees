@@ -379,7 +379,7 @@
 
 		cdc-vdd-px-supply = <&L3C>;
 		qcom,cdc-vdd-px-voltage = <1200000 1200000>;
-		qcom,cdc-vdd-px-current = <30000>;
+		qcom,cdc-vdd-px-current = <5000>;
 		qcom,cdc-vdd-px-lpm-supported = <1>;
 
 		qcom,cdc-micbias1-mv = <1800>;
