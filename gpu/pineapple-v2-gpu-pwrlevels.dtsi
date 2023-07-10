@@ -1,8 +1,11 @@
 /* ACD Control register values */
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define ACD_LEVEL_TURBO_L2    0x882a5ffd
 =======
 >>>>>>> 8ac098f3 ([DNM] ARM: dts: msm: Update ACD values for pineapple v2 release devices)
+=======
+>>>>>>> ba54cf8d (ARM: dts: msm: Update pineapple v2 max GPU frequency)
 #define ACD_LEVEL_TURBO_L1    0x882a5ffd
 #define ACD_LEVEL_TURBO       0x882a5ffd
 #define ACD_LEVEL_NOM_L1      0x882a5ffd
@@ -43,6 +46,7 @@
 			qcom,level = <RPMH_REGULATOR_LEVEL_TURBO>;
 >>>>>>> 520c79d5 (Revert "ARM: dts: msm: Set correct default frequency for pineapple v2")
 
+<<<<<<< HEAD
 			qcom,sku-codes = <SKU_CODE(PCODE_0, FC_Y0)
 					SKU_CODE(PCODE_1, FC_Y0)
 					SKU_CODE(PCODE_0, FC_Y1)>;
@@ -343,6 +347,8 @@
 			#size-cells = <0>;
 
 <<<<<<< HEAD
+=======
+>>>>>>> ba54cf8d (ARM: dts: msm: Update pineapple v2 max GPU frequency)
 			qcom,sku-codes = <SKU_CODE(PCODE_UNKNOWN, FC_AC)
 					SKU_CODE(PCODE_0, FC_Y0)
 					SKU_CODE(PCODE_1, FC_Y0)
@@ -539,7 +545,7 @@
 			};
 		};
 
-		qcom,gpu-pwrlevels-2 {
+		qcom,gpu-pwrlevels-1 {
 			#address-cells = <1>;
 			#size-cells = <0>;
 =======
