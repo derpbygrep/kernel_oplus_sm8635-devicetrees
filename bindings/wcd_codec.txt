@@ -405,7 +405,7 @@ Required properties:
 		same port_id configurations have to be grouped, and in ascending order.
  - qcom,wcd-rst-gpio-node: Phandle reference to the DT node having codec reset gpio
                         configuration. If this property is not defined, it is
-                        expected to atleast define "qcom,cdc-reset-gpio" property.
+                        expected to at least define "qcom,cdc-reset-gpio" property.
  - qcom,rx-slave: phandle reference of Soundwire Rx slave device.
  - qcom,tx-slave: phandle reference of Soundwire Tx slave device.
 
@@ -490,7 +490,7 @@ Required properties:
 		same port_id configurations have to be grouped, and in ascending order.
  - qcom,wcd-rst-gpio-node: Phandle reference to the DT node having codec reset gpio
                         configuration. If this property is not defined, it is
-                        expected to atleast define "qcom,cdc-reset-gpio" property.
+                        expected to at least define "qcom,cdc-reset-gpio" property.
  - qcom,rx-slave: phandle reference of Soundwire Rx slave device.
  - qcom,tx-slave: phandle reference of Soundwire Tx slave device.
 
@@ -560,6 +560,138 @@ wcd938x_codec: wcd938x-codec {
 	qcom,cdc-on-demand-supplies = "cdc-vdd-buck",
 				      "cdc-vdd-mic-bias";
 };
+
+Harmonium Codec
+
+Required properties:
+ - compatible: "qcom,wcd939x-codec";
+ - qcom,rx_swr_ch_map: mapping of swr rx slave port configuration to port_type and also
+		corresponding master port type it need to attach.
+		format: <port_id, slave_port_type, ch_mask, ch_rate, master_port_type>
+		same port_id configurations have to be grouped, and in ascending order.
+ - qcom,tx_swr_ch_map: mapping of swr tx slave port configuration to port_type and also
+		corresponding master port type it need to attach.
+		format: <port_id,slave_port_type, ch_mask, ch_rate, master_port_type>
+		same port_id configurations have to be grouped, and in ascending order.
+ - qcom,wcd-rst-gpio-node: Phandle reference to the DT node having codec reset gpio
+                        configuration. If this property is not defined, it is
+                        expected to at least define "qcom,cdc-reset-gpio" property.
+ - qcom,rx-slave: phandle reference of Soundwire Rx slave device.
+ - qcom,tx-slave: phandle reference of Soundwire Tx slave device.
+
+Optional properties:
+
+ - cdc-vdd-rx-supply: phandle of rx supply's regulator device tree node.
+ - qcom,cdc-vdd-rx-voltage: rx supply's voltage level min and max in mV.
+ - qcom,cdc-vdd-rx-current: rx supply's max current in mA.
+
+ - cdc-vdd-tx-supply: phandle of tx supply's regulator device tree node.
+ - qcom,cdc-vdd-tx-voltage: tx supply's voltage level min and max in mV.
+ - qcom,cdc-vdd-tx-current: tx supply's max current in mA.
+
+ - cdc-vdd-px-supply: phandle of px supply's regulator device tree node.
+ - qcom,cdc-vdd-px-voltage: px supply's voltage level min and max in mV.
+ - qcom,cdc-vdd-px-current: px supply's max current in mA.
+ - qcom,cdc-vdd-px-lpm-supported: flag if px supply supports LPM or not.
+		If true, px supply will reduce its current when codec PM is suspended.
+		When codec PM is resumed, current will return to original value.
+ - qcom,cdc-vdd-px-rem-supported: flag if px supply supports retention mode or not.
+		If true, px supply will be disabled and remove its vote when codec PM is suspended.
+		When codec PM is resumed, current will return to original value.
+
+ - cdc-vdd-buck-supply: phandle of buck supply's regulator device tree node.
+ - qcom,cdc-vdd-buck-voltage: buck supply's voltage level min and max in mV.
+ - qcom,cdc-vdd-buck-current: buck supply's max current in mA.
+ - qcom,cdc-vdd-buck-lpm-supported: flag if buck supply supports LPM or not.
+		If true, buck supply will reduce its current when codec PM is suspended.
+		When codec PM is resumed, current will return to original value.
+ - qcom,cdc-vdd-buck-rem-supported: flag if buck supply supports retention mode or not.
+		If true, buck supply will be disabled and remove its vote when codec PM is suspended.
+		When codec PM is resumed, current will return to original value.
+
+ - cdc-vdd-mic-bias-supply: phandle of mic bias supply's regulator device tree node.
+ - qcom,cdc-vdd-mic-bias-voltage: mic bias supply's voltage level min and max in mV.
+ - qcom,cdc-vdd-mic-bias-current: mic bias supply's max current in mA.
+
+ - qcom,cdc-static-supplies: List of supplies to be enabled prior to codec
+			     hardware probe.  Supplies in this list will be
+			     stay enabled.
+
+ - qcom,cdc-on-demand-supplies: List of supplies which can be enabled
+				dynamically.
+				Supplies in this list are off by default.
+
+Example:
+	wcd939x_codec: wcd939x-codec {
+		compatible = "qcom,wcd939x-codec";
+		qcom,split-codec = <1>;
+		qcom,rx_swr_ch_map = <0 HPH_L 0x1 0 HPH_L>,
+			<0 HPH_R 0x2 0 HPH_R>, <1 CLSH 0x1 0 CLSH>,
+			<2 COMP_L 0x1 0 COMP_L>, <2 COMP_R 0x2 0 COMP_R>,
+			<3 LO 0x1 0 LO>, <4 DSD_L 0x1 0 DSD_L>,
+			<4 DSD_R 0x2 0 DSD_R>, <5 HIFI_PCM_L 0x1 0 HIFI_PCM_L>,
+			<5 HIFI_PCM_R 0x2 0 HIFI_PCM_R>;
+
+		qcom,tx_swr_ch_map = <0 ADC1 0x1 0 SWRM_TX1_CH1>,
+			<0 ADC2 0x2 0 SWRM_TX1_CH2>,
+			<1 ADC3 0x1 0 SWRM_TX1_CH3>,
+			<1 ADC4 0x2 0 SWRM_TX1_CH4>,
+			<2 DMIC0 0x1 0 SWRM_TX2_CH1>,
+			<2 DMIC1 0x2 0 SWRM_TX2_CH2>,
+			<2 MBHC 0x4 0 SWRM_TX2_CH3>,
+			<2 DMIC2 0x4 0 SWRM_TX2_CH3>,
+			<2 DMIC3 0x8 0 SWRM_TX2_CH4>,
+			<3 DMIC4 0x1 0 SWRM_TX3_CH1>,
+			<3 DMIC5 0x2 0 SWRM_TX3_CH2>,
+			<3 DMIC6 0x4 0 SWRM_TX3_CH3>,
+			<3 DMIC7 0x8 0 SWRM_TX3_CH4>;
+
+		qcom,swr-tx-port-params =
+			<OFFSET1_VAL0 LANE1>, <OFFSET1_VAL0 LANE2>, <OFFSET1_VAL1 LANE0>, <OFFSET1_VAL1 LANE0>,
+			<OFFSET1_VAL0 LANE1>, <OFFSET1_VAL1 LANE0>, <OFFSET1_VAL1 LANE0>, <OFFSET1_VAL1 LANE0>,
+			<OFFSET1_VAL0 LANE1>, <OFFSET1_VAL2 LANE0>, <OFFSET1_VAL1 LANE0>, <OFFSET1_VAL2 LANE0>,
+			<OFFSET1_VAL1 LANE0>, <OFFSET1_VAL1 LANE0>, <OFFSET1_VAL1 LANE0>, <OFFSET1_VAL1 LANE0>;
+
+		qcom,wcd-rst-gpio-node = <&wcd939x_rst_gpio>;
+		qcom,rx-slave = <&wcd939x_rx_slave>;
+		qcom,tx-slave = <&wcd939x_tx_slave>;
+
+		cdc-vdd-rx-supply = <&L15B>;
+		qcom,cdc-vdd-rx-voltage = <1800000 1800000>;
+		qcom,cdc-vdd-rx-current = <30000>;
+		qcom,cdc-vdd-rx-lpm-supported = <1>;
+
+		cdc-vdd-tx-supply = <&L15B>;
+		qcom,cdc-vdd-tx-voltage = <1800000 1800000>;
+		qcom,cdc-vdd-tx-current = <30000>;
+		qcom,cdc-vdd-tx-lpm-supported = <1>;
+
+		cdc-vdd-buck-supply = <&L15B>;
+		qcom,cdc-vdd-buck-voltage = <1800000 1800000>;
+		qcom,cdc-vdd-buck-current = <650000>;
+		qcom,cdc-vdd-buck-lpm-supported = <1>;
+
+		cdc-vdd-mic-bias-supply = <&BOB1>;
+		qcom,cdc-vdd-mic-bias-voltage = <3296000 3296000>;
+		qcom,cdc-vdd-mic-bias-current = <30000>;
+
+		cdc-vdd-px-supply = <&L3C>;
+		qcom,cdc-vdd-px-voltage = <1200000 1200000>;
+		qcom,cdc-vdd-px-current = <30000>;
+		qcom,cdc-vdd-px-lpm-supported = <1>;
+		qcom,cdc-vdd-px-rem-supported = <1>;
+
+		qcom,cdc-micbias1-mv = <1800>;
+		qcom,cdc-micbias2-mv = <1800>;
+		qcom,cdc-micbias3-mv = <1800>;
+		qcom,cdc-micbias4-mv = <1800>;
+
+		qcom,cdc-static-supplies = "cdc-vdd-rx",
+					   "cdc-vdd-tx",
+					   "cdc-vdd-mic-bias";
+		qcom,cdc-on-demand-supplies = "cdc-vdd-buck",
+					   "cdc-vdd-px";
+	};
 
 Bolero Clock Resource Manager
 
