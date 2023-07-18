@@ -727,6 +727,7 @@
 
 				qcom,bus-freq = <1>;
 				qcom,bus-min = <1>;
+<<<<<<< HEAD
 				qcom,bus-max = <1>;
 <<<<<<< HEAD
 			};
@@ -742,6 +743,9 @@
 				qcom,bus-max = <1>;
 =======
 >>>>>>> ef30387f (ARM: dts: msm: Reduce Low_SVS_D2 bus max vote for pineapple GPU)
+=======
+				qcom,bus-max = <3>;
+>>>>>>> d2cc6997 (Revert "ARM: dts: msm: Reduce Low_SVS_D2 bus max vote for pineapple GPU")
 			};
 		};
 
@@ -902,7 +906,7 @@
 
 				qcom,bus-freq = <1>;
 				qcom,bus-min = <1>;
-				qcom,bus-max = <1>;
+				qcom,bus-max = <3>;
 			};
 		};
 
@@ -1078,7 +1082,7 @@
 
 				qcom,bus-freq = <1>;
 				qcom,bus-min = <1>;
-				qcom,bus-max = <1>;
+				qcom,bus-max = <3>;
 			};
 		};
 
@@ -1228,7 +1232,7 @@
 
 				qcom,bus-freq = <1>;
 				qcom,bus-min = <1>;
-				qcom,bus-max = <1>;
+				qcom,bus-max = <3>;
 			};
 		};
 	};
