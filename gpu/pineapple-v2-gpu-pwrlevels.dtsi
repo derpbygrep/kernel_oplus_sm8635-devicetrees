@@ -1,6 +1,7 @@
 /* ACD Control register values */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define ACD_LEVEL_TURBO_L2    0x882a5ffd
 =======
 >>>>>>> 8ac098f3 ([DNM] ARM: dts: msm: Update ACD values for pineapple v2 release devices)
@@ -19,6 +20,19 @@
 #define ACD_LEVEL_LOW_SVS_D0  0xc02e5ffd
 #define ACD_LEVEL_LOW_SVS_D1  0xc82c5ffd
 #define ACD_LEVEL_LOW_SVS_D2  0xc82f5ffd
+=======
+#define ACD_LEVEL_TURBO_L1    0x882f5ffd
+#define ACD_LEVEL_TURBO       0x882f5ffd
+#define ACD_LEVEL_NOM_L1      0x882f5ffd
+#define ACD_LEVEL_NOM         0xc0285ffd
+#define ACD_LEVEL_SVS_L2      0xe0295ffd
+#define ACD_LEVEL_SVS_L1      0xe0295ffd
+#define ACD_LEVEL_SVS_L0      0xc02a5ffd
+#define ACD_LEVEL_SVS         0xc02a5ffd
+#define ACD_LEVEL_LOW_SVS_L1  0xc02c5ffd
+#define ACD_LEVEL_LOW_SVS     0xc02f5ffd
+#define ACD_LEVEL_LOW_SVS_D0  0xc02f5ffd
+>>>>>>> dadbc3a6 (Revert "[DNM] ARM: dts: msm: Update ACD values for pineapple v2 release devices")
 
 &msm_gpu {
 	qcom,initial-pwrlevel = <11>;
@@ -519,8 +533,6 @@
 				qcom,bus-freq = <1>;
 				qcom,bus-min = <1>;
 				qcom,bus-max = <3>;
-
-				qcom,acd-level = <ACD_LEVEL_LOW_SVS_D1>;
 			};
 
 			/* Low_SVS_D2 */
@@ -534,6 +546,7 @@
 				qcom,bus-max = <1>;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 				qcom,acd-level = <ACD_LEVEL_LOW_SVS_D2>;
 =======
@@ -542,6 +555,8 @@
 
 				qcom,acd-level = <ACD_LEVEL_LOW_SVS_D2>;
 >>>>>>> 8ac098f3 ([DNM] ARM: dts: msm: Update ACD values for pineapple v2 release devices)
+=======
+>>>>>>> dadbc3a6 (Revert "[DNM] ARM: dts: msm: Update ACD values for pineapple v2 release devices")
 			};
 		};
 
@@ -861,8 +876,6 @@
 				qcom,bus-freq = <1>;
 				qcom,bus-min = <1>;
 				qcom,bus-max = <3>;
-
-				qcom,acd-level = <ACD_LEVEL_LOW_SVS_D1>;
 			};
 
 			/* Low_SVS_D2 */
@@ -876,6 +889,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 				qcom,bus-max = <1>;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -892,6 +906,8 @@
 
 				qcom,acd-level = <ACD_LEVEL_LOW_SVS_D2>;
 >>>>>>> 8ac098f3 ([DNM] ARM: dts: msm: Update ACD values for pineapple v2 release devices)
+=======
+>>>>>>> dadbc3a6 (Revert "[DNM] ARM: dts: msm: Update ACD values for pineapple v2 release devices")
 			};
 =======
 			qcom,bus-freq = <1>;
