@@ -520,6 +520,7 @@ endif
 =======
 ifeq ($(CONFIG_ARCH_PINEAPPLE),y)
 dtbo-y += pineapple-kiwi-bt.dtbo
+dtbo-y += pineapple-hdk-kiwi-bt.dtbo
 endif
 
 >>>>>>> 3790727b (btfm: dts: msm: Add support for pineapple target)
