@@ -115,6 +115,9 @@
 };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a9596733 (ARM: dts: msm: add external bridge support for pineapple HDK)
 &tlmm {
 	lt9611_pins: lt9611_pins {
 		mux {
@@ -194,6 +197,7 @@
 	};
 };
 
+<<<<<<< HEAD
 &sde_dsi {
 	qcom,dsi-default-panel = <&dsi_ext_bridge_1080p>;
 	ports {
@@ -220,6 +224,21 @@
 &sde_dsi {
 	qcom,dsi-default-panel = <&dsi_vtdr6130_amoled_cmd>;
 >>>>>>> 1101b883 (ARM: dts: msm: add display support for pineapple HDK)
+=======
+&sde_dsi {
+	qcom,dsi-default-panel = <&dsi_ext_bridge_1080p>;
+	ports {
+		#address-cells = <1>;
+		#size-cells = <0>;
+
+		port@0 {
+			reg = <0>;
+			ext_dsi_0_out: endpoint {
+				remote-endpoint = <&lt9611_in_0>;
+			};
+		};
+	};
+>>>>>>> a9596733 (ARM: dts: msm: add external bridge support for pineapple HDK)
 };
 
 &qupv3_se4_spi {
