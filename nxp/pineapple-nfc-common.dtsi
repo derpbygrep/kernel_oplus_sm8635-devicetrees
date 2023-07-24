@@ -11,9 +11,6 @@
 		qcom,sn-ven = <&tlmm 34 0x00>;
 		qcom,sn-clkreq = <&tlmm 35 0x00>;
 		qcom,sn-szone = "enable";
-		qcom,sn-vdd-1p8-supply = <&L3C>;
-		qcom,sn-vdd-1p8-voltage = <1200000 1200000>;
-		qcom,sn-vdd-1p8-current = <6700>;
 		interrupt-parent = <&tlmm>;
 		interrupts = <75 0>;
 		interrupt-names = "nfc_irq";
