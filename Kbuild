@@ -688,7 +688,14 @@ dtbo-y += gpu/trinket-gpu.dtbo \
 		gpu/trinketp-gpu.dtbo
 endif
 
+<<<<<<< HEAD
 >>>>>>> 06b67afd (ARM: dts: msm: Add GPU support for trinket IoT)
+=======
+ifeq ($(CONFIG_ARCH_QCS405), y)
+dtbo-y += gpu/qcs405-gpu.dtbo
+endif
+
+>>>>>>> 96e2e3f0 (ARM: dts: msm: Add GPU support for QCS405 Target)
 always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
 clean-files    := *.dtb *.dtbo
