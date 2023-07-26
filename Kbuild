@@ -762,6 +762,7 @@ ifeq ($(CONFIG_ARCH_QCS405), y)
 dtbo-y += gpu/qcs405-gpu.dtbo
 endif
 
+<<<<<<< HEAD
 >>>>>>> 96e2e3f0 (ARM: dts: msm: Add GPU support for QCS405 Target)
 always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
@@ -930,6 +931,10 @@ clean-files	:= *.dtb *.dtbo
 =======
 ifeq ($(CONFIG_ARCH_CLIFFS), y)
 dtbo-y += cliffs-vidc.dtbo
+=======
+ifeq ($(CONFIG_ARCH_CLIFFS), y)
+dtbo-y += gpu/cliffs-gpu.dtbo
+>>>>>>> a87810c9 (ARM: dts: msm: Add support for Cliffs GPU)
 endif
 
 always-y    := $(dtb-y) $(dtbo-y)
