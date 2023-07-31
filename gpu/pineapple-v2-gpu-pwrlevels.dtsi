@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define ACD_LEVEL_TURBO_L2    0x882a5ffd
 =======
 >>>>>>> 8ac098f3 ([DNM] ARM: dts: msm: Update ACD values for pineapple v2 release devices)
@@ -10,6 +11,9 @@
 >>>>>>> ba54cf8d (ARM: dts: msm: Update pineapple v2 max GPU frequency)
 =======
 >>>>>>> d0745c72 (ARM: dts: msm: Update pineapple v2 max GPU frequency)
+=======
+#define ACD_LEVEL_TURBO_L2    0x882a5ffd
+>>>>>>> e7e3d372 (Revert "ARM: dts: msm: Update pineapple v2 max GPU frequency")
 #define ACD_LEVEL_TURBO_L1    0x882a5ffd
 #define ACD_LEVEL_TURBO       0x882a5ffd
 #define ACD_LEVEL_NOM_L1      0x882a5ffd
@@ -57,6 +61,7 @@
 		qcom,initial-pwrlevel = <11>;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		/* Turbo */
 		qcom,gpu-pwrlevel@0 {
 			reg = <0>;
@@ -65,6 +70,8 @@
 >>>>>>> 520c79d5 (Revert "ARM: dts: msm: Set correct default frequency for pineapple v2")
 
 <<<<<<< HEAD
+=======
+>>>>>>> e7e3d372 (Revert "ARM: dts: msm: Update pineapple v2 max GPU frequency")
 			qcom,sku-codes = <SKU_CODE(PCODE_0, FC_Y0)
 					SKU_CODE(PCODE_1, FC_Y0)
 					SKU_CODE(PCODE_0, FC_Y1)>;
@@ -88,6 +95,7 @@
 			/* Turbo_L1 */
 			qcom,gpu-pwrlevel@1 {
 				reg = <1>;
+<<<<<<< HEAD
 =======
 =======
 		compatible = "qcom,gpu-pwrlevels";
@@ -110,6 +118,8 @@
 			qcom,gpu-pwrlevel@0 {
 				reg = <0>;
 >>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
+=======
+>>>>>>> e7e3d372 (Revert "ARM: dts: msm: Update pineapple v2 max GPU frequency")
 				qcom,gpu-freq = <1000000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO_L1>;
 
@@ -122,12 +132,17 @@
 
 			/* Turbo_L1 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			qcom,gpu-pwrlevel@2 {
 				reg = <2>;
 =======
 			qcom,gpu-pwrlevel@1 {
 				reg = <1>;
 >>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
+=======
+			qcom,gpu-pwrlevel@2 {
+				reg = <2>;
+>>>>>>> e7e3d372 (Revert "ARM: dts: msm: Update pineapple v2 max GPU frequency")
 				qcom,gpu-freq = <950000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO_L1>;
 
@@ -138,12 +153,17 @@
 
 			/* Turbo */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			qcom,gpu-pwrlevel@3 {
 				reg = <3>;
 =======
 			qcom,gpu-pwrlevel@2 {
 				reg = <2>;
 >>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
+=======
+			qcom,gpu-pwrlevel@3 {
+				reg = <3>;
+>>>>>>> e7e3d372 (Revert "ARM: dts: msm: Update pineapple v2 max GPU frequency")
 				qcom,gpu-freq = <903000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_TURBO>;
 
@@ -156,12 +176,17 @@
 
 			/* Nom_L1 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			qcom,gpu-pwrlevel@4 {
 				reg = <4>;
 =======
 			qcom,gpu-pwrlevel@3 {
 				reg = <3>;
 >>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
+=======
+			qcom,gpu-pwrlevel@4 {
+				reg = <4>;
+>>>>>>> e7e3d372 (Revert "ARM: dts: msm: Update pineapple v2 max GPU frequency")
 				qcom,gpu-freq = <834000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_NOM_L1>;
 
@@ -174,12 +199,17 @@
 
 			/* Nom */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			qcom,gpu-pwrlevel@5 {
 				reg = <5>;
 =======
 			qcom,gpu-pwrlevel@4 {
 				reg = <4>;
 >>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
+=======
+			qcom,gpu-pwrlevel@5 {
+				reg = <5>;
+>>>>>>> e7e3d372 (Revert "ARM: dts: msm: Update pineapple v2 max GPU frequency")
 				qcom,gpu-freq = <770000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_NOM>;
 
@@ -192,12 +222,17 @@
 
 			/* SVS_L2 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			qcom,gpu-pwrlevel@6 {
 				reg = <6>;
 =======
 			qcom,gpu-pwrlevel@5 {
 				reg = <5>;
 >>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
+=======
+			qcom,gpu-pwrlevel@6 {
+				reg = <6>;
+>>>>>>> e7e3d372 (Revert "ARM: dts: msm: Update pineapple v2 max GPU frequency")
 				qcom,gpu-freq = <720000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L2>;
 
@@ -210,12 +245,17 @@
 
 			/* SVS_L1 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			qcom,gpu-pwrlevel@7 {
 				reg = <7>;
 =======
 			qcom,gpu-pwrlevel@6 {
 				reg = <6>;
 >>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
+=======
+			qcom,gpu-pwrlevel@7 {
+				reg = <7>;
+>>>>>>> e7e3d372 (Revert "ARM: dts: msm: Update pineapple v2 max GPU frequency")
 				qcom,gpu-freq = <680000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L1>;
 
@@ -228,12 +268,17 @@
 
 			/* SVS_L0 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			qcom,gpu-pwrlevel@8 {
 				reg = <8>;
 =======
 			qcom,gpu-pwrlevel@7 {
 				reg = <7>;
 >>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
+=======
+			qcom,gpu-pwrlevel@8 {
+				reg = <8>;
+>>>>>>> e7e3d372 (Revert "ARM: dts: msm: Update pineapple v2 max GPU frequency")
 				qcom,gpu-freq = <629000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L0>;
 
@@ -246,12 +291,17 @@
 
 			/* SVS */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			qcom,gpu-pwrlevel@9 {
 				reg = <9>;
 =======
 			qcom,gpu-pwrlevel@8 {
 				reg = <8>;
 >>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
+=======
+			qcom,gpu-pwrlevel@9 {
+				reg = <9>;
+>>>>>>> e7e3d372 (Revert "ARM: dts: msm: Update pineapple v2 max GPU frequency")
 				qcom,gpu-freq = <578000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS>;
 
@@ -264,12 +314,17 @@
 
 			/* Low_SVS_L1 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			qcom,gpu-pwrlevel@10 {
 				reg = <10>;
 =======
 			qcom,gpu-pwrlevel@9 {
 				reg = <9>;
 >>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
+=======
+			qcom,gpu-pwrlevel@10 {
+				reg = <10>;
+>>>>>>> e7e3d372 (Revert "ARM: dts: msm: Update pineapple v2 max GPU frequency")
 				qcom,gpu-freq = <500000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_L1>;
 
@@ -282,12 +337,17 @@
 
 			/* Low_SVS */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			qcom,gpu-pwrlevel@11 {
 				reg = <11>;
 =======
 			qcom,gpu-pwrlevel@10 {
 				reg = <10>;
 >>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
+=======
+			qcom,gpu-pwrlevel@11 {
+				reg = <11>;
+>>>>>>> e7e3d372 (Revert "ARM: dts: msm: Update pineapple v2 max GPU frequency")
 				qcom,gpu-freq = <422000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS>;
 
@@ -300,12 +360,17 @@
 
 			/* Low_SVS_D0 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			qcom,gpu-pwrlevel@12 {
 				reg = <12>;
 =======
 			qcom,gpu-pwrlevel@11 {
 				reg = <11>;
 >>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
+=======
+			qcom,gpu-pwrlevel@12 {
+				reg = <12>;
+>>>>>>> e7e3d372 (Revert "ARM: dts: msm: Update pineapple v2 max GPU frequency")
 				qcom,gpu-freq = <366000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D0>;
 
@@ -318,12 +383,17 @@
 
 			/* Low_SVS_D1 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			qcom,gpu-pwrlevel@13 {
 				reg = <13>;
 =======
 			qcom,gpu-pwrlevel@12 {
 				reg = <12>;
 >>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
+=======
+			qcom,gpu-pwrlevel@13 {
+				reg = <13>;
+>>>>>>> e7e3d372 (Revert "ARM: dts: msm: Update pineapple v2 max GPU frequency")
 				qcom,gpu-freq = <310000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
@@ -336,17 +406,23 @@
 
 			/* Low_SVS_D2 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			qcom,gpu-pwrlevel@14 {
 				reg = <14>;
 =======
 			qcom,gpu-pwrlevel@13 {
 				reg = <13>;
 >>>>>>> 5b316ee6 (ARM: dts: msm: Enable 1Ghz GPU freq for pineapple v2)
+=======
+			qcom,gpu-pwrlevel@14 {
+				reg = <14>;
+>>>>>>> e7e3d372 (Revert "ARM: dts: msm: Update pineapple v2 max GPU frequency")
 				qcom,gpu-freq = <231000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D2>;
 
 				qcom,bus-freq = <1>;
 				qcom,bus-min = <1>;
+<<<<<<< HEAD
 <<<<<<< HEAD
 				qcom,bus-max = <1>;
 <<<<<<< HEAD
@@ -357,6 +433,11 @@
 
 				qcom,acd-level = <ACD_LEVEL_LOW_SVS_D2>;
 >>>>>>> d6cabb02 (ARM: dts: msm: Update ACD values for pineapple v2 devices)
+=======
+				qcom,bus-max = <1>;
+
+				qcom,acd-level = <ACD_LEVEL_LOW_SVS_D2>;
+>>>>>>> e7e3d372 (Revert "ARM: dts: msm: Update pineapple v2 max GPU frequency")
 			};
 		};
 
@@ -365,10 +446,13 @@
 			#size-cells = <0>;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> ba54cf8d (ARM: dts: msm: Update pineapple v2 max GPU frequency)
 =======
 >>>>>>> d0745c72 (ARM: dts: msm: Update pineapple v2 max GPU frequency)
+=======
+>>>>>>> e7e3d372 (Revert "ARM: dts: msm: Update pineapple v2 max GPU frequency")
 			qcom,sku-codes = <SKU_CODE(PCODE_UNKNOWN, FC_AC)
 					SKU_CODE(PCODE_0, FC_Y0)
 					SKU_CODE(PCODE_1, FC_Y0)
@@ -570,7 +654,7 @@
 			};
 		};
 
-		qcom,gpu-pwrlevels-1 {
+		qcom,gpu-pwrlevels-2 {
 			#address-cells = <1>;
 			#size-cells = <0>;
 =======
