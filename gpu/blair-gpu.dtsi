@@ -40,8 +40,6 @@
 	vdd-parent-supply = <&S8A_LEVEL>;
 	vdd-parent-min-corner = <RPM_SMD_REGULATOR_LEVEL_RETENTION>;
 
-	qcom,no-nap;
-
 	qcom,gpu-quirk-secvid-set-once;
 
 	qcom,min-access-length = <32>;

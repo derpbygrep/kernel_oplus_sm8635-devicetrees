@@ -65,8 +65,6 @@
 			"gcc_gpu_snoc_dvm_gfx",
 			"gpu_cc_ahb", "apb_pclk";
 
-	qcom,no-nap;
-
 	qcom,min-access-length = <32>;
 
 	qcom,ubwc-mode = <4>;

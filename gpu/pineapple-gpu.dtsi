@@ -50,8 +50,6 @@
 
 	qcom,chipid = <0x43051400>;
 
-	qcom,no-nap;
-
 	qcom,min-access-length = <32>;
 
 	qcom,ubwc-mode = <4>;
