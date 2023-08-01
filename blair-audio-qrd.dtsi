@@ -25,13 +25,13 @@
 	qcom,wcn-btfm = <1>;
 	qcom,audio-routing =
 		"AMIC1", "Analog Mic1",
-		"Analog Mic1", "MIC BIAS1",
+		"AMIC1", "MIC BIAS1",
 		"AMIC2", "Analog Mic2",
-		"Analog Mic2", "MIC BIAS2",
+		"AMIC2", "MIC BIAS2",
 		"AMIC3", "Analog Mic3",
-		"Analog Mic3", "MIC BIAS3",
+		"AMIC3", "MIC BIAS3",
 		"AMIC4", "Analog Mic4",
-		"Analog Mic4", "MIC BIAS3",
+		"AMIC4", "MIC BIAS3",
 		"TX DMIC0", "Digital Mic0",
 		"TX DMIC0", "MIC BIAS1",
 		"TX DMIC1", "Digital Mic1",
@@ -79,6 +79,6 @@
 			   "wcd937x_codec", "wsa-codec0";
 	qcom,wsa-max-devs = <1>;
 	qcom,wsa-aux-dev-prefix = "SpkrMono";
-	qcom,msm_audio_ssr_devs = <&audio_gpr>, <&bolero_cdc>,
-								  <&lpi_tlmm>;
+	qcom,msm_audio_ssr_devs = <&audio_gpr>, <&lpi_tlmm>,
+								<&bolero_cdc>;
 };

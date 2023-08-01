@@ -198,12 +198,12 @@
 			<2 COMP_L 0x1 0 COMP_L>, <2 COMP_R 0x2 0 COMP_R>,
 			<3 LO 0x1 0 LO>, <4 DSD_L 0x1 0 DSD_L>,
 			<4 DSD_R 0x2 0 DSD_R>;
-		qcom,tx_swr_ch_map = <0 ADC1 0x1 0 SWRM_TX1_CH1>,
-			<1 ADC2 0x1 0 SWRM_TX2_CH1>,
-			<1 ADC3 0x2 0 SWRM_TX2_CH2>,
+		qcom,tx_swr_ch_map = <0 ADC1 0x1 4800000 SWRM_TX1_CH1>,
+			<1 ADC2 0x1 4800000 SWRM_TX2_CH1>,
+			<1 ADC3 0x2 4800000 SWRM_TX2_CH2>,
 			<2 DMIC0 0x1 0 SWRM_TX1_CH4>,
 			<2 DMIC1 0x2 0 SWRM_TX2_CH1>,
-			<2 MBHC 0x4 0 SWRM_TX2_CH2>,
+			<2 MBHC 0x4 4800000 SWRM_TX2_CH2>,
 			<3 DMIC2 0x1 0 SWRM_TX2_CH3>,
 			<3 DMIC3 0x2 0 SWRM_TX2_CH4>,
 			<3 DMIC4 0x4 0 SWRM_TX3_CH1>,
@@ -255,13 +255,13 @@
 		qcom,rxtx-bolero-codec = <1>;
 		qcom,audio-routing =
 			"AMIC1", "Analog Mic1",
-			"Analog Mic1", "MIC BIAS1",
+			"AMIC1", "MIC BIAS1",
 			"AMIC2", "Analog Mic2",
-			"Analog Mic2", "MIC BIAS2",
+			"AMIC2", "MIC BIAS2",
 			"AMIC3", "Analog Mic3",
-			"Analog Mic3", "MIC BIAS3",
+			"AMIC3", "MIC BIAS3",
 			"AMIC4", "Analog Mic4",
-			"Analog Mic4", "MIC BIAS3",
+			"AMIC4", "MIC BIAS3",
 			"TX DMIC0", "Digital Mic0",
 			"TX DMIC0", "MIC BIAS1",
 			"TX DMIC1", "Digital Mic1",
@@ -309,8 +309,8 @@
 				   "wcd937x_codec", "wsa-codec0";
 		qcom,wsa-max-devs = <1>;
 		qcom,wsa-aux-dev-prefix = "SpkrMono";
-		qcom,msm_audio_ssr_devs = <&audio_gpr>, <&bolero_cdc>,
-								  <&lpi_tlmm>;
+		qcom,msm_audio_ssr_devs = <&audio_gpr>, <&lpi_tlmm>,
+									<&bolero_cdc>;
 	};
 
 	rx_swr_gpios: rx_swr_clk_data_pinctrl {
