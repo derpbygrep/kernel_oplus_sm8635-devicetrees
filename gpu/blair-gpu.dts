@@ -15,6 +15,6 @@
 / {
 		model = "Qualcomm Technologies, Inc. Blair";
 		compatible = "qcom,blair";
-		qcom,msm-id = <507 0x10000>;
+		qcom,msm-id = <507 0x10000>, <578 0x10000>;
 		qcom,board-id = <0 0>;
 };
