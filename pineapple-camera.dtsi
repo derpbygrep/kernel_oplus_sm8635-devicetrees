@@ -3233,6 +3233,7 @@
 		ubwc-bps-fetch-cfg = <0x707b 0x7083>;
 		ubwc-bps-write-cfg = <0x161ef 0x1620f>;
 		qos-val = <0x808>;
+		fw-pas-id = <33>;
 		cam_hw_pid = <11>;
 		status = "ok";
 	};
