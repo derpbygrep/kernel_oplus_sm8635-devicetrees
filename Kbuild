@@ -635,6 +635,7 @@ dtbo-y += pineapple-vidc.dtbo
 dtbo-y += pineapple-vidc-v2.dtbo
 endif
 
+<<<<<<< HEAD
 =======
 >>>>>>> b3f75993 (ARM: dts: msm: remove Waipio target)
 =======
@@ -807,3 +808,12 @@ clean-files	:= *.dtb *.dtbo
 >>>>>>> 1cb703bb (mm-sys-devicetree: build framework files)
 =======
 >>>>>>> 6cd3bca3 (fingerprint-devicetree: Move QBT DTSI configs to Vendor SI)
+=======
+ifeq ($(CONFIG_ARCH_CLIFFS), y)
+dtbo-y += cliffs-vidc.dtbo
+endif
+
+always-y    := $(dtb-y) $(dtbo-y)
+subdir-y    := $(dts-dirs)
+clean-files    := *.dtb *.dtbo
+>>>>>>> 91545d0e (ARM: dts: msm: enable dt for cliffs target)
