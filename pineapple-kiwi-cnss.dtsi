@@ -183,7 +183,7 @@
 			qcom,iommu-geometry = <0xa0000000 0x10010000>;
 			qcom,iommu-dma = "fastmap";
 			qcom,iommu-pagetable = "coherent";
-			qcom,iommu-faults = "stall-disable", "HUPCF", "no-CFRE",
+			qcom,iommu-faults = "stall-disable", "HUPCF",
 					    "non-fatal";
 		};
 	};
