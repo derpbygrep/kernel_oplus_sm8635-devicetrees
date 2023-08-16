@@ -290,7 +290,11 @@
 		/* MCLK2 */
 		mux {
 			pins = "gpio66";
+<<<<<<< HEAD
 			function = "cam_mclk";
+=======
+			function = "cam_aon_mclk2";
+>>>>>>> 0b1b45fa (ARM: dts: msm: Add camera sensor DT for cliffs)
 		};
 
 		config {
@@ -304,7 +308,11 @@
 		/* MCLK2 */
 		mux {
 			pins = "gpio66";
+<<<<<<< HEAD
 			function = "cam_mclk";
+=======
+			function = "cam_aon_mclk2";
+>>>>>>> 0b1b45fa (ARM: dts: msm: Add camera sensor DT for cliffs)
 		};
 
 		config {
@@ -462,6 +470,10 @@
 			pins = "gpio12";
 			bias-disable; /* No PULL */
 			drive-strength = <2>; /* 2 MA */
+<<<<<<< HEAD
+=======
+			qcom,apps;
+>>>>>>> 0b1b45fa (ARM: dts: msm: Add camera sensor DT for cliffs)
 		};
 	};
 
@@ -476,6 +488,10 @@
 			bias-pull-down; /* PULL DOWN */
 			drive-strength = <2>; /* 2 MA */
 			output-low;
+<<<<<<< HEAD
+=======
+			qcom,remote;
+>>>>>>> 0b1b45fa (ARM: dts: msm: Add camera sensor DT for cliffs)
 		};
 	};
 

@@ -15,6 +15,7 @@ dtbo-$(CONFIG_ARCH_PINEAPPLE)	+= pineapple-camera-v2.dtbo \
 =======
 dtbo-$(CONFIG_ARCH_CLIFFS)	+= cliffs-camera.dtbo
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> c6bd8b8e (ARM: dts: msm: Add camera device tree for Cliffs)
 =======
 dtbo-$(CONFIG_ARCH_CLIFFS)	+= cliffs-camera-sensor-cdp.dtbo \
@@ -25,3 +26,7 @@ dtbo-$(CONFIG_ARCH_CLIFFS)	+= cliffs-camera-sensor-cdp.dtbo \
 								cliffs-camera-sensor-mtp.dtbo \
 								cliffs-camera-sensor-qrd.dtbo
 >>>>>>> b15a5b90 (ARM: dts: msm: Add camera sensor DT for cliffs)
+=======
+dtbo-$(CONFIG_ARCH_CLIFFS)	+= cliffs-camera-sensor-cdp.dtbo \
+								cliffs-camera-sensor-mtp.dtbo
+>>>>>>> 0b1b45fa (ARM: dts: msm: Add camera sensor DT for cliffs)
