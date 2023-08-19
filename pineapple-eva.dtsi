@@ -81,6 +81,11 @@
 			qti,smmu-proxy-cb-id = <QTI_SMMU_PROXY_EVA_CB>;
 		};
 
+		non_secure_cb_group: cvp_non_secure_cb_group {
+			qcom,iommu-dma-addr-pool = <0x4b000000 0x90000000>;
+			qcom,iommu-faults = "non-fatal";
+		};
+
 		cvp_non_secure_cb {
 			compatible = "qcom,msm-cvp,context-bank";
 			label = "cvp_hlos";
@@ -88,8 +93,7 @@
 				<&apps_smmu 0x1920 0x0000>;
 			buffer-types = <0xfff>;
 			dma-coherent;
-			qcom,iommu-faults = "non-fatal";
-			qcom,iommu-dma-addr-pool = <0x4b000000 0x90000000>;
+			qcom,iommu-group = <&non_secure_cb_group>;
 		};
 
 
@@ -113,6 +117,15 @@
 			qcom,iommu-faults = "non-fatal";
 			qcom,iommu-dma-addr-pool = <0x26800000 0x24800000>;
 			qcom,iommu-vmid = <0xA>;
+		};
+
+		cvp_dsp_cb {
+			compatible = "qcom,msm-cvp,context-bank";
+			label = "cvp_dsp";
+			iommus =
+				<&apps_smmu 0x1920 0x0000>;
+			buffer-types = <0xfff>;
+			qcom,iommu-group = <&non_secure_cb_group>;
 		};
 
 		/* Memory Heaps */
