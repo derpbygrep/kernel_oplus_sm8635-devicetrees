@@ -717,8 +717,15 @@ dtbo-y += gpu/trinket-gpu.dtbo \
 endif
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 06b67afd (ARM: dts: msm: Add GPU support for trinket IoT)
 =======
+=======
+ifeq ($(CONFIG_ARCH_HOLI), y)
+dtbo-y += gpu/holi-gpu.dtbo
+endif
+
+>>>>>>> 4415a402 (ARM: dts: msm: Add initial support for holi GPU)
 ifeq ($(CONFIG_ARCH_QCS405), y)
 dtbo-y += gpu/qcs405-gpu.dtbo
 endif
