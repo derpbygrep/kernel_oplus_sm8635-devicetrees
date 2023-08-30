@@ -225,6 +225,10 @@ dtbo-y += pineapple-eva.dtbo
 dtbo-y += pineapple-eva-v2.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_CLIFFS), y)
+dtbo-y += cliffs-eva.dtbo
+endif
+
 ifeq ($(CONFIG_ARCH_KALAMA), y)
 dtbo-y += kalama-eva.dtbo
 endif
