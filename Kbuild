@@ -804,11 +804,14 @@ dtbo-y += pineapple-kiwi-cnss.dtbo
 dtbo-y += pineapplep-hdk-kiwi-cnss.dtbo
 endif
 
+<<<<<<< HEAD
 ifeq ($(CONFIG_ARCH_SUN),y)
 dtbo-y += sun-peach-cnss.dtbo
 dtbo-y += sun-peach-cnss-v8.dtbo
 endif
 
+=======
+>>>>>>> 443869b8 (ARM: dts: msm: Add board id for cliffs wlan attachements)
 ifeq ($(CONFIG_ARCH_CLIFFS),y)
 dtbo-y += cliffs-kiwi-cnss.dtbo
 dtbo-y += cliffs-qca6750.dtbo
