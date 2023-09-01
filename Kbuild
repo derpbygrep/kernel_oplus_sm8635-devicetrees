@@ -756,6 +756,11 @@ dtbo-y += pineapple-kiwi-cnss.dtbo
 dtbo-y += pineapplep-hdk-kiwi-cnss.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_CLIFFS),y)
+dtbo-y += cliffs-kiwi-cnss.dtbo
+dtbo-y += cliffs-qca6750.dtbo
+endif
+
 ifeq ($(CONFIG_ARCH_MONACO),y)
 dtbo-y += monaco-cnss.dtbo
 dtbo-y += monaco-standalone-cnss.dtbo
