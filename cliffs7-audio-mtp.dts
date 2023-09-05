@@ -1,7 +1,7 @@
 /dts-v1/;
 /plugin/;
 
-#include "cliffs-audio-mtp.dtsi"
+#include "cliffs7-audio-mtp.dtsi"
  / {
 	model = "Qualcomm Technologies, Inc. Cliffs MTP";
 	compatible = "qcom,cliffs-mtp", "qcom,cliffs", "qcom,mtp";

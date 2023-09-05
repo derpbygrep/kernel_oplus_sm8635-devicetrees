@@ -1,7 +1,7 @@
 /dts-v1/;
 /plugin/;
 
-#include "cliffs-audio-cdp.dtsi"
+#include "cliffs7-audio-cdp.dtsi"
  / {
 	model = "Qualcomm Technologies, Inc. Cliffs CDP";
 	compatible = "qcom,cliffs-cdp", "qcom,cliffs", "qcom,cdp";

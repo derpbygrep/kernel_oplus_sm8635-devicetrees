@@ -1,7 +1,7 @@
 /dts-v1/;
 /plugin/;
 
-#include "cliffs-audio-atp.dtsi"
+#include "cliffs7-audio-atp.dtsi"
  / {
 	model = "Qualcomm Technologies, Inc. Cliffs ATP";
 	compatible = "qcom,cliffs-atp", "qcom,cliffs", "qcom,atp";

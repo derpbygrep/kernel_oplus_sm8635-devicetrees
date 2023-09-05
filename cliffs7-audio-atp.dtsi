@@ -1,1 +1,2 @@
 #include "cliffs-audio-qrd.dtsi"
+#include "cliffs-adsp_loader.dtsi"
