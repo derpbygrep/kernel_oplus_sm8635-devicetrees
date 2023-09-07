@@ -707,6 +707,7 @@ clean-files    := *.dtb *.dtbo
 >>>>>>> 82fb2209 (ARM: dts: msm: mm-drivers: add support for hw-fence feature on kalama)
 =======
 ifeq ($(CONFIG_ARCH_PINEAPPLE), y)
+ifneq ($(CONFIG_ARCH_QTI_VM), y)
 dtbo-y += pineapple-dsp.dtbo
 =======
 ifeq ($(CONFIG_ARCH_SDXPINN),y)
@@ -792,6 +793,7 @@ endif
 
 ifeq ($(CONFIG_ARCH_KONA),y)
 dtbo-y += kona-iot-vc-cnss.dtbo
+endif
 endif
 
 ifeq ($(CONFIG_ARCH_QTI_VM), y)
