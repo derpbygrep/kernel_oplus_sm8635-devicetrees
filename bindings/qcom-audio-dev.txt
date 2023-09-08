@@ -2644,25 +2644,46 @@ Optional properties:
 - qcom,usbcss-hs-xtalk-config: Indicates the type of crosstalk to support. 0 for digital crosstalk
 			       disabled, 1 for digital crosstalk with local sensed a-xtalk enabled,
 			       and 2 for digital crosstalk with remote sensed a-xtalk enabled.
-- qcom,usbcss-hs-rdson: Impedance of the external MOSFET on the ground path, in milliohms.
-			Attainable from the device datasheet via the Rds(on) parameter.
-- qcom,usbcss-hs-r2: Parasitic resistances on the audio path between the external MOSFET and the
-		     USB-C connector, in milliohms.
-- qcom,usbcss-hs-r3: Parasitic resistances on the audio path between the WCD and external MOSFET, in
-		     milliohms.
-- qcom,usbcss-hs-r4: Parasitic resistance on the ground path between the external MOSFET and the USB
-		     connector, in milliohms.
-- qcom,usbcss-hs-r5: For digital crosstalk with remote sensed analog crosstalk mode, ground path
-		     parasitic resistance between the WCD SBU pin and the external MOSFET, in
-		     milliohms.
-- qcom,usbcss-hs-r6: For digital crosstalk with local sensed analog crosstalk mode, ground path
-		     parasitic resistance between the WCD GSBU tap point and the external MOSFET, in
-		     milliohms.
-- qcom,usbcss-hs-r7: For digital crosstalk with local sensed analog crosstalk mode, ground path
-		     parasitic resistance between the WCD GSBU tap point and the WCD SBU pin, in
-		     milliohms.
+- qcom,usbcss-hs-rdson-3p6v: Impedance of the external MOSFET with Vgs=3.6V, in milliohms.
+			     Attainable from the device datasheet via the Rds(on) parameter.
+- qcom,usbcss-hs-rdson-6v: Impedance of the external MOSFET with Vgs=6V, in milliohms. Attainable
+			   from the device datasheet via the Rds(on) parameter.
+- qcom,usbcss-hs-r1-l: Parasitic resistances on the audio path between HPH_L and HPHL_FB, in
+		       milliohms.
+- qcom,usbcss-hs-r1-r: Parasitic resistances on the audio path between HPH_R and HPHR_FB, in
+		       milliohms.
+- qcom,usbcss-hs-r3-l: Parasitic resistances on the audio path between the WCD and external MOSFET,
+		       left channel, in milliohms.
+- qcom,usbcss-hs-r3-r: Parasitic resistances on the audio path between the WCD and external MOSFET,
+		       right channel, in milliohms.
+- qcom,usbcss-hs-r4-sbu1: Parasitic resistance on the ground path between the external MOSFET and
+			  the USB connector, SBU1 ground, in milliohms.
+- qcom,usbcss-hs-r4-sbu2: Parasitic resistance on the ground path between the external MOSFET and
+			  the USB connector, SBU2 ground, in milliohms.
+- qcom,usbcss-hs-r5-sbu1: For digital crosstalk with remote sensed analog crosstalk mode, ground
+			  path parasitic resistance between the WCD SBU pin and the external MOSFET,
+			  SBU1 ground, in milliohms.
+- qcom,usbcss-hs-r5-sbu2: For digital crosstalk with remote sensed analog crosstalk mode, ground
+			  path parasitic resistance between the WCD SBU pin and the external MOSFET,
+			  SBU2 ground, in milliohms.
+- qcom,usbcss-hs-r6-sbu1: For digital crosstalk with local sensed analog crosstalk mode, ground path
+			  parasitic resistance between the WCD GSBU tap point and the external
+			  MOSFET, SBU1 ground, in milliohms.
+- qcom,usbcss-hs-r6-sbu2: For digital crosstalk with local sensed analog crosstalk mode, ground path
+			  parasitic resistance between the WCD GSBU tap point and the external
+			  MOSFET, SBU2 ground, in milliohms.
+- qcom,usbcss-hs-r7-sbu1: For digital crosstalk with local sensed analog crosstalk mode, ground path
+			  parasitic resistance between the WCD GSBU tap point and the WCD SBU pin,
+			  SBU1 ground, in milliohms.
+- qcom,usbcss-hs-r7-sbu2: For digital crosstalk with local sensed analog crosstalk mode, ground path
+			  parasitic resistance between the WCD GSBU tap point and the WCD SBU pin,
+			  SBU2 ground, in milliohms.
+- qcom,usbcss-hs-rcom-margin: A margin to check if the calculated common ground impedance is in a
+			      reasonable range or not, in milliohms. This margin should have normal
+			      run-to-run variation and dongle-to-dongle variation covered.
+- qcom,usbcss-hs-diff-slope: A slope to adjust the device-to-device MBHC differential impedance
+			     measurement error, between 9800 and 10000.
 - qcom,usbcss-hs-lin-k-aud: Tap out linearizer constant for the audio path, must be -90 or greater.
-- qcom,usbcss-hs-lin-k-gnd: Tap out linearizer constant for the ground path, must be -90 or greater.
 
 Example:
 	kalama_snd: sound {
