@@ -831,11 +831,18 @@ dtbo-y += blair-dsp.dtbo
 >>>>>>> 5f15a294 (ARM: dts: msm: Add blair dts and dtsi files)
 endif
 
+<<<<<<< HEAD
 ifeq ($(CONFIG_ARCH_BLAIR),y)
 dtbo-y += blair-ipa.dtbo
 endif
 
 <<<<<<< HEAD
+=======
+ifeq ($(CONFIG_ARCH_HOLI), y)
+dtbo-y += holi-dsp.dtbo
+endif
+
+>>>>>>> 41fbc768 (ARM: dts: msm: Add holi dts and dtsi files)
 ifeq ($(CONFIG_ARCH_CLIFFS), y)
 dtbo-y += cliffs-dsp.dtbo
 =======
