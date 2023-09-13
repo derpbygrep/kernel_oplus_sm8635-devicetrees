@@ -829,8 +829,13 @@ ifeq ($(CONFIG_ARCH_BLAIR),y)
 dtbo-y += blair-ipa.dtbo
 endif
 
+<<<<<<< HEAD
 ifeq ($(CONFIG_ARCH_CLIFFS), y)
 dtbo-y += cliffs-dsp.dtbo
+=======
+ifeq ($(CONFIG_ARCH_HOLI),y)
+dtbo-y += holi-ipa.dtbo
+>>>>>>> e136b5bf (ARM: dts: msm: Add ipa_hw support for holi)
 endif
 
 always-y	:= $(dtb-y) $(dtbo-y)
