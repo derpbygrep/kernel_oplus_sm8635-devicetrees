@@ -864,6 +864,11 @@ dtbo-y += holi-ipa.dtbo
 >>>>>>> e136b5bf (ARM: dts: msm: Add ipa_hw support for holi)
 endif
 
+ifeq ($(CONFIG_ARCH_HOLI),y)
+dtbo-y += nxp/holi-nfc.dtbo \
+          nxp/holi-pm6125-nfc.dtbo
+endif
+
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
