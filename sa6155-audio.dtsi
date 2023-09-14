@@ -459,6 +459,14 @@
 	};
 };
 
+&dai_pri_auxpcm_rx{
+	pinctrl-names = "default", "sleep";
+	pinctrl-0 = <&pri_aux_pcm_sck_active &pri_aux_pcm_ws_active
+			&pri_aux_pcm_data0_active &pri_aux_pcm_data1_active>;
+	pinctrl-1 = <&pri_aux_pcm_sck_sleep &pri_aux_pcm_ws_sleep
+			&pri_aux_pcm_data0_sleep &pri_aux_pcm_data1_sleep>;
+};
+
 &dai_msm_q6 {
 	compatible = "qcom,msm-dai-q6";
 
