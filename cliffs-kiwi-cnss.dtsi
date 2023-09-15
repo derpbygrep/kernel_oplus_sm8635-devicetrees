@@ -12,6 +12,10 @@
 	status = "disabled";
 };
 
+&pcie0 {
+	status = "ok";
+};
+
 &tlmm {
 	cnss_pins {
 		cnss_wlan_en_active: cnss_wlan_en_active {
@@ -80,7 +84,7 @@
 		qcom,qmp = <&aoss_qmp>;
 
 		interconnects =
-		<&pcie_noc MASTER_PCIE_0 &pcie_noc SLAVE_ANOC_PCIE_GEM_NOC>,
+		<&pcie_anoc MASTER_PCIE_0 &pcie_anoc SLAVE_ANOC_PCIE_GEM_NOC>,
 		<&gem_noc MASTER_ANOC_PCIE_GEM_NOC &mc_virt SLAVE_EBI1>;
 		interconnect-names = "pcie_to_memnoc", "memnoc_to_ddr";
 
