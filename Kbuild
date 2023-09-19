@@ -887,6 +887,10 @@ dtbo-y += nxp/holi-nfc.dtbo \
           nxp/holi-pm6125-nfc.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_CLIFFS),y)
+dtbo-y += cliffs-ipa.dtbo
+endif
+
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
