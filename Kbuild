@@ -564,6 +564,11 @@ ifeq ($(CONFIG_ARCH_TRINKET), y)
 dtbo-y += trinket-bt-v1.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_HOLI),y)
+dtbo-y += holi-bt.dtbo
+dtbo-y += holi-pm6125-bt.dtbo
+endif
+
 always-y        := $(dtb-y) $(dtbo-y)
 subdir-y        := $(dts-dirs)
 clean-files     := *.dtb *.dtbo
