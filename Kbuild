@@ -215,7 +215,14 @@ dtbo-y += kalama-ese-qrd.dtbo
 =======
 =======
 ifneq ($(CONFIG_ARCH_QTI_VM), y)
-dtbo-$(CONFIG_ARCH_CLIFFS) += display/cliffs-sde.dtbo
+dtbo-$(CONFIG_ARCH_CLIFFS) += display/cliffs-sde.dtbo \
+		display/cliffs-sde-display-rumi-overlay.dtbo \
+		display/cliffs-sde-display-cdp-overlay.dtbo \
+		display/cliffs-sde-display-rcm-overlay.dtbo \
+		display/cliffs-sde-display-mtp-overlay.dtbo \
+		display/cliffs-sde-display-mtp-wcd9395-overlay.dtbo \
+		display/cliffs-sde-display-qrd-overlay.dtbo \
+		display/cliffs-sde-display-atp-overlay.dtbo
 endif
 
 >>>>>>> 737bf172 (ARM: dts: msm: add display dt node for cliffs target)
