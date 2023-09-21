@@ -128,6 +128,7 @@ ifeq ($(CONFIG_ARCH_WAIPIO), y)
 >>>>>>> 66237747 (ARM: dts: msm: add target config based device tree compilation)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 endif
 =======
 ifeq ($(CONFIG_ARCH_SA8155), y)
@@ -212,6 +213,12 @@ dtbo-y += kalama-ese-qrd.dtbo
 >>>>>>> 33d788bc (Devicetree: eSE: To add eSE GPIO device node for kalama)
 =======
 =======
+=======
+ifneq ($(CONFIG_ARCH_QTI_VM), y)
+dtbo-$(CONFIG_ARCH_CLIFFS) += display/cliffs-sde.dtbo
+endif
+
+>>>>>>> 737bf172 (ARM: dts: msm: add display dt node for cliffs target)
 ifeq ($(CONFIG_ARCH_SA8155), y)
 dtbo-y += display/sa8155-adp-star-display.dtbo
 endif
