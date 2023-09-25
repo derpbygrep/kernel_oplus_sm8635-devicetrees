@@ -1,7 +1,7 @@
 &mdss_mdp {
 	dsi_vtdr6130_amoled_120hz_video: qcom,mdss_dsi_vtdr6130_fhd_plus_120hz_vid {
 		qcom,mdss-dsi-panel-name =
-			"vtdr6130 amoled video mode 120hz dsi visionox panel with DSC";
+			"vtdr6130 amoled video mode dsi visionox panel with DSC";
 		qcom,mdss-dsi-panel-type = "dsi_video_mode";
 		qcom,mdss-dsi-panel-physical-type = "oled";
 		qcom,mdss-dsi-virtual-channel-id = <0>;
