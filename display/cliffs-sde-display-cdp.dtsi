@@ -1,5 +1,9 @@
 #include "cliffs-sde-display.dtsi"
 
+&sde_dp {
+	qcom,dp-aux-switch = <&wcd_usbss>;
+};
+
 &dsi_vtdr6130_amoled_cmd {
 	qcom,panel-supply-entries = <&dsi_panel_pwr_supply_amoled>;
 	qcom,panel-sec-supply-entries = <&dsi_panel_pwr_supply_amoled>;
