@@ -149,7 +149,6 @@
 		qcom,wcn-bt = <0>;
 		qcom,ext-disp-audio-rx = <0>;
 		qcom,afe-rxtx-lb = <0>;
-
 		clock-names = "lpass_audio_hw_vote";
 		clocks = <&lpass_audio_hw_vote 0>;
 		wcd939x-i2c-handle = <&wcd_usbss>;

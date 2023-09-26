@@ -1,4 +1,4 @@
-#include "cliffs-audio-overlay"
+#include "cliffs-audio-overlay.dtsi"
 
 &fm_i2s1_gpios {
 	status = "ok";
@@ -10,7 +10,7 @@
 
 &pineapple_snd {
 	qcom,sec-mi2s-gpios = <&fm_i2s1_gpios>;
-	qcom,model = "cliffs-idp-wcd9395-snd-card";
+	qcom,model = "cliffs-mtp-wcd9395-snd-card";
 	qcom,audio-routing =
 		"TX DMIC0", "Digital Mic0",
 		"TX DMIC0", "MIC BIAS3",
