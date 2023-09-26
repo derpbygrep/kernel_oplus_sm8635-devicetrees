@@ -240,6 +240,7 @@
 			<0xbbf0000 0x1f00>,
 			<0xadd7000 0x5000>;
 		reg-cam-base = <0x13000 0x19000 0x0bbf0000 0xadd7000>;
+		cam_hw_fuse = <CAM_CPAS_SHDR_FUSE 0x221C8134 0x100 CAM_CPAS_FEATURE_TYPE_VALUE 0xFF>;
 		interrupt-names = "cpas_camnoc";
 		interrupts = <GIC_SPI 459 IRQ_TYPE_EDGE_RISING>;
 		camnoc-axi-min-ib-bw = <3000000000>;
