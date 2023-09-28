@@ -4,7 +4,7 @@
 #include <dt-bindings/interrupt-controller/arm-gic.h>
 #include <dt-bindings/regulator/qcom,rpmh-regulator-levels.h>
 
-#include "lemans-vm-audio.dtsi"
+#include "monaco-vm-audio.dtsi"
 
 / {
 	model = "Qualcomm Technologies, Inc. Monaco Single LA Virtual Machine";
