@@ -47,7 +47,7 @@
 		aon_mappings = <0xFF80F000 0x1000 0x0ABE0000>;
 
 		/* CVP Firmware ELF image name */
-		cvp,firmware-name = "evass";
+		cvp,firmware-name = "evass-lt";
 
 		/* Buses */
 		cvp_cnoc {
