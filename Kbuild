@@ -32,6 +32,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 ifeq ($(CONFIG_ARCH_WAIPIO), y)
@@ -152,6 +153,12 @@ dtbo-y += waipio-v2-mmrm.dtbo
 <<<<<<< HEAD
 >>>>>>> b4f12f9e (msm_mmrm: support mmrm on v1 and v2)
 =======
+=======
+ifeq ($(CONFIG_ARCH_MONACO_AUTO),y)
+dtbo-y += monaco_auto-cnss.dtbo
+endif
+
+>>>>>>> 16a87745 (wlan: dts: Add dts, dtsi file for monaco_auto)
 ifeq ($(CONFIG_ARCH_WAIPIO),y)
 dtbo-y += waipio-cnss.dtbo
 dtbo-y += waipio-kiwi-cnss.dtbo
