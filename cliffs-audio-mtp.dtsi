@@ -6,7 +6,7 @@
 
 &pineapple_snd {
 	qcom,sec-mi2s-gpios = <&fm_i2s1_gpios>;
-	qcom,model = "cliffs-idp-wsa883x-snd-card";
+	qcom,model = "cliffs-mtp-wsa883x-snd-card";
 	qcom,audio-routing =
 		"AMIC2", "Analog Mic2",
 		"AMIC2", "MIC BIAS2",
