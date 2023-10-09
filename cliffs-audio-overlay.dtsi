@@ -68,6 +68,7 @@
 			wcd937x_tx_slave: wcd937x-tx-slave {
 				compatible = "qcom,wcd937x-slave";
 				reg = <0x0A 0x01170223>;
+				status = "disabled";
 			};
 
 			wcd939x_tx_slave: wcd939x-tx-slave {
@@ -168,6 +169,7 @@
 			wcd937x_rx_slave: wcd937x-rx-slave {
 				compatible = "qcom,wcd937x-slave";
 				reg = <0x0A 0x01170224>;
+				status = "disabled";
 			};
 
 			wcd939x_rx_slave: wcd939x-rx-slave {
@@ -182,9 +184,9 @@
 		reg = <0x6B00000 0x0>;
 		wsa_data_fs_ctl_reg = <0x6B6F000>;
 		qcom,wsa-swr-gpios = <&wsa_swr_gpios>;
-		qcom,wsa-bat-cfgs= <1>, <1>;
-		qcom,wsa-rloads= <2>, <2>;
-		qcom,wsa-system-gains= <0 9>, <0 9>;
+		qcom,wsa-bat-cfgs = <1>, <1>;
+		qcom,wsa-rloads = <2>, <2>;
+		qcom,wsa-system-gains = <0 9>, <0 9>;
 		qcom,wsa-bcl-pmic-params = /bits/ 8 <0x00 0x03 0x48>;
 		qcom,default-clk-id = <WSA_TX_CORE_CLK>;
 		qcom,thermal-max-state = <11>;
@@ -392,7 +394,7 @@
 		qcom,cdc-vdd-mic-bias-current = <30000>;
 
 		cdc-vdd-px-supply = <&L7B>;
-		qcom,cdc-vdd-px-voltage = <1200000 1200000>;
+		qcom,cdc-vdd-px-voltage = <1800000 1800000>;
 		qcom,cdc-vdd-px-current = <15000>;
 		qcom,cdc-vdd-px-lpm-supported = <1>;
 
@@ -416,7 +418,7 @@
 	pineapple_snd: sound {
 		qcom,model = "cliffs-qrd-snd-card";
 		qcom,msm-mi2s-master = <1>, <1>, <1>, <1>, <1>, <1>, <1>;
-		qcom,mi2s-tdm-is-hw-vote-needed = <1>, <0>, <1>, <0>, <1>, <0>, <0>;
+		qcom,mi2s-tdm-is-hw-vote-needed = <1>, <1>, <1>, <1>, <1>, <1>, <1>;
 		qcom,wcn-bt = <0>;
 		qcom,ext-disp-audio-rx = <0>;
 		qcom,tdm-max-slots = <8>;
@@ -583,7 +585,7 @@
 		pinctrl-1 = <&tx_swr_clk_sleep &tx_swr_data0_sleep
 			    &tx_swr_data1_sleep &tx_swr_data2_sleep>;
 		qcom,lpi-gpios;
-		qcom,chip-wakeup-reg = <0xf1a6008>;
+		qcom,chip-wakeup-reg = <0xf18C008>;
 		qcom,chip-wakeup-maskbit = <7>;
 		qcom,chip-wakeup-default-val = <0x1>;
 		qcom,tlmm-pins = <140>;

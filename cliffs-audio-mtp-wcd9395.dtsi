@@ -12,6 +12,8 @@
 	qcom,sec-mi2s-gpios = <&fm_i2s1_gpios>;
 	qcom,model = "cliffs-mtp-wcd9395-snd-card";
 	qcom,audio-routing =
+		"AMIC2", "Analog Mic2",
+		"AMIC2", "MIC BIAS2",
 		"TX DMIC0", "Digital Mic0",
 		"TX DMIC0", "MIC BIAS3",
 		"TX DMIC1", "Digital Mic1",
