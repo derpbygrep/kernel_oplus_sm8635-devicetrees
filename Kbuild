@@ -933,8 +933,13 @@ ifeq ($(CONFIG_ARCH_CLIFFS), y)
 dtbo-y += cliffs-vidc.dtbo
 =======
 ifeq ($(CONFIG_ARCH_CLIFFS), y)
+<<<<<<< HEAD
 dtbo-y += gpu/cliffs-gpu.dtbo
 >>>>>>> a87810c9 (ARM: dts: msm: Add support for Cliffs GPU)
+=======
+dtbo-y += gpu/cliffs-gpu.dtbo \
+		gpu/cliffs7-gpu.dtbo
+>>>>>>> f34dd327 (ARM: dts: msm: Add support for Cliffs7 GPU)
 endif
 
 always-y    := $(dtb-y) $(dtbo-y)
