@@ -175,6 +175,15 @@ dtbo-y += pineapple/pineapple-mmrm-test-v2.dtbo
 endif
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ifeq ($(CONFIG_ARCH_CLIFFS), y)
+dtbo-y += cliffs/cliffs-mmrm.dtbo
+dtbo-y += cliffs/cliffs-mmrm-test.dtbo
+dtbo-y += cliffs/cliffs-mmrm-test-v2.dtbo
+endif
+
+>>>>>>> 2080fc4b (ARM: dts: Add mmrm devicetree support for cliffs)
 ifeq ($(CONFIG_ARCH_KALAMA), y)
 	ifneq ($(CONFIG_ARCH_QTI_VM), y)
 		dtbo-y += kalama/kalama-mmrm.dtbo
