@@ -592,6 +592,8 @@ dtbo-y += trinket-bt-v1.dtbo
 endif
 
 ifeq ($(CONFIG_ARCH_HOLI),y)
+dtbo-y += holi-mtp-pm6125-nopmi-overlay-bt.dtbo
+dtbo-y += holi-qrd-pm6125-nopmi-overlay-bt.dtbo
 dtbo-y += holi-bt.dtbo
 dtbo-y += holi-pm6125-bt.dtbo
 endif
