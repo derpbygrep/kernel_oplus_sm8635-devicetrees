@@ -51,6 +51,7 @@
 				"{class: wlan_pdc, ss: rf, res: s1b.v, upval: 1864}",
 				"{class: wlan_pdc, ss: rf, res: s2b.v, upval: 1316}";
 	};
+<<<<<<< HEAD
 
 	slim_msm: slim@6C40000 {
 		status =  "ok";
@@ -68,12 +69,15 @@
 			};
 		};
 	};
+=======
+>>>>>>> f6b5c8c8 (ARM: dts: msm: Add support for kiwi node in cliffs)
 };
 
 //uart instance
 &qupv3_se10_4uart {
 	status = "ok";
 };
+<<<<<<< HEAD
 
 // FM changes
 &qupv3_se0_i2c {
@@ -89,3 +93,5 @@
 		rtc6226,vio-supply-voltage = <1800000 1800000>;
 	};
 };
+=======
+>>>>>>> f6b5c8c8 (ARM: dts: msm: Add support for kiwi node in cliffs)

@@ -613,7 +613,10 @@ endif
 
 ifeq ($(CONFIG_ARCH_CLIFFS), y)
 dtbo-y += cliffs-kiwi-bt.dtbo
+<<<<<<< HEAD
 dtbo-y += cliffs-qca6750-bt.dtbo
+=======
+>>>>>>> f6b5c8c8 (ARM: dts: msm: Add support for kiwi node in cliffs)
 endif
 
 always-y        := $(dtb-y) $(dtbo-y)
