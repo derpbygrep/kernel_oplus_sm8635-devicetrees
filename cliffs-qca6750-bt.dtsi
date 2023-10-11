@@ -47,6 +47,7 @@
 		qcom,bt-vdd-ipa-2p2-config = <1600000 2400000 0 1>;
 	};
 
+<<<<<<< HEAD
 	slim_msm: slim@6C40000 {
 		status =  "ok";
 		ngd@1 {
@@ -63,6 +64,8 @@
 			};
 		};
 	};
+=======
+>>>>>>> 684d2837 (ARM: dts: msm: Add MSL bluetooth node for cliffs)
 };
 
 //uart instance
@@ -70,6 +73,7 @@
 	status = "ok";
 };
 
+<<<<<<< HEAD
 
 // FM changes
 &qupv3_se0_i2c {
@@ -85,3 +89,5 @@
 		rtc6226,vio-supply-voltage = <1800000 1800000>;
 	};
 };
+=======
+>>>>>>> 684d2837 (ARM: dts: msm: Add MSL bluetooth node for cliffs)

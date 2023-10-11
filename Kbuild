@@ -614,9 +614,13 @@ endif
 ifeq ($(CONFIG_ARCH_CLIFFS), y)
 dtbo-y += cliffs-kiwi-bt.dtbo
 <<<<<<< HEAD
+<<<<<<< HEAD
 dtbo-y += cliffs-qca6750-bt.dtbo
 =======
 >>>>>>> f6b5c8c8 (ARM: dts: msm: Add support for kiwi node in cliffs)
+=======
+dtbo-y += cliffs-qca6750-bt.dtbo
+>>>>>>> 684d2837 (ARM: dts: msm: Add MSL bluetooth node for cliffs)
 endif
 
 always-y        := $(dtb-y) $(dtbo-y)
