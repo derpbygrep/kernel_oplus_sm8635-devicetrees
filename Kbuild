@@ -600,6 +600,7 @@ endif
 
 ifeq ($(CONFIG_ARCH_CLIFFS), y)
 dtbo-y += cliffs-kiwi-bt.dtbo
+dtbo-y += cliffs-qca6750-bt.dtbo
 endif
 
 always-y        := $(dtb-y) $(dtbo-y)
