@@ -596,6 +596,10 @@ dtbo-y += holi-bt.dtbo
 dtbo-y += holi-pm6125-bt.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_CLIFFS), y)
+dtbo-y += cliffs-kiwi-bt.dtbo
+endif
+
 always-y        := $(dtb-y) $(dtbo-y)
 subdir-y        := $(dts-dirs)
 clean-files     := *.dtb *.dtbo
