@@ -84,6 +84,9 @@
 	status = "ok";
 };
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1b431a86 (ARM: dts: msm: Add support for FM node in cliffs)
 
 // FM changes
 &qupv3_se0_i2c {
@@ -99,5 +102,8 @@
 		rtc6226,vio-supply-voltage = <1800000 1800000>;
 	};
 };
+<<<<<<< HEAD
 =======
 >>>>>>> f6b5c8c8 (ARM: dts: msm: Add support for kiwi node in cliffs)
+=======
+>>>>>>> 1b431a86 (ARM: dts: msm: Add support for FM node in cliffs)
