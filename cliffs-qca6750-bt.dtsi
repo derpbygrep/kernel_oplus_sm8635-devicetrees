@@ -48,6 +48,9 @@
 	};
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7291c9f8 (ARM: dts: msm: Add support for BT slim and FM in cliffs with WCN675x)
 	slim_msm: slim@6C40000 {
 		status =  "ok";
 		ngd@1 {
@@ -64,8 +67,11 @@
 			};
 		};
 	};
+<<<<<<< HEAD
 =======
 >>>>>>> 684d2837 (ARM: dts: msm: Add MSL bluetooth node for cliffs)
+=======
+>>>>>>> 7291c9f8 (ARM: dts: msm: Add support for BT slim and FM in cliffs with WCN675x)
 };
 
 //uart instance
@@ -74,6 +80,9 @@
 };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7291c9f8 (ARM: dts: msm: Add support for BT slim and FM in cliffs with WCN675x)
 
 // FM changes
 &qupv3_se0_i2c {
@@ -89,5 +98,8 @@
 		rtc6226,vio-supply-voltage = <1800000 1800000>;
 	};
 };
+<<<<<<< HEAD
 =======
 >>>>>>> 684d2837 (ARM: dts: msm: Add MSL bluetooth node for cliffs)
+=======
+>>>>>>> 7291c9f8 (ARM: dts: msm: Add support for BT slim and FM in cliffs with WCN675x)
