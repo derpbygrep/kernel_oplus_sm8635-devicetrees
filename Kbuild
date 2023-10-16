@@ -299,6 +299,7 @@ endif
 ifeq ($(CONFIG_ARCH_HOLI),y)
 dtbo-y += holi-cnss.dtbo
 dtbo-y += holi-pm6125-cnss.dtbo
+dtbo-y += holi-pm6125-nopmi-cnss.dtbo
 endif
 
 >>>>>>> 0e8a0e46 (ARM: dts: msm: Add wlan related dtsi file for holi)
