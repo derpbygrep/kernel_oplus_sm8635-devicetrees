@@ -793,6 +793,7 @@ endif
 
 ifeq ($(CONFIG_ARCH_SUN),y)
 dtbo-y += sun-peach-cnss.dtbo
+dtbo-y += sun-kiwi-cnss.dtbo
 endif
 
 ifeq ($(CONFIG_ARCH_CLIFFS),y)
