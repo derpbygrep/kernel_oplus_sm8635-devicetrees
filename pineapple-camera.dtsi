@@ -2281,6 +2281,8 @@
 					traffic-data = <CAM_CPAS_PATH_DATA_ALL>;
 					traffic-transaction-type =
 					<CAM_CPAS_TRANSACTION_WRITE>;
+					constituent-paths =
+					<CAM_CPAS_PATH_DATA_CRE_WR_OUT>;
 					parent-node = <&level1_nrt2_wr>;
 				};
 
@@ -2332,6 +2334,8 @@
 					traffic-data = <CAM_CPAS_PATH_DATA_ALL>;
 					traffic-transaction-type =
 					<CAM_CPAS_TRANSACTION_READ>;
+					constituent-paths =
+					<CAM_CPAS_PATH_DATA_CRE_RD_IN>;
 					parent-node = <&level1_nrt3_rd>;
 				};
 
