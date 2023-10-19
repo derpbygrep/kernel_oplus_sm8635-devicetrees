@@ -18,5 +18,10 @@ dtbo-$(CONFIG_ARCH_CLIFFS)	+= cliffs-camera.dtbo
 >>>>>>> c6bd8b8e (ARM: dts: msm: Add camera device tree for Cliffs)
 =======
 dtbo-$(CONFIG_ARCH_CLIFFS)	+= cliffs-camera-sensor-cdp.dtbo \
+<<<<<<< HEAD
 								cliffs-camera-sensor-mtp.dtbo
 >>>>>>> 6897dac7 (ARM: dts: msm: Add camera sensor DT for cliffs)
+=======
+								cliffs-camera-sensor-mtp.dtbo \
+								cliffs-camera-sensor-qrd.dtbo
+>>>>>>> b15a5b90 (ARM: dts: msm: Add camera sensor DT for cliffs)
