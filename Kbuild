@@ -910,7 +910,8 @@ endif
 
 ifeq ($(CONFIG_ARCH_HOLI),y)
 dtbo-y += nxp/holi-nfc.dtbo \
-          nxp/holi-pm6125-nfc.dtbo
+          nxp/holi-pm6125-nfc.dtbo \
+          nxp/holi-pm6125-nopmi-nfc.dtbo
 endif
 
 ifeq ($(CONFIG_ARCH_CLIFFS),y)
