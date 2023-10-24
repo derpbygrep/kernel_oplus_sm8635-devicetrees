@@ -927,7 +927,11 @@ dtbo-y += direwolf-vm-dual-cnss.dtbo
 >>>>>>> 3aefbc09 (cnss2: Add cnss2 device tree for gen4 kernel 5.15)
 =======
 dtbo-y += lemans-vm-cnss.dtbo
+<<<<<<< HEAD
 >>>>>>> 728131b8 (ARM: dts: msm: Add cnss dt on Lemans LV GVM)
+=======
+dtbo-y += monaco-vm-cnss.dtbo
+>>>>>>> d63aec50 (wlan_devicetree: Add dts, dtsi file for monaco GVM)
 endif
 
 <<<<<<< HEAD
