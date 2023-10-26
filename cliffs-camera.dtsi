@@ -290,7 +290,7 @@
 		/* MCLK2 */
 		mux {
 			pins = "gpio66";
-			function = "cam_aon_mclk2";
+			function = "cam_mclk";
 		};
 
 		config {
@@ -304,7 +304,7 @@
 		/* MCLK2 */
 		mux {
 			pins = "gpio66";
-			function = "cam_aon_mclk2";
+			function = "cam_mclk";
 		};
 
 		config {
