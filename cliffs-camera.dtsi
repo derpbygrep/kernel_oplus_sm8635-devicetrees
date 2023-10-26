@@ -291,10 +291,14 @@
 		mux {
 			pins = "gpio66";
 <<<<<<< HEAD
+<<<<<<< HEAD
 			function = "cam_mclk";
 =======
 			function = "cam_aon_mclk2";
 >>>>>>> 0b1b45fa (ARM: dts: msm: Add camera sensor DT for cliffs)
+=======
+			function = "cam_mclk";
+>>>>>>> 37dd234a (ARM: dts: msm: Sensor BU fixes for cliffs)
 		};
 
 		config {
@@ -309,10 +313,14 @@
 		mux {
 			pins = "gpio66";
 <<<<<<< HEAD
+<<<<<<< HEAD
 			function = "cam_mclk";
 =======
 			function = "cam_aon_mclk2";
 >>>>>>> 0b1b45fa (ARM: dts: msm: Add camera sensor DT for cliffs)
+=======
+			function = "cam_mclk";
+>>>>>>> 37dd234a (ARM: dts: msm: Sensor BU fixes for cliffs)
 		};
 
 		config {

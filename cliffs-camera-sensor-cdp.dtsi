@@ -44,12 +44,17 @@
 		regulator-names = "cam_vaf";
 		rgltr-cntrl-support;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		rgltr-min-voltage = <2800000>;
 		rgltr-max-voltage = <2800000>;
 =======
 		rgltr-min-voltage = <2960000>;
 		rgltr-max-voltage = <2960000>;
 >>>>>>> 0b1b45fa (ARM: dts: msm: Add camera sensor DT for cliffs)
+=======
+		rgltr-min-voltage = <2800000>;
+		rgltr-max-voltage = <2800000>;
+>>>>>>> 37dd234a (ARM: dts: msm: Sensor BU fixes for cliffs)
 		rgltr-load-current = <103000>;
 		status = "ok";
 	};
@@ -65,12 +70,17 @@
 		regulator-names = "cam_vio","cam_vaf", "cam_clk";
 		rgltr-cntrl-support;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		rgltr-min-voltage = <1800000 2800000 0>;
 		rgltr-max-voltage = <1800000 2800000 0>;
 =======
 		rgltr-min-voltage = <1800000 2960000 0>;
 		rgltr-max-voltage = <1800000 2960000 0>;
 >>>>>>> 0b1b45fa (ARM: dts: msm: Add camera sensor DT for cliffs)
+=======
+		rgltr-min-voltage = <1800000 2800000 0>;
+		rgltr-max-voltage = <1800000 2800000 0>;
+>>>>>>> 37dd234a (ARM: dts: msm: Sensor BU fixes for cliffs)
 		rgltr-load-current = <3500 103000 0>;
 		status = "ok";
 	};
@@ -89,12 +99,17 @@
 			"cam_vaf", "cam_v_custom1";
 		rgltr-cntrl-support;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		rgltr-min-voltage = <1800000 1104000 0 2800000 2800000 1800000>;
 		rgltr-max-voltage = <1800000 1104000 0 2800000 2800000 1800000>;
 =======
 		rgltr-min-voltage = <1800000 1104000 0 2800000 2960000 1800000>;
 		rgltr-max-voltage = <1800000 1104000 0 2800000 2960000 1800000>;
 >>>>>>> 0b1b45fa (ARM: dts: msm: Add camera sensor DT for cliffs)
+=======
+		rgltr-min-voltage = <1800000 1104000 0 2800000 2800000 1800000>;
+		rgltr-max-voltage = <1800000 1104000 0 2800000 2800000 1800000>;
+>>>>>>> 37dd234a (ARM: dts: msm: Sensor BU fixes for cliffs)
 		rgltr-load-current = <3500 913200 0 91430 103000 63100>;
 		gpio-no-mux = <0>;
 		pinctrl-names = "cam_default", "cam_suspend";
@@ -130,10 +145,14 @@
 		actuator-src = <&actuator_triple_wide>;
 		led-flash-src = <&led_flash_triple_rear_wide>;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		cam_vio-supply = <&L5N>;
 =======
 		cam_vio-supply = <&L3N>;
 >>>>>>> 0b1b45fa (ARM: dts: msm: Add camera sensor DT for cliffs)
+=======
+		cam_vio-supply = <&L5N>;
+>>>>>>> 37dd234a (ARM: dts: msm: Sensor BU fixes for cliffs)
 		cam_vdig-supply = <&L1N>;
 		cam_clk-supply = <&cam_cc_titan_top_gdsc>;
 		cam_vana-supply = <&L6M>;
@@ -143,12 +162,17 @@
 			"cam_vaf", "cam_v_custom1";
 		rgltr-cntrl-support;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		rgltr-min-voltage = <1800000 1104000 0 2800000 2800000 1800000>;
 		rgltr-max-voltage = <1800000 1104000 0 2800000 2800000 1800000>;
 =======
 		rgltr-min-voltage = <1800000 1104000 0 2800000 2960000 1800000>;
 		rgltr-max-voltage = <1800000 1104000 0 2800000 2960000 1800000>;
 >>>>>>> 0b1b45fa (ARM: dts: msm: Add camera sensor DT for cliffs)
+=======
+		rgltr-min-voltage = <1800000 1104000 0 2800000 2800000 1800000>;
+		rgltr-max-voltage = <1800000 1104000 0 2800000 2800000 1800000>;
+>>>>>>> 37dd234a (ARM: dts: msm: Sensor BU fixes for cliffs)
 		rgltr-load-current = <3500 913200 0 91430 103000 63100>;
 		gpio-no-mux = <0>;
 		pinctrl-names = "cam_default", "cam_suspend";
@@ -180,12 +204,17 @@
 		regulator-names = "cam_vaf";
 		rgltr-cntrl-support;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		rgltr-min-voltage = <2800000>;
 		rgltr-max-voltage = <2800000>;
 =======
 		rgltr-min-voltage = <2960000>;
 		rgltr-max-voltage = <2960000>;
 >>>>>>> 0b1b45fa (ARM: dts: msm: Add camera sensor DT for cliffs)
+=======
+		rgltr-min-voltage = <2800000>;
+		rgltr-max-voltage = <2800000>;
+>>>>>>> 37dd234a (ARM: dts: msm: Sensor BU fixes for cliffs)
 		rgltr-load-current = <103000>;
 		status = "ok";
 	};
@@ -203,12 +232,17 @@
 			"cam_vana", "cam_vaf";
 		rgltr-cntrl-support;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		rgltr-min-voltage = <1800000 1056000 0 2800000 2800000>;
 		rgltr-max-voltage = <1800000 1056000 0 2800000 2800000>;
 =======
 		rgltr-min-voltage = <1800000 1056000 0 2800000 2960000>;
 		rgltr-max-voltage = <1800000 1056000 0 2800000 2960000>;
 >>>>>>> 0b1b45fa (ARM: dts: msm: Add camera sensor DT for cliffs)
+=======
+		rgltr-min-voltage = <1800000 1056000 0 2800000 2800000>;
+		rgltr-max-voltage = <1800000 1056000 0 2800000 2800000>;
+>>>>>>> 37dd234a (ARM: dts: msm: Sensor BU fixes for cliffs)
 		rgltr-load-current = <4000 261000 0 68000 103000>;
 		gpio-no-mux = <0>;
 		pinctrl-names = "cam_default", "cam_suspend";
@@ -251,12 +285,17 @@
 			"cam_vana", "cam_vaf";
 		rgltr-cntrl-support;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		rgltr-min-voltage = <1800000 1056000 0 2800000 2800000>;
 		rgltr-max-voltage = <1800000 1056000 0 2800000 2800000>;
 =======
 		rgltr-min-voltage = <1800000 1056000 0 2800000 2960000>;
 		rgltr-max-voltage = <1800000 1056000 0 2800000 2960000>;
 >>>>>>> 0b1b45fa (ARM: dts: msm: Add camera sensor DT for cliffs)
+=======
+		rgltr-min-voltage = <1800000 1056000 0 2800000 2800000>;
+		rgltr-max-voltage = <1800000 1056000 0 2800000 2800000>;
+>>>>>>> 37dd234a (ARM: dts: msm: Sensor BU fixes for cliffs)
 		rgltr-load-current = <4000 261000 0 68000 103000>;
 		gpio-no-mux = <0>;
 		pinctrl-names = "cam_default", "cam_suspend";
@@ -285,14 +324,19 @@
 	actuator_triple_uw: qcom,actuator1 {
 		cell-index = <1>;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		compatible = "qcom,actuator";
 =======
 		compatible = "qcom,cam-actuator";
 >>>>>>> 0b1b45fa (ARM: dts: msm: Add camera sensor DT for cliffs)
+=======
+		compatible = "qcom,actuator";
+>>>>>>> 37dd234a (ARM: dts: msm: Sensor BU fixes for cliffs)
 		cci-master = <CCI_MASTER_0>;
 		cam_vaf-supply = <&L7M>;
 		regulator-names = "cam_vaf";
 		rgltr-cntrl-support;
+<<<<<<< HEAD
 <<<<<<< HEAD
 		rgltr-min-voltage = <2800000>;
 		rgltr-max-voltage = <2800000>;
@@ -300,6 +344,10 @@
 		rgltr-min-voltage = <2960000>;
 		rgltr-max-voltage = <2960000>;
 >>>>>>> 0b1b45fa (ARM: dts: msm: Add camera sensor DT for cliffs)
+=======
+		rgltr-min-voltage = <2800000>;
+		rgltr-max-voltage = <2800000>;
+>>>>>>> 37dd234a (ARM: dts: msm: Sensor BU fixes for cliffs)
 		rgltr-load-current = <103000>;
 		status = "ok";
 	};
@@ -308,10 +356,14 @@
 	eeprom_triple_uw: qcom,eeprom1 {
 		cell-index = <1>;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		compatible = "qcom,eeprom";
 =======
 		compatible = "qcom,cam-eeprom";
 >>>>>>> 0b1b45fa (ARM: dts: msm: Add camera sensor DT for cliffs)
+=======
+		compatible = "qcom,eeprom";
+>>>>>>> 37dd234a (ARM: dts: msm: Sensor BU fixes for cliffs)
 		cam_vio-supply = <&L5N>;
 		cam_vdig-supply = <&L1M>;
 		cam_clk-supply = <&cam_cc_titan_top_gdsc>;
@@ -321,12 +373,17 @@
 			"cam_vaf";
 		rgltr-cntrl-support;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		rgltr-min-voltage = <1800000 1104000 0 2800000 2800000>;
 		rgltr-max-voltage = <1800000 1104000 0 2800000 2800000>;
 =======
 		rgltr-min-voltage = <1800000 1104000 0 2800000 2960000>;
 		rgltr-max-voltage = <1800000 1104000 0 2800000 2960000>;
 >>>>>>> 0b1b45fa (ARM: dts: msm: Add camera sensor DT for cliffs)
+=======
+		rgltr-min-voltage = <1800000 1104000 0 2800000 2800000>;
+		rgltr-max-voltage = <1800000 1104000 0 2800000 2800000>;
+>>>>>>> 37dd234a (ARM: dts: msm: Sensor BU fixes for cliffs)
 		rgltr-load-current = <1060 643640 0 82860 107140>;
 		gpio-no-mux = <0>;
 		pinctrl-names = "cam_default", "cam_suspend";
@@ -369,12 +426,17 @@
 			"cam_vaf";
 		rgltr-cntrl-support;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		rgltr-min-voltage = <1800000 1104000 0 2800000 2800000>;
 		rgltr-max-voltage = <1800000 1104000 0 2800000 2800000>;
 =======
 		rgltr-min-voltage = <1800000 1104000 0 2800000 2960000>;
 		rgltr-max-voltage = <1800000 1104000 0 2800000 2960000>;
 >>>>>>> 0b1b45fa (ARM: dts: msm: Add camera sensor DT for cliffs)
+=======
+		rgltr-min-voltage = <1800000 1104000 0 2800000 2800000>;
+		rgltr-max-voltage = <1800000 1104000 0 2800000 2800000>;
+>>>>>>> 37dd234a (ARM: dts: msm: Sensor BU fixes for cliffs)
 		rgltr-load-current = <1060 643640 0 82860 107140>;
 		gpio-no-mux = <0>;
 		pinctrl-names = "cam_default", "cam_suspend";
