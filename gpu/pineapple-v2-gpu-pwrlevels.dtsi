@@ -63,6 +63,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		/* Turbo */
 		qcom,gpu-pwrlevel@0 {
 			reg = <0>;
@@ -171,6 +172,8 @@
 				qcom,bus-freq = <8>;
 				qcom,bus-min = <7>;
 =======
+=======
+>>>>>>> 124fd2ff (ARM: dts: msm: Update pineapple v2 binned part frequency)
 			qcom,sku-codes = <SKU_CODE(PCODE_UNKNOWN, FC_AC)>;
 			qcom,speed-bin = <4>;
 
@@ -184,13 +187,17 @@
 
 				qcom,bus-freq = <9>;
 				qcom,bus-min = <9>;
+<<<<<<< HEAD
 >>>>>>> 828ed309 (ARM: dts: msm: Update pineapple v2 binned part frequency)
+=======
+>>>>>>> 124fd2ff (ARM: dts: msm: Update pineapple v2 binned part frequency)
 				qcom,bus-max = <9>;
 
 				qcom,acd-level = <ACD_LEVEL_TURBO>;
 			};
 
 			/* Nom_L1 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -208,6 +215,10 @@
 			qcom,gpu-pwrlevel@1 {
 				reg = <1>;
 >>>>>>> 828ed309 (ARM: dts: msm: Update pineapple v2 binned part frequency)
+=======
+			qcom,gpu-pwrlevel@1 {
+				reg = <1>;
+>>>>>>> 124fd2ff (ARM: dts: msm: Update pineapple v2 binned part frequency)
 				qcom,gpu-freq = <834000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_NOM_L1>;
 
@@ -219,6 +230,7 @@
 			};
 
 			/* Nom */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -236,6 +248,10 @@
 			qcom,gpu-pwrlevel@2 {
 				reg = <2>;
 >>>>>>> 828ed309 (ARM: dts: msm: Update pineapple v2 binned part frequency)
+=======
+			qcom,gpu-pwrlevel@2 {
+				reg = <2>;
+>>>>>>> 124fd2ff (ARM: dts: msm: Update pineapple v2 binned part frequency)
 				qcom,gpu-freq = <770000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_NOM>;
 
@@ -247,6 +263,7 @@
 			};
 
 			/* SVS_L2 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -264,6 +281,10 @@
 			qcom,gpu-pwrlevel@3 {
 				reg = <3>;
 >>>>>>> 828ed309 (ARM: dts: msm: Update pineapple v2 binned part frequency)
+=======
+			qcom,gpu-pwrlevel@3 {
+				reg = <3>;
+>>>>>>> 124fd2ff (ARM: dts: msm: Update pineapple v2 binned part frequency)
 				qcom,gpu-freq = <720000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L2>;
 
@@ -275,6 +296,7 @@
 			};
 
 			/* SVS_L1 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -292,6 +314,10 @@
 			qcom,gpu-pwrlevel@4 {
 				reg = <4>;
 >>>>>>> 828ed309 (ARM: dts: msm: Update pineapple v2 binned part frequency)
+=======
+			qcom,gpu-pwrlevel@4 {
+				reg = <4>;
+>>>>>>> 124fd2ff (ARM: dts: msm: Update pineapple v2 binned part frequency)
 				qcom,gpu-freq = <680000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L1>;
 
@@ -303,6 +329,7 @@
 			};
 
 			/* SVS_L0 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -320,6 +347,10 @@
 			qcom,gpu-pwrlevel@5 {
 				reg = <5>;
 >>>>>>> 828ed309 (ARM: dts: msm: Update pineapple v2 binned part frequency)
+=======
+			qcom,gpu-pwrlevel@5 {
+				reg = <5>;
+>>>>>>> 124fd2ff (ARM: dts: msm: Update pineapple v2 binned part frequency)
 				qcom,gpu-freq = <629000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L0>;
 
@@ -331,6 +362,7 @@
 			};
 
 			/* SVS */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -348,6 +380,10 @@
 			qcom,gpu-pwrlevel@6 {
 				reg = <6>;
 >>>>>>> 828ed309 (ARM: dts: msm: Update pineapple v2 binned part frequency)
+=======
+			qcom,gpu-pwrlevel@6 {
+				reg = <6>;
+>>>>>>> 124fd2ff (ARM: dts: msm: Update pineapple v2 binned part frequency)
 				qcom,gpu-freq = <578000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_SVS>;
 
@@ -359,6 +395,7 @@
 			};
 
 			/* Low_SVS_L1 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -376,6 +413,10 @@
 			qcom,gpu-pwrlevel@7 {
 				reg = <7>;
 >>>>>>> 828ed309 (ARM: dts: msm: Update pineapple v2 binned part frequency)
+=======
+			qcom,gpu-pwrlevel@7 {
+				reg = <7>;
+>>>>>>> 124fd2ff (ARM: dts: msm: Update pineapple v2 binned part frequency)
 				qcom,gpu-freq = <500000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_L1>;
 
@@ -387,6 +428,7 @@
 			};
 
 			/* Low_SVS */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -404,6 +446,10 @@
 			qcom,gpu-pwrlevel@8 {
 				reg = <8>;
 >>>>>>> 828ed309 (ARM: dts: msm: Update pineapple v2 binned part frequency)
+=======
+			qcom,gpu-pwrlevel@8 {
+				reg = <8>;
+>>>>>>> 124fd2ff (ARM: dts: msm: Update pineapple v2 binned part frequency)
 				qcom,gpu-freq = <422000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS>;
 
@@ -415,6 +461,7 @@
 			};
 
 			/* Low_SVS_D0 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -432,6 +479,10 @@
 			qcom,gpu-pwrlevel@9 {
 				reg = <9>;
 >>>>>>> 828ed309 (ARM: dts: msm: Update pineapple v2 binned part frequency)
+=======
+			qcom,gpu-pwrlevel@9 {
+				reg = <9>;
+>>>>>>> 124fd2ff (ARM: dts: msm: Update pineapple v2 binned part frequency)
 				qcom,gpu-freq = <366000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D0>;
 
@@ -443,6 +494,7 @@
 			};
 
 			/* Low_SVS_D1 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -460,6 +512,10 @@
 			qcom,gpu-pwrlevel@10 {
 				reg = <10>;
 >>>>>>> 828ed309 (ARM: dts: msm: Update pineapple v2 binned part frequency)
+=======
+			qcom,gpu-pwrlevel@10 {
+				reg = <10>;
+>>>>>>> 124fd2ff (ARM: dts: msm: Update pineapple v2 binned part frequency)
 				qcom,gpu-freq = <310000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
@@ -471,6 +527,7 @@
 			};
 
 			/* Low_SVS_D2 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -488,11 +545,16 @@
 			qcom,gpu-pwrlevel@11 {
 				reg = <11>;
 >>>>>>> 828ed309 (ARM: dts: msm: Update pineapple v2 binned part frequency)
+=======
+			qcom,gpu-pwrlevel@11 {
+				reg = <11>;
+>>>>>>> 124fd2ff (ARM: dts: msm: Update pineapple v2 binned part frequency)
 				qcom,gpu-freq = <231000000>;
 				qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D2>;
 
 				qcom,bus-freq = <1>;
 				qcom,bus-min = <1>;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -515,6 +577,11 @@
 
 				qcom,acd-level = <ACD_LEVEL_LOW_SVS_D2>;
 >>>>>>> 828ed309 (ARM: dts: msm: Update pineapple v2 binned part frequency)
+=======
+				qcom,bus-max = <1>;
+
+				qcom,acd-level = <ACD_LEVEL_LOW_SVS_D2>;
+>>>>>>> 124fd2ff (ARM: dts: msm: Update pineapple v2 binned part frequency)
 			};
 		};
 
@@ -522,6 +589,7 @@
 			#address-cells = <1>;
 			#size-cells = <0>;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -533,6 +601,8 @@
 >>>>>>> e7e3d372 (Revert "ARM: dts: msm: Update pineapple v2 max GPU frequency")
 =======
 >>>>>>> 828ed309 (ARM: dts: msm: Update pineapple v2 binned part frequency)
+=======
+>>>>>>> 124fd2ff (ARM: dts: msm: Update pineapple v2 binned part frequency)
 			qcom,sku-codes = <SKU_CODE(PCODE_UNKNOWN, FC_AC)
 					SKU_CODE(PCODE_0, FC_Y0)
 					SKU_CODE(PCODE_1, FC_Y0)
