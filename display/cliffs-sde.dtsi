@@ -238,7 +238,7 @@
 	interconnects = <&mmss_noc MASTER_MDP &gem_noc SLAVE_LLCC>,
 			<&mc_virt MASTER_LLCC &mc_virt SLAVE_EBI1>,
 			<&gem_noc MASTER_APPSS_PROC
-				&cnoc_cfg SLAVE_DISPLAY_CFG>;
+				&cnoc_main SLAVE_DISPLAY_CFG>;
 	interconnect-names = "qcom,sde-data-bus0",
 			"qcom,sde-ebi-bus", "qcom,sde-reg-bus";
 
