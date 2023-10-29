@@ -869,6 +869,7 @@ dtbo-y += lemans-vm-cnss.dtbo
 >>>>>>> 728131b8 (ARM: dts: msm: Add cnss dt on Lemans LV GVM)
 endif
 
+<<<<<<< HEAD
 
 ifeq ($(CONFIG_ARCH_SA525),y)
 dtbo-y += sa525m-cnss.dtbo
@@ -884,6 +885,15 @@ dtbo-y += pineapple-dsp-trustedvm.dtbo
 endif
 
 <<<<<<< HEAD
+=======
+ifeq ($(CONFIG_ARCH_CLIFFS),y)
+dtbo-y += nxp/cliffs-nfc.dtbo \
+          nxp/cliffs-nfc-atp.dtbo \
+          nxp/cliffs-nfc-mtp.dtbo \
+          nxp/cliffs-nfc-qrd.dtbo
+endif
+
+>>>>>>> 47bce355 (ARM: dts: msm: Add NFC device node for cliffs)
 ifeq ($(CONFIG_ARCH_BLAIR),y)
 dtbo-y += nxp/blair-nfc.dtbo \
           nxp/blair-nfc-atp.dtbo \
