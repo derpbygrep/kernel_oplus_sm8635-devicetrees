@@ -58,12 +58,29 @@
 		pinctrl-2 = <&cnss_wlan_en_sleep>;
 
 		chip_cfg@0 {
+			supported-ids = <0x1101>;
+			wlan_vregs;
+			qcom,wlan-ramdump-dynamic = <0x400000>;
+		};
+
+		chip_cfg@1 {
+			supported-ids = <0x1102>;
+			wlan_vregs;
+			qcom,wlan-ramdump-dynamic = <0x400000>;
+		};
+
+		chip_cfg@2 {
 			supported-ids = <0x1103>;
 			wlan_vregs;
 			qcom,wlan-ramdump-dynamic = <0x420000>;
 			qcom,no-bwscale;
 		};
 
+		chip_cfg@3 {
+			supported-ids = <0x1107>;
+			wlan_vregs;
+			qcom,wlan-ramdump-dynamic = <0x600000>;
+		};
 	};
 };
 
@@ -85,4 +102,8 @@
 			 "non-fatal";
 		};
 	};
+};
+
+&pcie0 {
+	qcom,boot-option = <0x1>;
 };
