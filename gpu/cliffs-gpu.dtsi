@@ -23,7 +23,7 @@
 			"gpu_cc_ahb",
 			"apb_pclk";
 
-	qcom,gpu-model = "Adreno726";
+	qcom,gpu-model = "Adreno735";
 
 	qcom,chipid = <0x43030b00>;
 
