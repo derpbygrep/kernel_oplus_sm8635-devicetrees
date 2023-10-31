@@ -893,6 +893,8 @@ endif
 ifeq ($(CONFIG_ARCH_CLIFFS),y)
 dtbo-y += nxp/cliffs-nfc.dtbo \
           nxp/cliffs-nfc-atp.dtbo \
+          nxp/cliffs-nfc-cdp.dtbo \
+          nxp/cliffs-nfc-rcm.dtbo \
           nxp/cliffs-nfc-mtp.dtbo \
           nxp/cliffs-nfc-qrd.dtbo
 endif
