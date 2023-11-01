@@ -428,14 +428,7 @@
 			qcom,qsync-mode-min-refresh-rate = <60>;
 		};
 
-		timing@9 { /* WQHD 1FPS cmd mode*/
-			qcom,mdss-dsi-panel-phy-timings = [00 18 06 06 15 20 06
-				06 07 02 04 00 15 0b];
-			qcom,display-topology = <1 1 1>,
-						<2 2 1>;
-			qcom,default-topology-index = <1>;
-			qcom,qsync-mode-min-refresh-rate = <1>;
-		};
+		/delete-node/ timing@9; /* WQHD 1FPS cmd mode*/
 
 		timing@10 { /* WQHD 5FPS cmd mode*/
 			qcom,mdss-dsi-panel-phy-timings = [00 18 06 06 15 20 06
@@ -519,13 +512,6 @@
 
 &dsi_sim_vid {
 	qcom,dsi-select-clocks = "pll_byte_clk0", "pll_dsi_clk0";
-	qcom,dsi-supported-dfps-list = <144 120 90 60 30 10 1>;
-	qcom,mdss-dsi-pan-enable-dynamic-fps;
-	qcom,mdss-dsi-pan-fps-update = "dfps_immediate_porch_mode_vfp";
-
-	qcom,qsync-enable;
-	qcom,dsi-supported-qsync-min-fps-list = <1 1 1 1 1 1 1>;
-	qcom,dsi-qsync-avr-step-list = <288 240 180 120 60 20 0>;
 
 	qcom,mdss-dsi-display-timings {
 		timing@0 {
