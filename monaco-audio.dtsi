@@ -147,6 +147,10 @@
 		qcom,mi2s-audio-intf;
 		qcom,auxpcm-audio-intf;
 		qcom,msm-mi2s-master = <1>, <1>, <1>, <1>, <1>;
+		qcom,hw_pcm_info = <0x00010100>;
+		qcom,hw_buffer_size_max = <131072>;
+		qcom,hw_period_byte_size = <4096>, <8192>;
+		qcom,hw_period_count_size = <2>, <128>;
 
 		qcom,sec-tdm-gpios = <&spf_tdm_sec>;
 		qcom,tert-tdm-gpios = <&spf_tdm_tert>;
