@@ -892,6 +892,9 @@ dtbo-y += nxp/cliffs-nfc.dtbo \
           nxp/cliffs-nfc-rcm.dtbo \
           nxp/cliffs-nfc-mtp.dtbo \
           nxp/cliffs-nfc-qrd.dtbo
+
+dtbo-y += st/cliffs-nfc.dtbo \
+          st/cliffs-nfc-mtp.dtbo
 endif
 
 >>>>>>> 47bce355 (ARM: dts: msm: Add NFC device node for cliffs)
