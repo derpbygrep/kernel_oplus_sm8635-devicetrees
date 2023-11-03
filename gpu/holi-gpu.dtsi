@@ -24,7 +24,7 @@
 		"iface_clk",
 		"mem_clk",
 		"gmu_clk",
-		"gcc_gpu_memnoc_gfx_clk";
+		"gcc_gpu_memnoc_gfx";
 
 	interrupts = <0 177 IRQ_TYPE_LEVEL_HIGH>;
 	interrupt-names = "kgsl_3d0_irq";
