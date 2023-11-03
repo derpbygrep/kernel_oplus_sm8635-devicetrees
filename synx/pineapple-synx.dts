@@ -9,9 +9,13 @@
 	model = "Qualcomm Technologies, Inc. Pineapple";
 	compatible = "qcom,pineapple";
 <<<<<<< HEAD
+<<<<<<< HEAD
 	qcom,msm-id = <557 0x10000>;
 =======
 	qcom,msm-id = <557 0x10000>, <557 0x20000>, <577 0x10000>, <577 0x20000>, <614 0x10000>;
 >>>>>>> 170314ea (ARM: dts: msm: dt changes for palawan synx)
+=======
+	qcom,msm-id = <557 0x10000>, <557 0x20000>, <577 0x10000>, <577 0x20000>, <614 0x10000>, <632 0x10000>;
+>>>>>>> df8f775e (ARM: dts: msm: dt changes for palawan 7x)
 	qcom,board-id = <0 0>;
 };
