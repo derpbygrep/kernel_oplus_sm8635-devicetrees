@@ -27,6 +27,7 @@
 &pineapple_snd {
 	qcom,model = "cliffs-cdp-snd-card";
 	qcom,wcn-bt = <1>;
+	qcom,ext-disp-audio-rx = <1>;
 	qcom,audio-routing =
 		"AMIC2", "Analog Mic2",
 		"AMIC2", "MIC BIAS2",

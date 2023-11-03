@@ -4,12 +4,10 @@
 	status = "ok";
 };
 
-&wsa_macro {
-	qcom,wsa-bat-cfgs = <2>, <2>;
-};
-
 &pineapple_snd {
 	qcom,sec-mi2s-gpios = <&fm_i2s1_gpios>;
+	qcom,wcn-bt = <1>;
+	qcom,ext-disp-audio-rx = <1>;
 	qcom,model = "cliffs-mtp-wcd9395-snd-card";
 	qcom,wcn-bt = <1>;
 	qcom,audio-routing =

@@ -534,6 +534,8 @@ dtbo-y += pineapple-audio.dtbo \
                  cliffs-audio-cdp.dtbo \
                  cliffs7-audio-cdp.dtbo \
                  cliffs-audio-rcm.dtbo \
+                 cliffs7-audio-rcm.dtbo \
+                 cliffs-audio-mtp-wcd9395.dtbo \
                  cliffs7-audio-mtp-wcd9395.dtbo \
                  cliffs-audio-atp.dtbo \
                  cliffs7-audio-atp.dtbo

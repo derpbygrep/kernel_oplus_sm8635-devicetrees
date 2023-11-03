@@ -1,5 +1,9 @@
 #include "cliffs-audio-overlay.dtsi"
 
+&pineapple_snd {
+	qcom,ext-disp-audio-rx = <1>;
+};
+
 &wcd939x_codec {
 	qcom,usbcss-hs-xtalk-config = <2>;
 	qcom,usbcss-hs-rdson = <600>;
