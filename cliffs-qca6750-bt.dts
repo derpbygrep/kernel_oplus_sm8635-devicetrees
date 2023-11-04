@@ -8,8 +8,12 @@
 	compatible = "qcom,cliffs";
 	qcom,msm-id = <614 0x10000>, <632 0x10000>;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	qcom,board-id = <1 0>, <8 0>, <11 0>, <21 0>, <21 1>;
 =======
 	qcom,board-id = <1 0>, <8 0>, <11 0>, <21 0>;
 >>>>>>> 684d2837 (ARM: dts: msm: Add MSL bluetooth node for cliffs)
+=======
+	qcom,board-id = <1 0>, <8 0>, <11 0>, <21 0>, <21 1>;
+>>>>>>> 361fa47b (ARM: dts: msm: Add support for bluetooth in rcm)
 };
