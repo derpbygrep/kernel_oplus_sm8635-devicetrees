@@ -2,7 +2,7 @@
 /plugin/;
 
 #include "trustedvm-cliffs-sde.dtsi"
-#include "trustedvm-cliffs-sde-display-rcm.dtsi"
+#include "trustedvm-cliffs-sde-display-cdp.dtsi"
 
 / {
 	model = "Qualcomm Technologies, Inc. Cliffs SVM RCM";
