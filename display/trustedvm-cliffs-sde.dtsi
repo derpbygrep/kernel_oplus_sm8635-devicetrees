@@ -12,7 +12,7 @@
 
 	smmu_sde_unsec: qcom,smmu_sde_unsec_cb {
 		compatible = "qcom,smmu_sde_unsec";
-		iommus = <&apps_smmu 0x1c03 0>,
+		iommus = <&apps_smmu 0x1c04 0>,
 			<&apps_smmu 0x1c06 0>;
 		qcom,iommu-dma-addr-pool = <0x00020000 0xfffe0000>;
 		qcom,iommu-faults = "non-fatal";
