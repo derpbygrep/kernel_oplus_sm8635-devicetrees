@@ -993,6 +993,7 @@ dtbo-y += holi-ipa.dtbo
 >>>>>>> e136b5bf (ARM: dts: msm: Add ipa_hw support for holi)
 endif
 
+<<<<<<< HEAD
 ifeq ($(CONFIG_ARCH_HOLI),y)
 dtbo-y += nxp/holi-nfc.dtbo \
           nxp/holi-pm6125-nfc.dtbo \
@@ -1012,6 +1013,12 @@ dtbo-y += sun-fingerprint.dtbo
 endif
 
 
+=======
+ifeq ($(CONFIG_ARCH_PITTI), y)
+dtbo-y += pitti-dsp.dtbo
+endif
+
+>>>>>>> d9961782 (ARM: dts: msm: Add pitti dts and dtsi files)
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
