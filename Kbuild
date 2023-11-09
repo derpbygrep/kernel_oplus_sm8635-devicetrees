@@ -33,6 +33,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 ifeq ($(CONFIG_ARCH_WAIPIO), y)
@@ -676,6 +677,9 @@ endif
 
 >>>>>>> 1cb703bb (mm-sys-devicetree: build framework files)
 =======
+=======
+ifeq ($(CONFIG_ARCH_PINEAPPLE),y)
+>>>>>>> f18a8764 (eSE-devicetree: Added eSE device node probing for sun target)
 dtbo-y += pineapple-ese-mtp.dtbo
 dtbo-y += pineapple-ese-cdp.dtbo
 dtbo-y += pineapple-ese-qrd.dtbo
@@ -690,7 +694,20 @@ endif
 dtbo-y += pineapple-v2-ese-mtp.dtbo
 dtbo-y += pineapple-v2-ese-cdp.dtbo
 dtbo-y += pineapple-v2-ese-qrd.dtbo
+<<<<<<< HEAD
 >>>>>>> 6532024e (eSE-devicetree: Updated the DT entries for Lanai.)
+=======
+endif
+
+ifeq ($(CONFIG_ARCH_SUN),y)
+dtbo-y += sun-ese-mtp.dtbo
+dtbo-y += sun-ese-cdp.dtbo
+dtbo-y += sun-ese-qrd.dtbo
+dtbo-y += sun-v2-ese-mtp.dtbo
+dtbo-y += sun-v2-ese-cdp.dtbo
+dtbo-y += sun-v2-ese-qrd.dtbo
+endif
+>>>>>>> f18a8764 (eSE-devicetree: Added eSE device node probing for sun target)
 
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
