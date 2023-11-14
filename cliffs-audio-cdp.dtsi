@@ -75,4 +75,7 @@
 	qcom,wsa-max-devs = <2>;
 	qcom,sec-mi2s-gpios = <&fm_i2s1_gpios>;
 	qcom,usbss-hsj-connect-enabled;
+	qcom,msm-mbhc-usbc-audio-supported = <0>;
+	qcom,msm-mbhc-hphl-swh = <1>;
+	qcom,msm-mbhc-gnd-swh = <1>;
 };
