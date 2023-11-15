@@ -46,6 +46,7 @@
 		qcom,wan-use-skb-page;
 		qcom,rmnet-ctl-enable;
 		qcom,ipa-endp-delay-wa;
+		qcom,wan-rx-ring-size = <192>;
 		qcom,tx-wrapper-cache-max-size = <400>;
 		clock-names = "core_clk";
 		clocks = <&rpmcc RPM_SMD_IPA_CLK>;
@@ -102,7 +103,7 @@
 			qcom,additional-mapping =
 			/* modem tables in IMEM */
 			<0x0C123000 0x0C123000 0x2000>;
-			qcom,iommu-dma = "fastmap";
+			qcom,iommu-dma = "atomic";
 			qcom,ipa-q6-smem-size = <36864>;
 		};
 
