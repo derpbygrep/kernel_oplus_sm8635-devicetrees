@@ -29,6 +29,20 @@
 				bias-pull-down;
 			};
 		};
+
+		cnss_wlan_sw_ctrl: cnss_wlan_sw_ctrl {
+			mux {
+				pins = "gpio18";
+				function = "wcn_sw_ctrl";
+			};
+		};
+
+		cnss_wlan_sw_ctrl_wl_cx: cnss_wlan_sw_ctrl_wl_cx {
+			mux {
+				pins = "gpio19";
+				function = "wcn_sw";
+			};
+		};
 	};
 };
 
@@ -55,9 +69,12 @@
 		qcom,sw-ctrl-gpio = <&tlmm 18 0>;
 		/* List of GPIOs to be setup for interrupt wakeup capable */
 		mpm_wake_set_gpios = <18 19>;
-		pinctrl-names = "wlan_en_active", "wlan_en_sleep";
+		pinctrl-names = "wlan_en_active", "wlan_en_sleep", "sw_ctrl",
+				"sw_ctrl_wl_cx";
 		pinctrl-0 = <&cnss_wlan_en_active>;
 		pinctrl-1 = <&cnss_wlan_en_sleep>;
+		pinctrl-2 = <&cnss_wlan_sw_ctrl>;
+		pinctrl-3 = <&cnss_wlan_sw_ctrl_wl_cx>;
 		qcom,wlan;
 		qcom,wlan-rc-num = <0>;
 		qcom,wlan-ramdump-dynamic = <0x780000>;
