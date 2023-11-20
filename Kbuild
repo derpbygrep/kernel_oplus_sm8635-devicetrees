@@ -858,6 +858,7 @@ endif
 ifeq ($(CONFIG_ARCH_PINEAPPLE),y)
 dtbo-y += pineapple-kiwi-cnss.dtbo
 dtbo-y += pineapplep-hdk-kiwi-cnss.dtbo
+dtbo-y += pineapplep-aim500-kiwi-cnss.dtbo
 endif
 
 <<<<<<< HEAD
