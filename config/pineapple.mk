@@ -9,10 +9,15 @@ dtbo-$(CONFIG_ARCH_PINEAPPLE)	+= pineapple-camera-v2.dtbo \
 									pineapple-camera-sensor-cdp.dtbo \
 									pineapple-camera-sensor-mtp.dtbo \
 									pineapple-camera-sensor-hdk.dtbo \
+<<<<<<< HEAD
 									pineapple-camera-sensor-qrd.dtbo
 <<<<<<< HEAD
 >>>>>>> 6c31fdaa (ARM: dts: msm: Add camera devicetree for pineapple)
 =======
+=======
+									pineapple-camera-sensor-qrd.dtbo \
+									pineapple-camera-sensor-aim500.dtbo
+>>>>>>> d0c12fa5 (ARM: dts: msm: add camera support for AIM500 series)
 dtbo-$(CONFIG_ARCH_CLIFFS)	+= cliffs-camera.dtbo
 <<<<<<< HEAD
 <<<<<<< HEAD
