@@ -13,6 +13,6 @@
 / {
 	model = "Qualcomm Technologies, Inc. TRINKET IOT";
 	compatible = "qcom,trinket-iot";
-	qcom,msm-id = <467 0x0>;
+	qcom,msm-id = <467 0x0>, <394 0x10000>;
 	qcom,board-id = <0 0>;
 };
