@@ -5,7 +5,6 @@
 	pinctrl-names = "aud_active", "aud_sleep";
 	pinctrl-0 = <&spkr_1_sd_n_active>;
 	pinctrl-1 = <&spkr_1_sd_n_sleep>;
-	qcom,lpi-gpios;
 };
 
 &wsa881x_i2c_e {
