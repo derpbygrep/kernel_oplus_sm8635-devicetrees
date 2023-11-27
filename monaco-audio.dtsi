@@ -48,96 +48,96 @@
 
 	spf_tdm_sec: qcom,spf-msm-dai-tdm-sec {
 		compatible = "qcom,msm-pcm-pinctrl";
-		pinctrl-names = "default", "sleep";
-		pinctrl-0 = <&sec_tdm_sck_active &sec_tdm_ws_active
-			&sec_tdm_din_active &sec_tdm_dout_active>;
-		pinctrl-1 = <&sec_tdm_sck_sleep &sec_tdm_ws_sleep
+		pinctrl-names = "default", "active";
+		pinctrl-0 = <&sec_tdm_sck_sleep &sec_tdm_ws_sleep
 			&sec_tdm_din_sleep &sec_tdm_dout_sleep>;
+		pinctrl-1 = <&sec_tdm_sck_active &sec_tdm_ws_active
+			&sec_tdm_din_active &sec_tdm_dout_active>;
 		#gpio-cells = <0>;
 	};
 
 	spf_tdm_tert: qcom,spf-msm-dai-tdm-tert {
 		compatible = "qcom,msm-pcm-pinctrl";
-		pinctrl-names = "default", "sleep";
-		pinctrl-0 = <&tert_tdm_sck_active &tert_tdm_ws_active
-			&tert_tdm_din_active &tert_tdm_dout_active>;
-		pinctrl-1 = <&tert_tdm_sck_sleep &tert_tdm_ws_sleep
+		pinctrl-names = "default", "active";
+		pinctrl-0 = <&tert_tdm_sck_sleep &tert_tdm_ws_sleep
 			&tert_tdm_din_sleep &tert_tdm_dout_sleep>;
+		pinctrl-1 = <&tert_tdm_sck_active &tert_tdm_ws_active
+			&tert_tdm_din_active &tert_tdm_dout_active>;
 		#gpio-cells = <0>;
 	};
 
 	spf_tdm_hsif0: qcom,spf-msm-dai-tdm-hsif0 {
 		compatible = "qcom,msm-pcm-pinctrl";
-		pinctrl-names = "default", "sleep";
-		pinctrl-0 = <&hs0_i2s_sck_active &hs0_i2s_ws_active
-			&hs0_i2s_data0_active &hs0_i2s_data1_active>;
-		pinctrl-1 = <&hs0_i2s_sck_sleep &hs0_i2s_ws_sleep
+		pinctrl-names = "default", "active";
+		pinctrl-0 = <&hs0_i2s_sck_sleep &hs0_i2s_ws_sleep
 			&hs0_i2s_data0_sleep &hs0_i2s_data1_sleep>;
+		pinctrl-1 = <&hs0_i2s_sck_active &hs0_i2s_ws_active
+			&hs0_i2s_data0_active &hs0_i2s_data1_active>;
 		#gpio-cells = <0>;
 	};
 
 	spf_tdm_quat: qcom,spf-msm-dai-tdm-quat {
 		compatible = "qcom,msm-pcm-pinctrl";
-		pinctrl-names = "default", "sleep";
-		pinctrl-0 = <&quat_mi2s_sck_active &quat_mi2s_ws_active
-			&quat_mi2s_sd0_active &quat_mi2s_sd1_active
-			&quat_mi2s_sd2_active &quat_mi2s_sd3_active>;
-		pinctrl-1 = <&quat_mi2s_sck_sleep &quat_mi2s_ws_sleep
+		pinctrl-names = "default", "active";
+		pinctrl-0 = <&quat_mi2s_sck_sleep &quat_mi2s_ws_sleep
 			&quat_mi2s_sd0_sleep &quat_mi2s_sd1_sleep
 			&quat_mi2s_sd2_sleep &quat_mi2s_sd3_sleep>;
+		pinctrl-1 = <&quat_mi2s_sck_active &quat_mi2s_ws_active
+			&quat_mi2s_sd0_active &quat_mi2s_sd1_active
+			&quat_mi2s_sd2_active &quat_mi2s_sd3_active>;
 		qcom,lpi-gpios;
 		#gpio-cells = <0>;
 	};
 
 	spf_tdm_quin: qcom,spf-msm-dai-tdm-quin {
 		compatible = "qcom,msm-pcm-pinctrl";
-		pinctrl-names = "default", "sleep";
-		pinctrl-0 = <&lpi_i2s1_sck_active &lpi_i2s1_ws_active
-			&lpi_i2s1_sd0_active &lpi_i2s1_sd1_active>;
-		pinctrl-1 = <&lpi_i2s1_sck_sleep &lpi_i2s1_ws_sleep
+		pinctrl-names = "default", "active";
+		pinctrl-0 = <&lpi_i2s1_sck_sleep &lpi_i2s1_ws_sleep
 			&lpi_i2s1_sd0_sleep &lpi_i2s1_sd1_sleep>;
+		pinctrl-1 = <&lpi_i2s1_sck_active &lpi_i2s1_ws_active
+			&lpi_i2s1_sd0_active &lpi_i2s1_sd1_active>;
 		qcom,lpi-gpios;
 		#gpio-cells = <0>;
 	};
 
 	spf_tdm_sen: qcom,spf-msm-dai-tdm-sen {
 		compatible = "qcom,msm-pcm-pinctrl";
-		pinctrl-names = "default", "sleep";
-		pinctrl-0 = <&lpi_i2s2_sck_active &lpi_i2s2_ws_active
-			&lpi_i2s2_sd0_active &lpi_i2s2_sd1_active>;
-		pinctrl-1 = <&lpi_i2s2_sck_sleep &lpi_i2s2_ws_sleep
+		pinctrl-names = "default", "active";
+		pinctrl-0 = <&lpi_i2s2_sck_sleep &lpi_i2s2_ws_sleep
 			&lpi_i2s2_sd0_sleep &lpi_i2s2_sd1_sleep>;
+		pinctrl-1 = <&lpi_i2s2_sck_active &lpi_i2s2_ws_active
+			&lpi_i2s2_sd0_active &lpi_i2s2_sd1_active>;
 		qcom,lpi-gpios;
 		#gpio-cells = <0>;
 	};
 
 	spf_tdm_sep: qcom,spf-msm-dai-tdm-sep {
 		compatible = "qcom,msm-pcm-pinctrl";
-		pinctrl-names = "default", "sleep";
-		pinctrl-0 = <&lpi_i2s3_sck_active &lpi_i2s3_ws_active
-			&lpi_i2s3_sd0_active &lpi_i2s3_sd1_active>;
-		pinctrl-1 = <&lpi_i2s3_sck_sleep &lpi_i2s3_ws_sleep
+		pinctrl-names = "default", "active";
+		pinctrl-0 = <&lpi_i2s3_sck_sleep &lpi_i2s3_ws_sleep
 			&lpi_i2s3_sd0_sleep &lpi_i2s3_sd1_sleep>;
+		pinctrl-1 = <&lpi_i2s3_sck_active &lpi_i2s3_ws_active
+			&lpi_i2s3_sd0_active &lpi_i2s3_sd1_active>;
 		qcom,lpi-gpios;
 		#gpio-cells = <0>;
 	};
 
 	spf_tdm_oct: qcom,spf-msm-dai-tdm-oct {
 		compatible = "qcom,msm-pcm-pinctrl";
-		pinctrl-names = "default", "sleep";
-		pinctrl-0 = <&lpi_i2s4_sck_active &lpi_i2s4_ws_active
-			&lpi_i2s4_sd0_active &lpi_i2s4_sd1_active>;
-		pinctrl-1 = <&lpi_i2s4_sck_sleep &lpi_i2s4_ws_sleep
+		pinctrl-names = "default", "active";
+		pinctrl-0 = <&lpi_i2s4_sck_sleep &lpi_i2s4_ws_sleep
 			&lpi_i2s4_sd0_sleep &lpi_i2s4_sd1_sleep>;
+		pinctrl-1 = <&lpi_i2s4_sck_active &lpi_i2s4_ws_active
+			&lpi_i2s4_sd0_active &lpi_i2s4_sd1_active>;
 		qcom,lpi-gpios;
 		#gpio-cells = <0>;
 	};
 
 	spf_internal_mclk1: qcom,spf-msm-internal-mclk1 {
 		compatible = "qcom,msm-pcm-pinctrl";
-		pinctrl-names = "default", "sleep";
-		pinctrl-0 = <&audio_internal_mclk1_active>;
-		pinctrl-1 = <&audio_internal_mclk1_sleep>;
+		pinctrl-names = "default", "active";
+		pinctrl-0 = <&audio_internal_mclk1_sleep>;
+		pinctrl-1 = <&audio_internal_mclk1_active>;
 		#gpio-cells = <0>;
 	};
 
