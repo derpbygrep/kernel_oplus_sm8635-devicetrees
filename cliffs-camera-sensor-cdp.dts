@@ -13,8 +13,12 @@
 	compatible = "qcom,cliffs-cdp", "qcom,cliffs", "qcom,cdp", "qcom,rcm", "qcom,cliffs-rcm";
 	qcom,msm-id = <614 0x10000>, <632 0x10000>;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	qcom,board-id = <1 0>, <21 0>, <21 1>;
 =======
 	qcom,board-id = <1 0>, <21 0>;
 >>>>>>> 0b1b45fa (ARM: dts: msm: Add camera sensor DT for cliffs)
+=======
+	qcom,board-id = <1 0>, <21 0>, <21 1>, <21 2>, <21 3>;
+>>>>>>> d0c145f0 (ARM: dts: msm: Add camera support for cliffs HMT variants)
 };
