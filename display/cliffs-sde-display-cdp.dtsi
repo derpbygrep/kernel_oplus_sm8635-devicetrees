@@ -134,7 +134,7 @@
 	qcom,mdss-dsi-bl-min-level = <1>;
 	qcom,mdss-dsi-bl-max-level = <4095>;
 	qcom,platform-reset-gpio = <&tlmm 177 0>;
-	qcom,platform-bklight-en-gpio = <&pmxr2230_gpios 10 0>;
+	qcom,platform-bklight-en-gpio = <&pmxr2230_gpios 8 0>;
 };
 
 &dsi_sharp_qhd_plus_dsc_video {
@@ -143,7 +143,7 @@
 	qcom,mdss-dsi-bl-min-level = <1>;
 	qcom,mdss-dsi-bl-max-level = <4095>;
 	qcom,platform-reset-gpio = <&tlmm 177 0>;
-	qcom,platform-bklight-en-gpio = <&pmxr2230_gpios 10 0>;
+	qcom,platform-bklight-en-gpio = <&pmxr2230_gpios 8 0>;
 };
 
 &dsi_sim_cmd {
