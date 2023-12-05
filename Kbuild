@@ -250,7 +250,14 @@ dtbo-$(CONFIG_ARCH_CLIFFS) += display/trustedvm-cliffs-sde-display-mtp-overlay.d
 		  display/trustedvm-cliffs-sde-display-atp-overlay.dtbo
 endif
 
+<<<<<<< HEAD
 >>>>>>> 737bf172 (ARM: dts: msm: add display dt node for cliffs target)
+=======
+ifneq ($(CONFIG_ARCH_QTI_VM), y)
+dtbo-$(CONFIG_ARCH_PITTI) += display/pitti-sde.dtbo
+endif
+
+>>>>>>> b140eb67 (ARM: dts: msm: Add initial display sde dsi nodes on Pitti target)
 ifeq ($(CONFIG_ARCH_SA8155), y)
 dtbo-y += display/sa8155-adp-star-display.dtbo
 endif
