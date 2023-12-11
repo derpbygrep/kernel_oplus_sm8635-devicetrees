@@ -326,8 +326,15 @@ dtbo-y += crow-cnss.dtbo
 endif
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> d61f4951 (ARM: dts: msm: Add wlan related dtsi file for crow)
 =======
+=======
+ifeq ($(CONFIG_ARCH_PITTI),y)
+dtbo-y += pitti-adrastea.dtbo
+endif
+
+>>>>>>> 2ca9903c (ARM: dts: msm: Add icnss node for pitti adrastea)
 ifeq ($(CONFIG_ARCH_SA6155),y)
 dtbo-y += sa6155p-cnss.dtbo
 endif
