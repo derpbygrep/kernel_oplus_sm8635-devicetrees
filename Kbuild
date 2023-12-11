@@ -710,6 +710,12 @@ dtbo-y += pineapple-v2-ese-qrd.dtbo
 =======
 endif
 
+ifeq ($(CONFIG_ARCH_CLIFFS),y)
+dtbo-y += cliffs-ese-mtp.dtbo
+dtbo-y += cliffs-ese-cdp.dtbo
+dtbo-y += cliffs-ese-qrd.dtbo
+endif
+
 ifeq ($(CONFIG_ARCH_SUN),y)
 dtbo-y += sun-ese-mtp.dtbo
 dtbo-y += sun-ese-cdp.dtbo
