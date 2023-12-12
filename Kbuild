@@ -562,6 +562,12 @@ dtbo-y += pineapple-audio.dtbo \
                  cliffs7-audio-atp.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_PITTI), y)
+dtbo-y += pitti-audio.dtbo \
+                 pitti-audio-idp.dtbo \
+                 pitti-audio-qrd.dtbo \
+                 pitti-audio-atp.dtbo
+endif
 
 ifeq ($(CONFIG_ARCH_SA8155), y)
 dtbo-y +=  sa8155-audio.dtbo
