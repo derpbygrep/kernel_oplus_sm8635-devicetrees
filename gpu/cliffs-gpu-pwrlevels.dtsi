@@ -99,7 +99,7 @@
 		/* Low_SVS_D1 */
 		qcom,gpu-pwrlevel@8 {
 			reg = <8>;
-			qcom,gpu-freq = <255000000>;
+			qcom,gpu-freq = <260000000>;
 			qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
 			qcom,bus-freq = <1>;
