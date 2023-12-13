@@ -254,7 +254,13 @@ endif
 >>>>>>> 737bf172 (ARM: dts: msm: add display dt node for cliffs target)
 =======
 ifneq ($(CONFIG_ARCH_QTI_VM), y)
-dtbo-$(CONFIG_ARCH_PITTI) += display/pitti-sde.dtbo
+dtbo-$(CONFIG_ARCH_PITTI) += display/pitti-sde.dtbo \
+		display/pitti-sde-display-atp-overlay.dtbo \
+		display/pitti-sde-display-idp-overlay.dtbo \
+		display/pitti-sde-display-idp-amoled-overlay.dtbo \
+		display/pitti-sde-display-idp-pmiv0104-overlay.dtbo \
+		display/pitti-sde-display-qrd-overlay.dtbo \
+		display/pitti-sde-display-rumi-overlay.dtbo
 endif
 
 >>>>>>> b140eb67 (ARM: dts: msm: Add initial display sde dsi nodes on Pitti target)
