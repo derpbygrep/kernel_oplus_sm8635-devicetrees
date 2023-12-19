@@ -27,6 +27,7 @@
 			qcom,iommu-faults = "stall-disable", "HUPCF";
 			dma-coherent;
 			qcom,iova-best-fit;
+			qcom,iova-max-align-shift = <9>; /* Set MAX alignment to 2 MB*/
 			pd-type = <7>;	/* USERPD */
 		};
 
@@ -38,6 +39,7 @@
 			qcom,iommu-faults = "stall-disable", "HUPCF";
 			dma-coherent;
 			qcom,iova-best-fit;
+			qcom,iova-max-align-shift = <9>; /* Set MAX alignment to 2 MB*/
 			pd-type = <7>;	/* USERPD */
 		};
 
@@ -49,6 +51,7 @@
 			qcom,iommu-faults = "stall-disable", "HUPCF";
 			dma-coherent;
 			qcom,iova-best-fit;
+			qcom,iova-max-align-shift = <9>; /* Set MAX alignment to 2 MB*/
 			pd-type = <7>;	/* USERPD */
 		};
 
@@ -60,6 +63,7 @@
 			qcom,iommu-faults = "stall-disable", "HUPCF";
 			dma-coherent;
 			qcom,iova-best-fit;
+			qcom,iova-max-align-shift = <9>; /* Set MAX alignment to 2 MB*/
 			pd-type = <7>;	/* USERPD */
 		};
 
@@ -71,6 +75,7 @@
 			qcom,iommu-faults = "stall-disable", "HUPCF";
 			dma-coherent;
 			qcom,iova-best-fit;
+			qcom,iova-max-align-shift = <9>; /* Set MAX alignment to 2 MB*/
 			pd-type = <7>;	/* USERPD */
 		};
 
@@ -82,6 +87,7 @@
 			qcom,iommu-faults = "stall-disable", "HUPCF";
 			dma-coherent;
 			qcom,iova-best-fit;
+			qcom,iova-max-align-shift = <9>; /* Set MAX alignment to 2 MB*/
 			pd-type = <7>;	/* USERPD */
 		};
 
@@ -93,6 +99,7 @@
 			qcom,iommu-faults = "stall-disable", "HUPCF";
 			dma-coherent;
 			qcom,iova-best-fit;
+			qcom,iova-max-align-shift = <9>; /* Set MAX alignment to 2 MB*/
 			pd-type = <7>;	/* USERPD */
 		};
 
@@ -156,6 +163,7 @@
 			qcom,iommu-faults = "stall-disable", "HUPCF";
 			dma-coherent;
 			qcom,iova-best-fit;
+			qcom,iova-max-align-shift = <9>; /* Set MAX alignment to 2 MB*/
 			pd-type = <7>;	/* USERPD */
 		};
 
@@ -169,6 +177,7 @@
 			qcom,iommu-faults = "stall-disable", "HUPCF";
 			dma-coherent;
 			qcom,iova-best-fit;
+			qcom,iova-max-align-shift = <9>; /* Set MAX alignment to 2 MB*/
 			pd-type = <7>;	/* USERPD */
 		};
 
@@ -180,6 +189,7 @@
 			qcom,iommu-faults = "stall-disable", "HUPCF";
 			dma-coherent;
 			qcom,iova-best-fit;
+			qcom,iova-max-align-shift = <9>; /* Set MAX alignment to 2 MB*/
 			pd-type = <7>;	/* USERPD */
 		};
 
@@ -191,6 +201,7 @@
 			qcom,iommu-faults = "stall-disable", "HUPCF";
 			dma-coherent;
 			qcom,iova-best-fit;
+			qcom,iova-max-align-shift = <9>; /* Set MAX alignment to 2 MB*/
 			pd-type = <7>;	/* USERPD */
 		};
 
@@ -202,6 +213,7 @@
 			qcom,iommu-faults = "stall-disable", "HUPCF";
 			dma-coherent;
 			qcom,iova-best-fit;
+			qcom,iova-max-align-shift = <9>; /* Set MAX alignment to 2 MB*/
 			pd-type = <7>;	/* USERPD */
 		};
 	};
