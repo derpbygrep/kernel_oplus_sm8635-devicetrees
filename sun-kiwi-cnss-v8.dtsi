@@ -131,8 +131,6 @@
 			"{class: wlan_pdc, ss: rf, res: s1d.v, dwnval: 880}",
 			"{class: wlan_pdc, ss: bb, res: s4d.v, upval: 976}",
 			"{class: wlan_pdc, ss: bb, res: s4d.v, dwnval: 536}",
-			"{class: wlan_pdc, ss: rf, res: s4j.m, enable: 0}",
-			"{class: wlan_pdc, ss: rf, res: s4j.v, enable: 0}",
 			"{class: wlan_pdc, ss: bb, res: s5f.m, enable: 1}",
 			"{class: wlan_pdc, ss: bb, res: s5f.v, enable: 1}",
 			"{class: wlan_pdc, ss: bb, res: s5f.v, upval: 932}",
