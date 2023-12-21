@@ -119,12 +119,17 @@
 
 		/* Low_SVS_D1 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		qcom,gpu-pwrlevel@8 {
 			reg = <8>;
 =======
 		qcom,gpu-pwrlevel@10 {
 			reg = <10>;
 >>>>>>> 483ceadf (ARM: dts: msm: Clock plan update for Cliffs and Cliffs7 gpu)
+=======
+		qcom,gpu-pwrlevel@10 {
+			reg = <10>;
+>>>>>>> 34cdf960 (ARM: dts: msm: Clock plan update for Cliffs and Cliffs7 gpu)
 			qcom,gpu-freq = <255000000>;
 			qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 

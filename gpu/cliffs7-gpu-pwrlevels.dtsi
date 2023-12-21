@@ -1,6 +1,7 @@
 &msm_gpu {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	qcom,initial-pwrlevel = <7>;
 =======
 	qcom,initial-pwrlevel = <6>;
@@ -8,6 +9,9 @@
 =======
 	qcom,initial-pwrlevel = <8>;
 >>>>>>> 483ceadf (ARM: dts: msm: Clock plan update for Cliffs and Cliffs7 gpu)
+=======
+	qcom,initial-pwrlevel = <8>;
+>>>>>>> 34cdf960 (ARM: dts: msm: Clock plan update for Cliffs and Cliffs7 gpu)
 
 	/* Power levels */
 	qcom,gpu-pwrlevels {
@@ -16,6 +20,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -35,6 +40,11 @@
 		/* Turbo_L0*/
 		qcom,gpu-pwrlevel@0 {
 			reg = <0>;
+=======
+		/* Turbo_L0*/
+		qcom,gpu-pwrlevel@0 {
+			reg = <0>;
+>>>>>>> 34cdf960 (ARM: dts: msm: Clock plan update for Cliffs and Cliffs7 gpu)
 			qcom,gpu-freq = <950000000>;
 			qcom,level = <RPMH_REGULATOR_LEVEL_TURBO_L0>;
 
@@ -47,7 +57,10 @@
 			reg = <1>;
 			qcom,gpu-freq = <900000000>;
 			qcom,level = <RPMH_REGULATOR_LEVEL_TURBO>;
+<<<<<<< HEAD
 >>>>>>> 483ceadf (ARM: dts: msm: Clock plan update for Cliffs and Cliffs7 gpu)
+=======
+>>>>>>> 34cdf960 (ARM: dts: msm: Clock plan update for Cliffs and Cliffs7 gpu)
 
 			qcom,bus-freq = <9>;
 			qcom,bus-min = <9>;
@@ -55,24 +68,31 @@
 		};
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		/* Nom */
 		qcom,gpu-pwrlevel@1 {
 			reg = <1>;
 			qcom,gpu-freq = <736000000>;
 			qcom,level = <RPMH_REGULATOR_LEVEL_NOM>;
 =======
+=======
+>>>>>>> 34cdf960 (ARM: dts: msm: Clock plan update for Cliffs and Cliffs7 gpu)
 		/* Nom_L1 */
 		qcom,gpu-pwrlevel@2 {
 			reg = <2>;
 			qcom,gpu-freq = <835000000>;
 			qcom,level = <RPMH_REGULATOR_LEVEL_NOM_L1>;
+<<<<<<< HEAD
 >>>>>>> 483ceadf (ARM: dts: msm: Clock plan update for Cliffs and Cliffs7 gpu)
+=======
+>>>>>>> 34cdf960 (ARM: dts: msm: Clock plan update for Cliffs and Cliffs7 gpu)
 
 			qcom,bus-freq = <8>;
 			qcom,bus-min = <7>;
 			qcom,bus-max = <9>;
 		};
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		/* SVS_L2 */
 		qcom,gpu-pwrlevel@2 {
@@ -93,6 +113,22 @@
 		qcom,gpu-pwrlevel@4 {
 			reg = <4>;
 >>>>>>> 483ceadf (ARM: dts: msm: Clock plan update for Cliffs and Cliffs7 gpu)
+=======
+		/* Nom */
+		qcom,gpu-pwrlevel@3 {
+			reg = <3>;
+			qcom,gpu-freq = <736000000>;
+			qcom,level = <RPMH_REGULATOR_LEVEL_NOM>;
+
+			qcom,bus-freq = <7>;
+			qcom,bus-min = <6>;
+			qcom,bus-max = <8>;
+		};
+
+		/* SVS_L2 */
+		qcom,gpu-pwrlevel@4 {
+			reg = <4>;
+>>>>>>> 34cdf960 (ARM: dts: msm: Clock plan update for Cliffs and Cliffs7 gpu)
 			qcom,gpu-freq = <684000000>;
 			qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L2>;
 
@@ -103,25 +139,19 @@
 
 		/* SVS_L1 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		qcom,gpu-pwrlevel@3 {
 			reg = <3>;
 =======
 		qcom,gpu-pwrlevel@5 {
 			reg = <5>;
 >>>>>>> 483ceadf (ARM: dts: msm: Clock plan update for Cliffs and Cliffs7 gpu)
+=======
+		qcom,gpu-pwrlevel@5 {
+			reg = <5>;
+>>>>>>> 34cdf960 (ARM: dts: msm: Clock plan update for Cliffs and Cliffs7 gpu)
 			qcom,gpu-freq = <633000000>;
 			qcom,level = <RPMH_REGULATOR_LEVEL_SVS_L1>;
-
-			qcom,bus-freq = <7>;
-			qcom,bus-min = <6>;
-			qcom,bus-max = <8>;
-		};
-
-		/* SVS */
-		qcom,gpu-pwrlevel@4 {
-			reg = <4>;
-			qcom,gpu-freq = <500000000>;
-			qcom,level = <RPMH_REGULATOR_LEVEL_SVS>;
 
 			qcom,bus-freq = <7>;
 			qcom,bus-min = <5>;
@@ -129,24 +159,31 @@
 		};
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		/* Low_SVS */
 		qcom,gpu-pwrlevel@5 {
 			reg = <5>;
 			qcom,gpu-freq = <353000000>;
 			qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS>;
 =======
+=======
+>>>>>>> 34cdf960 (ARM: dts: msm: Clock plan update for Cliffs and Cliffs7 gpu)
 		/* SVS */
 		qcom,gpu-pwrlevel@6 {
 			reg = <6>;
 			qcom,gpu-freq = <500000000>;
 			qcom,level = <RPMH_REGULATOR_LEVEL_SVS>;
+<<<<<<< HEAD
 >>>>>>> 483ceadf (ARM: dts: msm: Clock plan update for Cliffs and Cliffs7 gpu)
+=======
+>>>>>>> 34cdf960 (ARM: dts: msm: Clock plan update for Cliffs and Cliffs7 gpu)
 
 			qcom,bus-freq = <4>;
 			qcom,bus-min = <2>;
 			qcom,bus-max = <7>;
 		};
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		/* Low_SVS_D1 */
 		qcom,gpu-pwrlevel@6 {
@@ -167,6 +204,22 @@
 		qcom,gpu-pwrlevel@8 {
 			reg = <8>;
 >>>>>>> 483ceadf (ARM: dts: msm: Clock plan update for Cliffs and Cliffs7 gpu)
+=======
+		/* Low_SVS */
+		qcom,gpu-pwrlevel@7 {
+			reg = <7>;
+			qcom,gpu-freq = <353000000>;
+			qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS>;
+
+			qcom,bus-freq = <3>;
+			qcom,bus-min = <1>;
+			qcom,bus-max = <3>;
+		};
+
+		/* Low_SVS_D1 */
+		qcom,gpu-pwrlevel@8 {
+			reg = <8>;
+>>>>>>> 34cdf960 (ARM: dts: msm: Clock plan update for Cliffs and Cliffs7 gpu)
 			qcom,gpu-freq = <255000000>;
 			qcom,level = <RPMH_REGULATOR_LEVEL_LOW_SVS_D1>;
 
