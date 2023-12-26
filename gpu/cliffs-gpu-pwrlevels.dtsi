@@ -1,12 +1,12 @@
 &msm_gpu {
+	qcom,initial-pwrlevel = <8>;
+
 	/* Power levels */
 	qcom,gpu-pwrlevels {
 		compatible="qcom,gpu-pwrlevels";
 
 		#address-cells = <1>;
 		#size-cells = <0>;
-
-		qcom,initial-pwrlevel = <8>;
 
 		/* Turbo_L1 */
 		qcom,gpu-pwrlevel@0 {
