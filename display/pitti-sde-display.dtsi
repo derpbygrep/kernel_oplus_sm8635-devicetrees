@@ -29,7 +29,7 @@
 };
 
 &mdss_mdp {
-	connectors = <&sde_dsi>;
+	connectors = <&sde_dsi &smmu_sde_unsec &smmu_sde_sec>;
 };
 
 &dsi_vtdr6130_amoled_120hz_cmd {
