@@ -944,7 +944,11 @@ dtbo-y += lemans-vm-cnss.dtbo
 >>>>>>> 728131b8 (ARM: dts: msm: Add cnss dt on Lemans LV GVM)
 =======
 dtbo-y += monaco-vm-cnss.dtbo
+<<<<<<< HEAD
 >>>>>>> d63aec50 (wlan_devicetree: Add dts, dtsi file for monaco GVM)
+=======
+dtbo-y += sa6155p-vm-cnss.dtbo
+>>>>>>> 5c800ac8 (wlan: dts: Add support for qcn7605 on Talos GVM)
 endif
 
 <<<<<<< HEAD
