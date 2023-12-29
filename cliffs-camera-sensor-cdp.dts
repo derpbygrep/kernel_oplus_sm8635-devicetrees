@@ -12,6 +12,7 @@
 	model = "Qualcomm Technologies, Inc. Cliffs CDP/RCM";
 	compatible = "qcom,cliffs-cdp", "qcom,cliffs", "qcom,cdp", "qcom,rcm", "qcom,cliffs-rcm";
 <<<<<<< HEAD
+<<<<<<< HEAD
 	qcom,msm-id = <614 0x10000>, <632 0x10000>;
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -24,6 +25,9 @@
 =======
 	qcom,msm-id = <614 0x10000>, <632 0x10000>, <642 0x10000>, <643 0x10000>;
 >>>>>>> 55b266fe (ARM: dts: msm: Add camera sensor support for cliffs APQ)
+=======
+	qcom,msm-id = <614 0x10000>, <632 0x10000>, <642 0x10000>, <643 0x10000>;
+>>>>>>> abff5045 (ARM: dts: msm: Add camera sensor support for cliffs APQ)
 	qcom,board-id = <1 0>, <21 0>, <21 1>, <21 2>, <21 3>;
 >>>>>>> d0c145f0 (ARM: dts: msm: Add camera support for cliffs HMT variants)
 =======
