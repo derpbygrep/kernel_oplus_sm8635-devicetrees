@@ -14,7 +14,7 @@
 
 / {
 	model = "Qualcomm Technologies, Inc. Cliffs 7";
-	compatible = "qcom,cliffs";
-	qcom,msm-id = <632 0x10000>;
+	compatible = "qcom,cliffs", "qcom,cliffsp";
+	qcom,msm-id = <632 0x10000>, <643 0x10000>;
 	qcom,board-id = <0 0>;
 };
