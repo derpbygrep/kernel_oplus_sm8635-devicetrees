@@ -40,3 +40,7 @@
 			"{class: wlan_pdc, ss: rf, res: s6c.v, dwnval: 1820}";
 	};
 };
+
+&fm_rtc6226 {
+	status = "disabled";
+};
