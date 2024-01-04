@@ -26,8 +26,11 @@
 		"gmu_clk",
 		"gcc_gpu_memnoc_gfx";
 
-	interrupts = <0 177 IRQ_TYPE_LEVEL_HIGH>;
-	interrupt-names = "kgsl_3d0_irq";
+	interrupts = <0 177 IRQ_TYPE_LEVEL_HIGH>, <0 181 IRQ_TYPE_LEVEL_HIGH>;
+	interrupt-names = "kgsl_3d0_irq", "freq_limiter_irq";
+
+	resets = <&gpucc GPUCC_GPU_CC_FREQUENCY_LIMITER_IRQ_CLEAR>;
+	reset-names = "freq_limiter_irq_clear";
 
 	nvmem-cells = <&gpu_speed_bin>, <&gpu_gaming_bin>;
 	nvmem-cell-names = "speed_bin", "gaming_bin";
