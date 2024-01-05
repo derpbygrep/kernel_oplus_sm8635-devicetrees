@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	qcom,msm-id = <614 0x10000>, <642 0x10000>;
 =======
 	qcom,msm-id = <614 0x10000>;
@@ -18,5 +19,8 @@
 =======
 	qcom,msm-id = <614 0x10000>;
 >>>>>>> 6583d28a (Revert "ARM: dts: qcom: Add support for APQ msm-id's on Palawan")
+=======
+	qcom,msm-id = <614 0x10000>, <642 0x10000>;
+>>>>>>> 46c92807 (ARM: dts: qcom: Add support for APQ msm-id's on Palawan)
 	qcom,board-id = <21 0>, <21 1>, <21 2>, <21 3>;
 };
