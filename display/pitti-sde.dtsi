@@ -1,5 +1,7 @@
 #include <dt-bindings/clock/qcom,dispcc-pitti.h>
 #include <dt-bindings/clock/qcom,rpmcc.h>
+#include <dt-bindings/interconnect/qcom,pitti.h>
+#include <dt-bindings/clock/qcom,gcc-pitti.h>
 #include "pitti-sde-common.dtsi"
 
 &soc {
