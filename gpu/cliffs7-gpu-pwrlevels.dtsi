@@ -1,5 +1,9 @@
 &msm_gpu {
+<<<<<<< HEAD
 	qcom,initial-pwrlevel = <7>;
+=======
+	qcom,initial-pwrlevel = <6>;
+>>>>>>> 42864d4d (ARM: dts: msm: Add initial-pwrlevel for cliffs GPU)
 
 	/* Power levels */
 	qcom,gpu-pwrlevels {
@@ -9,8 +13,11 @@
 		#size-cells = <0>;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		qcom,initial-pwrlevel = <6>;
 
+=======
+>>>>>>> 42864d4d (ARM: dts: msm: Add initial-pwrlevel for cliffs GPU)
 		/* Nom_L1 */
 =======
 		/* Turbo */
