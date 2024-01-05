@@ -6,10 +6,14 @@
 	model = "Qualcomm Technologies, Inc. Cliffs RCM";
 	compatible = "qcom,cliffs-rcm", "qcom,cliffs", "qcom,rcm";
 <<<<<<< HEAD
+<<<<<<< HEAD
 	qcom,msm-id = <632 0x10000>, <643 0x10000>;
 =======
 	qcom,msm-id = <632 0x10000>;
 >>>>>>> c4232fed (ARM: dts: qcom: Add rcm board ids on cliffs platforms)
+=======
+	qcom,msm-id = <632 0x10000>, <643 0x10000>;
+>>>>>>> 79a25005 (ARM: dts: qcom: Add support for APQ msm-id's on Palawan)
 	qcom,board-id = <21 0>, <21 1>, <21 2>, <21 3>;
 };
 
