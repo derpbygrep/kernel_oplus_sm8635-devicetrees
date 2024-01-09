@@ -852,6 +852,7 @@ dtbo-y += gpu/qcs405-gpu.dtbo
 endif
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 96e2e3f0 (ARM: dts: msm: Add GPU support for QCS405 Target)
 always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
@@ -1031,6 +1032,12 @@ dtbo-y += holi-dsp.dtbo
 endif
 
 >>>>>>> 41fbc768 (ARM: dts: msm: Add holi dts and dtsi files)
+=======
+ifeq ($(CONFIG_ARCH_PITTI), y)
+dtbo-y += gpu/pitti-gpu.dtbo
+endif
+
+>>>>>>> b4dd4cd7 (ARM: dts: msm: Add support for pitti GPU)
 ifeq ($(CONFIG_ARCH_CLIFFS), y)
 dtbo-y += cliffs-dsp.dtbo
 =======
