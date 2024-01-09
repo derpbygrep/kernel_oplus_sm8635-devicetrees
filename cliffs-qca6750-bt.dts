@@ -6,9 +6,13 @@
 / {
 	model = "Qualcomm Technologies, Inc. Cliffs SoC";
 	compatible = "qcom,cliffs";
+<<<<<<< HEAD
 	qcom,msm-id = <614 0x10000>, <632 0x10000>;
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+	qcom,msm-id = <614 0x10000>, <632 0x10000>, <642 0x10000>, <643 0x10000>;
+>>>>>>> d4ff004e (BT_dts: add msm-id for new cliff bt hw)
 	qcom,board-id = <1 0>, <8 0>, <11 0>, <21 0>, <21 1>;
 =======
 	qcom,board-id = <1 0>, <8 0>, <11 0>, <21 0>;
