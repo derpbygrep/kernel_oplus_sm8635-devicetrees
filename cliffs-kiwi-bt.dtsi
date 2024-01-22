@@ -46,7 +46,6 @@
 
 			qcom,pdc_init_table =
 				"{class: wlan_pdc, ss: rf, res: l5b.m, enable: 0}",
-				"{class: wlan_pdc, ss: bb, res: pdc, enable: 1}",
 				"{class: wlan_pdc, ss: rf, res: s3b.v, upval: 976}",
 				"{class: wlan_pdc, ss: rf, res: s1b.v, upval: 1864}",
 				"{class: wlan_pdc, ss: rf, res: s2b.v, upval: 1316}";
