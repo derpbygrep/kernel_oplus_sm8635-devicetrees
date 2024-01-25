@@ -5,10 +5,15 @@
 / {
         model = "Qualcomm Technologies, Inc. Cliffs RCM";
         compatible = "qcom,cliffs-rcm", "qcom,cliffs", "qcom,rcm";
+<<<<<<< HEAD
         qcom,msm-id = <614 0x10000>, <632 0x10000>;
 <<<<<<< HEAD
         qcom,board-id = <21 0>, <21 1>;
 =======
         qcom,board-id = <21 0>;
 >>>>>>> 453e398f (ARM: dts: msm: Add nfc node for cliffs)
+=======
+        qcom,msm-id = <614 0x10000>, <632 0x10000>, <642 0x10000>, <643 0x10000>;
+        qcom,board-id = <21 0>, <21 1>, <21 2>, <21 3>;
+>>>>>>> c09aa4f9 (nfc dt: New board ids for cliff rcm)
 };
