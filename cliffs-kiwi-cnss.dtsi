@@ -108,13 +108,13 @@
 		qcom,bus-bw-cfg =
 		/** ICC Path 1 **/
 		<0 0>, /* no vote */
-		/* idle: 0-18 Mbps snoc/anoc: 150 Mhz */
+		/* idle: 0-18 Mbps snoc/anoc: 100 Mhz */
 		<2250 1200000>,
-		/* low: 18-60 Mbps snoc/anoc: 150 Mhz */
+		/* low: 18-60 Mbps snoc/anoc: 100 Mhz */
 		<7500 1200000>,
-		/* medium: 60-240 Mbps snoc/anoc: 150 Mhz */
-		<30000 2600000>,
-		/* high: 240-1200 Mbps snoc/anoc: 150 Mhz */
+		/* medium: 60-240 Mbps snoc/anoc: 100 Mhz */
+		<30000 1200000>,
+		/* high: 240-1200 Mbps snoc/anoc: 100 Mhz */
 		<100000 1200000>,
 		/* very high: > 1200 Mbps snoc/anoc: 403 Mhz */
 		<175000 3224000>,
@@ -127,13 +127,13 @@
 
 		/** ICC Path 2 **/
 		<0 0>,
-		/* idle: 0-18 Mbps ddr: 547.2 MHz */
+		/* idle: 0-18 Mbps ddr: 451.2 MHz */
 		<2250 2188800>,
-		/* low: 18-60 Mbps ddr: 547.2 MHz */
+		/* low: 18-60 Mbps ddr: 451.2 MHz */
 		<7500 2188800>,
-		/* medium: 60-240 Mbps ddr: 547.2 MHz */
+		/* medium: 60-240 Mbps ddr: 451.2 MHz */
 		<30000 2188800>,
-		/* high: 240-1200 Mbps ddr: 547.2 MHz */
+		/* high: 240-1200 Mbps ddr: 451.2 MHz */
 		<100000 2188800>,
 		/* very high: > 1200 Mbps ddr: 1555 MHz */
 		<175000 6220800>,
@@ -141,7 +141,7 @@
 		<312500 8368000>,
 		/* super high: DBS mode ddr: 3.2 GHz */
 		<587500 12800000>,
-		/* low (latency critical): 18-60 Mbps ddr: 547.2 MHz */
+		/* low (latency critical): 18-60 Mbps ddr: 451.2 MHz */
 		<7500 2188800>;
 
 		qcom,vreg_pdc_map =
