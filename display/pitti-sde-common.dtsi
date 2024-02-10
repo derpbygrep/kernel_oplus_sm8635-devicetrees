@@ -105,8 +105,8 @@
 		qcom,sde-pipe-order-version = <0x1>;
 		qcom,sde-has-dim-layer;
 
-		qcom,sde-max-bw-low-kbps = <0x7 3600000>;
-		qcom,sde-max-bw-high-kbps = <0x7 6400000>;
+		qcom,sde-max-bw-low-kbps = <3600000>;
+		qcom,sde-max-bw-high-kbps = <6400000>;
 		qcom,sde-min-core-ib-kbps = <2500000>;
 		qcom,sde-min-llcc-ib-kbps = <0>;
 		qcom,sde-min-dram-ib-kbps = <1600000>;
