@@ -82,3 +82,11 @@
 &dsi_sim_dsc_10b_cmd {
 	qcom,ulps-enabled;
 };
+
+&reserved_memory {
+	splash_region: splash_region {
+		reg = <0x0 0x82D00000 0x0 0x00D00000>;
+		label = "cont_splash_region";
+	};
+};
+
