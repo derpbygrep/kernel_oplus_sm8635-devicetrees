@@ -254,6 +254,10 @@ endif
 >>>>>>> 737bf172 (ARM: dts: msm: add display dt node for cliffs target)
 =======
 ifneq ($(CONFIG_ARCH_QTI_VM), y)
+dtbo-$(CONFIG_ARCH_VOLCANO) += display/volcano-sde.dtbo
+endif
+
+ifneq ($(CONFIG_ARCH_QTI_VM), y)
 dtbo-$(CONFIG_ARCH_PITTI) += display/pitti-sde.dtbo \
 		display/pitti-sde-display-atp-overlay.dtbo \
 		display/pitti-sde-display-idp-overlay.dtbo \
