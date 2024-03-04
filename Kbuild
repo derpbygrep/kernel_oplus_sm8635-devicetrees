@@ -262,6 +262,12 @@ dtbo-$(CONFIG_ARCH_VOLCANO) += display/volcano-sde.dtbo \
 		display/volcano-sde-display-mtp-wcd9395-overlay.dtbo \
 		display/volcano-sde-display-qrd-overlay.dtbo \
 		display/volcano-sde-display-rumi-overlay.dtbo
+else
+dtbo-$(CONFIG_ARCH_VOLCANO) += display/trustedvm-volcano-sde-display-atp-overlay.dtbo \
+		  display/trustedvm-volcano-sde-display-idp-overlay.dtbo \
+		  display/trustedvm-volcano-sde-display-mtp-overlay.dtbo \
+		  display/trustedvm-volcano-sde-display-qrd-overlay.dtbo \
+		  display/trustedvm-volcano-sde-display-rumi-overlay.dtbo
 endif
 
 ifneq ($(CONFIG_ARCH_QTI_VM), y)

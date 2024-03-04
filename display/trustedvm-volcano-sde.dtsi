@@ -1,0 +1,29 @@
+#include <dt-bindings/clock/qcom,dispcc-volcano.h>
+#include "volcano-sde-common.dtsi"
+
+&soc {
+	/* dummy display clock provider */
+	clock_cpucc: qcom,cpucc {
+		compatible = "qcom,dummycc";
+		clock-output-names = "cpucc_clocks";
+		#clock-cells = <1>;
+	};
+};
+
+&mdss_mdp {
+};
+
+&mdss_dsi0 {
+	clocks = <&clock_cpucc DISP_CC_MDSS_BYTE0_CLK>,
+		<&clock_cpucc DISP_CC_MDSS_BYTE0_CLK_SRC>,
+		<&clock_cpucc DISP_CC_MDSS_BYTE0_INTF_CLK>,
+		<&clock_cpucc DISP_CC_MDSS_PCLK0_CLK>,
+		<&clock_cpucc DISP_CC_MDSS_PCLK0_CLK_SRC>,
+		<&clock_cpucc DISP_CC_MDSS_ESC0_CLK>;
+	clock-names = "byte_clk", "byte_clk_rcg", "byte_intf_clk",
+			"pixel_clk", "pixel_clk_rcg", "esc_clk";
+};
+
+&mdss_dsi_phy0 {
+	qcom,dsi-pll-in-trusted-vm;
+};
