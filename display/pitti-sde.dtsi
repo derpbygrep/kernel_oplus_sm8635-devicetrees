@@ -53,6 +53,7 @@
 			iommus = <&apps_smmu 0x043c 0x0>;
 			qcom,iommu-dma-addr-pool = <0x00020000 0xfffe0000>;
 			qcom,iommu-faults = "non-fatal";
+			dma-coherent;
 		};
 
 		smmu_rot_sec: qcom,smmu_rot_sec_cb {
@@ -72,6 +73,7 @@
 		qcom,iommu-earlymap; /* for cont-splash */
 		clocks = <&dispcc DISP_CC_MDSS_MDP_CLK>;
 		clock-names = "mdp_core_clk";
+		dma-coherent;
 	};
 
 	smmu_sde_sec: qcom,smmu_sde_sec_cb {
