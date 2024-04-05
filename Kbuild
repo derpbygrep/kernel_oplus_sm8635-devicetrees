@@ -278,6 +278,7 @@ dtbo-$(CONFIG_ARCH_PITTI) += display/pitti-sde.dtbo \
 		display/pitti-sde-display-idp-amoled-overlay.dtbo \
 		display/pitti-sde-display-idp-90fps-overlay.dtbo \
 		display/pitti-sde-display-idp-pmiv0104-overlay.dtbo \
+		display/pitti-sde-display-idp-pmiv0104-90fps-overlay.dtbo \
 		display/pitti-sde-display-qrd-overlay.dtbo \
 		display/pitti-sde-display-qrd-3gb-overlay.dtbo \
 		display/pitti-sde-display-qrd-90fps-overlay.dtbo \
