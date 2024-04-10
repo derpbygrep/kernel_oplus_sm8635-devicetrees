@@ -2,6 +2,10 @@
 #include "pitti-sde-display-common.dtsi"
 
 &soc {
+	disp_rdump_memory: disp_rdump_region@82d00000 {
+		reg = <0x82D00000 0x00D00000>;
+		label = "disp_rdump_region";
+	};
 };
 
 &sde_dsi {
