@@ -1,7 +1,12 @@
 #include "volcano-sde-display.dtsi"
 
+&sde_dp {
+	status = "disabled";
+};
+
 &mdss_mdp {
 	qcom,sde-emulated-env;
+	connectors = <&sde_dsi &smmu_sde_unsec &sde_wb2>;
 };
 
 &mdss_dsi_phy0 {
