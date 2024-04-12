@@ -175,6 +175,8 @@
 			&dsi_vtdr6130_amoled_90hz_cmd
 			&dsi_vtdr6130_amoled_90hz_video
 			&dsi_vtdr6130_amoled_60hz_cmd
-			&dsi_vtdr6130_amoled_60hz_video>;
+			&dsi_vtdr6130_amoled_60hz_video
+			&dsi_vtdr6130_amoled_qsync_144hz_cmd
+			&dsi_vtdr6130_amoled_qsync_144hz_video>;
 	};
 };
