@@ -6,7 +6,7 @@
 
 &mdss_mdp {
 	qcom,sde-emulated-env;
-	connectors = <&sde_dsi &smmu_sde_unsec &sde_wb2>;
+	connectors = <&sde_dsi &smmu_sde_unsec &sde_wb2 &sde_rscc>;
 };
 
 &mdss_dsi_phy0 {
