@@ -167,7 +167,7 @@
 };
 
 &sde_dsi {
-	qcom,dsi-default-panel = <&dsi_vtdr6130_amoled_video>;
+	qcom,dsi-default-panel = <&dsi_vtdr6130_amoled_cmd>;
 };
 
 &mdss_mdp {
