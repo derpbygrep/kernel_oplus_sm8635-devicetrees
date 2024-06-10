@@ -14,6 +14,24 @@
 	qcom,mdss-brightness-max-level = <8191>;
 	qcom,mdss-dsi-bl-inverted-dbv;
 	qcom,platform-reset-gpio = <&tlmm 12 0>;
+
+	qcom,mdss-dsi-display-timings {
+		timing@0 {
+			/delete-property/ qcom,partial-update-enabled;
+		};
+
+		timing@1 {
+			/delete-property/ qcom,partial-update-enabled;
+		};
+
+		timing@2 {
+			/delete-property/ qcom,partial-update-enabled;
+		};
+
+		timing@3 {
+			/delete-property/ qcom,partial-update-enabled;
+		};
+	};
 };
 
 &dsi_vtdr6130_amoled_video {
