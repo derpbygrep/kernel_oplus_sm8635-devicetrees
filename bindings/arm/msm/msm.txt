@@ -104,6 +104,9 @@ SoCs:
 - NEO
   compatible = "qcom,neo"
 
+- NEO
+  compatible = "qcom,neo"
+
 - ANORAK
   compatible = "qcom,anorak", "qcom,anorakp"
 

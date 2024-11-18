@@ -49,7 +49,10 @@ Required properties :
 			"qcom,anorak-gcc"
 			"qcom,neo-gcc"
 			"qcom,gcc-mdm9607"
+<<<<<<< HEAD
 			"qcom,seraph-gcc"
+=======
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 
 - reg : shall contain base register location and length
 - vdd_cx-supply: The vdd_cx logic rail supply.

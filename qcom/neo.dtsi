@@ -25,7 +25,11 @@
 	#size-cells = <2>;
 
 	chosen: chosen {
+<<<<<<< HEAD
 		bootargs = " rcupdate.rcu_expedited=1 rcu_nocbs=0-7 kpti=off log_buf_len=256K pcie_ports=compat loglevel=6 cpufreq.default_governor=performance swiotlb=noforce cgroup.memory=nokmem,nosocket allow_file_spec_access msm_rtb.filter=0x237 disable_dma32=on ftrace_dump_on_oops net.ifnames=0";
+=======
+		bootargs = " rcupdate.rcu_expedited=1 rcu_nocbs=0-7 kpti=off log_buf_len=256K pcie_ports=compat console=ttyMSM0,115200,n8 loglevel=6 cpufreq.default_governor=performance swiotlb=noforce cgroup.memory=nokmem,nosocket allow_file_spec_access msm_rtb.filter=0x237 disable_dma32=on ftrace_dump_on_oops net.ifnames=0";
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 	};
 
 	memory { device_type = "memory"; reg = <0 0 0 0>; };
@@ -396,6 +400,7 @@
 		};
 	};
 
+<<<<<<< HEAD
 	slimbam: bamdma@3304000 {
 		compatible = "qcom,bam-v1.7.0";
 		qcom,controlled-remotely;
@@ -420,6 +425,8 @@
 		status = "disabled";
 	};
 
+=======
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 	intc: interrupt-controller@0x17200000 {
 		compatible = "arm,gic-v3";
 		#interrupt-cells = <3>;
@@ -437,6 +444,7 @@
 
 	gmu: qcom,gmu@3d6a000 { };
 
+<<<<<<< HEAD
 	spmi_bus: spmi0_bus: qcom,spmi@c42d000 {
 		compatible = "qcom,spmi-pmic-arb";
 		reg = <0xc42d000 0x4000>,
@@ -458,6 +466,8 @@
 		qcom,bus-id = <0>;
 	};
 
+=======
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 	arch_timer: timer {
 		compatible = "arm,armv8-timer";
 		interrupts = <GIC_PPI 13 (GIC_CPU_MASK_SIMPLE(8) | IRQ_TYPE_LEVEL_LOW)>,
@@ -574,6 +584,7 @@
 		ss-name = "adsp", "adsp_island", "cdsp", "apss", "wpss";
 	};
 
+<<<<<<< HEAD
 	qcom,power-state {
 		compatible = "qcom,power-state";
 		qcom,subsys-name = "lpass", "cdsp";
@@ -586,6 +597,8 @@
 		qcom,qmp = <&aoss_qmp>;
 	};
 
+=======
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 	memtimer: timer@17420000 {
 		#address-cells = <1>;
 		#size-cells = <1>;
@@ -1393,6 +1406,7 @@
 					<&CPU3 0x17830058 0x17830060>;
 	};
 
+<<<<<<< HEAD
 	qcom,tmecom-qmp-client {
 		compatible = "qcom,tmecom-qmp-client";
 		mboxes = <&qmp_tme 0>;
@@ -1401,6 +1415,8 @@
 		depends-on-supply = <&qmp_tme>;
 	};
 
+=======
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 	qcom,secure-buffer {
 		compatible = "qcom,secure-buffer";
 		qcom,vmid-cp-camera-preview-ro;

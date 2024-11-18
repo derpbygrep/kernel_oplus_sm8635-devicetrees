@@ -76,7 +76,11 @@
 
 	video_mem: video_region@86f00000 {
 		no-map;
+<<<<<<< HEAD
 		reg = <0x0 0x86f00000 0x0 0x700000>;
+=======
+		reg = <0x0 0x86f00000 0x0 0x500000>;
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 	};
 
 	adsp_mem: adsp_region@87600000 {
@@ -89,6 +93,19 @@
 		reg = <0x0 0x89400000 0x0 0xf00000>;
 	};
 
+<<<<<<< HEAD
+=======
+	ipa_fw_mem: ipa_fw_region@8a300000 {
+		no-map;
+		reg = <0x0 0x8a300000 0x0 0x10000>;
+	};
+
+	ipa_gsi_mem: ipa_gsi_region@8a310000 {
+		no-map;
+		reg = <0x0 0x8a310000 0x0 0xa000>;
+	};
+
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 	gpu_microcode_mem: gpu_microcode_region@8a31a000 {
 		no-map;
 		reg = <0x0 0x8a31a000 0x0 0x2000>;

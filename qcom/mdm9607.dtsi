@@ -6,7 +6,10 @@
 #include <dt-bindings/clock/qcom,rpmh.h>
 #include <dt-bindings/interconnect/qcom,mdm9x07.h>
 #include <dt-bindings/interconnect/qcom,icc.h>
+<<<<<<< HEAD
 #include <dt-bindings/clock/qcom,apsscc-sdxlemur.h>
+=======
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 
 #define MHZ_TO_MBPS(mhz, w) ((mhz * 1000000 * w) / (1024 * 1024))
 #define BW_OPP_ENTRY(mhz, w) opp-mhz {opp-hz = /bits/ 64 <MHZ_TO_MBPS(mhz, w)>;}
@@ -26,8 +29,11 @@
 
 	aliases {
 		qpic_nand1 = &qnand_1;
+<<<<<<< HEAD
 		mmc0 = &sdhc_1; /* SDC1 for SDIO slot */
 		mmc1 = &sdhc_2; /* SDC2 SD card slot */
+=======
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 	};
 
 	reserved_mem: reserved-memory {
@@ -35,15 +41,30 @@
 		#size-cells = <1>;
 		ranges;
 
+<<<<<<< HEAD
+=======
+		cnss_debug_mem: cnss_debug_region@82200000 {
+			no-map;
+			reg = <0x82200000 0x200000>;
+			label = "cnss_debug_mem";
+		};
+
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 		modem_adsp_mem: modem_adsp_region@82a00000 {
 			no-map;
 			reg = <0x82a00000 0x5000000>;
 			label = "modem_adsp_mem";
 		};
 
+<<<<<<< HEAD
 		mba_mem: mba_region@87a00000 {
 			no-map;
 			reg = <0x87a00000 0x100000>;
+=======
+		mba_mem: mba_region@8f600000 {
+			no-map;
+			reg = <0x8f600000 0x100000>;
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 			label = "mba_mem";
 		};
 
@@ -112,8 +133,11 @@
 	firmware: firmware {};
 };
 
+<<<<<<< HEAD
 #include "mdm9607-pm.dtsi"
 
+=======
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 &soc {
 	#address-cells = <1>;
 	#size-cells = <1>;
@@ -129,10 +153,13 @@
 		      <0x0b002000 0x1000>;
 	};
 
+<<<<<<< HEAD
 	dload_mode {
 		compatible = "qcom,dload-mode";
 	};
 
+=======
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 	wakegic: wake-gic {
 		compatible = "qcom,mpm-gic-mdm9607", "qcom,mpm";
 		interrupts = <GIC_SPI 197 IRQ_TYPE_EDGE_RISING>;
@@ -151,7 +178,10 @@
 		rpm-channel-name = "rpm_requests";
 		interrupts = <GIC_SPI 168 IRQ_TYPE_EDGE_RISING>;
 		rpm-channel-type = <15>; /* SMD_APPS_RPM */
+<<<<<<< HEAD
 		qcom,use-rpmsg-no-sleep; /* For soc using single cpu core only */
+=======
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 	};
 
 	timer@b020000 {
@@ -230,6 +260,7 @@
 		qcom,pipe-attr-ee;
 	};
 
+<<<<<<< HEAD
 	qcom,wdt@b017000 {
 		compatible = "qcom,msm-watchdog";
 		reg = <0xb017000 0x1000>;
@@ -301,6 +332,8 @@
 	};
 
 
+=======
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 	tcsr_mutex_regs: syscon@1905000 {
 		compatible = "syscon";
 		reg = <0x1905000 0x20000>;
@@ -312,11 +345,14 @@
 		#hwlock-cells = <1>;
 	};
 
+<<<<<<< HEAD
 	tcsr: syscon@193d100 {
 		compatible = "syscon";
 		reg = <0x193d100 0x4>;
 	};
 
+=======
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 	qcom,ipc-spinlock@1905000 {
 		compatible = "qcom,ipc-spinlock-sfpb";
 		reg = <0x1905000 0x8000>;
@@ -341,10 +377,13 @@
 		#mbox-cells = <1>;
 	};
 
+<<<<<<< HEAD
 	system_pm_rpm {
 		compatible = "qcom,system-pm-rpm";
 	};
 
+=======
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 	qcom,smd {
 		compatible = "qcom,smd";
 
@@ -381,8 +420,11 @@
 		};
 	};
 
+<<<<<<< HEAD
 	thermal_zones: thermal-zones {};
 
+=======
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 	apcs: syscon@0b011008 {
 		compatible = "syscon";
 		reg = <0x0b011008 0x04>;
@@ -465,6 +507,7 @@
 			clock-output-names = "chip_sleep_clk";
 			#clock-cells = <0>;
 		};
+<<<<<<< HEAD
 
 		emac_0_125m_clk: emac_0_125m_clk {
 			compatible = "fixed-clock";
@@ -479,6 +522,8 @@
 			clock-output-names = "emac_0_tx_clk";
 			#clock-cells = <0>;
 		};
+=======
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 	};
 
 	rpmcc: clock-controller {
@@ -492,16 +537,22 @@
 		reg-names = "cc_base";
 		vdd_dig-supply = <&VDD_CX_LEVEL>;
 		clocks = <&rpmcc RPM_SMD_XO_CLK_SRC>,
+<<<<<<< HEAD
 			<&rpmcc RPM_SMD_XO_A_CLK_SRC>,
 			<&sleep_clk>,
 			<&emac_0_125m_clk>,
 			<&emac_0_tx_clk>;
 		clock-names = "xo", "xo_ao", "sleep_clk",
 				"emac_0_125m_clk", "emac_0_tx_clk";
+=======
+			 <&sleep_clk>;
+		clock-names = "xo", "sleep_clk";
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 		#clock-cells = <1>;
 		#reset-cells = <1>;
 	};
 
+<<<<<<< HEAD
 	cpucc: syscon@b01101c {
 		compatible = "syscon";
 		reg = <0xb01101c 0x4>;
@@ -592,6 +643,8 @@
 		qcom,target-dev = <&cpubw>;
 	};
 
+=======
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 	qnand_1: nand@7980000 {
 		compatible = "qcom,msm-nand";
 		reg = <0x07980000 0x1000>,
@@ -742,6 +795,13 @@
 			reg = <0x10 0x8>;
 		};
 
+<<<<<<< HEAD
+=======
+		restart_reason@65c {
+			compatible = "qcom,msm-imem-restart_reason";
+			reg = <0x65c 0x4>;
+		};
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 
 		boot_stats@6b0 {
 			compatible = "qcom,msm-imem-boot_stats";
@@ -759,6 +819,7 @@
 		};
 	};
 
+<<<<<<< HEAD
 	qcom,msm-imem@860065C {
 		compatible = "qcom,msm-imem-restart_reason";
 		reg = <0x860065C 0x4>;
@@ -777,6 +838,8 @@
 		nvmem-cell-names = "restart_reason";
 	};
 
+=======
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 	restart@4ab000 {
 		compatible = "qcom,pshold";
 		reg = <0x4ab000 0x4>,
@@ -784,6 +847,7 @@
 		reg-names = "pshold-base", "tcsr-boot-misc-detect";
 	};
 
+<<<<<<< HEAD
 	qcom,mpm2-sleep-counter@4a3000 {
 		compatible = "qcom,mpm2-sleep-counter";
 		reg = <0x4a3000 0x1000>;
@@ -892,6 +956,23 @@
 			mask = <0x1>;
 			vote = <70>;
 		};
+=======
+	usb_hsusb: hsusb@78d9000 {
+		compatible = "qcom,msm-hsusb";
+		reg = <0x78d9000 0x400>;
+		reg-names = "core";
+		#address-cells = <1>;
+		#size-cells = <1>;
+		ranges;
+
+		interrupts = <GIC_SPI 134 IRQ_TYPE_LEVEL_HIGH>;
+
+		hsusb_vdd_dig-supply = <&mdm9607_l9>;
+		HSUSB_1p8-supply = <&mdm9607_l2>;
+		HSUSB_3p3-supply = <&mdm9607_l4>;
+		qcom,usbid-gpio = <&pm8019_mpps 1 0>;
+		pinctrl-0 = <&usb_id_default>;
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 	};
 
 	qcom_qseecom: qseecom@88000000 {
@@ -899,11 +980,25 @@
 		reg = <0x88000000 0x500000>;
 		reg-names = "secapp-region";
 		memory-region = <&qseecom_mem>;
+<<<<<<< HEAD
 		interconnects = <&pcnoc MASTER_CRYPTO_CORE_0 &bimc SLAVE_EBI_CH0>;
 		interconnect-names = "data_path";
 		qcom,hlos-ce-hw-instance = <0>;
 		qcom,qsee-ce-hw-instance = <0>;
 		qcom,support-bus-scaling;
+=======
+		qcom,hlos-ce-hw-instance = <0>;
+		qcom,qsee-ce-hw-instance = <0>;
+		qcom,msm-bus,name = "qseecom-noc";
+		qcom,msm-bus,num-cases = <4>;
+		qcom,msm-bus,num-paths = <1>;
+		qcom,support-bus-scaling;
+		qcom,msm-bus,vectors-KBps =
+				<47 512 0 0>,
+				<47 512 0 0>,
+				<47 512 120000 1200000>,
+				<47 512 393600 3936000>;
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 		clocks = <&gcc CRYPTO_CLK_SRC>,
 			<&gcc GCC_CRYPTO_CLK>,
 			<&gcc GCC_CRYPTO_AHB_CLK>,
@@ -933,6 +1028,7 @@
 		qcom,disable-shmbridge-support;
 	};
 
+<<<<<<< HEAD
 	sdhc_1: sdhci@7824900 {
 		compatible = "qcom,sdhci-msm-v4";
 		reg = <0x7824900 0x200>, <0x7824000 0x800>, <0x01111000 0x4>;
@@ -988,6 +1084,8 @@
 		};
 	};
 
+=======
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 	remoteproc_mss: remoteproc-mss@4080000 {
 		compatible = "qcom,mdm9607-mss-pil";
 		reg = <0x04080000 0x100>,
@@ -1067,6 +1165,7 @@
 			};
 		};
 	};
+<<<<<<< HEAD
 
 	qcom,smdpkt {
 		compatible = "qcom,smdpkt";
@@ -1220,6 +1319,15 @@
 #include "mdm9607-cnss.dtsi"
 #include "mdm9607-coresight.dtsi"
 #include "mdm9607-thermal.dtsi"
+=======
+};
+
+#include "mdm9x07-pinctrl.dtsi"
+#include "pm8019-rpm-regulator.dtsi"
+#include "mdm9607-regulator.dtsi"
+#include "mdm9607-blsp.dtsi"
+#include "pm8019.dtsi"
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 
 &blsp1_uart5 {
 	status = "ok";
@@ -1228,6 +1336,7 @@
 &firmware {
 	scm {
 		compatible = "qcom,scm";
+<<<<<<< HEAD
 		qcom,dload-mode = <&tcsr 0>;
 	};
 };
@@ -1248,3 +1357,7 @@
 	qcom,core_3_0v_support;
 	status = "ok";
 };
+=======
+	};
+};
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)

@@ -211,10 +211,18 @@
 		pm7550_l1: regulator-pm7550-l1 {
 			regulator-name = "pm7550_l1";
 			qcom,set = <RPMH_REGULATOR_SET_ALL>;
+<<<<<<< HEAD
 			regulator-min-microvolt = <800000>;
 			regulator-max-microvolt = <1200000>;
 			qcom,init-voltage = <800000>;
 			qcom,init-mode = <RPMH_REGULATOR_MODE_HPM>;
+=======
+			regulator-min-microvolt = <1800000>;
+			regulator-max-microvolt = <1800000>;
+			qcom,init-voltage = <1800000>;
+			qcom,init-mode = <RPMH_REGULATOR_MODE_LPM>;
+			regulator-always-on;
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 		};
 	};
 

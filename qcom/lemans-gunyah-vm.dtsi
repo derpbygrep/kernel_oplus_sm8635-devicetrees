@@ -6,7 +6,7 @@
 / {
 	#address-cells = <0x2>;
 	#size-cells = <0x2>;
-	qcom,msm-id = <532 0x10000>, <533 0x10000>, <534 0x10000>, <619 0x10000>, <532 0x20000>, <533 0x20000>, <534 0x20000>, <619 0x20000>;
+	qcom,msm-id = <532 0x10000>, <533 0x10000>, <534 0x10000>, <532 0x20000>, <533 0x20000>, <534 0x20000>;
 	interrupt-parent = <&intc>;
 
 	qcom,mem-buf {
@@ -15,8 +15,16 @@
 		qcom,vmid = <52>;
 	};
 
+	aliases {
+		hsuart0 = &qupv3_se17_4uart;
+	};
+
 	chosen {
+<<<<<<< HEAD
 		bootargs = "nokaslr log_buf_len=1M androidboot.force_normal_boot=1 ufshcd-core.use_mcq_mode=n androidboot.verifiedbootstate=orange";
+=======
+		bootargs = "nokaslr log_buf_len=1M androidboot.force_normal_boot=1 ufshcd-core.use_mcq_mode=n";
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 	};
 
 	reserved_memory: reserved-memory {
@@ -58,6 +66,11 @@
 		glink_cma_mem: glink-cma-region {
 			no-map;
 			qcom,label = <0x60>;
+		};
+
+		gptp_timedata_mem: gptp_timedata_region {
+			no-map;
+			qcom,label = <0x61>;
 		};
 	};
 
@@ -180,6 +193,98 @@
 		};
 	};
 
+	virtio_input_keyboard@1c150000 {
+		wakeup-source;
+	};
+
+	virtio_blk_super {
+		qcom,dev-name = "super";
+	};
+
+	virtio_blk_userdata {
+		qcom,dev-name = "userdata";
+	};
+
+	virtio_blk_metadata {
+		qcom,dev-name = "metadata";
+	};
+
+	virtio_blk_persist {
+		qcom,dev-name = "persist";
+	};
+
+	virtio_blk_misc {
+		qcom,dev-name = "misc";
+	};
+
+	virtio_blk_vbmeta_b {
+		qcom,dev-name = "vbmeta_b";
+	};
+
+	virtio_blk_vbmeta_a {
+		qcom,dev-name = "vbmeta_a";
+	};
+
+	virtio_blk_modem_b {
+		qcom,dev-name = "modem_b";
+	};
+
+	virtio_blk_modem_a {
+		qcom,dev-name = "modem_a";
+	};
+
+	virtio_blk_bluetooth_b {
+		qcom,dev-name = "bluetooth_b";
+	};
+
+	virtio_blk_bluetooth_a {
+		qcom,dev-name = "bluetooth_a";
+	};
+
+	virtio_blk_la_boot_b {
+		qcom,dev-name = "boot_b";
+	};
+
+	virtio_blk_la_boot_a {
+		qcom,dev-name = "boot_a";
+	};
+
+	virtio_blk_la_dtbo_b {
+		qcom,dev-name = "dtbo_b";
+	};
+
+	virtio_blk_la_dtbo_a {
+		qcom,dev-name = "dtbo_a";
+	};
+
+	virtio_blk_dsp_b {
+		qcom,dev-name = "dsp_b";
+	};
+
+	virtio_blk_dsp_a {
+		qcom,dev-name = "dsp_a";
+	};
+
+	virtio_blk_la_vendor_boot_b {
+		qcom,dev-name = "vendor_boot_b";
+	};
+
+	virtio_blk_la_vendor_boot_a {
+		qcom,dev-name = "vendor_boot_a";
+	};
+
+	virtio_blk_la_init_boot_b {
+		qcom,dev-name = "init_boot_b";
+	};
+
+	virtio_blk_la_init_boot_a {
+		qcom,dev-name = "init_boot_a";
+	};
+
+	virtio_blk_la_devinfo {
+		qcom,dev-name = "devinfo";
+	};
+
 	qcom,vm-config {
 		compatible = "qcom,vm-1.0";
 		vm-type = "aarch64-guest";
@@ -191,33 +296,71 @@
 		image-name = "qcom,autoghgvm";
 		qcom,pasid = <0x0 0x2c>;
 		qcom,qtee-config-info = "p=3,16,57,77,78,7A,7C,8F,97,159,199,47E,7F1,10C;";
+<<<<<<< HEAD
 		qcom,secdomain-ids = <52>;
+=======
+		qcom,secdomain-ids = <52 9 10>;
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 		qcom,primary-vm-index = <0>;
-		vm-attrs = "guest-ram-dump";
+		vm-attrs = "guest-ram-dump", "vpm-virq";
 
 		/* Pass through regions */
+<<<<<<< HEAD
 		/* TLMM region */
 		/* QRNG region */
 		/* MPROC NS1 IPCC region */
 		/* Compute L0 IPCC region */
 		/* Board serial number region */
 		iomemory-ranges = <0x0 0xF000000 0x0 0xF000000 0x0 0x1000000 0x0
+=======
+		iomemory-ranges = <
+				/* TLMM region */
+				0x0 0xF000000 0x0 0xF000000 0x0 0x1000000 0x0
+				/* QUPv3 Tile 2 read-only region */
+				0x0 0x8C0000 0x0 0x8C0000 0x0 0x1000 0x1
+				0x0 0x8C1000 0x0 0x8C1000 0x0 0x1000 0x1
+				/* QUPv3 SE17 region */
+				0x0 0x88C000 0x0 0x88C000 0x0 0x1000 0x0
+				0x0 0x88D000 0x0 0x88D000 0x0 0x1000 0x0
+				0x0 0x88E000 0x0 0x88E000 0x0 0x1000 0x0
+				/* QRNG region */
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 				0x0 0x10dc000 0x0 0x10dc000 0x0 0x1000 0x0
+				/* MPROC NS1 IPCC region */
 				0x0 0x421000 0x0 0x421000 0x0 0x1000 0x0
+				/* Compute L0 IPCC region */
 				0x0 0x461000 0x0 0x461000 0x0 0x1000 0x0
 				0x0 0x1fd8000 0x0 0x1fd8000 0x0 0x1000 0x1
 				0x0 0x1fd9000 0x0 0x1fd9000 0x0 0x1000 0x3
 				0x0 0x1fdd000 0x0 0x1fdd000 0x0 0x1000 0x3
 				0x0 0x1fdb000 0x0 0x1fdb000 0x0 0x1000 0x0
 				0x0 0x1fdf000 0x0 0x1fdf000 0x0 0x1000 0x0
+<<<<<<< HEAD
 				0x0 0x786000 0x0 0x786000 0x0 0x1000 0x1
 				>;
 
 		/* Pass through IRQs */
 		/* MPROC NS1 IPCC GIC IRQ */
 		/* Compute L0 IPCC GIC IRQ */
+=======
+				/* Board serial number region */
+				0x0 0x786000 0x0 0x786000 0x0 0x1000 0x1
+				/* PTP region */
+				0x0 0x23047000 0x0 0x23047000 0x0 0x1000 0x0
+				/* Qtimer region */
+				0x0 0x17c23000 0x0 0x17c23000 0x0 0x1000 0x0
+				/* MPM timer read only*/
+				0x0 0xc221000 0x0 0xc221000 0x0 0x1000 0x1
+				>;
+
+		/* Pass through IRQs */
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 		gic-irq-ranges = <
+			/* QUPv3 SE17 GIC IRQ */
+			617 617
+			/* MPROC NS1 IPCC GIC IRQ */
 			591 591
+			/* Compute L0 IPCC GIC IRQ */
 			588 588
 			270 270
 			271 271>;
@@ -269,6 +412,7 @@
 				peer-default;
 				vqs-num = <0x1>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x0>;
 				memory {
@@ -280,10 +424,11 @@
 
 			virtio-mmio@1 {
 				vdevice-type = "virtio-mmio";
-				generate = "/virtio-mmio";
+				patch = "/virtio_blk_la_devinfo";
 				peer-default;
 				vqs-num = <0x1>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x4000>;
 				memory {
@@ -295,10 +440,11 @@
 
 			virtio-mmio@2 {
 				vdevice-type = "virtio-mmio";
-				generate = "/virtio-mmio";
+				patch = "/virtio_blk_la_init_boot_a";
 				peer-default;
 				vqs-num = <0x1>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x8000>;
 				memory {
@@ -310,10 +456,11 @@
 
 			virtio-mmio@3 {
 				vdevice-type = "virtio-mmio";
-				generate = "/virtio-mmio";
+				patch = "/virtio_blk_la_init_boot_b";
 				peer-default;
 				vqs-num = <0x1>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0xC000>;
 				memory {
@@ -325,10 +472,11 @@
 
 			virtio-mmio@4 {
 				vdevice-type = "virtio-mmio";
-				generate = "/virtio-mmio";
+				patch = "/virtio_blk_la_vendor_boot_a";
 				peer-default;
 				vqs-num = <0x1>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x10000>;
 				memory {
@@ -340,10 +488,11 @@
 
 			virtio-mmio@5 {
 				vdevice-type = "virtio-mmio";
-				generate = "/virtio-mmio";
+				patch = "/virtio_blk_la_vendor_boot_b";
 				peer-default;
 				vqs-num = <0x1>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x14000>;
 				memory {
@@ -355,10 +504,11 @@
 
 			virtio-mmio@6 {
 				vdevice-type = "virtio-mmio";
-				generate = "/virtio-mmio";
+				patch = "/virtio_blk_dsp_a";
 				peer-default;
 				vqs-num = <0x1>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x18000>;
 				memory {
@@ -370,10 +520,11 @@
 
 			virtio-mmio@7 {
 				vdevice-type = "virtio-mmio";
-				generate = "/virtio-mmio";
+				patch = "/virtio_blk_dsp_b";
 				peer-default;
 				vqs-num = <0x1>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x1C000>;
 				memory {
@@ -385,10 +536,11 @@
 
 			virtio-mmio@8 {
 				vdevice-type = "virtio-mmio";
-				generate = "/virtio-mmio";
+				patch = "/virtio_blk_la_dtbo_a";
 				peer-default;
 				vqs-num = <0x1>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x20000>;
 				memory {
@@ -400,10 +552,11 @@
 
 			virtio-mmio@9 {
 				vdevice-type = "virtio-mmio";
-				generate = "/virtio-mmio";
+				patch = "/virtio_blk_la_dtbo_b";
 				peer-default;
 				vqs-num = <0x1>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x24000>;
 				memory {
@@ -415,10 +568,11 @@
 
 			virtio-mmio@10 {
 				vdevice-type = "virtio-mmio";
-				generate = "/virtio-mmio";
+				patch = "/virtio_blk_la_boot_a";
 				peer-default;
 				vqs-num = <0x1>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x28000>;
 				memory {
@@ -430,10 +584,11 @@
 
 			virtio-mmio@11 {
 				vdevice-type = "virtio-mmio";
-				generate = "/virtio-mmio";
+				patch = "/virtio_blk_la_boot_b";
 				peer-default;
 				vqs-num = <0x1>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x2C000>;
 				memory {
@@ -445,10 +600,11 @@
 
 			virtio-mmio@12 {
 				vdevice-type = "virtio-mmio";
-				generate = "/virtio-mmio";
+				patch = "/virtio_blk_bluetooth_a";
 				peer-default;
 				vqs-num = <0x1>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x30000>;
 				memory {
@@ -460,10 +616,11 @@
 
 			virtio-mmio@13 {
 				vdevice-type = "virtio-mmio";
-				generate = "/virtio-mmio";
+				patch = "/virtio_blk_bluetooth_b";
 				peer-default;
 				vqs-num = <0x1>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x34000>;
 				memory {
@@ -475,10 +632,11 @@
 
 			virtio-mmio@14 {
 				vdevice-type = "virtio-mmio";
-				generate = "/virtio-mmio";
+				patch = "/virtio_blk_modem_a";
 				peer-default;
 				vqs-num = <0x1>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x38000>;
 				memory {
@@ -490,10 +648,11 @@
 
 			virtio-mmio@15 {
 				vdevice-type = "virtio-mmio";
-				generate = "/virtio-mmio";
+				patch = "/virtio_blk_modem_b";
 				peer-default;
 				vqs-num = <0x1>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x3C000>;
 				memory {
@@ -505,10 +664,11 @@
 
 			virtio-mmio@16 {
 				vdevice-type = "virtio-mmio";
-				generate = "/virtio-mmio";
+				patch = "/virtio_blk_vbmeta_a";
 				peer-default;
 				vqs-num = <0x1>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x40000>;
 				memory {
@@ -520,10 +680,11 @@
 
 			virtio-mmio@17 {
 				vdevice-type = "virtio-mmio";
-				generate = "/virtio-mmio";
+				patch = "/virtio_blk_vbmeta_b";
 				peer-default;
 				vqs-num = <0x1>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x44000>;
 				memory {
@@ -535,10 +696,11 @@
 
 			virtio-mmio@18 {
 				vdevice-type = "virtio-mmio";
-				generate = "/virtio-mmio";
+				patch = "/virtio_blk_misc";
 				peer-default;
 				vqs-num = <0x1>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x48000>;
 				memory {
@@ -550,10 +712,11 @@
 
 			virtio-mmio@19 {
 				vdevice-type = "virtio-mmio";
-				generate = "/virtio-mmio";
+				patch = "/virtio_blk_persist";
 				peer-default;
 				vqs-num = <0x1>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x4C000>;
 				memory {
@@ -565,10 +728,11 @@
 
 			virtio-mmio@20 {
 				vdevice-type = "virtio-mmio";
-				generate = "/virtio-mmio";
+				patch = "/virtio_blk_metadata";
 				peer-default;
 				vqs-num = <0x1>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x50000>;
 				memory {
@@ -580,10 +744,11 @@
 
 			virtio-mmio@21 {
 				vdevice-type = "virtio-mmio";
-				generate = "/virtio-mmio";
+				patch = "/virtio_blk_userdata";
 				peer-default;
 				vqs-num = <0x1>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x54000>;
 				memory {
@@ -595,10 +760,11 @@
 
 			virtio-mmio@22 {
 				vdevice-type = "virtio-mmio";
-				generate = "/virtio-mmio";
+				patch = "/virtio_blk_super";
 				peer-default;
 				vqs-num = <0x1>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x58000>;
 				memory {
@@ -614,6 +780,7 @@
 				peer-default;
 				vqs-num = <0x2>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x5C000>;
 				memory {
@@ -629,6 +796,7 @@
 				peer-default;
 				vqs-num = <0x2>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x64000>;
 				memory {
@@ -644,6 +812,7 @@
 				peer-default;
 				vqs-num = <0x2>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x6C000>;
 				memory {
@@ -659,6 +828,7 @@
 				peer-default;
 				vqs-num = <0x2>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x7C000>;
 				memory {
@@ -674,6 +844,7 @@
 				peer-default;
 				vqs-num = <0x8>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x8C000>;
 				memory {
@@ -689,6 +860,7 @@
 				peer-default;
 				vqs-num = <0xA>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0xCC000>;
 				memory {
@@ -704,6 +876,7 @@
 				peer-default;
 				vqs-num = <0x6>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x11C000>;
 				memory {
@@ -719,6 +892,7 @@
 				peer-default;
 				vqs-num = <0x6>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x14C000>;
 				memory {
@@ -735,6 +909,7 @@
 				peer-default;
 				vqs-num = <0x2>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x17C000>;
 				memory {
@@ -746,11 +921,12 @@
 
 			virtio-mmio@32 {
 				vdevice-type = "virtio-mmio";
-				generate = "/virtio-mmio";
+				patch = "/virtio_input_keyboard@1c150000";
 				virtio,device-type = <18>;
 				peer-default;
 				vqs-num = <0x2>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x180000>;
 				memory {
@@ -766,6 +942,7 @@
 				peer-default;
 				vqs-num = <0x2>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x184000>;
 				memory {
@@ -781,6 +958,7 @@
 				peer-default;
 				vqs-num = <0x2>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x18C000>;
 				memory {
@@ -796,6 +974,7 @@
 				peer-default;
 				vqs-num = <0x3>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x194000>;
 				memory {
@@ -811,6 +990,7 @@
 				peer-default;
 				vqs-num = <0x1>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x1A0000>;
 				memory {
@@ -826,6 +1006,7 @@
 				peer-default;
 				vqs-num = <0x2>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x1A2000>;
 				memory {
@@ -841,6 +1022,7 @@
 				peer-default;
 				vqs-num = <0x1>;
 				push-compatible = "virtio,mmio";
+				sync-reset;
 				dma-coherent;
 				dma_base = <0x0 0x1A6000>;
 				memory {
@@ -856,6 +1038,10 @@
 				peer-default;
 				vqs-num = <0x1>;
 				push-compatible = "virtio,mmio";
+<<<<<<< HEAD
+=======
+				sync-reset;
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 				dma-coherent;
 				dma_base = <0x0 0x1A8000>;
 				memory {
@@ -871,6 +1057,10 @@
 				peer-default;
 				vqs-num = <0x2>;
 				push-compatible = "virtio,mmio";
+<<<<<<< HEAD
+=======
+				sync-reset;
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 				dma-coherent;
 				dma_base = <0x0 0x1AA000>;
 				memory {
@@ -914,7 +1104,11 @@
 
 		android {
 			compatible = "android,firmware";
+<<<<<<< HEAD
 			boot_devices = "70003000.virtio-mmio,70004000.virtio-mmio,70005000.virtio-mmio,70006000.virtio-mmio,70007000.virtio-mmio,70008000.virtio-mmio,70009000.virtio-mmio,7000A000.virtio-mmio,7000B000.virtio-mmio,7000C000.virtio-mmio,7000D000.virtio-mmio,7000E000.virtio-mmio,7000F000.virtio-mmio,70010000.virtio-mmio,70011000.virtio-mmio,70012000.virtio-mmio,70013000.virtio-mmio,70014000.virtio-mmio,70015000.virtio-mmio,70016000.virtio-mmio,70017000.virtio-mmio";
+=======
+			boot_devices = "70002000.virtio_blk_la_devinfo,70003000.virtio_blk_la_init_boot_a,70004000.virtio_blk_la_init_boot_b,70005000.virtio_blk_la_vendor_boot_a,70006000.virtio_blk_la_vendor_boot_b,70007000.virtio_blk_dsp_a,70008000.virtio_blk_dsp_b,70009000.virtio_blk_la_dtbo_a,7000a000.virtio_blk_la_dtbo_b,7000b000.virtio_blk_la_boot_a,7000c000.virtio_blk_la_boot_b,7000d000.virtio_blk_bluetooth_a,7000e000.virtio_blk_bluetooth_b,7000f000.virtio_blk_modem_a,70010000.virtio_blk_modem_b,70011000.virtio_blk_vbmeta_a,70012000.virtio_blk_vbmeta_b,70013000.virtio_blk_misc,70014000.virtio_blk_persist,70015000.virtio_blk_metadata,70016000.virtio_blk_userdata,70017000.virtio_blk_super";
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 
 			vbmeta {
 				compatible = "android,vbmeta";
@@ -954,6 +1148,28 @@
 	psci {
 		compatible = "arm,psci-1.0";
 		method = "smc";
+	};
+
+	scmi {
+		compatible = "arm,scmi-virtio";
+		#address-cells = <1>;
+		#size-cells = <0>;
+		status = "disabled";
+
+		scmi_power: protocol@11 {
+			reg = <0x11>;
+			#power-domain-cells = <1>;
+		};
+
+		scmi_perf: protocol@13 {
+			reg = <0x13>;
+			#power-domain-cells = <1>;
+		};
+
+		scmi_reset: protocol@16 {
+			reg = <0x16>;
+			#reset-cells = <1>;
+		};
 	};
 
 	intc: interrupt-controller@17a00000 {
@@ -1149,6 +1365,16 @@
 			};
 		};
 	};
+
+	ptp_virtual {
+		compatible = "qcom,ptp_virtual";
+		reg = <0xacfff000 0x1000>,
+			<0x23047000 0x1000>,
+			<0x17c23000 0x1000>;
+		reg-names = "ptp_carveout_mem",
+				"ptp_reg",
+				"qtimer_reg";
+	};
 };
 
 / {
@@ -1162,7 +1388,11 @@
 					"vdj", "vdk", "vdl",
 					"vdm", "vdn", "vdo",
 					"vdp", "vdq", "vdr",
+<<<<<<< HEAD
 					"vds", "vdt", "vdu";
+=======
+					"vds", "vdt", "vdu", "vdv";
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 			rename-dev = "super", "userdata", "metadata",
 					"persist", "misc", "vbmeta_b",
 					"vbmeta_a", "modem_b", "modem_a",
@@ -1170,7 +1400,11 @@
 					"boot_b", "boot_a", "dtbo_b",
 					"dtbo_a", "dsp_b", "dsp_a",
 					"vendor_boot_b", "vendor_boot_a",
+<<<<<<< HEAD
 					"init_boot_b", "init_boot_a";
+=======
+					"init_boot_b", "init_boot_a", "devinfo";
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 		};
 	};
 };
@@ -1178,14 +1412,122 @@
 #include "lemans-pinctrl.dtsi"
 #include "lemans-vm-qupv3.dtsi"
 
-&qupv3_1 {
-	iommus = <&apps_smmu 0x458 0x0>;
+/delete-node/ &qupv3_1;
+
+&qupv3_2 {
+	/delete-property/ clocks;
+	/delete-property/ clock-names;
+	reg = <0x8c0000 0x2000>;
+	qcom,firmware-managed-resources;
+
+	iommus = <&apps_smmu 0x5b8 0x0>;
 	qcom,iommu-dma = "default";
 	status = "disabled";
 };
 
-&qupv3_2 {
-	iommus = <&apps_smmu 0x5b8 0x0>;
-	qcom,iommu-dma = "default";
+&qupv3_se17_4uart {
+	/delete-property/ clocks;
+	/delete-property/ clock-names;
+	/delete-property/ interconnects;
+	/delete-property/ interconnect-names;
+	compatible = "qcom,geni-uart";
+	reg = <0x88c000 0x3000>;
+
+	power-domains = <&scmi_power 0>, <&scmi_perf 0>;
+	power-domain-names = "power", "perf";
+
+	qcom,auto-suspend-disable;
 	status = "disabled";
+};
+
+&soc {
+	hab: qcom,hab {
+		compatible = "qcom,hab";
+		vmid = <2>;
+
+		mmidgrp100: mmidgrp100 {
+			grp-start-id = <100>;
+			role = "fe";
+			remote-vmids = <0>;
+		};
+
+		mmidgrp200: mmidgrp200 {
+			grp-start-id = <200>;
+			role = "fe";
+			remote-vmids = <0>;
+		};
+
+		mmidgrp300: mmidgrp300 {
+			grp-start-id = <300>;
+			role = "fe";
+			remote-vmids = <0>;
+		};
+
+		mmidgrp400: mmidgrp400 {
+			grp-start-id = <400>;
+			role = "fe";
+			remote-vmids = <0>;
+		};
+
+		mmidgrp500: mmidgrp500 {
+			grp-start-id = <500>;
+			role = "fe";
+			remote-vmids = <0>;
+		};
+
+		mmidgrp600: mmidgrp600 {
+			grp-start-id = <600>;
+			role = "fe";
+			remote-vmids = <0>;
+		};
+
+		mmidgrp700: mmidgrp700 {
+			grp-start-id = <700>;
+			role = "fe";
+			remote-vmids = <0>;
+			kernel_only;
+		};
+
+		mmidgrp900: mmidgrp900 {
+			grp-start-id = <900>;
+			role = "fe";
+			remote-vmids = <0>;
+		};
+
+		mmidgrp1000: mmidgrp1000 {
+			grp-start-id = <1000>;
+			role = "fe";
+			remote-vmids = <0>;
+		};
+
+		mmidgrp1100: mmidgrp1100 {
+			grp-start-id = <1100>;
+			role = "fe";
+			remote-vmids = <0>;
+		};
+
+		mmidgrp1200: mmidgrp1200 {
+			grp-start-id = <1200>;
+			role = "fe";
+			remote-vmids = <0>;
+		};
+
+		mmidgrp1400: mmidgrp1400 {
+			grp-start-id = <1400>;
+			role = "fe";
+			remote-vmids = <0>;
+		};
+
+		mmidgrp1500: mmidgrp1500 {
+			grp-start-id = <1500>;
+			role = "fe";
+			remote-vmids = <0>;
+		};
+
+		mmidgrp1600: mmidgrp1600 {
+			grp-start-id = <1600>;
+			role = "fe";
+			remote-vmids = <0>;
+		};
+	};
 };

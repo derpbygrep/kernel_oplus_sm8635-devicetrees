@@ -1,11 +1,14 @@
 / {
 	aliases {
+<<<<<<< HEAD
 		spi1 = &spi_1;
 		spi2 = &spi_2;
 		spi3 = &spi_3;
 		spi4 = &spi_4;
 		spi5 = &spi_5;
 		spi6 = &spi_6;
+=======
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 		i2c1 = &i2c_1;
 		i2c2 = &i2c_2;
 		i2c3 = &i2c_3;
@@ -46,10 +49,22 @@
 		reg = <0x78b1000 0x200>,
 			<0x7884000 0x2b000>;
 		reg-names = "core_mem", "bam_mem";
+<<<<<<< HEAD
 		interrupts-extended = <&intc GIC_SPI 119 IRQ_TYPE_LEVEL_HIGH>,
 				<&intc GIC_SPI 238 IRQ_TYPE_LEVEL_HIGH>,
 				<&tlmm 1 IRQ_TYPE_LEVEL_HIGH>;
 		#address-cells = <0>;
+=======
+		interrupt-names = "core_irq", "bam_irq", "wakeup_irq";
+		#address-cells = <0>;
+		interrupt-parent = <&blsp1_uart3>;
+		interrupts = <0 1 2>;
+		#interrupt-cells = <1>;
+		interrupt-map-mask = <0xffffffff>;
+		interrupt-map = <0 &intc 0 119 IRQ_TYPE_LEVEL_HIGH
+				1 &intc 0 238 IRQ_TYPE_LEVEL_HIGH
+				2 &tlmm 1 IRQ_TYPE_LEVEL_HIGH>;
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 		qcom,inject-rx-on-wakeup;
 		qcom,rx-char-to-inject = <0xFD>;
 		qcom,bam-tx-ep-pipe-index = <4>;
@@ -58,6 +73,7 @@
 		clock-names = "core_clk", "iface_clk";
 		clocks = <&gcc GCC_BLSP1_UART3_APPS_CLK>,
 				<&gcc GCC_BLSP1_AHB_CLK>;
+<<<<<<< HEAD
 		pinctrl-names = "sleep", "default", "shutdown", "active";
 		pinctrl-0 = <&blsp1_uart3_hs_tx_sleep>,<&blsp1_uart3_hs_rx_sleep>,
 				<&blsp1_uart3_hs_cts_sleep>,<&blsp1_uart3_hs_rfr_sleep>;
@@ -66,6 +82,12 @@
 		pinctrl-2 = <&blsp1_uart3_hs_tx_sleep>,<&blsp1_uart3_hs_rx_sleep>,
 				<&blsp1_uart3_hs_cts_sleep>,<&blsp1_uart3_hs_rfr_sleep>;
 		pinctrl-3 = <&blsp1_uart3_hs_tx_active>,<&blsp1_uart3_hs_rx_active>,
+=======
+		pinctrl-names = "sleep", "default";
+		pinctrl-0 = <&blsp1_uart3_hs_tx_sleep>,<&blsp1_uart3_hs_rx_sleep>,
+				<&blsp1_uart3_hs_cts_sleep>,<&blsp1_uart3_hs_rfr_sleep>;
+		pinctrl-1 = <&blsp1_uart3_hs_tx_active>,<&blsp1_uart3_hs_rx_active>,
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 				<&blsp1_uart3_hs_cts_active>,<&blsp1_uart3_hs_rfr_active>;
 		interconnect-names ="blsp-ddr";
 		interconnects = <&pcnoc MASTER_BLSP_1 &bimc SLAVE_EBI_CH0>;
@@ -221,6 +243,7 @@
 		interconnects = <&pcnoc MASTER_BLSP_1 &pcnoc SLAVE_BLSP_1>;
 		status = "disabled";
 	};
+<<<<<<< HEAD
 
 	spi_1: spi@78B5000 { /* BLSP1 QUP1 */
 		compatible = "qcom,spi-qup-v2";
@@ -401,4 +424,6 @@
 		interconnects = <&pcnoc MASTER_BLSP_1 &pcnoc SLAVE_BLSP_1>;
 		status = "disabled";
 	};
+=======
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 };

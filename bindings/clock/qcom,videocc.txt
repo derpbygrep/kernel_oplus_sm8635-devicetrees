@@ -25,7 +25,10 @@ Required properties :
 			"qcom,volcano-videocc"
 			"qcom,anorak-videocc"
 			"qcom,neo-videocc"
+<<<<<<< HEAD
 			"qcom,seraph-videocc"
+=======
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 
 - reg : shall contain base register location and length
 - #clock-cells : from common clock binding, shall contain 1.

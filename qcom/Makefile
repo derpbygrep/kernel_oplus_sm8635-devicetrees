@@ -144,6 +144,37 @@ niobe-dtb-$(CONFIG_ARCH_NIOBE) += \
 niobe-overlays-dtb-$(CONFIG_ARCH_NIOBE) += $(NIOBE_BOARDS) $(NOAPQ_NIOBE_BOARDS) $(NIOBE_BASE_DTB) $(NIOBE_APQ_BASE_DTB)
 dtb-y += $(niobe-dtb-y)
 
+### Added for Neo ###
+NEO_LA_BASE_DTB += neo_la.dtb
+NEO_LUNA_DTB += neo_luna-v2.dtb
+
+NEO_BOARDS += \
+		neo_la-rumi-overlay.dtbo \
+		neo-sg-idp-hmt-overlay.dtbo \
+		neo-sg-idp-pm8008-overlay.dtbo \
+		neo_luna-v2-sg-idp-dual-display-camera-overlay.dtbo \
+		neo_luna-v2-sg-idp-dual-display-overlay.dtbo \
+		neo_luna-v2-sg-idp-overlay.dtbo \
+		neo_luna-v2-sg-idp-pm8008-overlay.dtbo
+
+neo-dtb-$(CONFIG_ARCH_NEO) += \
+	$(call add-overlays, $(NEO_BOARDS) ,$(NEO_LA_BASE_DTB)) \
+	$(call add-overlays, $(NEO_BOARDS) ,$(NEO_LUNA_DTB))
+
+neo-overlays-dtb-$(CONFIG_ARCH_NEO) += $(NEO_BOARDS) $(NEO_LA_BASE_DTB) $(NEO_LUNA_DTB)
+dtb-y += $(neo-dtb-y)
+
+SERAPH_BASE_DTB += seraph.dtb
+
+NOAPQ_SERAPH_BOARDS += \
+                  seraph-rumi-overlay.dtbo
+
+seraph-dtb-$(CONFIG_ARCH_SERAPH) += \
+	$(call add-overlays, $(NOAPQ_SERAPH_BOARDS),$(SERAPH_BASE_DTB))\
+	$(call add-overlays, $(APQ_SERAPH_BOARDS),$(SERAPH_APQ_BASE_DTB))
+seraph-overlays-dtb-$(CONFIG_ARCH_SERAPH) += $(NOAPQ_SERAPH_BOARDS) $(SERAPH_BASE_DTB) $(SERAPH_APQ_BASE_DTB)
+dtb-y += $(seraph-dtb-y)
+
 ### Added for Anorak ###
 ANORAK_BASE_DTB += anorak.dtb
 ANORAK_APQ_BASE_DTB += anorakp.dtb
@@ -390,6 +421,16 @@ dtb-y += $(kalama_tuivm-dtb-y)
 endif
 endif
 
+ifeq ($(CONFIG_ARCH_MDM9607), y)
+mdm9607-dtb-$(CONFIG_ARCH_MDM9607) += mdm9607-rumi.dtb \
+	mdm9607-cdp.dtb \
+	mdm9607-mtp.dtb \
+	mdm9607-rcm.dtb \
+	mdm9607-mtp-sdcard.dtb \
+	mdm9607-ttp.dtb
+dtb-y += $(mdm9607-dtb-y)
+endif
+
 LEMANS_LA_GVM_BASE_DTB += lemans-vm-la.dtb
 
 LEMANS_LA_GVM_BOARDS += \
@@ -423,6 +464,12 @@ DIREWOLF_LV_GVM_BASE_DTB += direwolf-vm-lv.dtb
 
 DIREWOLF_LV_GVM_BOARDS += \
                    direwolf-vm-lv-overlay.dtbo
+
+DIREWOLF_LV_GVM_HEADLESS_BASE_DTB += \
+		direwolf-vm-lv-headless-mt.dtb
+
+DIREWOLF_LV_GVM_HEADLESS_BOARDS += \
+		direwolf-vm-lv-headless-mt-overlay.dtbo
 
 SA8155_MULTI_GVM_BASE_DTB += \
 		   sa8155-vm-la-mt.dtb
@@ -461,6 +508,7 @@ autogvm-dtb-$(CONFIG_QTI_QUIN_GVM) += \
 	$(call add-overlays, $(SA8195_LA_GVM_BOARDS),$(SA8195_LA_GVM_BASE_DTB)) \
 	$(call add-overlays, $(DIREWOLF_LA_GVM_BOARDS),$(DIREWOLF_LA_GVM_BASE_DTB)) \
 	$(call add-overlays, $(DIREWOLF_LV_GVM_BOARDS),$(DIREWOLF_LV_GVM_BASE_DTB)) \
+	$(call add-overlays, $(DIREWOLF_LV_GVM_HEADLESS_BOARDS),$(DIREWOLF_LV_GVM_HEADLESS_BASE_DTB)) \
 	$(call add-overlays, $(LEMANS_LV_GVM_BOARDS),$(LEMANS_LV_GVM_BASE_DTB)) \
 	$(call add-overlays, $(LEMANS_LA_GVM_BOARDS),$(LEMANS_LA_GVM_BASE_DTB)) \
 	$(call add-overlays, $(LEMANS_MULTI_GVM_BOARDS),$(LEMANS_MULTI_GVM_BASE_DTB)) \
@@ -475,6 +523,7 @@ autogvm-overlays-dtb-$(CONFIG_QTI_QUIN_GVM) += \
 	$(SA8195_LA_GVM_BOARDS) $(SA8195_LA_GVM_BASE_DTB) \
 	$(DIREWOLF_LA_GVM_BOARDS) $(DIREWOLF_LA_GVM_BASE_DTB) \
 	$(DIREWOLF_LV_GVM_BOARDS) $(DIREWOLF_LV_GVM_BASE_DTB) \
+	$(DIREWOLF_LV_GVM_HEADLESS_BOARDS) $(DIREWOLF_LV_GVM_HEADLESS_BASE_DTB) \
 	$(LEMANS_LV_GVM_BOARDS) $(LEMANS_LV_GVM_BASE_DTB) \
 	$(LEMANS_LA_GVM_BOARDS) $(LEMANS_LA_GVM_BASE_DTB) \
 	$(LEMANS_MULTI_GVM_BOARDS) $(LEMANS_MULTI_GVM_BASE_DTB) \
