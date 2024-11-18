@@ -842,6 +842,10 @@ dtbo-y += sun-v2-ese-qrd.dtbo
 endif
 >>>>>>> f18a8764 (eSE-devicetree: Added eSE device node probing for sun target)
 
+ifeq ($(CONFIG_ARCH_VOLCANO),y)
+dtbo-y += volcano-ese.dtbo
+endif
+
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
