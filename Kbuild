@@ -1175,6 +1175,7 @@ dtbo-y += nxp/holi-nfc.dtbo \
           nxp/holi-pm6125-nopmi-nfc.dtbo
 endif
 
+<<<<<<< HEAD
 ifeq ($(CONFIG_ARCH_CLIFFS),y)
 dtbo-y += cliffs-ipa.dtbo
 endif
@@ -1221,6 +1222,19 @@ dtbo-y += neo-dsp.dtbo
 endif
 
 >>>>>>> a9a151fd (Commit label r2.0_00012.0 - LA.VENDOR.14.3.0.r1-17600-lanai.QSSI15.0)
+=======
+ifeq ($(CONFIG_ARCH_PITTI),y)
+dtbo-y += nxp/pitti-nfc.dtbo \
+          nxp/pitti-nfc-atp.dtbo \
+          nxp/pitti-nfc-idp.dtbo \
+          nxp/pitti-nfc-qrd.dtbo
+endif
+
+ifeq ($(CONFIG_ARCH_VOLCANO), y)
+dtbo-y += nxp/volcano-nfc.dtbo
+endif
+
+>>>>>>> 0c618ecf (Commit label r2.0_00012.0 - LA.VENDOR.14.3.0.r1-17600-lanai.QSSI15.0)
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
