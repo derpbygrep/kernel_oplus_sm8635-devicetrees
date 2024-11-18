@@ -1150,6 +1150,7 @@ ifeq ($(CONFIG_ARCH_CLIFFS),y)
 dtbo-y += cliffs-ipa.dtbo
 endif
 
+<<<<<<< HEAD
 ifeq ($(CONFIG_ARCH_TRINKET),y)
 dtbo-y += trinket-cnss.dtbo
 endif
@@ -1168,6 +1169,16 @@ dtbo-y += pitti-dsp.dtbo
 endif
 
 >>>>>>> d9961782 (ARM: dts: msm: Add pitti dts and dtsi files)
+=======
+ifeq ($(CONFIG_ARCH_PITTI),y)
+dtbo-y += pitti-ipa.dtbo
+endif
+
+ifeq ($(CONFIG_ARCH_VOLCANO),y)
+dtbo-y += volcano-ipa.dtbo
+endif
+
+>>>>>>> 77f738c4 (Commit label r2.0_00012.0 - LA.VENDOR.14.3.0.r1-17600-lanai.QSSI15.0)
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
