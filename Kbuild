@@ -1286,6 +1286,10 @@ dtbo-y += gpu/volcano6ip-fp3-gpu.dtbo
 dtbo-y += gpu/volcano6ip-fp4-gpu.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_VOLCANO), y)
+dtbo-y += volcano-vidc.dtbo
+endif
+
 always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
 clean-files    := *.dtb *.dtbo
