@@ -681,6 +681,7 @@ endif
 ifeq ($(CONFIG_ARCH_PINEAPPLE),y)
 dtbo-y += pineapple-kiwi-bt.dtbo
 dtbo-y += pineapple-hdk-kiwi-bt.dtbo
+dtbo-y += pineapple-aim500-kiwi-bt.dtbo
 endif
 
 >>>>>>> 3790727b (btfm: dts: msm: Add support for pineapple target)
@@ -714,6 +715,23 @@ dtbo-y += cliffs-qca6750-bt.dtbo
 =======
 dtbo-y += cliffs-qca6750-bt.dtbo
 >>>>>>> 684d2837 (ARM: dts: msm: Add MSL bluetooth node for cliffs)
+endif
+
+ifeq ($(CONFIG_ARCH_PITTI), y)
+dtbo-y += pitti-bt.dtbo
+endif
+
+ifeq ($(CONFIG_ARCH_NIOBE), y)
+dtbo-y += niobe-bt.dtbo
+endif
+
+ifeq ($(CONFIG_ARCH_VOLCANO), y)
+dtbo-y += volcano-bt.dtbo
+endif
+
+ifeq ($(CONFIG_ARCH_ANORAK),y)
+dtbo-y += anorak61-kiwi-bt.dtbo
+dtbo-y += anorak61-hsp-bt.dtbo
 endif
 
 always-y        := $(dtb-y) $(dtbo-y)
