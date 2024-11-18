@@ -1,15 +1,15 @@
 #include <dt-bindings/msm-camera.h>
-
+#include <dt-bindings/arm/msm/qti-smmu-proxy-dt-ids.h>
 &tlmm {
 	cci_i2c_sda0_active: cci_i2c_sda0_active {
 		mux {
 			/* CLK, DATA */
-			pins = "gpio70";
+			pins = "gpio88";
 			function = "cci_i2c_sda0";
 		};
 
 		config {
-			pins = "gpio70";
+			pins = "gpio88";
 			bias-pull-up; /* PULL UP*/
 			drive-strength = <2>; /* 2 MA */
 		};
@@ -18,12 +18,12 @@
 	cci_i2c_sda0_suspend: cci_i2c_sda0_suspend {
 		mux {
 			/* CLK, DATA */
-			pins = "gpio70";
+			pins = "gpio88";
 			function = "cci_i2c_sda0";
 		};
 
 		config {
-			pins = "gpio70";
+			pins = "gpio88";
 			bias-pull-down; /* PULL DOWN */
 			drive-strength = <2>; /* 2 MA */
 		};
@@ -32,12 +32,12 @@
 	cci_i2c_scl0_active: cci_i2c_scl0_active {
 		mux {
 			/* CLK, DATA */
-			pins = "gpio71";
+			pins = "gpio89";
 			function = "cci_i2c_scl0";
 		};
 
 		config {
-			pins = "gpio71";
+			pins = "gpio89";
 			bias-pull-up; /* PULL UP*/
 			drive-strength = <2>; /* 2 MA */
 		};
@@ -46,12 +46,12 @@
 	cci_i2c_scl0_suspend: cci_i2c_scl0_suspend {
 		mux {
 			/* CLK, DATA */
-			pins = "gpio71";
+			pins = "gpio89";
 			function = "cci_i2c_scl0";
 		};
 
 		config {
-			pins = "gpio71";
+			pins = "gpio89";
 			bias-pull-down; /* PULL DOWN */
 			drive-strength = <2>; /* 2 MA */
 		};
@@ -60,12 +60,12 @@
 	cci_i2c_sda1_active: cci_i2c_sda1_active {
 		mux {
 			/* CLK, DATA */
-			pins = "gpio72";
+			pins = "gpio90";
 			function = "cci_i2c_sda1";
 		};
 
 		config {
-			pins = "gpio72";
+			pins = "gpio90";
 			bias-pull-up; /* PULL UP*/
 			drive-strength = <2>; /* 2 MA */
 		};
@@ -74,12 +74,12 @@
 	cci_i2c_sda1_suspend: cci_i2c_sda1_suspend {
 		mux {
 			/* CLK, DATA */
-			pins = "gpio72";
+			pins = "gpio90";
 			function = "cci_i2c_sda1";
 		};
 
 		config {
-			pins = "gpio72";
+			pins = "gpio90";
 			bias-pull-down; /* PULL DOWN */
 			drive-strength = <2>; /* 2 MA */
 		};
@@ -88,12 +88,12 @@
 	cci_i2c_scl1_active: cci_i2c_scl1_active {
 		mux {
 			/* CLK, DATA */
-			pins = "gpio73";
+			pins = "gpio91";
 			function = "cci_i2c_scl1";
 		};
 
 		config {
-			pins = "gpio73";
+			pins = "gpio91";
 			bias-pull-up; /* PULL UP*/
 			drive-strength = <2>; /* 2 MA */
 		};
@@ -102,12 +102,12 @@
 	cci_i2c_scl1_suspend: cci_i2c_scl1_suspend {
 		mux {
 			/* CLK, DATA */
-			pins = "gpio73";
+			pins = "gpio91";
 			function = "cci_i2c_scl1";
 		};
 
 		config {
-			pins = "gpio73";
+			pins = "gpio91";
 			bias-pull-down; /* PULL DOWN */
 			drive-strength = <2>; /* 2 MA */
 		};
@@ -116,12 +116,12 @@
 	cci_i2c_sda2_active: cci_i2c_sda2_active {
 		mux {
 			/* CLK, DATA */
-			pins = "gpio74";
+			pins = "gpio92";
 			function = "cci_i2c_sda2";
 		};
 
 		config {
-			pins = "gpio74";
+			pins = "gpio92";
 			bias-pull-up; /* PULL UP*/
 			drive-strength = <2>; /* 2 MA */
 		};
@@ -130,12 +130,12 @@
 	cci_i2c_sda2_suspend: cci_i2c_sda2_suspend {
 		mux {
 			/* CLK, DATA */
-			pins = "gpio74";
+			pins = "gpio92";
 			function = "cci_i2c_sda2";
 		};
 
 		config {
-			pins = "gpio74";
+			pins = "gpio92";
 			bias-pull-down; /* PULL DOWN */
 			drive-strength = <2>; /* 2 MA */
 		};
@@ -144,12 +144,12 @@
 	cci_i2c_scl2_active: cci_i2c_scl2_active {
 		mux {
 			/* CLK, DATA */
-			pins = "gpio75";
+			pins = "gpio93";
 			function = "cci_i2c_scl2";
 		};
 
 		config {
-			pins = "gpio75";
+			pins = "gpio93";
 			bias-pull-up; /* PULL UP*/
 			drive-strength = <2>; /* 2 MA */
 		};
@@ -158,12 +158,12 @@
 	cci_i2c_scl2_suspend: cci_i2c_scl2_suspend {
 		mux {
 			/* CLK, DATA */
-			pins = "gpio75";
+			pins = "gpio93";
 			function = "cci_i2c_scl2";
 		};
 
 		config {
-			pins = "gpio75";
+			pins = "gpio93";
 			bias-pull-down; /* PULL DOWN */
 			drive-strength = <2>; /* 2 MA */
 		};
@@ -172,12 +172,12 @@
 	cci_i2c_sda3_active: cci_i2c_sda3_active {
 		mux {
 			/* CLK, DATA */
-			pins = "gpio76";
+			pins = "gpio94";
 			function = "cci_i2c_sda3";
 		};
 
 		config {
-			pins = "gpio76";
+			pins = "gpio94";
 			bias-pull-up; /* PULL UP*/
 			drive-strength = <2>; /* 2 MA */
 		};
@@ -186,12 +186,12 @@
 	cci_i2c_sda3_suspend: cci_i2c_sda3_suspend {
 		mux {
 			/* CLK, DATA */
-			pins = "gpio76";
+			pins = "gpio94";
 			function = "cci_i2c_sda3";
 		};
 
 		config {
-			pins = "gpio76";
+			pins = "gpio94";
 			bias-pull-down; /* PULL DOWN */
 			drive-strength = <2>; /* 2 MA */
 		};
@@ -200,12 +200,12 @@
 	cci_i2c_scl3_active: cci_i2c_scl3_active {
 		mux {
 			/* CLK, DATA */
-			pins = "gpio77";
+			pins = "gpio95";
 			function = "cci_i2c_scl3";
 		};
 
 		config {
-			pins = "gpio77";
+			pins = "gpio95";
 			bias-pull-up; /* PULL UP*/
 			drive-strength = <2>; /* 2 MA */
 		};
@@ -214,12 +214,12 @@
 	cci_i2c_scl3_suspend: cci_i2c_scl3_suspend {
 		mux {
 			/* CLK, DATA */
-			pins = "gpio77";
+			pins = "gpio95";
 			function = "cci_i2c_scl3";
 		};
 
 		config {
-			pins = "gpio77";
+			pins = "gpio95";
 			bias-pull-down; /* PULL DOWN */
 			drive-strength = <2>; /* 2 MA */
 		};
@@ -228,12 +228,12 @@
 	cam_sensor_mclk0_active: cam_sensor_mclk0_active {
 		/* MCLK0 */
 		mux {
-			pins = "gpio64";
+			pins = "gpio83";
 			function = "cam_mclk";
 		};
 
 		config {
-			pins = "gpio64";
+			pins = "gpio83";
 			bias-disable; /* No PULL */
 			drive-strength = <2>; /* 2 MA */
 		};
@@ -242,12 +242,12 @@
 	cam_sensor_mclk0_suspend: cam_sensor_mclk0_suspend {
 		/* MCLK0 */
 		mux {
-			pins = "gpio64";
+			pins = "gpio83";
 			function = "cam_mclk";
 		};
 
 		config {
-			pins = "gpio64";
+			pins = "gpio83";
 			bias-pull-down; /* PULL DOWN */
 			drive-strength = <2>; /* 2 MA */
 		};
@@ -256,12 +256,12 @@
 	cam_sensor_mclk1_active: cam_sensor_mclk1_active {
 		/* MCLK1 */
 		mux {
-			pins = "gpio65";
+			pins = "gpio84";
 			function = "cam_mclk";
 		};
 
 		config {
-			pins = "gpio65";
+			pins = "gpio84";
 			bias-disable; /* No PULL */
 			drive-strength = <2>; /* 2 MA */
 		};
@@ -270,12 +270,12 @@
 	cam_sensor_mclk1_suspend: cam_sensor_mclk1_suspend {
 		/* MCLK1 */
 		mux {
-			pins = "gpio65";
+			pins = "gpio84";
 			function = "cam_mclk";
 		};
 
 		config {
-			pins = "gpio65";
+			pins = "gpio84";
 			bias-pull-down; /* PULL DOWN */
 			drive-strength = <2>; /* 2 MA */
 		};
@@ -284,12 +284,12 @@
 	cam_sensor_mclk2_active: cam_sensor_mclk2_active {
 		/* MCLK2 */
 		mux {
-			pins = "gpio66";
+			pins = "gpio85";
 			function = "cam_mclk";
 		};
 
 		config {
-			pins = "gpio66";
+			pins = "gpio85";
 			bias-disable; /* No PULL */
 			drive-strength = <2>; /* 2 MA */
 		};
@@ -298,12 +298,12 @@
 	cam_sensor_mclk2_suspend: cam_sensor_mclk2_suspend {
 		/* MCLK2 */
 		mux {
-			pins = "gpio66";
+			pins = "gpio85";
 			function = "cam_mclk";
 		};
 
 		config {
-			pins = "gpio66";
+			pins = "gpio85";
 			bias-pull-down; /* PULL DOWN */
 			drive-strength = <2>; /* 2 MA */
 		};
@@ -312,12 +312,12 @@
 	cam_sensor_mclk3_active: cam_sensor_mclk3_active {
 		/* MCLK3 */
 		mux {
-			pins = "gpio67";
+			pins = "gpio86";
 			function = "cam_mclk";
 		};
 
 		config {
-			pins = "gpio67";
+			pins = "gpio86";
 			bias-disable; /* No PULL */
 			drive-strength = <2>; /* 2 MA */
 		};
@@ -326,40 +326,12 @@
 	cam_sensor_mclk3_suspend: cam_sensor_mclk3_suspend {
 		/* MCLK3 */
 		mux {
-			pins = "gpio67";
+			pins = "gpio86";
 			function = "cam_mclk";
 		};
 
 		config {
-			pins = "gpio67";
-			bias-pull-down; /* PULL DOWN */
-			drive-strength = <2>; /* 2 MA */
-		};
-	};
-
-	cam_sensor_mclk4_active: cam_sensor_mclk4_active {
-		/* MCLK4 */
-		mux {
-			pins = "gpio68";
-			function = "cam_mclk";
-		};
-
-		config {
-			pins = "gpio68";
-			bias-disable; /* No PULL */
-			drive-strength = <2>; /* 2 MA */
-		};
-	};
-
-	cam_sensor_mclk4_suspend: cam_sensor_mclk4_suspend {
-		/* MCLK4 */
-		mux {
-			pins = "gpio68";
-			function = "cam_mclk";
-		};
-
-		config {
-			pins = "gpio68";
+			pins = "gpio86";
 			bias-pull-down; /* PULL DOWN */
 			drive-strength = <2>; /* 2 MA */
 		};
@@ -367,12 +339,12 @@
 
 	cam_sensor_active_rst0: cam_sensor_active_rst0 {
 		mux {
-			pins = "gpio123";
+			pins = "gpio40";
 			function = "gpio";
 		};
 
 		config {
-			pins = "gpio123";
+			pins = "gpio40";
 			bias-disable; /* No PULL */
 			drive-strength = <2>; /* 2 MA */
 		};
@@ -380,12 +352,12 @@
 
 	cam_sensor_suspend_rst0: cam_sensor_suspend_rst0 {
 		mux {
-			pins = "gpio123";
+			pins = "gpio40";
 			function = "gpio";
 		};
 
 		config {
-			pins = "gpio123";
+			pins = "gpio40";
 			bias-pull-down; /* PULL DOWN */
 			drive-strength = <2>; /* 2 MA */
 			output-low;
@@ -394,12 +366,12 @@
 
 	cam_sensor_active_rst1: cam_sensor_active_rst1 {
 		mux {
-			pins = "gpio124";
+			pins = "gpio41";
 			function = "gpio";
 		};
 
 		config {
-			pins = "gpio124";
+			pins = "gpio41";
 			bias-disable; /* No PULL */
 			drive-strength = <2>; /* 2 MA */
 		};
@@ -407,12 +379,12 @@
 
 	cam_sensor_suspend_rst1: cam_sensor_suspend_rst1 {
 		mux {
-			pins = "gpio124";
+			pins = "gpio41";
 			function = "gpio";
 		};
 
 		config {
-			pins = "gpio124";
+			pins = "gpio41";
 			bias-pull-down; /* PULL DOWN */
 			drive-strength = <2>; /* 2 MA */
 			output-low;
@@ -421,12 +393,12 @@
 
 	cam_sensor_active_rst2: cam_sensor_active_rst2 {
 		mux {
-			pins = "gpio125";
+			pins = "gpio42";
 			function = "gpio";
 		};
 
 		config {
-			pins = "gpio125";
+			pins = "gpio42";
 			bias-disable; /* No PULL */
 			drive-strength = <2>; /* 2 MA */
 		};
@@ -434,12 +406,12 @@
 
 	cam_sensor_suspend_rst2: cam_sensor_suspend_rst2 {
 		mux {
-			pins = "gpio125";
+			pins = "gpio42";
 			function = "gpio";
 		};
 
 		config {
-			pins = "gpio125";
+			pins = "gpio42";
 			bias-pull-down; /* PULL DOWN */
 			drive-strength = <2>; /* 2 MA */
 			output-low;
@@ -448,12 +420,12 @@
 
 	cam_sensor_active_rst3: cam_sensor_active_rst3 {
 		mux {
-			pins = "gpio126";
+			pins = "gpio43";
 			function = "gpio";
 		};
 
 		config {
-			pins = "gpio126";
+			pins = "gpio43";
 			bias-disable; /* No PULL */
 			drive-strength = <2>; /* 2 MA */
 		};
@@ -461,12 +433,12 @@
 
 	cam_sensor_suspend_rst3: cam_sensor_suspend_rst3 {
 		mux {
-			pins = "gpio126";
+			pins = "gpio43";
 			function = "gpio";
 		};
 
 		config {
-			pins = "gpio126";
+			pins = "gpio43";
 			bias-pull-down; /* PULL DOWN */
 			drive-strength = <2>; /* 2 MA */
 			output-low;
@@ -489,10 +461,9 @@
 		compatible = "qcom,cam-sync";
 		status = "ok";
 	};
-
 	cam_csiphy0: qcom,csiphy0@ace4000 {
 		cell-index = <0>;
-		compatible = "qcom,csiphy-v2.1.2", "qcom,csiphy";
+		compatible = "qcom,csiphy-v2.2.1", "qcom,csiphy";
 		reg = <0x0ace4000 0x2000>;
 		reg-names = "csiphy";
 		reg-cam-base = <0xe4000>;
@@ -516,9 +487,10 @@
 			<&camcc CAM_CC_CSI0PHYTIMER_CLK_SRC>,
 			<&camcc CAM_CC_CSI0PHYTIMER_CLK>;
 		src-clock-name = "csi0phytimer_clk_src";
-		clock-cntl-level = "lowsvs", "svs", "svs_l1", "nominal";
+		clock-cntl-level = "lowsvs", "svs", "svs_l1", "nominal", "turbo";
 		clock-rates =
 			<300000000 0 300000000 0>,
+			<400000000 0 300000000 0>,
 			<400000000 0 300000000 0>,
 			<400000000 0 300000000 0>,
 			<400000000 0 300000000 0>;
@@ -527,7 +499,7 @@
 
 	cam_csiphy1: qcom,csiphy1@ace6000 {
 		cell-index = <1>;
-		compatible = "qcom,csiphy-v2.1.2", "qcom,csiphy";
+		compatible = "qcom,csiphy-v2.2.1", "qcom,csiphy";
 		reg = <0xace6000 0x2000>;
 		reg-names = "csiphy";
 		reg-cam-base = <0xe6000>;
@@ -551,9 +523,10 @@
 			<&camcc CAM_CC_CSI1PHYTIMER_CLK_SRC>,
 			<&camcc CAM_CC_CSI1PHYTIMER_CLK>;
 		src-clock-name = "csi1phytimer_clk_src";
-		clock-cntl-level = "lowsvs", "svs", "svs_l1", "nominal";
+		clock-cntl-level = "lowsvs", "svs", "svs_l1", "nominal", "turbo";
 		clock-rates =
 			<300000000 0 300000000 0>,
+			<400000000 0 300000000 0>,
 			<400000000 0 300000000 0>,
 			<400000000 0 300000000 0>,
 			<400000000 0 300000000 0>;
@@ -562,7 +535,7 @@
 
 	cam_csiphy2: qcom,csiphy2@ace8000 {
 		cell-index = <2>;
-		compatible = "qcom,csiphy-v2.1.2", "qcom,csiphy";
+		compatible = "qcom,csiphy-v2.2.1", "qcom,csiphy";
 		reg = <0xace8000 0x2000>;
 		reg-names = "csiphy";
 		reg-cam-base = <0xe8000>;
@@ -586,9 +559,10 @@
 			<&camcc CAM_CC_CSI2PHYTIMER_CLK_SRC>,
 			<&camcc CAM_CC_CSI2PHYTIMER_CLK>;
 		src-clock-name = "csi2phytimer_clk_src";
-		clock-cntl-level = "lowsvs", "svs", "svs_l1", "nominal";
+		clock-cntl-level = "lowsvs", "svs", "svs_l1", "nominal", "turbo";
 		clock-rates =
 			<300000000 0 300000000 0>,
+			<400000000 0 300000000 0>,
 			<400000000 0 300000000 0>,
 			<400000000 0 300000000 0>,
 			<400000000 0 300000000 0>;
@@ -597,7 +571,7 @@
 
 	cam_csiphy3: qcom,csiphy3@acea000 {
 		cell-index = <3>;
-		compatible = "qcom,csiphy-v2.1.2", "qcom,csiphy";
+		compatible = "qcom,csiphy-v2.2.1", "qcom,csiphy";
 		reg = <0xacea000 0x2000>;
 		reg-names = "csiphy";
 		reg-cam-base = <0xea000>;
@@ -621,9 +595,10 @@
 			<&camcc CAM_CC_CSI3PHYTIMER_CLK_SRC>,
 			<&camcc CAM_CC_CSI3PHYTIMER_CLK>;
 		src-clock-name = "csi3phytimer_clk_src";
-		clock-cntl-level = "lowsvs", "svs", "svs_l1", "nominal";
+		clock-cntl-level = "lowsvs", "svs", "svs_l1", "nominal", "turbo";
 		clock-rates =
 			<300000000 0 300000000 0>,
+			<400000000 0 300000000 0>,
 			<400000000 0 300000000 0>,
 			<400000000 0 300000000 0>,
 			<400000000 0 300000000 0>;
@@ -862,7 +837,16 @@
 					iova-region-start = <0x14400000>;
 					iova-region-len = <0x700000>;
 					iova-region-id = <0x6>;
+					subregion_support;
 					status = "ok";
+
+					/* Used for HFI queues/sec heap */
+					iova-mem-region-generic-region {
+						iova-region-name = "icp_hfi";
+						iova-region-start = <0x14400000>;
+						iova-region-len = <0x200000>;
+						iova-region-id = <0x0>;
+					};
 				};
 
 				iova-mem-region-io {
@@ -928,31 +912,11 @@
 			};
 		};
 
-		msm_cam_smmu_jpeg {
-			compatible = "qcom,msm-cam-smmu-cb";
-			iommus = <&apps_smmu 0x1960 0x000>;
-			qcom,iommu-faults = "fatal";
-			cam-smmu-label = "jpeg";
-			qcom,iommu-dma-addr-pool = <0x100000 0xffe00000>;
-			dma-coherent;
-			jpeg_iova_mem_map: iova-mem-map {
-				/* IO region is approximately 4.0 GB */
-				iova-mem-region-io {
-					iova-region-name = "io";
-					/* 1 MB pad for start */
-					iova-region-start = <0x100000>;
-					/* 1 MB pad for end */
-					iova-region-len = <0xffe00000>;
-					iova-region-id = <0x3>;
-					status = "ok";
-				};
-			};
-		};
-
 		msm_cam_smmu_secure {
 			compatible = "qcom,msm-cam-smmu-cb";
 			cam-smmu-label = "cam-secure";
 			qcom,secure-cb;
+			qti,smmu-proxy-cb-id = <QTI_SMMU_PROXY_CAMERA_CB>;
 		};
 	};
 
@@ -966,7 +930,6 @@
 			<0xac19000 0xB000>,
 			<0xbbf0000 0x1F00>;
 		reg-cam-base = <0x13000 0x19000 0x0bbf0000>;
-		cam_hw_fuse = <CAM_CPAS_ISP_LITE_FUSE 0x221C8138 0x1 CAM_CPAS_FEATURE_TYPE_ENABLE 0x8>;
 		interrupt-names = "cpas_camnoc";
 		interrupts = <GIC_SPI 459 IRQ_TYPE_EDGE_RISING>;
 		camnoc-axi-min-ib-bw = <3000000000>;
@@ -1014,7 +977,7 @@
 		camnoc-axi-clk-bw-margin-perc = <20>;
 		interconnect-names = "cam_ahb";
 		interconnects =<&gem_noc MASTER_APPSS_PROC
-			&config_noc SLAVE_CAMERA_CFG>;
+			&cnoc_cfg SLAVE_CAMERA_CFG>;
 		rpmh-bcm-info = <12 0x4 0x800 0 4>;
 		cam-ahb-num-cases = <9>;
 		cam-ahb-bw-KBps =
@@ -1037,10 +1000,10 @@
 		client-id-based;
 		client-names =
 			"csiphy0", "csiphy1", "csiphy2", "csiphy3", "cci0", "cci1",
-			"csid0", "csid1", "csid2", "csid3", "tfe0", "tfe1", "tfe2",
-			"tfe3", "ipe0", "rt-cdm0", "rt-cdm1", "rt-cdm2",
+			"csid0", "csid1", "csid2", "tfe0", "tfe1", "tfe2",
+			"ipe0", "rt-cdm0", "rt-cdm1", "rt-cdm2",
 			"cam-cdm-intf0", "bps0", "icp0", "tpg13", "tpg14", "tpg15",
-			"tpg16", "cre0", "jpeg-dma0", "jpeg-enc0";
+			"tpg16", "cre0";
 		status = "ok";
 
 		camera-bus-nodes {
@@ -1296,22 +1259,6 @@
 					parent-node = <&level1_rt1_wr0>;
 				};
 
-				tfe3_rdi_raw_wr: tfe3-rdi-pixel-raw-wr {
-					cell-index = <22>;
-					node-name = "tfe3-rdi-pixel-raw-wr";
-					client-name = "tfe3";
-					traffic-data =
-					<CAM_CPAS_PATH_DATA_IFE_RDI_PIXEL_RAW>;
-					traffic-transaction-type =
-					<CAM_CPAS_TRANSACTION_WRITE>;
-					constituent-paths =
-					<CAM_CPAS_PATH_DATA_IFE_RDI0
-					CAM_CPAS_PATH_DATA_IFE_RDI1
-					CAM_CPAS_PATH_DATA_IFE_RDI2
-					CAM_CPAS_PATH_DATA_IFE_PIXEL_RAW>;
-					parent-node = <&level1_rt1_wr0>;
-				};
-
 				ope_all_wr: ipe0-all-wr {
 					cell-index = <23>;
 					node-name = "ipe0-all-wr";
@@ -1393,46 +1340,6 @@
 					parent-node = <&level1_nrt2_rd_wr>;
 				};
 
-				jpeg_enc0_all_wr: jpeg-enc0-all-wr {
-					cell-index = <30>;
-					node-name = "jpeg-enc0-all-wr";
-					client-name = "jpeg-enc0";
-					traffic-data = <CAM_CPAS_PATH_DATA_ALL>;
-					traffic-transaction-type =
-					<CAM_CPAS_TRANSACTION_WRITE>;
-					parent-node = <&level1_nrt3_wr0>;
-				};
-
-				jpeg_dma0_all_wr: jpeg-dma0-all-wr {
-					cell-index = <31>;
-					node-name = "jpeg-dma0-all-wr";
-					client-name = "jpeg-dma0";
-					traffic-data = <CAM_CPAS_PATH_DATA_ALL>;
-					traffic-transaction-type =
-					<CAM_CPAS_TRANSACTION_WRITE>;
-					parent-node = <&level1_nrt3_wr0>;
-				};
-
-				jpeg_enc0_all_rd: jpeg-enc0-all-rd {
-					cell-index = <32>;
-					node-name = "jpeg-enc0-all-rd";
-					client-name = "jpeg-enc0";
-					traffic-data = <CAM_CPAS_PATH_DATA_ALL>;
-					traffic-transaction-type =
-					<CAM_CPAS_TRANSACTION_READ>;
-					parent-node = <&level1_nrt4_rd0>;
-				};
-
-				jpeg_dma0_all_rd: jpeg-dma0-all-rd {
-					cell-index = <33>;
-					node-name = "jpeg-dma0-all-rd";
-					client-name = "jpeg-dma0";
-					traffic-data = <CAM_CPAS_PATH_DATA_ALL>;
-					traffic-transaction-type =
-					<CAM_CPAS_TRANSACTION_READ>;
-					parent-node = <&level1_nrt4_rd0>;
-				};
-
 				rt_cdm0_all_rd: rt-cdm0-all-rd {
 					cell-index = <34>;
 					node-name = "rt-cdm0-all-rd";
@@ -1481,8 +1388,7 @@
 		cell-index = <0>;
 		label = "cam-cdm-intf";
 		num-hw-cdm = <1>;
-		cdm-client-names = "jpegdma",
-			"jpegenc";
+		cdm-client-names = "vfe";
 		status = "ok";
 	};
 
@@ -1534,30 +1440,6 @@
 		status = "ok";
 	};
 
-	qcom,rt-cdm2@ac26000 {
-		cell-index = <2>;
-		compatible = "qcom,cam-rt-cdm2_1";
-		label = "rt-cdm";
-		reg = <0xac26000 0x400>;
-		reg-names = "rt-cdm2";
-		reg-cam-base = <0x26000>;
-		interrupt-names = "rt-cdm2";
-		interrupts = <GIC_SPI 122 IRQ_TYPE_EDGE_RISING>;
-		regulator-names = "camss";
-		camss-supply = <&cam_cc_camss_top_gdsc>;
-		clock-names = "cam_cc_cpas_ahb_clk";
-		clocks = <&camcc CAM_CC_CPAS_AHB_CLK>;
-		clock-rates = <0>;
-		clock-cntl-level = "svs";
-		nrt-device;
-		cdm-client-names = "tfe-lite0";
-		config-fifo;
-		fifo-depths = <64 0 0 0>;
-		cam_hw_pid = <28>;
-		single-context-cdm;
-		status = "ok";
-	};
-
 	qcom,cam-isp {
 		compatible = "qcom,cam-isp";
 		arch-compat = "tfe";
@@ -1566,7 +1448,7 @@
 
 	cam_tfe_csid0: qcom,tfe_csid0@ac62000 {
 		cell-index = <0>;
-		compatible = "qcom,csid770";
+		compatible = "qcom,csid665";
 		reg-names = "csid0", "cam_cpas_top";
 		reg = <0xac62000 0x1000>,
 			<0xac13000 0x1000>;
@@ -1581,7 +1463,7 @@
 			"tfe0_csid_clk",
 			"tfe0_cphy_rx_clk",
 			"tfe0_clk";
-                clocks =
+		clocks =
 			<&camcc CAM_CC_TFE_0_AHB_CLK>,
 			<&camcc CAM_CC_TFE_0_CSID_CLK_SRC>,
 			<&camcc CAM_CC_TFE_0_CSID_CLK>,
@@ -1601,7 +1483,7 @@
 
 	cam_tfe0: qcom,tfe0@ac62000 {
 		cell-index = <0>;
-		compatible = "qcom,tfe770";
+		compatible = "qcom,tfe665";
 		reg-names = "tfe0";
 		reg = <0xac62000 0xD000>;
 		reg-cam-base = <0x62000>;
@@ -1633,7 +1515,7 @@
 
 	cam_tfe_csid1: qcom,tfe_csid1@ac71000 {
 		cell-index = <1>;
-		compatible = "qcom,csid770";
+		compatible = "qcom,csid665";
 		reg-names = "csid1", "cam_cpas_top";
 		reg = <0xac71000 0x1000>,
 			<0xac13000 0x1000>;
@@ -1668,7 +1550,7 @@
 
 	cam_tfe1: qcom,tfe1@ac71000 {
 		cell-index = <1>;
-		compatible = "qcom,tfe770";
+		compatible = "qcom,tfe665";
 		reg-names = "tfe1";
 		reg = <0xac71000 0xD000>;
 		reg-cam-base = <0x71000>;
@@ -1700,7 +1582,7 @@
 
 	cam_tfe_csid2: qcom,tfe_csid2@ac80000 {
 		cell-index = <2>;
-		compatible = "qcom,csid770";
+		compatible = "qcom,csid665";
 		reg-names = "csid2", "cam_cpas_top";
 		reg = <0xac80000 0x1000>,
 			<0xac13000 0x1000>;
@@ -1735,7 +1617,7 @@
 
 	cam_tfe2: qcom,tfe2@ac80000 {
 		cell-index = <2>;
-		compatible = "qcom,tfe770";
+		compatible = "qcom,tfe665";
 		reg-names = "tfe2";
 		reg = <0xac80000 0xD000>;
 		reg-cam-base = <0x80000>;
@@ -1762,73 +1644,6 @@
 		src-clock-name = "tfe2_clk_src";
 		clock-control-debugfs = "true";
 		cam_hw_pid = <6 10>;
-		status = "ok";
-	};
-
-	cam_tfe_csid_lite0: qcom,tfe_csid-lite0@ac8F000 {
-		cell-index = <3>;
-		compatible = "qcom,csid-lite770";
-		reg-names = "csid-lite0", "cam_cpas_top";
-		reg = <0xac8F000 0x1000>,
-			<0xac13000 0x1000>;
-		reg-cam-base = <0x8F000 0x13000>;
-		interrupt-names = "csid-lite0";
-		interrupts = <GIC_SPI 139 IRQ_TYPE_EDGE_RISING>;
-		regulator-names = "camss";
-		camss-supply = <&cam_cc_camss_top_gdsc>;
-		clock-names =
-			"tfe3_ahb_clk",
-			"tfe3_csid_clk_src",
-			"tfe3_csid_clk",
-			"tfe3_cphy_rx_clk",
-			"tfe3_clk";
-		clocks =
-			<&camcc CAM_CC_TFE_3_AHB_CLK>,
-			<&camcc CAM_CC_TFE_3_CSID_CLK_SRC>,
-			<&camcc CAM_CC_TFE_3_CSID_CLK>,
-			<&camcc CAM_CC_TFE_3_CPHY_RX_CLK>,
-			<&camcc CAM_CC_TFE_3_CLK>;
-		clock-rates =
-			<0 300000000 0 0 0>,
-			<0 400000000 0 0 0>,
-			<0 400000000 0 0 0>,
-			<0 400000000 0 0 0>,
-			<0 400000000 0 0 0>;
-		clock-cntl-level = "lowsvs", "svs", "svs_l1", "nominal", "turbo";
-		src-clock-name = "tfe3_csid_clk_src";
-		clock-control-debugfs = "true";
-		status = "ok";
-	};
-
-	cam_tfe_lite0: qcom,tfe-lite0@ac8F000 {
-		cell-index = <3>;
-		compatible = "qcom,tfe-lite770";
-		reg-names = "tfe-lite0";
-		reg = <0xac8F000 0xD000>;
-		reg-cam-base = <0x8F000>;
-		rt-wrapper-base = <0x62000>;
-		interrupt-names = "tfe-lite0";
-		interrupts = <GIC_SPI 156 IRQ_TYPE_EDGE_RISING>;
-		regulator-names = "camss";
-		camss-supply = <&cam_cc_camss_top_gdsc>;
-		clock-names =
-			"tfe3_ahb_clk",
-			"tfe3_clk_src",
-			"tfe3_clk";
-		clocks =
-			<&camcc CAM_CC_TFE_3_AHB_CLK>,
-			<&camcc CAM_CC_TFE_3_CLK_SRC>,
-			<&camcc CAM_CC_TFE_3_CLK>;
-		clock-rates =
-			<0 350000000 0>,
-			<0 570000000 0>,
-			<0 600000000 0>,
-			<0 725000000 0>,
-			<0 725000000 0>;
-		clock-cntl-level = "lowsvs", "svs", "svs_l1", "nominal", "turbo";
-		src-clock-name = "tfe3_clk_src";
-		clock-control-debugfs = "true";
-		cam_hw_pid = <11>;
 		status = "ok";
 	};
 
@@ -2037,8 +1852,8 @@
 		clock-rates =
 			<0 100000000 0 300000000>,
 			<0 150000000 0 410000000>,
-			<0 200000000 0 460000000>,
-			<0 240000000 0 600000000>,
+			<0 200000000 0 520000000>,
+			<0 240000000 0 645000000>,
 			<0 240000000 0 700000000>;
 		clock-cntl-level = "lowsvs", "svs", "svs_l1", "nominal",
 			"turbo";
@@ -2124,71 +1939,6 @@
 		src-clock-name = "cre_clk_src";
 		clock-control-debugfs = "true";
 		cam_hw_pid = <13 12>;
-		status = "ok";
-	};
-
-	qcom,cam-jpeg {
-		compatible = "qcom,cam-jpeg";
-		compat-hw-name = "qcom,jpegenc",
-			"qcom,jpegdma";
-		num-jpeg-enc = <1>;
-		num-jpeg-dma = <1>;
-		status = "ok";
-	};
-
-	cam_jpeg_enc: qcom,jpegenc@ac2a000 {
-		cell-index = <0>;
-		compatible = "qcom,cam_jpeg_enc_770";
-		reg-names = "jpege_hw", "cam_camnoc";
-		reg = <0xac2a000 0x1000>,
-			<0xac19000 0xB000>;
-		reg-cam-base = <0x2a000 0x19000>;
-		interrupt-names = "jpeg";
-		interrupts = <GIC_SPI 137 IRQ_TYPE_EDGE_RISING>;
-		regulator-names = "camss";
-		camss-supply = <&cam_cc_camss_top_gdsc>;
-		shared-clks = <1 0>;
-		clock-names =
-			"jpegenc_clk_src",
-			"jpegenc_clk";
-		clocks =
-			<&camcc CAM_CC_JPEG_CLK_SRC>,
-			<&camcc CAM_CC_JPEG_CLK>;
-		clock-rates = <600000000 0>;
-		src-clock-name = "jpegenc_clk_src";
-		clock-cntl-level = "nominal";
-		nrt-device;
-		cam_hw_pid = <21 22>;
-		cam_hw_rd_mid = <0>;
-		cam_hw_wr_mid = <1>;
-		status = "ok";
-	};
-
-	cam_jpeg_dma: qcom,jpegdma@ac2b000 {
-		cell-index = <0>;
-		compatible = "qcom,cam_jpeg_dma_770";
-		reg-names = "jpegdma_hw", "cam_camnoc";
-		reg = <0xac2b000 0x1000>,
-			<0xac19000 0xB000>;
-		reg-cam-base = <0x2b000 0x19000>;
-		interrupt-names = "jpegdma";
-		interrupts = <GIC_SPI 138 IRQ_TYPE_EDGE_RISING>;
-		regulator-names = "camss";
-		camss-supply = <&cam_cc_camss_top_gdsc>;
-		shared-clks = <1 0>;
-		clock-names =
-			"jpegdma_clk_src",
-			"jpegdma_clk";
-		clocks =
-			<&camcc CAM_CC_JPEG_CLK_SRC>,
-			<&camcc CAM_CC_JPEG_CLK>;
-		clock-rates = <600000000 0>;
-		src-clock-name = "jpegdma_clk_src";
-		clock-cntl-level = "nominal";
-		nrt-device;
-		cam_hw_pid = <20 23>;
-		cam_hw_rd_mid = <0>;
-		cam_hw_wr_mid = <1>;
 		status = "ok";
 	};
 };

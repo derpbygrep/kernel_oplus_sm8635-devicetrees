@@ -11,6 +11,11 @@
 / {
 	model = "Qualcomm Technologies, Inc. Cliffs MTP";
 	compatible = "qcom,cliffs-mtp", "qcom,cliffs", "qcom,mtp";
+<<<<<<< HEAD
 	qcom,msm-id = <614 0x10000>, <632 0x10000>;
 	qcom,board-id = <8 0>, <8 1>;
+=======
+	qcom,msm-id = <614 0x10000>, <632 0x10000>, <642 0x10000>, <643 0x10000>;
+	qcom,board-id = <8 0>, <8 1>, <8 2>, <8 3>, <8 4>;
+>>>>>>> c5d8a2b4 (Commit label r2.0_00012.0 - CAMERA.LA.4.0.r2-07100-lanai.0)
 };

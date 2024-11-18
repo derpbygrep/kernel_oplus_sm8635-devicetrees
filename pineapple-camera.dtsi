@@ -1369,7 +1369,7 @@
 
 		msm_cam_smmu_jpeg {
 			compatible = "qcom,msm-cam-smmu-cb";
-			iommus = <&apps_smmu 0x18A0 0x0040>;
+			iommus = <&apps_smmu 0x18A0 0x0000>;
 			cam-smmu-label = "jpeg";
 			qcom,iommu-faults = "stall-disable", "non-fatal";
 			qcom,iommu-dma-addr-pool = <0x0 0x100000 0x0 0xffe00000>;
@@ -3303,7 +3303,7 @@
 
 	cam_bps: qcom,bps@ac2c000 {
 		cell-index = <0>;
-		compatible = "qcom,cam-bps680";
+		compatible = "qcom,cam-bps880";
 		reg = <0xac2c000 0xb000>;
 		reg-names = "bps_top";
 		reg-cam-base = <0x2c000>;

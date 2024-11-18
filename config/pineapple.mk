@@ -31,6 +31,7 @@ dtbo-$(CONFIG_ARCH_CLIFFS)	+= cliffs-camera-sensor-cdp.dtbo \
 =======
 								cliffs-camera-sensor-mtp.dtbo \
 								cliffs-camera-sensor-qrd.dtbo
+<<<<<<< HEAD
 >>>>>>> b15a5b90 (ARM: dts: msm: Add camera sensor DT for cliffs)
 =======
 dtbo-$(CONFIG_ARCH_CLIFFS)	+= cliffs-camera-sensor-cdp.dtbo \
@@ -40,3 +41,10 @@ dtbo-$(CONFIG_ARCH_CLIFFS)	+= cliffs-camera-sensor-cdp.dtbo \
 								cliffs-camera-sensor-mtp.dtbo \
 								cliffs-camera-sensor-qrd.dtbo
 >>>>>>> 54cd0a4c (ARM: dts: msm: Add camera sensor DT for cliffs)
+=======
+dtbo-$(CONFIG_ARCH_VOLCANO)     += volcano-camera.dtbo
+dtbo-$(CONFIG_ARCH_VOLCANO)     += volcano-camera-qrd.dtbo
+dtbo-$(CONFIG_ARCH_VOLCANO)     += volcano-camera-sensor-mtp.dtbo
+dtbo-$(CONFIG_ARCH_VOLCANO)     += volcano-camera-sensor-idp.dtbo
+dtbo-$(CONFIG_ARCH_VOLCANO)     += volcano-camera-sensor-qrd.dtbo
+>>>>>>> c5d8a2b4 (Commit label r2.0_00012.0 - CAMERA.LA.4.0.r2-07100-lanai.0)
