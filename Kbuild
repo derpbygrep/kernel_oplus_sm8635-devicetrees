@@ -186,12 +186,17 @@ dtbo-y += kalama-mmrm.dtbo
 
 ifeq ($(CONFIG_ARCH_KALAMA),y)
 dtbo-y += kalama-cnss.dtbo
+<<<<<<< HEAD
 =======
 
 ifeq ($(CONFIG_ARCH_PINEAPPLE), y)
 dtbo-y += pineapple/pineapple-mmrm.dtbo
 dtbo-y += pineapple/pineapple-mmrm-test.dtbo
 dtbo-y += pineapple/pineapple-mmrm-test-v2.dtbo
+=======
+dtbo-y += kalama-aim300-cnss.dtbo
+dtbo-y += kalama-rb5-gen2-cnss.dtbo
+>>>>>>> 7d142b67 (Commit label r2.0_00012.0 - LA.VENDOR.14.3.0.r1-17600-lanai.QSSI15.0)
 endif
 
 <<<<<<< HEAD
@@ -361,8 +366,15 @@ dtbo-y += khaje-cnss.dtbo
 endif
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 9b58c470 (ARM: dts: msm: Add icnss dtsi entries for khaje)
 =======
+=======
+ifeq ($(CONFIG_ARCH_BENGAL),y)
+dtbo-y += bengal-cnss.dtbo
+endif
+
+>>>>>>> 7d142b67 (Commit label r2.0_00012.0 - LA.VENDOR.14.3.0.r1-17600-lanai.QSSI15.0)
 ifeq ($(CONFIG_ARCH_BLAIR),y)
 dtbo-y += blair-cnss.dtbo
 endif
@@ -996,18 +1008,28 @@ dtbo-y += pineapplep-aim500-kiwi-cnss.dtbo
 endif
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ifeq ($(CONFIG_ARCH_SUN),y)
 dtbo-y += sun-kiwi-cnss.dtbo
 dtbo-y += sun-kiwi-cnss-v8.dtbo
 dtbo-y += sun-peach-cnss.dtbo
 dtbo-y += sun-peach-cnss-v8.dtbo
+=======
+ifeq ($(CONFIG_ARCH_NIOBE),y)
+dtbo-y += niobe-kiwi-cnss.dtbo
+>>>>>>> 7d142b67 (Commit label r2.0_00012.0 - LA.VENDOR.14.3.0.r1-17600-lanai.QSSI15.0)
 endif
 
 =======
 >>>>>>> 443869b8 (ARM: dts: msm: Add board id for cliffs wlan attachements)
 ifeq ($(CONFIG_ARCH_CLIFFS),y)
 dtbo-y += cliffs-kiwi-cnss.dtbo
+dtbo-y += cliffs-peach-cnss.dtbo
 dtbo-y += cliffs-qca6750.dtbo
+endif
+
+ifeq ($(CONFIG_ARCH_VOLCANO),y)
+dtbo-y += volcano-qca6750.dtbo
 endif
 
 ifeq ($(CONFIG_ARCH_MONACO),y)
@@ -1038,7 +1060,16 @@ dtbo-y += lemans-cnss.dtbo
 endif
 endif
 
+<<<<<<< HEAD
 >>>>>>> 28991781 (wlan: dts: Add support for lemans)
+=======
+
+ifeq ($(CONFIG_ARCH_ANORAK),y)
+dtbo-y += anorak-hsp-cnss.dtbo
+dtbo-y += anorak-kiwi-cnss.dtbo
+endif
+
+>>>>>>> 7d142b67 (Commit label r2.0_00012.0 - LA.VENDOR.14.3.0.r1-17600-lanai.QSSI15.0)
 ifeq ($(CONFIG_QTI_QUIN_GVM),y)
 dtbo-y += sa8155p-vm-cnss.dtbo
 <<<<<<< HEAD
@@ -1083,7 +1114,11 @@ dtbo-y += monaco-vm-cnss.dtbo
 >>>>>>> d63aec50 (wlan_devicetree: Add dts, dtsi file for monaco GVM)
 =======
 dtbo-y += sa6155p-vm-cnss.dtbo
+<<<<<<< HEAD
 >>>>>>> 5c800ac8 (wlan: dts: Add support for qcn7605 on Talos GVM)
+=======
+dtbo-y += monaco_auto-vm-cnss.dtbo
+>>>>>>> 7d142b67 (Commit label r2.0_00012.0 - LA.VENDOR.14.3.0.r1-17600-lanai.QSSI15.0)
 endif
 
 <<<<<<< HEAD
@@ -1185,6 +1220,7 @@ ifeq ($(CONFIG_ARCH_TRINKET),y)
 dtbo-y += trinket-cnss.dtbo
 endif
 
+<<<<<<< HEAD
 ifeq ($(CONFIG_ARCH_SUN), y)
 dtbo-y += sun-fingerprint.dtbo
 endif
@@ -1246,6 +1282,12 @@ dtbo-y += st/volcano6i-idp-wcd9395-brahma-overlay-nfc.dtbo \
 endif
 
 >>>>>>> 0c618ecf (Commit label r2.0_00012.0 - LA.VENDOR.14.3.0.r1-17600-lanai.QSSI15.0)
+=======
+ifeq ($(CONFIG_ARCH_SCUBA),y)
+dtbo-y += scuba-cnss.dtbo
+endif
+
+>>>>>>> 7d142b67 (Commit label r2.0_00012.0 - LA.VENDOR.14.3.0.r1-17600-lanai.QSSI15.0)
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
