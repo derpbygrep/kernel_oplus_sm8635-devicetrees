@@ -1245,6 +1245,14 @@ dtbo-y += gpu/cliffs-gpu.dtbo \
 >>>>>>> f34dd327 (ARM: dts: msm: Add support for Cliffs7 GPU)
 endif
 
+ifeq ($(CONFIG_ARCH_VOLCANO), y)
+dtbo-y += gpu/volcano-gpu.dtbo
+dtbo-y += gpu/volcano6-gpu.dtbo
+dtbo-y += gpu/volcano6p-gpu.dtbo
+dtbo-y += gpu/volcano6i-gpu.dtbo
+dtbo-y += gpu/volcano6ip-gpu.dtbo
+endif
+
 always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
 clean-files    := *.dtb *.dtbo
