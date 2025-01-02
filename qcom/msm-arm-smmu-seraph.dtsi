@@ -1,6 +1,7 @@
 #include <dt-bindings/interrupt-controller/arm-gic.h>
 
 &soc {
+<<<<<<< HEAD
 	kgsl_smmu: kgsl-smmu@3da0000 {
 		compatible = "qcom,qsmmu-v500", "qcom,adreno-smmu";
 		reg = <0x3da0000 0x40000>;
@@ -71,6 +72,8 @@
 		};
 	};
 
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 	apps_smmu: apps-smmu@15000000 {
 		compatible = "qcom,qsmmu-v500";
 		reg = <0x15000000 0x100000>,
@@ -83,7 +86,10 @@
 		#address-cells = <1>;
 		ranges;
 		dma-coherent;
+<<<<<<< HEAD
 		qcom,handoff-smrs = <0x1c00 0x2>;
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 
 		/* TODO: qcom,actlr */
 
@@ -295,6 +301,7 @@
 			iommus = <&apps_smmu 0x400 0x0>;
 			qcom,iommu-vmid = <0xa>; /* VMID_CP_PIXEL */
 		};
+<<<<<<< HEAD
 
 		usecase5_kgsl {
 			compatible = "qcom,iommu-debug-usecase";
@@ -306,5 +313,7 @@
 			iommus = <&kgsl_smmu 0x0007 0x0>;
 			dma-coherent;
 		};
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 	};
 };

@@ -1,10 +1,14 @@
 &soc {
 	tlmm: pinctrl@0x1000000 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		compatible = "qcom,mdm9607-tlmm";
 =======
 		compatible = "qcom,mdm9x07-tlmm";
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+		compatible = "qcom,mdm9607-tlmm";
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 		reg = <0x1000000 0x300000>;
 		reg-names = "pinctrl";
 		interrupts = <0 208 IRQ_TYPE_LEVEL_HIGH>;
@@ -80,10 +84,14 @@
 					pins = "gpio0";
 					drive-strength = <2>;
 <<<<<<< HEAD
+<<<<<<< HEAD
 					bias-pull-up;
 =======
 					bias-disable;
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+					bias-pull-up;
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 				};
 			};
 
@@ -117,20 +125,28 @@
 				mux {
 					pins = "gpio1";
 <<<<<<< HEAD
+<<<<<<< HEAD
 					function = "gpio";
 =======
 					function = "blsp_uart_rx3";
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+					function = "gpio";
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 				};
 
 				config {
 					pins = "gpio1";
 					drive-strength = <2>;
 <<<<<<< HEAD
+<<<<<<< HEAD
 					bias-pull-down;
 =======
 					bias-no-pull;
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+					bias-pull-down;
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 				};
 			};
 
@@ -157,10 +173,14 @@
 					pins = "gpio2";
 					drive-strength = <2>;
 <<<<<<< HEAD
+<<<<<<< HEAD
 					bias-pull-down;
 =======
 					bias-no-pull;
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+					bias-pull-down;
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 				};
 			};
 
@@ -174,10 +194,14 @@
 					pins = "gpio3";
 					drive-strength = <2>;
 <<<<<<< HEAD
+<<<<<<< HEAD
 					bias-pull-down;
 =======
 					bias-disable;
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+					bias-pull-down;
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 				};
 			};
 
@@ -191,10 +215,14 @@
 					pins = "gpio3";
 					drive-strength = <2>;
 <<<<<<< HEAD
+<<<<<<< HEAD
 					bias-pull-down;
 =======
 					bias-no-pull;
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+					bias-pull-down;
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 				};
 			};
 		};
@@ -416,6 +444,9 @@
 		};
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 		wcd9xxx_intr {
 			wcd_intr_default: wcd_intr_default {
 				mux {
@@ -735,8 +766,11 @@
 			};
 		};
 
+<<<<<<< HEAD
 =======
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 		i2c_5 {
 			i2c_5_sda5_active: i2c_5_sda5_active {
 				mux {
@@ -845,6 +879,9 @@
 			};
 		};
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 
 		spi_1 {
 			spi_1_mosi1_default: spi_1_mosi1_default {
@@ -1889,7 +1926,10 @@
 				};
 			};
 		};
+<<<<<<< HEAD
 =======
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 	};
 };

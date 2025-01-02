@@ -165,6 +165,7 @@ properties:
       detection.
     type: boolean
 
+<<<<<<< HEAD
   qcom,force-usb3:
     description: |
       On some targets, although the second controller is DP Combo, yet it
@@ -172,6 +173,8 @@ properties:
       DP related register ops are NOP.
     type: boolean
 
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 required:
   - compatible
   - reg

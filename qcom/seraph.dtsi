@@ -9,12 +9,18 @@
 #include <dt-bindings/clock/qcom,tcsrcc-seraph.h>
 #include <dt-bindings/clock/qcom,videocc-seraph.h>
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include <dt-bindings/interconnect/qcom,seraph.h>
 #include <dt-bindings/mailbox/qcom-ipcc.h>
 #include <dt-bindings/regulator/qcom,rpmh-regulator-levels.h>
 #include <dt-bindings/spmi/spmi.h>
 =======
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+#include <dt-bindings/interconnect/qcom,seraph.h>
+#include <dt-bindings/mailbox/qcom-ipcc.h>
+#include <dt-bindings/regulator/qcom,rpmh-regulator-levels.h>
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 
 / {
 	model = "Qualcomm Technologies, Inc. Seraph";
@@ -78,10 +84,14 @@
 			compatible = "qcom,kryo";
 			reg = <0x0 0x0>;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 			enable-method = "psci";
 			cpu-idle-states = <&SILVER_OFF &SILVER_RAIL_OFF>;
 			power-domains = <&CPU_PD0>;
 			power-domain-names = "psci";
+<<<<<<< HEAD
 			next-level-cache = <&L2_0>;
 			capacity-dmips-mhz = <1024>;
 			dynamic-power-coefficient = <100>;
@@ -91,6 +101,11 @@
 			cpu-release-addr = <0x0 0x90000000>;
 			next-level-cache = <&L2_0>;
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+			next-level-cache = <&L2_0>;
+			capacity-dmips-mhz = <1024>;
+			dynamic-power-coefficient = <100>;
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 			L2_0: l2-cache {
 				compatible = "arm,arch-cache";
 				cache-level = <2>;
@@ -108,10 +123,14 @@
 			compatible = "qcom,kryo";
 			reg = <0x0 0x100>;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 			enable-method = "psci";
 			cpu-idle-states = <&SILVER_OFF &SILVER_RAIL_OFF>;
 			power-domains = <&CPU_PD1>;
 			power-domain-names = "psci";
+<<<<<<< HEAD
 			next-level-cache = <&L2_0>;
 			capacity-dmips-mhz = <1024>;
 			dynamic-power-coefficient = <100>;
@@ -121,6 +140,11 @@
 			cpu-release-addr = <0x0 0x90000000>;
 			next-level-cache = <&L2_0>;
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+			next-level-cache = <&L2_0>;
+			capacity-dmips-mhz = <1024>;
+			dynamic-power-coefficient = <100>;
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 		};
 
 		CPU2: cpu@200 {
@@ -128,10 +152,14 @@
 			compatible = "qcom,kryo";
 			reg = <0x0 0x200>;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 			enable-method = "psci";
 			cpu-idle-states = <&SILVER_OFF &SILVER_RAIL_OFF>;
 			power-domains = <&CPU_PD2>;
 			power-domain-names = "psci";
+<<<<<<< HEAD
 			next-level-cache = <&L2_0>;
 			capacity-dmips-mhz = <1024>;
 			dynamic-power-coefficient = <100>;
@@ -141,6 +169,11 @@
 			cpu-release-addr = <0x0 0x90000000>;
 			next-level-cache = <&L2_0>;
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+			next-level-cache = <&L2_0>;
+			capacity-dmips-mhz = <1024>;
+			dynamic-power-coefficient = <100>;
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 		};
 
 		CPU3: cpu@300 {
@@ -148,10 +181,14 @@
 			compatible = "qcom,kryo";
 			reg = <0x0 0x300>;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 			enable-method = "psci";
 			cpu-idle-states = <&SILVER_OFF &SILVER_RAIL_OFF>;
 			power-domains = <&CPU_PD3>;
 			power-domain-names = "psci";
+<<<<<<< HEAD
 			next-level-cache = <&L2_0>;
 			capacity-dmips-mhz = <1024>;
 			dynamic-power-coefficient = <100>;
@@ -161,6 +198,11 @@
 			cpu-release-addr = <0x0 0x90000000>;
 			next-level-cache = <&L2_0>;
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+			next-level-cache = <&L2_0>;
+			capacity-dmips-mhz = <1024>;
+			dynamic-power-coefficient = <100>;
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 		};
 
 		CPU4: cpu@400 {
@@ -168,10 +210,14 @@
 			compatible = "qcom,kryo";
 			reg = <0x0 0x400>;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 			enable-method = "psci";
 			cpu-idle-states = <&GOLD_OFF &GOLD_RAIL_OFF>;
 			power-domains = <&CPU_PD4>;
 			power-domain-names = "psci";
+<<<<<<< HEAD
 			next-level-cache = <&L2_0>;
 			capacity-dmips-mhz = <1956>;
 			dynamic-power-coefficient = <389>;
@@ -181,6 +227,11 @@
 			cpu-release-addr = <0x0 0x90000000>;
 			next-level-cache = <&L2_0>;
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+			next-level-cache = <&L2_0>;
+			capacity-dmips-mhz = <1956>;
+			dynamic-power-coefficient = <389>;
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 		};
 
 		cpu-map {
@@ -211,6 +262,9 @@
 	};
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 	idle-states {
 		entry-method = "psci";
 
@@ -282,8 +336,11 @@
 		};
 	};
 
+<<<<<<< HEAD
 =======
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 	soc: soc { };
 
 };
@@ -296,6 +353,9 @@
 	compatible = "simple-bus";
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 	psci {
 		compatible = "arm,psci-1.0";
 		method = "smc";
@@ -342,6 +402,7 @@
 		#hwlock-cells = <1>;
 	};
 
+<<<<<<< HEAD
 	qcom,tmecom-qmp-client {
 		compatible = "qcom,tmecom-qmp-client";
 		mboxes = <&qmp_tme 0>;
@@ -632,11 +693,20 @@
 
 =======
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+	smem: qcom,smem {
+		compatible = "qcom,smem";
+		memory-region = <&smem_mem>;
+		hwlocks = <&tcsr_mutex 3>;
+	};
+
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 	intc: interrupt-controller@17200000 {
 		compatible = "arm,gic-v3";
 		#interrupt-cells = <3>;
 		interrupt-controller;
 		#redistributor-regions = <1>;
+<<<<<<< HEAD
 <<<<<<< HEAD
 		redistributor-stride = <0x0 0x20000>;
 		reg = <0x17200000 0x10000>,       /* GICD */
@@ -646,6 +716,11 @@
 		reg = <0x17200000 0x10000>,       /* GICD */
 		     <0x17260000 0x200000>;       /* GICR * 8 */
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+		redistributor-stride = <0x0 0x20000>;
+		reg = <0x17200000 0x10000>,       /* GICD */
+		     <0x17260000 0xA0000>;       /* GICR * 5 */
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 		interrupts = <GIC_PPI 9 IRQ_TYPE_LEVEL_HIGH>;
 	};
 
@@ -659,6 +734,9 @@
 	};
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 	ipcc_mproc: qcom,ipcc@404000 {
 		compatible = "qcom,ipcc";
 		reg = <0x404000 0x1000>;
@@ -668,6 +746,7 @@
 		#mbox-cells = <2>;
 	};
 
+<<<<<<< HEAD
 	gic-interrupt-router {
 		compatible = "qcom,gic-intr-routing";
 		qcom,gic-class0-cpus = <&CPU0 &CPU1 &CPU2 &CPU3>;
@@ -687,6 +766,8 @@
 
 =======
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 	memtimer: timer@17420000 {
 		#address-cells = <1>;
 		#size-cells = <1>;
@@ -825,9 +906,13 @@
 			     <GIC_SPI 4 IRQ_TYPE_LEVEL_HIGH>,
 			     <GIC_SPI 5 IRQ_TYPE_LEVEL_HIGH>;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		power-domains = <&CLUSTER_PD>;
 =======
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+		power-domains = <&CLUSTER_PD>;
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 
 		apps_rsc_drv2: drv@2 {
 			qcom,drv-id = <2>;
@@ -841,15 +926,21 @@
 						  <FAST_PATH_TCS 1>;
 			};
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 
 			apps_bcm_voter: bcm_voter {
 				compatible = "qcom,bcm-voter";
 			};
+<<<<<<< HEAD
 
 			rpmhcc: clock-controller {
 				compatible = "qcom,seraph-rpmh-clk";
 				#clock-cells = <1>;
 			};
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 		};
 	};
 
@@ -957,11 +1048,14 @@
 		qcom,skip-qos;
 	};
 
+<<<<<<< HEAD
 =======
 		};
 	};
 
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 	pdc: interrupt-controller@b220000 {
 		compatible = "qcom,seraph-pdc", "qcom,pdc";
 		reg = <0xb220000 0x10000>, <0x174000f0 0x64>;
@@ -985,13 +1079,19 @@
 	};
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 	cluster-device {
 		compatible = "qcom,lpm-cluster-dev";
 		power-domains = <&CLUSTER_PD>;
 	};
 
+<<<<<<< HEAD
 =======
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 	tlmm: pinctrl@f000000 {
 		compatible = "qcom,seraph-pinctrl";
 		reg = <0x0F000000 0x1000000>;
@@ -1341,6 +1441,9 @@
 
 	gcc: clock-controller@100000 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 		compatible = "qcom,seraph-gcc", "syscon";
 		reg = <0x100000 0x1f4200>;
 		reg-name = "cc_base";
@@ -1356,10 +1459,13 @@
 			      "pcie_1_pipe_clk",
 			      "sleep_clk",
 			      "usb3_phy_wrapper_gcc_usb30_pipe_clk";
+<<<<<<< HEAD
 =======
 		compatible = "qcom,dummycc";
 		clock-output-names = "gcc_clocks";
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 		#clock-cells = <1>;
 		#reset-cells = <1>;
 	};
@@ -1405,15 +1511,21 @@
 	};
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 	tcsrcc: clock-controller@1ff1108 {
 		compatible = "qcom,seraph-tcsrcc", "syscon";
 		reg = <0x1ff1108 0x18>;
 		reg-name = "cc_base";
+<<<<<<< HEAD
 =======
 	tcsrcc: clock-controller@1f40000 {
 		compatible = "qcom,dummycc";
 		clock-output-names = "tcsrcc_clocks";
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 		#clock-cells = <1>;
 		#reset-cells = <1>;
 	};
@@ -1835,55 +1947,79 @@
 
 &gcc_pcie_0_gdsc {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	parent-supply = <&VDD_CX_LEVEL>;
 =======
 	compatible = "regulator-fixed";
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+	parent-supply = <&VDD_CX_LEVEL>;
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 	status = "ok";
 };
 
 &gcc_pcie_0_phy_gdsc {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	parent-supply = <&VDD_MX_LEVEL>;
 =======
 	compatible = "regulator-fixed";
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+	parent-supply = <&VDD_MX_LEVEL>;
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 	status = "ok";
 };
 
 &gcc_pcie_1_gdsc {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	parent-supply = <&VDD_CX_LEVEL>;
 =======
 	compatible = "regulator-fixed";
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+	parent-supply = <&VDD_CX_LEVEL>;
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 	status = "ok";
 };
 
 &gcc_pcie_1_phy_gdsc {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	parent-supply = <&VDD_MX_LEVEL>;
 =======
 	compatible = "regulator-fixed";
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+	parent-supply = <&VDD_MX_LEVEL>;
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 	status = "ok";
 };
 
 &gcc_usb30_prim_gdsc {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	parent-supply = <&VDD_CX_LEVEL>;
 =======
 	compatible = "regulator-fixed";
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+	parent-supply = <&VDD_CX_LEVEL>;
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 	status = "ok";
 };
 
 &gcc_usb3_phy_gdsc {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	parent-supply = <&VDD_MX_LEVEL>;
 =======
 	compatible = "regulator-fixed";
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+	parent-supply = <&VDD_MX_LEVEL>;
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 	reg = <0x15000c 0x4>;
 	status = "ok";
 };
@@ -2001,14 +2137,21 @@
 #include "seraph-pinctrl.dtsi"
 #include "seraph-qupv3.dtsi"
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "ipcc-test-seraph.dtsi"
 =======
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+#include "ipcc-test-seraph.dtsi"
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 
 &qupv3_se11_2uart {
 	status = "ok";
 };
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 
 #include "seraph-stub-regulators.dtsi"
 
@@ -2027,6 +2170,7 @@
 		linux,cma-default;
 	};
 
+<<<<<<< HEAD
 	adsp_mem_heap: adsp_heap_region {
 		compatible = "shared-dma-pool";
 		alloc-ranges = <0x0 0x00000000 0x0 0xffffffff>;
@@ -2035,6 +2179,8 @@
 		size = <0x0 0xC00000>;
 	};
 
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 	/* cdsp eva shared memory */
 	cdsp_eva_mem: cdsp_eva_region {
 		compatible = "shared-dma-pool";
@@ -2043,6 +2189,7 @@
 		alignment = <0x0 0x400000>;
 		size = <0x0 0x400000>;
 	};
+<<<<<<< HEAD
 
 	qseecom_mem: qseecom_region {
 		compatible = "shared-dma-pool";
@@ -2067,12 +2214,15 @@
 		alignment = <0x0 0x400000>;
 		size = <0x0 0x1000000>;
 	};
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 };
 
 &firmware {
 	qcom_scm {
 		compatible = "qcom,scm";
 	};
+<<<<<<< HEAD
 
 	qcom_smcinvoke {
 		compatible = "qcom,smcinvoke";
@@ -2090,11 +2240,14 @@
 		compatible = "qcom,hdcp";
 		qcom,use-smcinvoke = <1>;
 	};
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 };
 
 
 #include "seraph-reserved-memory.dtsi"
 #include "seraph-dma-heaps.dtsi"
+<<<<<<< HEAD
 #include "seraph-coresight.dtsi"
 #include "seraph-debug.dtsi"
 #include "msm-arm-smmu-seraph.dtsi"
@@ -2102,3 +2255,7 @@
 #include "msm-rdbg.dtsi"
 =======
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+#include "msm-arm-smmu-seraph.dtsi"
+#include "seraph-usb.dtsi"
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)

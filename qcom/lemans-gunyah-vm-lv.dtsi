@@ -278,11 +278,14 @@
 
 		vdevices {
 			generate = "/hypervisor";
+<<<<<<< HEAD
 			minidump {
 				vdevice-type = "minidump";
 				push-compatible = "qcom,minidump_rm";
 				minidump_allowed;
 			};
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 
 			rm-rpc {
 				vdevice-type = "rm-rpc";
@@ -846,12 +849,19 @@
 				};
 			};
 
+<<<<<<< HEAD
 			/*i2c 0*/
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 			virtio-mmio@34 {
 				vdevice-type = "virtio-mmio";
 				generate = "/virtio-mmio";
 				peer-default;
+<<<<<<< HEAD
 				vqs-num = <0x1>;
+=======
+				vqs-num = <0x2>;
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 				push-compatible = "virtio,mmio";
 				sync-reset;
 				dma-coherent;
@@ -863,6 +873,7 @@
 				};
 			};
 
+<<<<<<< HEAD
 			virtio-mmio@35 {
 				vdevice-type = "virtio-mmio";
 				generate = "/virtio-mmio";
@@ -895,6 +906,8 @@
 				};
 			};
 
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 			swiotlb-shm {
 				vdevice-type = "shm";
 				generate = "/swiotlb";
@@ -902,7 +915,11 @@
 				peer-default;
 				dma_base = <0x0 0x1100000>;
 				memory {
+<<<<<<< HEAD
 					qcom,label = <0x140>;
+=======
+					qcom,label = <0x123>;
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 					#address-cells = <0x2>;
 					allocate-base;
 				};
@@ -988,6 +1005,7 @@
 		qcom,custom-bridge-size = <512>;
 		qcom,support-hypervisor;
 	};
+<<<<<<< HEAD
 
 	logbuf: qcom,logbuf-vendor-hooks {
 		compatible = "qcom,logbuf-vendor-hooks";
@@ -1053,4 +1071,6 @@
 			remote-vmids = <0>;
 		};
 	};
+=======
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 };

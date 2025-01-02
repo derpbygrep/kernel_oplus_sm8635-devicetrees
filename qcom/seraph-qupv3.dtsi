@@ -464,6 +464,7 @@
 		#size-cells = <1>;
 		clock-names = "m-ahb", "s-ahb";
 <<<<<<< HEAD
+<<<<<<< HEAD
 		clocks = <&gcc GCC_QUPV3_WRAP_2_M_AHB_CLK>,
 			<&gcc GCC_QUPV3_WRAP_2_S_AHB_CLK>;
 		iommus = <&apps_smmu 0x23 0x0>;
@@ -773,6 +774,10 @@
 =======
 		clocks = <&gcc GCC_QUPV3_WRAP_1_M_AHB_CLK>,
 			<&gcc GCC_QUPV3_WRAP_1_S_AHB_CLK>;
+=======
+		clocks = <&gcc GCC_QUPV3_WRAP_2_M_AHB_CLK>,
+			<&gcc GCC_QUPV3_WRAP_2_S_AHB_CLK>;
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 		ranges;
 		status = "ok";
 
@@ -782,6 +787,7 @@
 			compatible = "qcom,geni-debug-uart";
 			reg = <0xa94000 0x4000>;
 			reg-names = "se_phys";
+<<<<<<< HEAD
 <<<<<<< HEAD
 			interrupts = <GIC_SPI 375 IRQ_TYPE_LEVEL_HIGH>;
 			clock-names = "se";
@@ -796,6 +802,11 @@
 			clock-names = "se";
 			clocks = <&gcc GCC_QUPV3_WRAP1_S5_CLK>;
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+			interrupts = <GIC_SPI 375 IRQ_TYPE_LEVEL_HIGH>;
+			clock-names = "se";
+			clocks = <&gcc GCC_QUPV3_WRAP2_S5_CLK>;
+>>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 			pinctrl-names = "default", "sleep";
 			pinctrl-0 = <&qupv3_se11_2uart_tx_active>, <&qupv3_se11_2uart_rx_active>;
 			pinctrl-1 = <&qupv3_se11_2uart_sleep>;
