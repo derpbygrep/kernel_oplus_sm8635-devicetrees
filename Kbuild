@@ -35,6 +35,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 ifeq ($(CONFIG_ARCH_WAIPIO), y)
@@ -73,6 +74,15 @@ ifeq ($(CONFIG_ARCH_KALAMA), y)
 =======
 =======
 =======
+=======
+ifeq ($(CONFIG_TARGET), msm.neo_la)
+dtbo-$(CONFIG_ARCH_NEO) += display/neo-sde.dtbo \
+		display/neo_la-sde-no-display-overlay.dtbo \
+		display/neo_luna-v2-sde-display-idp-overlay.dtbo \
+		display/neo_luna-v2-sde-display-sg-idp-overlay.dtbo
+endif
+
+>>>>>>> 8e9ae26c (Commit label r2.0_00016.0 - DISPLAY.LA.4.0.r2-08100-lanai.0)
 ifneq ($(CONFIG_ARCH_QTI_VM), y)
 >>>>>>> 64220878 (ARM: dts: msm: Add trustedvm device tree files for Pineapple target)
 dtbo-$(CONFIG_ARCH_PINEAPPLE) += display/pineapple-sde.dtbo \
@@ -256,6 +266,10 @@ endif
 =======
 ifneq ($(CONFIG_ARCH_QTI_VM), y)
 dtbo-$(CONFIG_ARCH_VOLCANO) += display/volcano-sde.dtbo \
+		display/volcano-sde-fp1.dtbo \
+		display/volcano-sde-fp2.dtbo \
+		display/volcano-sde-fp3.dtbo \
+		display/volcano-sde-fp4.dtbo \
 		display/volcano-sde-display-atp-overlay.dtbo \
 		display/volcano-sde-display-idp-overlay.dtbo \
 		display/volcano-sde-display-idp-wcd9395-overlay.dtbo \
@@ -265,7 +279,9 @@ dtbo-$(CONFIG_ARCH_VOLCANO) += display/volcano-sde.dtbo \
 		display/volcano-sde-display-rumi-overlay.dtbo \
 		display/volcano-sde-display-iot-idp-wcd9395-overlay.dtbo \
 		display/volcano-sde-display-iot-mtp-overlay.dtbo \
-		display/volcano-sde-display-iot-mtp-wcd9395-overlay.dtbo
+		display/volcano-sde-display-iot-mtp-wcd9395-overlay.dtbo \
+		display/volcano-sde-display-iot-mtp-wcd9395-pm7550ba-overlay.dtbo \
+		display/volcano-sde-display-iot-mtp-wingmate-overlay.dtbo
 else
 dtbo-$(CONFIG_ARCH_VOLCANO) += display/trustedvm-volcano-sde-display-atp-overlay.dtbo \
 		  display/trustedvm-volcano-sde-display-idp-overlay.dtbo \
