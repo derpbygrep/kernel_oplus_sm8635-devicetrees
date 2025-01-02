@@ -1001,6 +1001,10 @@ dtbo-y += sdxpinn-cnss.dtbo
 >>>>>>> 0c178e27 (wlan: dts: Add CNSS device tree for sdxpinn)
 endif
 
+ifeq ($(CONFIG_ARCH_SDXKOVA),y)
+dtbo-y += sdxkova-cnss.dtbo
+endif
+
 ifeq ($(CONFIG_ARCH_PINEAPPLE),y)
 dtbo-y += pineapple-kiwi-cnss.dtbo
 dtbo-y += pineapplep-hdk-kiwi-cnss.dtbo
@@ -1030,6 +1034,7 @@ endif
 
 ifeq ($(CONFIG_ARCH_VOLCANO),y)
 dtbo-y += volcano-qca6750.dtbo
+dtbo-y += volcano-wcn6450.dtbo
 endif
 
 ifeq ($(CONFIG_ARCH_MONACO),y)
@@ -1061,8 +1066,15 @@ endif
 endif
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 28991781 (wlan: dts: Add support for lemans)
 =======
+=======
+ifeq ($(CONFIG_ARCH_NEO),y)
+dtbo-y += neo-kiwi-cnss.dtbo
+dtbo-y += neo_luna-v2-kiwi-cnss.dtbo
+endif
+>>>>>>> 48051da0 (Commit label r2.0_00016.0 - LA.VENDOR.14.3.0.r1-18500-lanai.QSSI15.0)
 
 ifeq ($(CONFIG_ARCH_ANORAK),y)
 dtbo-y += anorak-hsp-cnss.dtbo
@@ -1123,6 +1135,12 @@ endif
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ifeq ($(CONFIG_ARCH_QTI_VM),y)
+dtbo-y += lemans-gunyah-vm-cnss.dtbo
+endif
+>>>>>>> 48051da0 (Commit label r2.0_00016.0 - LA.VENDOR.14.3.0.r1-18500-lanai.QSSI15.0)
 
 ifeq ($(CONFIG_ARCH_SA525),y)
 dtbo-y += sa525m-cnss.dtbo
