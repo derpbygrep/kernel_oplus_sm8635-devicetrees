@@ -1112,11 +1112,15 @@ dtbo-y += pineapple-fingerprint.dtbo
 dtbo-y += sa8255p-vm-cnss.dtbo
 >>>>>>> 18503e46 (wlan: dts: autogvm: Add support for lemans)
 dtbo-y += sa8295p-vm-cnss.dtbo
+<<<<<<< HEAD
 >>>>>>> b64a1f34 (wlan: dts: autogvm: Add support for direwolf)
 dtbo-y += direwolf-vm-dual-cnss.dtbo
 <<<<<<< HEAD
 >>>>>>> 3aefbc09 (cnss2: Add cnss2 device tree for gen4 kernel 5.15)
 =======
+=======
+dtbo-y += direwolf-vm-cnss.dtbo
+>>>>>>> c38080f3 (Commit label r2.0_00017.0 - LA.VENDOR.14.3.0.r1-18900-lanai.QSSI15.0)
 dtbo-y += lemans-vm-cnss.dtbo
 <<<<<<< HEAD
 >>>>>>> 728131b8 (ARM: dts: msm: Add cnss dt on Lemans LV GVM)
