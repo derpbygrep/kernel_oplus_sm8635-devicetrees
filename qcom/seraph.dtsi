@@ -14,6 +14,7 @@
 #include <dt-bindings/mailbox/qcom-ipcc.h>
 #include <dt-bindings/regulator/qcom,rpmh-regulator-levels.h>
 #include <dt-bindings/spmi/spmi.h>
+<<<<<<< HEAD
 =======
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 =======
@@ -21,6 +22,8 @@
 #include <dt-bindings/mailbox/qcom-ipcc.h>
 #include <dt-bindings/regulator/qcom,rpmh-regulator-levels.h>
 >>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
+=======
+>>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
 
 / {
 	model = "Qualcomm Technologies, Inc. Seraph";
@@ -403,6 +406,7 @@
 	};
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	qcom,tmecom-qmp-client {
 		compatible = "qcom,tmecom-qmp-client";
 		mboxes = <&qmp_tme 0>;
@@ -435,6 +439,8 @@
 		status = "disabled";
 	};
 
+=======
+>>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
 	qcom,smp2p-adsp {
 		compatible = "qcom,smp2p";
 		qcom,smem = <443>, <429>;
@@ -573,6 +579,7 @@
 		priority = <0>;
 		mbox-desc-offset = <0x0>;
 		#mbox-cells = <1>;
+<<<<<<< HEAD
 	};
 
 	qcom,glink {
@@ -698,6 +705,8 @@
 		compatible = "qcom,smem";
 		memory-region = <&smem_mem>;
 		hwlocks = <&tcsr_mutex 3>;
+=======
+>>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
 	};
 
 >>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
@@ -828,6 +837,7 @@
 	};
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	cpu_pmu: cpu-pmu {
 		compatible = "arm,armv8-pmuv3";
 		interrupts = <GIC_PPI 7 IRQ_TYPE_LEVEL_HIGH>;
@@ -882,6 +892,8 @@
 
 	};
 
+=======
+>>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
 	qcom,chd {
 		compatible = "qcom,core-hang-detect";
 		label = "core";
@@ -892,8 +904,11 @@
 					<&CPU4 0x17840058 0x17840060>;
 	};
 
+<<<<<<< HEAD
 =======
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+>>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
 	apps_rsc: rsc@17a00000 {
 		label = "apps_rsc";
 		compatible = "qcom,rpmh-rsc";
@@ -1422,6 +1437,9 @@
 
 	evacc: clock-controller@a8f0000 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
 		compatible = "qcom,seraph-evacc", "syscon";
 		reg = <0xa8f0000 0x10000>;
 		reg-name = "cc_base";
@@ -1431,10 +1449,13 @@
 			 <&sleep_clk>, <&gcc GCC_EVA_AHB_CLK>;
 		clock-names = "bi_tcxo",
 			      "sleep_clk", "iface";
+<<<<<<< HEAD
 =======
 		compatible = "qcom,dummycc";
 		clock-output-names = "evacc_clocks";
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+>>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
 		#clock-cells = <1>;
 		#reset-cells = <1>;
 	};
@@ -1493,6 +1514,9 @@
 
 	lsrcc: clock-controller@a9f0000 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
 		compatible = "qcom,seraph-lsrcc", "syscon";
 		reg = <0xa9f0000 0x10000>;
 		reg-name = "cc_base";
@@ -1502,10 +1526,13 @@
 			 <&sleep_clk>, <&gcc GCC_LSR_AHB_CLK>;
 		clock-names = "bi_tcxo",
 			      "sleep_clk", "iface";
+<<<<<<< HEAD
 =======
 		compatible = "qcom,dummycc";
 		clock-output-names = "lsrcc_clocks";
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+>>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
 		#clock-cells = <1>;
 		#reset-cells = <1>;
 	};
@@ -1532,6 +1559,9 @@
 
 	videocc: clock-controller@aaf0000 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
 		compatible = "qcom,seraph-videocc", "syscon";
 		reg = <0xaaf0000 0x10000>;
 		reg-name = "cc_base";
@@ -1539,6 +1569,7 @@
 		vdd_mx-supply = <&VDD_MX_LEVEL>;
 		clocks = <&rpmhcc RPMH_CXO_CLK>, <&gcc GCC_VIDEO_AHB_CLK>;
 		clock-names = "bi_tcxo", "iface";
+<<<<<<< HEAD
 		#clock-cells = <1>;
 		#reset-cells = <1>;
 	};
@@ -1825,6 +1856,76 @@
 		#reset-cells = <1>;
 	};
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+		#clock-cells = <1>;
+		#reset-cells = <1>;
+	};
+
+	thermal_zones: thermal-zones {};
+
+	spmi_bus: spmi0_bus: qcom,spmi@c42d000 {
+		compatible = "qcom,spmi-pmic-arb";
+		reg = <0xc42d000 0x4000>,
+		      <0xc400000 0x3000>,
+		      <0xc500000 0x400000>,
+		      <0xc440000 0x80000>,
+		      <0xc4c0000 0x10000>;
+		reg-names = "cnfg", "core", "chnls", "obsrvr", "intr";
+		interrupts-extended = <&pdc 1 IRQ_TYPE_LEVEL_HIGH>;
+		interrupt-names = "periph_irq";
+		interrupt-controller;
+		#interrupt-cells = <4>;
+		#address-cells = <2>;
+		#size-cells = <0>;
+		cell-index = <0>;
+		qcom,channel = <0>;
+		qcom,ee = <0>;
+		qcom,bus-id = <0>;
+	};
+
+	spmi0_debug_bus: qcom,spmi-debug@11314000 {
+		compatible = "qcom,spmi-pmic-arb-debug";
+		reg = <0x11314000 0x60>, <0x221c8784 0x4>;
+		reg-names = "core", "fuse";
+		clock-names = "core_clk";
+		qcom,fuse-enable-bit = <18>;
+		#address-cells = <2>;
+		#size-cells = <0>;
+		depends-on-supply = <&spmi_bus>;
+
+		qcom,pmar2230-debug@0 {
+			compatible = "qcom,spmi-pmic";
+			reg = <0 SPMI_USID>;
+			#address-cells = <2>;
+			#size-cells = <0>;
+			qcom,can-sleep;
+		};
+
+		qcom,pmg1110-debug@a {
+			compatible = "qcom,spmi-pmic";
+			reg = <10 SPMI_USID>;
+			#address-cells = <2>;
+			#size-cells = <0>;
+			qcom,can-sleep;
+		};
+
+		qcom,pm8010-debug@c {
+			compatible = "qcom,spmi-pmic";
+			reg = <12 SPMI_USID>;
+			#address-cells = <2>;
+			#size-cells = <0>;
+			qcom,can-sleep;
+		};
+
+		qcom,pm8010-debug@d {
+			compatible = "qcom,spmi-pmic";
+			reg = <13 SPMI_USID>;
+			#address-cells = <2>;
+			#size-cells = <0>;
+			qcom,can-sleep;
+		};
+	};
+>>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
 };
 
 #include "pineapple-gdsc.dtsi"
@@ -1925,16 +2026,23 @@
 
 &eva_cc_mvs0_gdsc {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	parent-supply = <&eva_cc_mvs0c_gdsc>;
 	clocks = <&gcc GCC_EVA_AHB_CLK>;
 	clock-names = "ahb_clk";
 =======
 	compatible = "regulator-fixed";
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+	parent-supply = <&eva_cc_mvs0c_gdsc>;
+	clocks = <&gcc GCC_EVA_AHB_CLK>;
+	clock-names = "ahb_clk";
+>>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
 	status = "ok";
 };
 
 &eva_cc_mvs0c_gdsc {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	parent-supply = <&VDD_MM_LEVEL>;
 	clocks = <&gcc GCC_EVA_AHB_CLK>;
@@ -1942,6 +2050,11 @@
 =======
 	compatible = "regulator-fixed";
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+	parent-supply = <&VDD_MM_LEVEL>;
+	clocks = <&gcc GCC_EVA_AHB_CLK>;
+	clock-names = "ahb_clk";
+>>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
 	status = "ok";
 };
 
@@ -2055,16 +2168,23 @@
 
 &lsr_cc_lsr_noc_gdsc {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	parent-supply = <&VDD_MM_LEVEL>;
 	clocks = <&gcc GCC_LSR_AHB_CLK>;
 	clock-names = "ahb_clk";
 =======
 	compatible = "regulator-fixed";
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+	parent-supply = <&VDD_MM_LEVEL>;
+	clocks = <&gcc GCC_LSR_AHB_CLK>;
+	clock-names = "ahb_clk";
+>>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
 	status = "ok";
 };
 
 &lsr_cc_mvs0_gdsc {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	parent-supply = <&lsr_cc_mvs0c_gdsc>;
 	clocks = <&gcc GCC_LSR_AHB_CLK>;
@@ -2072,10 +2192,16 @@
 =======
 	compatible = "regulator-fixed";
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+	parent-supply = <&lsr_cc_mvs0c_gdsc>;
+	clocks = <&gcc GCC_LSR_AHB_CLK>;
+	clock-names = "ahb_clk";
+>>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
 	status = "ok";
 };
 
 &lsr_cc_mvs0c_gdsc {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	parent-supply = <&VDD_MM_LEVEL>;
 	clocks = <&gcc GCC_LSR_AHB_CLK>;
@@ -2083,10 +2209,16 @@
 =======
 	compatible = "regulator-fixed";
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+	parent-supply = <&VDD_MM_LEVEL>;
+	clocks = <&gcc GCC_LSR_AHB_CLK>;
+	clock-names = "ahb_clk";
+>>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
 	status = "ok";
 };
 
 &video_cc_mvs0_gdsc {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	parent-supply = <&video_cc_mvs0c_gdsc>;
 	reg = <0xaaf80a8 0x4>;
@@ -2096,32 +2228,51 @@
 	compatible = "regulator-fixed";
 	reg = <0xaaf80a8 0x4>;
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+	parent-supply = <&video_cc_mvs0c_gdsc>;
+	reg = <0xaaf80a8 0x4>;
+	clocks = <&gcc GCC_VIDEO_AHB_CLK>;
+	clock-names = "ahb_clk";
+>>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
 	status = "ok";
 };
 
 &video_cc_mvs0_vpp0_gdsc {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	parent-supply = <&VDD_MM_LEVEL>;
 	clocks = <&gcc GCC_VIDEO_AHB_CLK>;
 	clock-names = "ahb_clk";
 =======
 	compatible = "regulator-fixed";
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+	parent-supply = <&VDD_MM_LEVEL>;
+	clocks = <&gcc GCC_VIDEO_AHB_CLK>;
+	clock-names = "ahb_clk";
+>>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
 	status = "ok";
 };
 
 &video_cc_mvs0_vpp1_gdsc {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	parent-supply = <&VDD_MM_LEVEL>;
 	clocks = <&gcc GCC_VIDEO_AHB_CLK>;
 	clock-names = "ahb_clk";
 =======
 	compatible = "regulator-fixed";
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+	parent-supply = <&VDD_MM_LEVEL>;
+	clocks = <&gcc GCC_VIDEO_AHB_CLK>;
+	clock-names = "ahb_clk";
+>>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
 	status = "ok";
 };
 
 &video_cc_mvs0c_gdsc {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	parent-supply = <&VDD_MM_LEVEL>;
 	reg = <0xaaf814c 0x4>;
@@ -2131,6 +2282,12 @@
 	compatible = "regulator-fixed";
 	reg = <0xaaf814c 0x4>;
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+	parent-supply = <&VDD_MM_LEVEL>;
+	reg = <0xaaf814c 0x4>;
+	clocks = <&gcc GCC_VIDEO_AHB_CLK>;
+	clock-names = "ahb_clk";
+>>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
 	status = "ok";
 };
 

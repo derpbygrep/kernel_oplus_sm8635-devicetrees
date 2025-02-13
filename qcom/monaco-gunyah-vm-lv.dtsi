@@ -1,6 +1,9 @@
 #include <dt-bindings/interrupt-controller/arm-gic.h>
 #include <dt-bindings/arm/msm/qcom_dma_heap_dt_constants.h>
+<<<<<<< HEAD
 #include <dt-bindings/clock/qcom,gcc-monaco_auto.h>
+=======
+>>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
 
 / {
 	#address-cells = <0x2>;
@@ -8,10 +11,13 @@
 	qcom,msm-id = <606 0x10000>;
 	interrupt-parent = <&intc>;
 
+<<<<<<< HEAD
 	aliases {
 		hsuart1 = &qupv3_se3_2uart;
 	};
 
+=======
+>>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
 	chosen {
 		bootargs = "root=/dev/vda log_buf_len=1M console=hvc0 loglevel=4 trace_event=scmi:* tp_printk trace_buf_size=4M";
 	};
@@ -846,12 +852,19 @@
 				};
 			};
 
+<<<<<<< HEAD
 			/* i2c 0*/
+=======
+>>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
 			virtio-mmio@34 {
 				vdevice-type = "virtio-mmio";
 				generate = "/virtio-mmio";
 				peer-default;
+<<<<<<< HEAD
 				vqs-num = <0x1>;
+=======
+				vqs-num = <0x2>;
+>>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
 				push-compatible = "virtio,mmio";
 				sync-reset;
 				dma-coherent;
@@ -863,6 +876,7 @@
 				};
 			};
 
+<<<<<<< HEAD
 			virtio-mmio@35 {
 				vdevice-type = "virtio-mmio";
 				generate = "/virtio-mmio";
@@ -895,6 +909,8 @@
 				};
 			};
 
+=======
+>>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
 			swiotlb-shm {
 				vdevice-type = "shm";
 				generate = "/swiotlb";
@@ -902,7 +918,11 @@
 				peer-default;
 				dma_base = <0x0 0x1100000>;
 				memory {
+<<<<<<< HEAD
 					qcom,label = <0x140>;
+=======
+					qcom,label = <0x123>;
+>>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
 					#address-cells = <0x2>;
 					allocate-base;
 				};
@@ -936,6 +956,7 @@
 		#reset-cells = <1>;
 	};
 
+<<<<<<< HEAD
 	scmi {
 		compatible = "arm,scmi-virtio";
 		#address-cells = <1>;
@@ -958,6 +979,8 @@
 		};
 	};
 
+=======
+>>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
 	psci {
 		compatible = "arm,psci-1.0";
 		method = "smc";
@@ -998,6 +1021,7 @@
 			memory-region = <&qseecom_ta_mem>;
 		};
 	};
+<<<<<<< HEAD
 
 	qcom,mem-buf {
 		compatible = "qcom,mem-buf";
@@ -1066,4 +1090,6 @@
 
 	qcom,auto-suspend-disable;
 	status = "disabled";
+=======
+>>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
 };

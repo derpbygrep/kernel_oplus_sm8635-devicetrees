@@ -15,6 +15,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 
+<<<<<<< HEAD
 		pmar2230_tz: pmar2230-temp-alarm@a00 {
 			compatible = "qcom,spmi-temp-alarm";
 			reg = <0xa00>;
@@ -24,6 +25,8 @@
 			io-channel-names = "thermal";
 		};
 
+=======
+>>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
 		pmar2230_gpios: pinctrl@8800 {
 			compatible = "qcom,pmar2230-gpio";
 			reg = <0x8800>;
@@ -51,6 +54,7 @@
 			};
 		};
 
+<<<<<<< HEAD
 		pmar2230_rtc: rtc@6400 {
 			compatible = "qcom,pm5100-rtc";
 			reg = <0x6400>, <0x6500>;
@@ -93,6 +97,8 @@
 			qcom,num-lpg-channels = <1>;
 		};
 
+=======
+>>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
 		pmar2230_vadc: vadc@7900 {
 			compatible = "qcom,spmi-adc5-gen4";
 			reg = <0x7900>;
@@ -131,6 +137,7 @@
 		};
 	};
 };
+<<<<<<< HEAD
 
 &thermal_zones {
 	pmar2230_temp_alarm: pmar2230_tz {
@@ -160,3 +167,5 @@
 		};
 	};
 };
+=======
+>>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
