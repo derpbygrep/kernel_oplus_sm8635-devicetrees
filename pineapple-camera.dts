@@ -11,6 +11,10 @@
 / {
 	model = "Qualcomm Technologies, Inc. Pineapple SoC";
 	compatible = "qcom,pineapple";
+<<<<<<< HEAD
         qcom,msm-id = <557 0x10000>, <557 0x20000>, <577 0x10000>, <577 0x20000>;
+=======
+	qcom,msm-id = <557 0x10000>, <577 0x10000>, <696 0x10000>;
+>>>>>>> 2cd3723d (Commit label r2.0_00017.0 - CAMERA.LA.4.0.r2-07700-lanai.0)
 	qcom,board-id = <0 0>;
 };
