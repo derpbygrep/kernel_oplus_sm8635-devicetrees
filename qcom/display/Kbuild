@@ -53,7 +53,7 @@ dtbo-$(CONFIG_ARCH_KALAMA) += display/trustedvm-kalama-sde-display-mtp-overlay.d
 		  display/trustedvm-kalama-sde-display-atp-overlay.dtbo
 endif
 
-dtbo-y += oplus/Lexus-24881-display-cliffs-overlay.dtbo
+dtbo-$(CONFIG_LEXUS_DTB) += oplus/Lexus-24881-display-cliffs-overlay.dtbo
 
 ifneq ($(CONFIG_ARCH_QTI_VM), y)
 dtbo-$(CONFIG_ARCH_CLIFFS) += display/cliffs-sde.dtbo

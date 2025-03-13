@@ -49,7 +49,7 @@ dtbo-y += \
 endif
 
 #OPLUS_DTS_OVERLAY start
-dtbo-y += oplus/lexus-24881-audio-cliffs-overlay.dtbo
+dtbo-$(CONFIG_LEXUS_DTB) += oplus/lexus-24881-audio-cliffs-overlay.dtbo
 #OPLUS_DTS_OVERLAY end
 
 endif

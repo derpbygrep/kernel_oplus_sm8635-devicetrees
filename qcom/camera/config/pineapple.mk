@@ -13,16 +13,11 @@ endif
 dtbo-$(CONFIG_ARCH_CLIFFS)	+= cliffs-camera.dtbo
 
 #OPLUS_DTS_OVERLAY start
-dtbo-$(CONFIG_ARCH_CLIFFS)    += oplus/lexus-camera-overlay.dtbo \
+dtbo-$(CONFIG_LEXUS_DTB)    += oplus/lexus-camera-overlay.dtbo \
 # dtbo-$(CONFIG_ARCH_CLIFFS)	+= cliffs-camera-sensor-cdp.dtbo \
 # 								cliffs-camera-sensor-mtp.dtbo \
 # 								cliffs-camera-sensor-qrd.dtbo
 
-ifneq ($(CONFIG_OPLUS_DEVICE_DTBS), y)
-dtbo-$(CONFIG_ARCH_CLIFFS)	+= cliffs-camera-sensor-cdp.dtbo \
-								cliffs-camera-sensor-mtp.dtbo \
-								cliffs-camera-sensor-qrd.dtbo
-endif
 dtbo-$(CONFIG_ARCH_VOLCANO)     += volcano-camera.dtbo
 dtbo-$(CONFIG_ARCH_VOLCANO)     += volcano-camera-fp1-fp2.dtbo
 dtbo-$(CONFIG_ARCH_VOLCANO)     += volcano-camera-qrd.dtbo
