@@ -36,7 +36,7 @@ dtbo-$(CONFIG_ARCH_KALAMA) += display/kalama-sde.dtbo \
 		display/kalama-sde-display-atp-overlay.dtbo
 
 #PLUS_DTS_OVERLAY start
-dtbo-y += oplus/Lexus-24881-display-cliffs-overlay.dtbo
+dtbo-$(CONFIG_LEXUS_DTB) += oplus/Lexus-24881-display-cliffs-overlay.dtbo
 #PLUS_DTS_OVERLAY end
 
 else
