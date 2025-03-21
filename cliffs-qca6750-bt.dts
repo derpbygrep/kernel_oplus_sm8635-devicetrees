@@ -7,12 +7,16 @@
 	model = "Qualcomm Technologies, Inc. Cliffs SoC";
 	compatible = "qcom,cliffs";
 <<<<<<< HEAD
+<<<<<<< HEAD
 	qcom,msm-id = <614 0x10000>, <632 0x10000>;
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 	qcom,msm-id = <614 0x10000>, <632 0x10000>, <642 0x10000>, <643 0x10000>;
 >>>>>>> d4ff004e (BT_dts: add msm-id for new cliff bt hw)
+=======
+	qcom,msm-id = <614 0x10000>, <632 0x10000>, <642 0x10000>, <643 0x10000>, <700 0x10000>;
+>>>>>>> 2cc219f5 (Commit label r2.0_00018.0 - LA.VENDOR.14.3.0.r1-19600-lanai.QSSI15.0)
 	qcom,board-id = <1 0>, <8 0>, <11 0>, <21 0>, <21 1>;
 =======
 	qcom,board-id = <1 0>, <8 0>, <11 0>, <21 0>;
