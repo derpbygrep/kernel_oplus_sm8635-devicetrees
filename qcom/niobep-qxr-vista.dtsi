@@ -337,6 +337,9 @@
 };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 &redriver1 {
 	set-aux;
 };
@@ -345,8 +348,11 @@
 	set-aux;
 };
 
+<<<<<<< HEAD
 =======
 >>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
+=======
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 &msm_sdexpress {
 	status = "disabled";
 };
@@ -359,6 +365,9 @@
 	status = "disabled";
 };
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 
 /delete-node/ &nordic_ctrl_suspend;
 /delete-node/ &nordic_ctrl_active;
@@ -392,6 +401,7 @@
 			output-low;
 		};
 	};
+<<<<<<< HEAD
 
 	hall_gpio_default: hall_gpio_default {
 		mux {
@@ -448,6 +458,8 @@
 			output-low;
 		};
 	};
+=======
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 };
 
 &qupv3_se1_spi {
@@ -473,8 +485,11 @@
 		interrupts = <52 1>;
 	};
 };
+<<<<<<< HEAD
 =======
 #include "niobep-qxr.dtsi"
 >>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
 =======
 >>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
+=======
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)

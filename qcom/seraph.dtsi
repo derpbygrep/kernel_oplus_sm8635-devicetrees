@@ -37,10 +37,14 @@
 
 	chosen: chosen {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		bootargs = "kpti=0 log_buf_len=256K swiotlb=0 loop.max_part=7 loglevel=8 cpufreq.default_governor=performance";
 =======
 		bootargs = "kpti=0 log_buf_len=256K swiotlb=0 loop.max_part=7 loglevel=8";
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+		bootargs = "kpti=0 log_buf_len=256K swiotlb=0 loop.max_part=7 loglevel=8 cpufreq.default_governor=performance";
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 	};
 
 	reserved_memory: reserved-memory {};
@@ -99,6 +103,7 @@
 			capacity-dmips-mhz = <1024>;
 			dynamic-power-coefficient = <100>;
 			qcom,freq-domain = <&cpufreq_hw 0>;
+<<<<<<< HEAD
 =======
 			enable-method = "spin-table";
 			cpu-release-addr = <0x0 0x90000000>;
@@ -109,6 +114,8 @@
 			capacity-dmips-mhz = <1024>;
 			dynamic-power-coefficient = <100>;
 >>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
+=======
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 			L2_0: l2-cache {
 				compatible = "arm,arch-cache";
 				cache-level = <2>;
@@ -138,6 +145,7 @@
 			capacity-dmips-mhz = <1024>;
 			dynamic-power-coefficient = <100>;
 			qcom,freq-domain = <&cpufreq_hw 0>;
+<<<<<<< HEAD
 =======
 			enable-method = "spin-table";
 			cpu-release-addr = <0x0 0x90000000>;
@@ -148,6 +156,8 @@
 			capacity-dmips-mhz = <1024>;
 			dynamic-power-coefficient = <100>;
 >>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
+=======
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 		};
 
 		CPU2: cpu@200 {
@@ -167,6 +177,7 @@
 			capacity-dmips-mhz = <1024>;
 			dynamic-power-coefficient = <100>;
 			qcom,freq-domain = <&cpufreq_hw 0>;
+<<<<<<< HEAD
 =======
 			enable-method = "spin-table";
 			cpu-release-addr = <0x0 0x90000000>;
@@ -177,6 +188,8 @@
 			capacity-dmips-mhz = <1024>;
 			dynamic-power-coefficient = <100>;
 >>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
+=======
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 		};
 
 		CPU3: cpu@300 {
@@ -196,6 +209,7 @@
 			capacity-dmips-mhz = <1024>;
 			dynamic-power-coefficient = <100>;
 			qcom,freq-domain = <&cpufreq_hw 0>;
+<<<<<<< HEAD
 =======
 			enable-method = "spin-table";
 			cpu-release-addr = <0x0 0x90000000>;
@@ -206,6 +220,8 @@
 			capacity-dmips-mhz = <1024>;
 			dynamic-power-coefficient = <100>;
 >>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
+=======
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 		};
 
 		CPU4: cpu@400 {
@@ -225,6 +241,7 @@
 			capacity-dmips-mhz = <1956>;
 			dynamic-power-coefficient = <389>;
 			qcom,freq-domain = <&cpufreq_hw 1>;
+<<<<<<< HEAD
 =======
 			enable-method = "spin-table";
 			cpu-release-addr = <0x0 0x90000000>;
@@ -235,6 +252,8 @@
 			capacity-dmips-mhz = <1956>;
 			dynamic-power-coefficient = <389>;
 >>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
+=======
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 		};
 
 		cpu-map {
@@ -586,6 +605,7 @@
 		compatible = "qcom,glink";
 	};
 
+<<<<<<< HEAD
 	qcom,glinkpkt {
 		compatible = "qcom,glinkpkt";
 
@@ -710,6 +730,8 @@
 	};
 
 >>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
+=======
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 	intc: interrupt-controller@17200000 {
 		compatible = "arm,gic-v3";
 		#interrupt-cells = <3>;
@@ -756,6 +778,9 @@
 	};
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 	gic-interrupt-router {
 		compatible = "qcom,gic-intr-routing";
 		qcom,gic-class0-cpus = <&CPU0 &CPU1 &CPU2 &CPU3>;
@@ -773,10 +798,13 @@
 		memory-region = <&adsp_mem_heap>;
 	};
 
+<<<<<<< HEAD
 =======
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 =======
 >>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
+=======
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 	memtimer: timer@17420000 {
 		#address-cells = <1>;
 		#size-cells = <1>;
@@ -838,6 +866,9 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 	cpu_pmu: cpu-pmu {
 		compatible = "arm,armv8-pmuv3";
 		interrupts = <GIC_PPI 7 IRQ_TYPE_LEVEL_HIGH>;
@@ -892,8 +923,11 @@
 
 	};
 
+<<<<<<< HEAD
 =======
 >>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
+=======
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 	qcom,chd {
 		compatible = "qcom,core-hang-detect";
 		label = "core";
@@ -949,13 +983,19 @@
 				compatible = "qcom,bcm-voter";
 			};
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 
 			rpmhcc: clock-controller {
 				compatible = "qcom,seraph-rpmh-clk";
 				#clock-cells = <1>;
 			};
+<<<<<<< HEAD
 =======
 >>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
+=======
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 		};
 	};
 
@@ -1119,6 +1159,7 @@
 	};
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	qcom_tzlog: tz-log@14680720 {
 		compatible = "qcom,tz-log";
 		reg = <0x14680720 0x3000>;
@@ -1226,6 +1267,8 @@
 		qcom,primary;
 	};
 
+=======
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 	adsp_pas: remoteproc-adsp@06C00000 {
 		compatible = "qcom,seraph-adsp-pas";
 		reg = <0x06C00000 0x10000>;
@@ -1369,8 +1412,11 @@
 		};
 	};
 
+<<<<<<< HEAD
 =======
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 	clocks {
 		xo_board: xo_board {
 			compatible = "fixed-clock";
@@ -1409,6 +1455,7 @@
 	};
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	camcc: clock-controller@ade0000 {
 		compatible = "qcom,seraph-camcc", "syscon";
 		reg = <0xade0000 0x20000>;
@@ -1431,6 +1478,18 @@
 		compatible = "qcom,dummycc";
 		clock-output-names = "camcc_clocks";
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+	camcc: clock-controller@ade0000 {
+		compatible = "qcom,seraph-camcc", "syscon";
+		reg = <0xade0000 0x20000>;
+		reg-name = "cc_base";
+		vdd_cx-supply = <&VDD_CX_LEVEL>;
+		vdd_mx-supply = <&VDD_MX_LEVEL>;
+		clocks = <&rpmhcc RPMH_CXO_CLK>,
+			 <&sleep_clk>, <&gcc GCC_CAMERA_AHB_CLK>;
+		clock-names = "bi_tcxo",
+			      "sleep_clk", "iface";
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 		#clock-cells = <1>;
 		#reset-cells = <1>;
 	};
@@ -1493,6 +1552,9 @@
 
 	gpucc: clock-controller@3d90000 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 		compatible = "qcom,seraph-gpucc", "syscon";
 		reg = <0x3d90000 0x9800>;
 		reg-name = "cc_base";
@@ -1504,10 +1566,13 @@
 		clock-names = "bi_tcxo",
 			      "gpll0_out_main",
 			      "gpll0_out_main_div";
+<<<<<<< HEAD
 =======
 		compatible = "qcom,dummycc";
 		clock-output-names = "gpucc_clocks";
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 		#clock-cells = <1>;
 		#reset-cells = <1>;
 	};
@@ -1861,6 +1926,58 @@
 		#reset-cells = <1>;
 	};
 
+	apsscc: syscon@17aa0000 {
+		compatible = "syscon";
+		reg = <0x17aa0000 0x1c>;
+	};
+
+	mccc: syscon@240ba000 {
+		compatible = "syscon";
+		reg = <0x240ba000 0x54>;
+	};
+
+	gxclkctldebugcc: clock-controller@3d64000 {
+		compatible = "syscon";
+		reg = <0x3d64000 0x5000>;
+	};
+
+	debugcc: clock-controller@0 {
+		compatible = "qcom,seraph-debugcc";
+		qcom,apsscc = <&apsscc>;
+		qcom,camcc = <&camcc>;
+		qcom,evacc = <&evacc>;
+		qcom,gcc = <&gcc>;
+		qcom,gpucc = <&gpucc>;
+		qcom,gxclkctl = <&gxclkctldebugcc>;
+		qcom,lsrcc = <&lsrcc>;
+		qcom,videocc = <&videocc>;
+		qcom,mccc = <&mccc>;
+		clocks = <&rpmhcc RPMH_CXO_CLK>, <&camcc 0>,
+			 <&evacc 0>, <&gcc 0>, <&gpucc 0>,
+			 <&lsrcc 0>, <&videocc 0>;
+		clock-names = "xo_clk_src", "camcc",
+			      "evacc", "gcc", "gpucc",
+			      "lsrcc", "videocc";
+		#clock-cells = <1>;
+	};
+
+	cpufreq_hw: qcom,cpufreq-hw {
+		compatible = "qcom,cpufreq-epss";
+		reg = <0x17d91000 0x1000>, <0x17d92000 0x1000>;
+		reg-names = "freq-domain0", "freq-domain1";
+		clocks = <&rpmhcc RPMH_CXO_CLK>, <&gcc GCC_GPLL0>;
+		clock-names = "xo", "alternate";
+		interrupts = <GIC_SPI 30 IRQ_TYPE_LEVEL_HIGH>,
+			<GIC_SPI 31 IRQ_TYPE_LEVEL_HIGH>;
+		interrupt-names = "dcvsh0_int", "dcvsh1_int";
+		#freq-domain-cells = <1>;
+	};
+
+	qcom,cpufreq-hw-debug {
+		compatible = "qcom,cpufreq-hw-epss-debug";
+		qcom,freq-hw-domain = <&cpufreq_hw 0>, <&cpufreq_hw 1>;
+	};
+
 	thermal_zones: thermal-zones {};
 
 	spmi_bus: spmi0_bus: qcom,spmi@c42d000 {
@@ -1932,16 +2049,6 @@
 
 &cam_cc_bps_gdsc {
 <<<<<<< HEAD
-	parent-supply = <&cam_cc_titan_top_gdsc>;
-	clocks = <&gcc GCC_CAMERA_AHB_CLK>;
-	clock-names = "ahb_clk";
-=======
-	compatible = "regulator-fixed";
->>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
-	status = "ok";
-};
-
-&cam_cc_ife_0_gdsc {
 <<<<<<< HEAD
 	parent-supply = <&cam_cc_titan_top_gdsc>;
 	clocks = <&gcc GCC_CAMERA_AHB_CLK>;
@@ -1949,76 +2056,134 @@
 =======
 	compatible = "regulator-fixed";
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+	parent-supply = <&cam_cc_titan_top_gdsc>;
+	clocks = <&gcc GCC_CAMERA_AHB_CLK>;
+	clock-names = "ahb_clk";
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
+	status = "ok";
+};
+
+&cam_cc_ife_0_gdsc {
+<<<<<<< HEAD
+<<<<<<< HEAD
+	parent-supply = <&cam_cc_titan_top_gdsc>;
+	clocks = <&gcc GCC_CAMERA_AHB_CLK>;
+	clock-names = "ahb_clk";
+=======
+	compatible = "regulator-fixed";
+>>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+	parent-supply = <&cam_cc_titan_top_gdsc>;
+	clocks = <&gcc GCC_CAMERA_AHB_CLK>;
+	clock-names = "ahb_clk";
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 	qcom,support-hw-trigger;
 	status = "ok";
 };
 
 &cam_cc_ife_1_gdsc {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	parent-supply = <&cam_cc_titan_top_gdsc>;
 	clocks = <&gcc GCC_CAMERA_AHB_CLK>;
 	clock-names = "ahb_clk";
 =======
 	compatible = "regulator-fixed";
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+	parent-supply = <&cam_cc_titan_top_gdsc>;
+	clocks = <&gcc GCC_CAMERA_AHB_CLK>;
+	clock-names = "ahb_clk";
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 	qcom,support-hw-trigger;
 	status = "ok";
 };
 
 &cam_cc_ife_lite_0_gdsc {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	parent-supply = <&cam_cc_titan_top_gdsc>;
 	clocks = <&gcc GCC_CAMERA_AHB_CLK>;
 	clock-names = "ahb_clk";
 =======
 	compatible = "regulator-fixed";
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+	parent-supply = <&cam_cc_titan_top_gdsc>;
+	clocks = <&gcc GCC_CAMERA_AHB_CLK>;
+	clock-names = "ahb_clk";
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 	status = "ok";
 };
 
 &cam_cc_ife_lite_1_gdsc {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	parent-supply = <&cam_cc_titan_top_gdsc>;
 	clocks = <&gcc GCC_CAMERA_AHB_CLK>;
 	clock-names = "ahb_clk";
 =======
 	compatible = "regulator-fixed";
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+	parent-supply = <&cam_cc_titan_top_gdsc>;
+	clocks = <&gcc GCC_CAMERA_AHB_CLK>;
+	clock-names = "ahb_clk";
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 	status = "ok";
 };
 
 &cam_cc_ife_lite_2_gdsc {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	parent-supply = <&cam_cc_titan_top_gdsc>;
 	clocks = <&gcc GCC_CAMERA_AHB_CLK>;
 	clock-names = "ahb_clk";
 =======
 	compatible = "regulator-fixed";
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+	parent-supply = <&cam_cc_titan_top_gdsc>;
+	clocks = <&gcc GCC_CAMERA_AHB_CLK>;
+	clock-names = "ahb_clk";
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 	status = "ok";
 };
 
 &cam_cc_ipe_0_gdsc {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	parent-supply = <&cam_cc_titan_top_gdsc>;
 	clocks = <&gcc GCC_CAMERA_AHB_CLK>;
 	clock-names = "ahb_clk";
 =======
 	compatible = "regulator-fixed";
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+	parent-supply = <&cam_cc_titan_top_gdsc>;
+	clocks = <&gcc GCC_CAMERA_AHB_CLK>;
+	clock-names = "ahb_clk";
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 	status = "ok";
 };
 
 &cam_cc_titan_top_gdsc {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 	parent-supply = <&VDD_CX_LEVEL>;
 	clocks = <&gcc GCC_CAMERA_AHB_CLK>;
 	clock-names = "ahb_clk";
 	interconnects = <&mmss_noc MASTER_CAMNOC_HF &mmss_noc SLAVE_MNOC_HF_MEM_NOC>;
 	interconnect-names = "mmnoc";
+<<<<<<< HEAD
 =======
 	compatible = "regulator-fixed";
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 	reg = <0xadf4028 0x4>;
 	qcom,support-hw-trigger;
 	status = "ok";
@@ -2143,6 +2308,7 @@
 
 &gpu_cc_cx_gdsc {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	reg = <0x3d99080 0x4>;
 	clocks = <&gcc GCC_GPU_CFG_AHB_CLK>;
 	clock-names = "ahb_clk";
@@ -2153,16 +2319,29 @@
 	compatible = "regulator-fixed";
 	reg = <0x3d99080 0x4>;
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+	reg = <0x3d99080 0x4>;
+	clocks = <&gcc GCC_GPU_CFG_AHB_CLK>;
+	clock-names = "ahb_clk";
+	parent-supply = <&VDD_CX_LEVEL>;
+	proxy-supply = <&gpu_cc_cx_gdsc>;
+	qcom,proxy-consumer-enable;
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 	status = "ok";
 };
 
 &gx_clkctl_gx_gdsc {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	reg-supply = <&gpu_cc_cx_gdsc>;
 	parent-supply = <&VDD_GFX_LEVEL>;
 =======
 	compatible = "regulator-fixed";
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+	reg-supply = <&gpu_cc_cx_gdsc>;
+	parent-supply = <&VDD_GFX_LEVEL>;
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 	status = "ok";
 };
 
@@ -2328,6 +2507,9 @@
 	};
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 	adsp_mem_heap: adsp_heap_region {
 		compatible = "shared-dma-pool";
 		alloc-ranges = <0x0 0x00000000 0x0 0xffffffff>;
@@ -2336,8 +2518,11 @@
 		size = <0x0 0xC00000>;
 	};
 
+<<<<<<< HEAD
 =======
 >>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
+=======
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 	/* cdsp eva shared memory */
 	cdsp_eva_mem: cdsp_eva_region {
 		compatible = "shared-dma-pool";
@@ -2405,6 +2590,9 @@
 #include "seraph-reserved-memory.dtsi"
 #include "seraph-dma-heaps.dtsi"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 #include "seraph-coresight.dtsi"
 #include "seraph-debug.dtsi"
 #include "msm-arm-smmu-seraph.dtsi"

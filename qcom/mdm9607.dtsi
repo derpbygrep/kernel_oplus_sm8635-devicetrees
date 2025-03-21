@@ -870,12 +870,15 @@
 		};
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		restart_reason@65c {
 			compatible = "qcom,msm-imem-restart_reason";
 			reg = <0x65c 0x4>;
 		};
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
+=======
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 
 		boot_stats@6b0 {
 			compatible = "qcom,msm-imem-boot_stats";
@@ -895,6 +898,9 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 	qcom,msm-imem@860065C {
 		compatible = "qcom,msm-imem-restart_reason";
 		reg = <0x860065C 0x4>;
@@ -907,6 +913,7 @@
 		};
 	};
 
+<<<<<<< HEAD
 	reboot_reason {
 		compatible = "qcom,imem-reboot-reason";
 		nvmem-cells = <&restart_reason>;
@@ -916,8 +923,12 @@
 =======
 >>>>>>> 8e7d5641 (Commit label r2.0_00012.0 - KERNEL.PLATFORM.3.0.r1-10700-kernel.0)
 =======
+=======
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 	reboot_reason {
-		compatible = "qcom,reboot-reason";
+		compatible = "qcom,imem-reboot-reason";
+		nvmem-cells = <&restart_reason>;
+		nvmem-cell-names = "restart_reason";
 	};
 
 >>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
@@ -1041,6 +1052,7 @@
 			mask = <0x1>;
 			vote = <70>;
 		};
+<<<<<<< HEAD
 =======
 	usb_hsusb: hsusb@78d9000 {
 		compatible = "qcom,msm-hsusb";
@@ -1159,6 +1171,8 @@
 
 		status = "disabled";
 >>>>>>> 93fbf476 (Commit label r2.0_00016.0 - KERNEL.PLATFORM.3.0.r1-11300-kernel.0)
+=======
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 	};
 
 	qcom_qseecom: qseecom@88000000 {
@@ -1273,6 +1287,9 @@
 
 		status = "disabled";
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
 		qos0 {
 			mask = <0x1>;
 			vote = <70>;
