@@ -7,8 +7,13 @@
 / {
 	model = "Qualcomm Technologies, Inc. Cliffs SVM MTP";
 	compatible = "qcom,cliffs-mtp", "qcom,cliffs", "qcom,mtp";
+<<<<<<< HEAD
 	qcom,msm-id = <614 0x10000>, <632 0x10000>, <642 0x10000>, <643 0x10000>;
 <<<<<<< HEAD
+=======
+	qcom,msm-id = <614 0x10000>, <632 0x10000>, <642 0x10000>, <643 0x10000>,
+			<700 0x10000>;
+>>>>>>> 12866311 (Commit label r2.0_00018.0 - DISPLAY.LA.4.0.r2-08400-lanai.0)
 	qcom,board-id = <8 0>, <8 1>, <8 2>, <8 3>, <8 4>;
 =======
 	qcom,board-id = <8 0>, <8 1>, <8 2>;
