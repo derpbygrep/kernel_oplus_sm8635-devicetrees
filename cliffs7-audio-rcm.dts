@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	qcom,msm-id = <632 0x10000>, <643 0x10000>;
 =======
 	qcom,msm-id = <632 0x10000>;
@@ -22,6 +23,9 @@
 =======
 	qcom,msm-id = <632 0x10000>, <643 0x10000>;
 >>>>>>> 46c92807 (ARM: dts: qcom: Add support for APQ msm-id's on Palawan)
+=======
+	qcom,msm-id = <632 0x10000>, <643 0x10000>, <700 0x10000>;
+>>>>>>> 879bb69c (Commit label r2.0_00018.0 - AUDIO.LA.9.0.r1-08300-lanai.0)
 	qcom,board-id = <21 0>, <21 1>, <21 2>, <21 3>;
 };
 
