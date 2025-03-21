@@ -15,6 +15,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 vendor := $(srctree)/$(src)
 
 ifneq "$(wildcard $(vendor)/qcom)" ""
@@ -101,9 +102,17 @@ KBUILD_OPTIONS += MODNAME=audio-devicetree
 =======
 
 SYNX_DEVICETREE_ROOT=$(KERNEL_SRC)/$(M)
+=======
+CUR_MKFILE=$(abspath $(lastword $(MAKEFILE_LIST)))
+SYNX_DEVICETREE_ROOT=$(dir $(CUR_MKFILE))
+ifneq ($(KERNAL_HEADER_DIR),)
+SYNX_KERNEL_ROOT=$(KERNAL_HEADER_DIR)
+else
+>>>>>>> d6d92ed2 (Commit label r2.0_00018.0 - LA.VENDOR.14.3.0.r1-19600-lanai.QSSI15.0)
 SYNX_KERNEL_ROOT=$(SYNX_DEVICETREE_ROOT)/../../opensource/synx-kernel
+endif
 
-KBUILD_OPTIONS += SYNX_DEVICETREE_ROOT=$(KERNEL_SRC)/$(M)
+KBUILD_OPTIONS += SYNX_DEVICETREE_ROOT=$(SYNX_DEVICETREE_ROOT)
 KBUILD_OPTIONS += KBUILD_DTC_INCLUDE=$(SYNX_KERNEL_ROOT)
 KBUILD_OPTIONS += KBUILD_EXTMOD_DTS=.
 KBUILD_OPTIONS += KERNEL_ROOT=$(ROOT_DIR)/$(KERNEL_DIR)
