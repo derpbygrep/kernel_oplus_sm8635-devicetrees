@@ -1,5 +1,8 @@
 #include "niobep-qxr-vista.dtsi"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b62f786b (Commit label r2.0_00020.0 - KERNEL.PLATFORM.3.0.r1-11800-kernel.0)
 
 &tlmm {
 
@@ -53,5 +56,8 @@
 	pinctrl-0 = <&qupv3_se8_spi_miso_active>, <&qupv3_se8_spi_clk_active>;
 	pinctrl-1 = <&qupv3_se8_spi_sleep>;
 };
+<<<<<<< HEAD
 =======
 >>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
+=======
+>>>>>>> b62f786b (Commit label r2.0_00020.0 - KERNEL.PLATFORM.3.0.r1-11800-kernel.0)

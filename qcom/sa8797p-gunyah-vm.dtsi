@@ -48,6 +48,9 @@
 			size = <0x0 0x1000000>;
 		};
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b62f786b (Commit label r2.0_00020.0 - KERNEL.PLATFORM.3.0.r1-11800-kernel.0)
 
 		glink_cma_mem1: glink-cma-region@1 {
 			no-map;
@@ -58,8 +61,11 @@
 			no-map;
 			qcom,label = <0x61>;
 		};
+<<<<<<< HEAD
 =======
 >>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
+=======
+>>>>>>> b62f786b (Commit label r2.0_00020.0 - KERNEL.PLATFORM.3.0.r1-11800-kernel.0)
 	};
 
 	cpus {
@@ -1234,6 +1240,9 @@
 		db-off;
 	};
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b62f786b (Commit label r2.0_00020.0 - KERNEL.PLATFORM.3.0.r1-11800-kernel.0)
 
 	scmi {
 		compatible = "arm,scmi-virtio";
@@ -1256,10 +1265,13 @@
 			#reset-cells = <1>;
 		};
 	};
+<<<<<<< HEAD
 =======
 >>>>>>> e7103c6d (Commit label r2.0_00017.0 - KERNEL.PLATFORM.3.0.r1-11500-kernel.0)
 =======
 >>>>>>> 88d7257d (Commit label r2.0_00018.0 - KERNEL.PLATFORM.3.0.r1-11700-kernel.0)
+=======
+>>>>>>> b62f786b (Commit label r2.0_00020.0 - KERNEL.PLATFORM.3.0.r1-11800-kernel.0)
 };
 
 / {
