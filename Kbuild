@@ -196,7 +196,11 @@ dtbo-y += pineapple/pineapple-mmrm-test-v2.dtbo
 =======
 dtbo-y += kalama-aim300-cnss.dtbo
 dtbo-y += kalama-rb5-gen2-cnss.dtbo
+<<<<<<< HEAD
 >>>>>>> 7d142b67 (Commit label r2.0_00012.0 - LA.VENDOR.14.3.0.r1-17600-lanai.QSSI15.0)
+=======
+dtbo-y += kalama-iot-vc-cnss.dtbo
+>>>>>>> 5f3c0cf8 (Commit label r2.0_00020.0 - LA.VENDOR.14.3.0.r1-20200-lanai.QSSI15.0)
 endif
 
 <<<<<<< HEAD
@@ -1081,8 +1085,12 @@ dtbo-y += anorak-hsp-cnss.dtbo
 dtbo-y += anorak-kiwi-cnss.dtbo
 endif
 
+<<<<<<< HEAD
 >>>>>>> 7d142b67 (Commit label r2.0_00012.0 - LA.VENDOR.14.3.0.r1-17600-lanai.QSSI15.0)
 ifeq ($(CONFIG_QTI_QUIN_GVM),y)
+=======
+ifeq (y, $(filter y, $(CONFIG_ARCH_QTI_VM) $(CONFIG_QTI_QUIN_GVM)))
+>>>>>>> 5f3c0cf8 (Commit label r2.0_00020.0 - LA.VENDOR.14.3.0.r1-20200-lanai.QSSI15.0)
 dtbo-y += sa8155p-vm-cnss.dtbo
 <<<<<<< HEAD
 >>>>>>> 60334255 (wlan: dts: autogvm: Add support for hana-au)
@@ -1148,6 +1156,10 @@ endif
 
 ifeq ($(CONFIG_ARCH_SA525),y)
 dtbo-y += sa525m-cnss.dtbo
+endif
+
+ifeq ($(TARGET_SUPPORT),sa510m)
+dtbo-y += sa510m-cnss.dtbo
 endif
 
 ifeq ($(CONFIG_ARCH_KONA),y)
