@@ -161,17 +161,14 @@ key_vol_up {
 
 &pmxr2230_switch0 {
 	qcom,led-mask = <9>; /* Channels 1 & 4 */
-	qcom,symmetry-en;
 };
 
 &pmxr2230_switch1 {
 	qcom,led-mask = <6>; /* Channels 2 & 3 */
-	qcom,symmetry-en;
 };
 
 &pmxr2230_switch2 {
 	qcom,led-mask = <15>; /* All Channels */
-	qcom,symmetry-en;
 };
 
 &pmxr2230_flash {
@@ -523,7 +520,7 @@ key_vol_up {
 			};
 
 			L5M: pm8010m_l5: regulator@4400 {
-				reg = <0x4300>;
+				reg = <0x4400>;
 				regulator-name = "pm8010m_l5";
 				regulator-min-microvolt = <1504000>;
 				regulator-max-microvolt = <3544000>;

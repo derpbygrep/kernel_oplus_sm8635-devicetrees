@@ -806,6 +806,21 @@
 				hysteresis = <5000>;
 				type = "passive";
 			};
+			cpu7_horae1: cpu7-horae1-cfg {
+				temperature = <75000>;
+				hysteresis = <5000>;
+				type = "passive";
+			};
+			cpu7_horae2: cpu7-horae2-cfg {
+				temperature = <85000>;
+				hysteresis = <5000>;
+				type = "passive";
+			};
+			cpu7_horae3: cpu7-horae3-cfg {
+				temperature = <95000>;
+				hysteresis = <5000>;
+				type = "passive";
+			};
 		};
 
 		cooling-maps {

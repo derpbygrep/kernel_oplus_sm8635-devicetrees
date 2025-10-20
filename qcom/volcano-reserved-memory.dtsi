@@ -122,9 +122,10 @@
 		reg = <0x0 0x99280000 0x0 0x80000>;
 	};
 
-	adspslpi_mem: adspslpi_region@99300000 {
+	/* PIL:0x8AC00000 to 0x9F2FFFFF, chang adsp addr from 0x99300000 to 0x9f300000 */
+	adspslpi_mem: adspslpi_region@9f300000 {
 		no-map;
-		reg = <0x0 0x99300000 0x0 0x2800000>;
+		reg = <0x0 0x9f300000 0x0 0x3000000>;
 	};
 
 	wpss_mem: wpss_region@9bb00000 {

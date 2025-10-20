@@ -1,5 +1,1 @@
 #include "volcano-qrd.dtsi"
-
-&pcie0 {
-	status = "disabled";
-};

@@ -17,32 +17,34 @@ endif
 
 ifeq ($(CONFIG_ARCH_PINEAPPLE), y)
 dtbo-y += pineapple-audio.dtbo \
-                 pineapple-audio-cdp.dtbo \
-                 pineapple-audio-wsa883x-cdp.dtbo \
-                 pineapple-audio-cdp-nfc.dtbo \
-                 pineapple-audio-mtp.dtbo \
-                 pineapple-audio-mtp-nfc.dtbo \
-                 pineapple-audio-qrd.dtbo \
-                 pineapple-audio-atp.dtbo \
-                 pineapple-audio-rumi.dtbo \
-                 pineapple-audio-rcm.dtbo \
-                 pineapple-audio-qrd-sku2.dtbo \
-                 pineapplep-audio-hdk.dtbo \
-                 pineapplep-audio-aim500.dtbo \
-                 pineapplep-audio-aim500-v2.dtbo \
-                 cliffs-audio.dtbo \
-                 cliffs-audio-mtp.dtbo \
-                 cliffs7-audio-mtp.dtbo \
-                 cliffs-audio-qrd.dtbo \
-                 cliffs7-audio-qrd.dtbo \
-                 cliffs-audio-cdp.dtbo \
-                 cliffs7-audio-cdp.dtbo \
-                 cliffs-audio-rcm.dtbo \
-                 cliffs7-audio-rcm.dtbo \
-                 cliffs-audio-mtp-wcd9395.dtbo \
-                 cliffs7-audio-mtp-wcd9395.dtbo \
-                 cliffs-audio-atp.dtbo \
-                 cliffs7-audio-atp.dtbo
+                  cliffs-audio.dtbo \
+#                 pineapple-audio-cdp.dtbo \
+#                 pineapple-audio-wsa883x-cdp.dtbo \
+#                 pineapple-audio-cdp-nfc.dtbo \
+#                 pineapple-audio-mtp.dtbo \
+#                 pineapple-audio-mtp-nfc.dtbo \
+#                 pineapple-audio-qrd.dtbo \
+#                 pineapple-audio-atp.dtbo \
+#                 pineapple-audio-rumi.dtbo \
+#                 pineapple-audio-rcm.dtbo \
+#                 pineapple-audio-qrd-sku2.dtbo
+#                 pineapplep-audio-hdk.dtbo \
+#                 pineapplep-audio-aim500.dtbo \
+#                 cliffs-audio-mtp.dtbo \
+#                 cliffs7-audio-mtp.dtbo \
+#                 cliffs-audio-qrd.dtbo \
+#                 cliffs7-audio-qrd.dtbo \
+#                 cliffs-audio-cdp.dtbo \
+#                 cliffs7-audio-cdp.dtbo \
+#                 cliffs-audio-rcm.dtbo \
+#                 cliffs7-audio-rcm.dtbo \
+#                 cliffs-audio-mtp-wcd9395.dtbo \
+#                 cliffs7-audio-mtp-wcd9395.dtbo \
+#                 cliffs-audio-atp.dtbo \
+#                 cliffs7-audio-atp.dtbo
+#OPLUS_DTS_OVERLAY start
+dtbo-y += oplus/lexus-24881-audio-cliffs-overlay.dtbo
+#OPLUS_DTS_OVERLAY end
 endif
 
 ifeq ($(CONFIG_ARCH_VOLCANO), y)
@@ -51,12 +53,8 @@ dtbo-y += volcano-audio.dtbo \
 		volcano-audio-mtp.dtbo \
 		volcano-audio-qrd.dtbo \
 		volcano-audio-atp.dtbo \
-                volcano-audio-cdp-wcn6450.dtbo \
-                volcano-audio-mtp-wcn6450.dtbo \
 		volcano-audio-mtp-wcd9395.dtbo \
 		volcano-audio-cdp-wcd9395.dtbo \
-                volcano-audio-cdp-wcd9395-wcn6450.dtbo \
-                volcano-audio-mtp-wcd9395-wcn6450.dtbo \
 		volcano6i-audio-idp-wcd9395-ganges.dtbo \
 		volcano6i-audio-idp-wcd9395-brahma.dtbo \
 		volcano6i-audio-mtp-wcd9395-ganges.dtbo \
@@ -67,6 +65,8 @@ dtbo-y += volcano-audio.dtbo \
 		volcano6i-audio-mtp-wcd9395-moselle.dtbo \
 		volcano6i-audio-mtp-moselle-wingmate.dtbo \
 		volcano6i-audio-qrd-moselle.dtbo
+#OPLUS_DTS_OVERLAY start
+#OPLUS_DTS_OVERLAY end
 endif
 
 ifeq ($(CONFIG_ARCH_PITTI), y)

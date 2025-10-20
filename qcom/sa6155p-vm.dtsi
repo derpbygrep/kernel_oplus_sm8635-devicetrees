@@ -259,7 +259,8 @@
 		compatible = "qcom,msm-rng";
 		reg = <0x793000 0x1000>;
 		qcom,no-qrng-config;
-		qcom,no-clock-support;
+		clocks = <&gcc GCC_PRNG_AHB_CLK>;
+		clock-names = "km_clk_src";
 	};
 
 	pdc: interrupt-controller@b220000 {
@@ -423,11 +424,6 @@
 &qupv3_2 {
 	qcom,iommu-dma = "bypass";
 	status = "disabled";
-};
-
-&scc {
-	vdd_cx-supply = <&VDD_CX_LEVEL>;
-	status = "ok";
 };
 
 &slpi_tlmm {

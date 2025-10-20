@@ -20,7 +20,7 @@
 		reg = <0x100ff000 0x1000>,
 		      <0x10080000 0x18000>;
 
-		qcom,transaction_timeout = <0x80>;
+		qcom,transaction_timeout = <0>;
 
 		reg-names = "dcc-base", "dcc-ram-base";
 		dcc-ram-offset = <0>;
@@ -3315,7 +3315,6 @@
 				<DCC_WRITE 0x179811d4 0x13 0>,
 				<DCC_READ 0x179811d4 1 0>,
 				<DCC_READ 0x179811d8 1 0>,
-				<DCC_READ 0x1740003C 1 0>,
 				<DCC_READ 0x17600238 1 0>,
 				<DCC_READ 0x1760043C 1 0>,
 				<DCC_READ 0x17600440 1 0>,
@@ -4546,6 +4545,8 @@
 				<DCC_READ 0x03D9103C 1 0>,
 				<DCC_READ 0x03D9E0C8 1 0>,
 				<DCC_READ 0xABE0028 1 0>,
+				<DCC_READ 0x17BA3C94 1 0>,
+				<DCC_READ 0x17B93C94 1 0>,
 				<DCC_READ 0xAAE0028 1 0>;
 		};
 	};

@@ -12,7 +12,6 @@
 				pins = "gpio7";
 				output-high;
 				bias-pull-up;
-				power-source = <1>; /* 0: 3.3v, 1: 1.8v */
 			};
 		};
 
@@ -26,7 +25,6 @@
 				pins = "gpio7";
 				output-low;
 				bias-pull-down;
-				power-source = <1>; /* 0: 3.3v, 1: 1.8v */
 			};
 		};
 	};
@@ -109,7 +107,6 @@
 			qcom,vdd-wlan-vh-config = <1900000 1900000 450000 0 0>;
 
 			qcom,wlan-ramdump-dynamic = <0x600000>;
-			qcom,no-bwscale;
 		};
 	};
 };

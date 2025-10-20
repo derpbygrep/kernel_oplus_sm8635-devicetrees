@@ -93,7 +93,7 @@
 };
 
 &L1B {
-	status = "disabled";
+	status = "ok";
 };
 
 &regulator_ocp_notifier {
