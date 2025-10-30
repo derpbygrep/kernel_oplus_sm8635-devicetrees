@@ -1,12 +1,12 @@
 dtbo-$(CONFIG_ARCH_PINEAPPLE)	:= pineapple-camera.dtbo
-ifneq ($(CONFIG_OPLUS_DEVICE_DTBS), y)
-dtbo-$(CONFIG_ARCH_PINEAPPLE)	+= pineapple-camera-v2.dtbo \
-									pineapple-camera-sensor-cdp.dtbo \
-									pineapple-camera-sensor-mtp.dtbo \
-									pineapple-camera-sensor-hdk.dtbo \
-									pineapple-camera-sensor-qrd.dtbo \
-									pineapple-camera-sensor-aim500.dtbo
-endif
+# ifneq ($(CONFIG_OPLUS_DEVICE_DTBS), y)
+# dtbo-$(CONFIG_ARCH_PINEAPPLE)	+= pineapple-camera-v2.dtbo \
+# 									pineapple-camera-sensor-cdp.dtbo \
+# 									pineapple-camera-sensor-mtp.dtbo \
+# 									pineapple-camera-sensor-hdk.dtbo \
+# 									pineapple-camera-sensor-qrd.dtbo \
+# 									pineapple-camera-sensor-aim500.dtbo
+# endif
 #OPLUS_DTS_OVERLAY start
 #OPLUS_DTS_OVERLAY end
 
