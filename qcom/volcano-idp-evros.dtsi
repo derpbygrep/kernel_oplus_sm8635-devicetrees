@@ -1,6 +1,0 @@
-#include "volcano-idp.dtsi"
-
-&L1B {
-	status = "ok";
-};
-

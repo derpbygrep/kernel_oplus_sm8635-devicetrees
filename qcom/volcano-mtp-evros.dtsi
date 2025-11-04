@@ -1,5 +1,0 @@
-#include "volcano-mtp.dtsi"
-
-&L1B {
-	status = "ok";
-};

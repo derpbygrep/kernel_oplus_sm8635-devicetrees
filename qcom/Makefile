@@ -11,8 +11,6 @@ add-overlays = $(foreach o,$1,$(foreach b,$2,$(eval $(basename $b)-$(basename $o
 # see DTB_TYPES from scripts/Makefile.dtbinst and install_dtbs from build.config.msm.common
 #
 
-ifneq ($(CONFIG_OPLUS_DEVICE_DTBS), y)
-
 ifneq ($(CONFIG_ARCH_QTI_VM), y)
 
 PINEAPPLE_BASE_DTB += pineapple.dtb pineapple-v2.dtb
@@ -570,9 +568,6 @@ sdmsteppeauto-overlays-dtb-$(CONFIG_ARCH_SA6155) += $(SA6155_BOARDS) $(SA6155P_B
 
 dtb-y += $(sdmsteppeauto-dtb-y)
 
-endif
-
 always-y        := $(dtb-y)
 subdir-y        := $(dts-dirs)
-subdir-y        += audio bt camera data display dsp eSE eva fingerprint graphics mm mmrm mm-sys nfc synx video wlan
 clean-files     := *.dtb *.dtbo

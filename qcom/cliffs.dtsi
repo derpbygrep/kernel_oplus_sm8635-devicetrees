@@ -1863,8 +1863,7 @@
 				qcom,low-latency;
 				qcom,intents = <0x800  5
 						0x2000 3
-						0x4400 2
-						0X6000 4>;
+						0x4400 2>;
 			};
 
 			qcom,modem_ds {
