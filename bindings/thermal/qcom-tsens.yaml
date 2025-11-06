@@ -71,7 +71,6 @@ properties:
     items:
       - const: calib
       - const: calib_sel
-      - const: tsens_itemp
 
   "#qcom,sensors":
     description:
@@ -124,7 +123,7 @@ required:
   - interrupt-names
   - "#thermal-sensor-cells"
 
-additionalProperties: true
+additionalProperties: false
 
 examples:
   - |

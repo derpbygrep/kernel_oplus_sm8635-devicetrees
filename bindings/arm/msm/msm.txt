@@ -99,19 +99,13 @@ SoCs:
   compatible = "qcom,diwali"
 
 - PINEAPPLE
-  compatible = "qcom,pineapple", "qcom,pineapplep", "qcom,pineappleq"
-
-- NEO
-  compatible = "qcom,neo"
+  compatible = "qcom,pineapple", "qcom,pineapplep"
 
 - ANORAK
   compatible = "qcom,anorak", "qcom,anorakp"
 
 - NIOBE
   compatible = "qcom,niobe", "qcom,niobep"
-
-- SERAPH
-  compatible = "qcom,seraph"
 
 - LEMANS
   compatible = "qcom,lemans"
@@ -131,16 +125,10 @@ SoCs:
 - VOLCANO
   compatible = "qcom,volcano", "qcom,volcanop"
 
-- SA8797p
-  compatible = "qcom,sa8797p"
-
 Generic board variants:
 
 - CDP device:
   compatible = "qcom,cdp"
-
-- TTP device:
-  compatible = "qcom,ttp"
 
 - IDP device:
   compatible = "qcom,idp"
@@ -192,9 +180,6 @@ Generic board variants:
 
 - QAM device:
   compatible = "qcom,qam"
-
-- COB device:
-  compatible = "qcom,cob"
 
 Boards (SoC type + board variant):
 
@@ -349,7 +334,6 @@ compatible = "qcom,niobe-qxr"
 compatible = "qcom,niobep-atp"
 compatible = "qcom,niobep-idp"
 compatible = "qcom,niobep-qxr"
-compatible = "qcom,seraph-rumi"
 compatible = "qcom,quinvm"
 compatible = "qcom,direwolf"
 compatible = "qcom,lemans-rumi"
@@ -390,8 +374,6 @@ compatible = "qcom,monaco_auto-adas-adp-star"
 compatible = "qcom,monaco_auto-ivi"
 compatible = "qcom,monaco_auto-ivi-adp-air"
 compatible = "qcom,monaco_auto-ivi-adp-star"
-compatible = "qcom,neo-rumi"
-compatible = "qcom,neo-idp"
 compatible = "qcom,anorak-idp"
 compatible = "qcom,anorak-qxr"
 compatible = "qcom,anorak-atp"
@@ -403,7 +385,6 @@ compatible = "qcom,pitti-idp"
 compatible = "qcom,pitti-atp"
 compatible = "qcom,pitti-qrd"
 compatible = "qcom,volcano-rumi"
-<<<<<<< HEAD   (31a9fa Merge "ARM: dts: msm: Add repeater nodes to Niobe ATP")
 compatible = "qcom,volcano-atp"
 compatible = "qcom,volcano-idp"
 compatible = "qcom,volcano-mtp"
@@ -412,10 +393,3 @@ compatible = "qcom,volcanop-atp"
 compatible = "qcom,volcanop-idp"
 compatible = "qcom,volcanop-mtp"
 compatible = "qcom,volcanop-qrd"
-=======
-compatible = "qcom,mdm9607-cdp"
-compatible = "qcom,mdm9607-rumi"
-compatible = "qcom,mdm9607-mtp"
-compatible = "qcom,mdm9607-ttp"
-compatible = "qcom,mdm9607"
->>>>>>> CHANGE (04bd1b ARM: dts: msm: Add initial device tree for MDM9607)
