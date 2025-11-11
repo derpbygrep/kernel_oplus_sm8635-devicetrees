@@ -955,7 +955,6 @@
 		coresight-name = "coresight-tpdm-tmess1";
 
 		clocks = <&aoss_qmp>;
-		status = "disabled";
 		clock-names = "apb_pclk";
 		atid = <100>;
 		qcom,hw-enable-check;
@@ -3904,7 +3903,7 @@
 
 		coresight-name = "coresight-ete0";
 		qcom,skip-power-up;
-		atid = <1>;
+		atid = <0x10>;
 		out-ports {
 			port {
 				ete0_out_funnel_ete: endpoint {
@@ -3920,7 +3919,7 @@
 
 		coresight-name = "coresight-ete1";
 		qcom,skip-power-up;
-		atid = <2>;
+		atid = <0x12>;
 		out-ports {
 			port {
 				ete1_out_funnel_ete: endpoint {
@@ -3936,7 +3935,7 @@
 
 		coresight-name = "coresight-ete2";
 		qcom,skip-power-up;
-		atid = <3>;
+		atid = <0x14>;
 		out-ports {
 			port {
 				ete2_out_funnel_ete: endpoint {
@@ -3952,7 +3951,7 @@
 
 		coresight-name = "coresight-ete3";
 		qcom,skip-power-up;
-		atid = <4>;
+		atid = <0x16>;
 		out-ports {
 			port {
 				ete3_out_funnel_ete: endpoint {
@@ -3968,7 +3967,7 @@
 
 		coresight-name = "coresight-ete4";
 		qcom,skip-power-up;
-		atid = <5>;
+		atid = <0x18>;
 		out-ports {
 			port {
 				ete4_out_funnel_ete: endpoint {
@@ -3984,7 +3983,7 @@
 
 		coresight-name = "coresight-ete5";
 		qcom,skip-power-up;
-		atid = <6>;
+		atid = <0x1a>;
 		out-ports {
 			port {
 				ete5_out_funnel_ete: endpoint {
@@ -4000,7 +3999,7 @@
 
 		coresight-name = "coresight-ete6";
 		qcom,skip-power-up;
-		atid = <7>;
+		atid = <0x1c>;
 		out-ports {
 			port {
 				ete6_out_funnel_ete: endpoint {
@@ -4016,7 +4015,7 @@
 
 		coresight-name = "coresight-ete7";
 		qcom,skip-power-up;
-		atid = <8>;
+		atid = <0x1e>;
 		out-ports {
 			port {
 				ete7_out_funnel_ete: endpoint {
@@ -4395,9 +4394,9 @@
 		clock-names = "apb_pclk";
 	};
 
-	apss_pe0: cti@120f0000 {
+	apss_pe0: cti@12010000 {
 		compatible = "arm,coresight-cti", "arm,primecell";
-		reg = <0x120f0000 0x1000>;
+		reg = <0x12010000 0x1000>;
 
 		arm,primecell-periphid = <0x000bb922>;
 		coresight-name = "coresight-cti-apss_pe0";
@@ -4406,9 +4405,9 @@
 		clock-names = "apb_pclk";
 	};
 
-	apss_pe1: cti@12170000 {
+	apss_pe1: cti@12020000 {
 		compatible = "arm,coresight-cti", "arm,primecell";
-		reg = <0x12170000 0x1000>;
+		reg = <0x12020000 0x1000>;
 
 		arm,primecell-periphid = <0x000bb922>;
 		coresight-name = "coresight-cti-apss_pe1";
@@ -4417,9 +4416,9 @@
 		clock-names = "apb_pclk";
 	};
 
-	apss_pe2: cti@121f0000 {
+	apss_pe2: cti@12030000 {
 		compatible = "arm,coresight-cti", "arm,primecell";
-		reg = <0x121f0000 0x1000>;
+		reg = <0x12030000 0x1000>;
 
 		arm,primecell-periphid = <0x000bb922>;
 		coresight-name = "coresight-cti-apss_pe2";
@@ -4428,9 +4427,9 @@
 		clock-names = "apb_pclk";
 	};
 
-	apss_pe3: cti@12270000 {
+	apss_pe3: cti@12040000 {
 		compatible = "arm,coresight-cti", "arm,primecell";
-		reg = <0x12270000 0x1000>;
+		reg = <0x12040000 0x1000>;
 
 		arm,primecell-periphid = <0x000bb922>;
 		coresight-name = "coresight-cti-apss_pe3";
@@ -4439,9 +4438,9 @@
 		clock-names = "apb_pclk";
 	};
 
-	apss_pe4: cti@122f0000 {
+	apss_pe4: cti@12050000 {
 		compatible = "arm,coresight-cti", "arm,primecell";
-		reg = <0x122f0000 0x1000>;
+		reg = <0x12050000 0x1000>;
 
 		arm,primecell-periphid = <0x000bb922>;
 		coresight-name = "coresight-cti-apss_pe4";
@@ -4450,9 +4449,9 @@
 		clock-names = "apb_pclk";
 	};
 
-	apss_pe5: cti@12370000 {
+	apss_pe5: cti@12060000 {
 		compatible = "arm,coresight-cti", "arm,primecell";
-		reg = <0x12370000 0x1000>;
+		reg = <0x12060000 0x1000>;
 
 		arm,primecell-periphid = <0x000bb922>;
 		coresight-name = "coresight-cti-apss_pe5";
@@ -4461,9 +4460,9 @@
 		clock-names = "apb_pclk";
 	};
 
-	apss_pe6: cti@123f0000 {
+	apss_pe6: cti@12070000 {
 		compatible = "arm,coresight-cti", "arm,primecell";
-		reg = <0x123f0000 0x1000>;
+		reg = <0x12070000 0x1000>;
 
 		arm,primecell-periphid = <0x000bb922>;
 		coresight-name = "coresight-cti-apss_pe6";
@@ -4472,9 +4471,9 @@
 		clock-names = "apb_pclk";
 	};
 
-	apss_pe7: cti@12470000 {
+	apss_pe7: cti@12080000 {
 		compatible = "arm,coresight-cti", "arm,primecell";
-		reg = <0x12470000 0x1000>;
+		reg = <0x12080000 0x1000>;
 
 		arm,primecell-periphid = <0x000bb922>;
 		coresight-name = "coresight-cti-apss_pe7";
@@ -4483,9 +4482,9 @@
 		clock-names = "apb_pclk";
 	};
 
-	apss_cluster: cti@12040000 {
+	apss_cluster: cti@12230000 {
 		compatible = "arm,coresight-cti", "arm,primecell";
-		reg = <0x12040000 0x1000>;
+		reg = <0x12230000 0x1000>;
 
 		arm,primecell-periphid = <0x000bb922>;
 		coresight-name = "coresight-cti-apss_cluster";

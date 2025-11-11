@@ -421,7 +421,7 @@
 		pinctrl-0 = <&qupv3_se1_7i2c_active>;
 		pinctrl-1 = <&qupv3_se1_7i2c_sleep>;
 		tlmm-vm-gpio-list = <&tlmm 16 0 &tlmm 17 0 &tlmm 18 0 &tlmm 19 0
-				     &tlmm 44 0 &tlmm 45 0 &tlmm 46 0 &tlmm 47 0
+				     &tlmm 44 0 &tlmm 45 0 &tlmm 47 0
 				     &tlmm 128 0 &tlmm 129 0 &tlmm 131 0 &tlmm 29 0
 				     &tlmm 177 0 &tlmm 54 0 &tlmm 77 0 &tlmm 78 0>;
 	};
@@ -460,7 +460,7 @@
 	tlmm-vm-mem-access {
 		compatible = "qcom,tlmm-vm-mem-access";
 		tlmm-vm-gpio-list = <&tlmm 16 0 &tlmm 17 0 &tlmm 18 0 &tlmm 19 0
-				     &tlmm 44 0 &tlmm 45 0 &tlmm 46 0 &tlmm 47 0
+				     &tlmm 44 0 &tlmm 45 0 &tlmm 47 0
 				     &tlmm 128 0 &tlmm 129 0 &tlmm 131 0 &tlmm 29 0
 				     &tlmm 177 0 &tlmm 54 0 &tlmm 77 0 &tlmm 78 0>;
 	};
