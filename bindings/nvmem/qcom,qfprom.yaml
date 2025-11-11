@@ -29,7 +29,6 @@ properties:
           - qcom,cliffs-qfprom
           - qcom,pitti-qfprom
           - qcom,niobe-qfprom
-          - qcom,pineapple-qfprom
       - const: qcom,qfprom
 
   reg:
