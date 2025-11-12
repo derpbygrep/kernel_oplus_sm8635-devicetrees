@@ -24,6 +24,10 @@ dtbo-y += st/cliffs-nfc.dtbo \
           st/cliffs-nfc-mtp.dtbo
 endif
 
+#PLUS_DTS_OVERLAY start
+dtbo-$(CONFIG_LEXUS_DTB) += oplus/lexus-24881-nfc-cliffs-overlay.dtbo
+#PLUS_DTS_OVERLAY end
+
 ifeq ($(CONFIG_ARCH_BLAIR),y)
 dtbo-y += nxp/blair-nfc.dtbo \
           nxp/blair-nfc-atp.dtbo \
